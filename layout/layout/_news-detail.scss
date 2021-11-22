@@ -1,0 +1,154 @@
+@media screen and (min-width: 601px) {
+  // ニュース詳細全体
+  .news-detail-wrapper {
+    width: 980px;
+    margin: 0 auto;
+
+    // ニュースのタグ
+    .news-detail-tag {
+      width: 82px;
+      height: 31px;
+      background-color: $back-darkbrown;
+      font-family: $montserrat;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 17.07px;
+      letter-spacing: 0.2rem;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: 0;
+      bottom: 80px;
+    }
+
+    .news-detail-title {
+      font-size: 28px;
+      line-height: 40.54px;
+      padding-top: 189px;
+      position: relative;
+    }
+
+    .news-detail-content-wrapper {
+      padding: 30px 0;
+      border-top: 1px solid $text-gray;
+      border-bottom: 1px solid $text-gray;
+      margin-top: 30px;
+      margin-bottom: 110px;
+
+      .news-detail-date {
+        font-family: $montserrat;
+        line-height: 19.5px;
+        letter-spacing: 0.2rem;
+      }
+
+      .news-detail-content {
+        line-height: 43px;
+      }
+    }
+
+    // 記事一覧へ戻るボタン
+    .news-detail-back-button {
+      width: 282px;
+      height: 50px;
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+      border: 1px solid $text-gray;
+      margin: 0 auto;
+      margin-bottom: 150px;
+
+      .news-detail-back-text {
+        line-height: 23.17px;
+      }
+
+      .news-detail-back-text:before {
+        content: "←";
+        // font-size: 16px;
+        margin-right: 53px;
+        padding-left: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  // ニュース詳細全体
+  .news-detail-wrapper {
+    width: 335px;
+    margin: 0 auto;
+
+    // ニュースのタグ
+    .news-detail-tag {
+      width: 66px;
+      height: 22px;
+      background-color: $back-darkbrown;
+      font-family: $montserrat;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 17.07px;
+      letter-spacing: 0.2rem;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 3px;
+      position: absolute;
+      left: 0;
+      bottom: 120px;
+    }
+
+    .news-detail-title {
+      font-size: 26px;
+      line-height: 37.65pxpx;
+      margin-top: 132px;
+      position: relative;
+    }
+
+    .news-detail-content-wrapper {
+      padding: 30px 0;
+      border-top: 1px solid $text-gray;
+      border-bottom: 1px solid $text-gray;
+      margin-top: 36px;
+      margin-bottom: 100px;
+
+      .news-detail-date {
+        font-size: 14px;
+        font-family: $montserrat;
+        line-height: 17.07px;
+        letter-spacing: 0.2rem;
+      }
+
+      .news-detail-content {
+        font-size: 14px;
+        line-height: 43px;
+        margin-top: 63px;
+      }
+    }
+
+    // 記事一覧へ戻るボタン
+    .news-detail-back-button {
+      width: 282px;
+      height: 50px;
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+      border: 1px solid $text-gray;
+      margin: 0 auto;
+      margin-bottom: 150px;
+
+      .news-detail-back-text {
+        line-height: 23.17px;
+        margin-right: 53px;
+        // text-align: center;
+      }
+
+      .news-detail-back-text:before {
+        content: "←";
+        margin-right: 53px;
+        margin-left: 16px;
+      }
+    }
+  }
+}

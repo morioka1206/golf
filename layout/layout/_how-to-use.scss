@@ -1,0 +1,555 @@
+@media screen and (min-width: 601px) {
+  .page-title {
+    font-family: $montserrat;
+    color: transparent;
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 40px;
+    -webkit-text-stroke: 1px $text-beige;
+    position: absolute;
+    top: -90px;
+    left: -240px;
+  }
+
+  .how-to-use-wrapper {
+    width: 1118px;
+    margin: 0 auto;
+    margin-top: 252px;
+    position: relative;
+
+    .how-title {
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 40px;
+      letter-spacing: 0.2rem;
+      font-family: $noto-serif;
+    }
+
+    // ご利用方法の内容
+    .how-to-use-contents {
+      width: 1118px;
+
+      // トライアル利用
+      .trial-use {
+        .trial-title {
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 43.44px;
+          letter-spacing: 0.2rem;
+          color: $text-beige;
+          display: flex;
+          text-align: center;
+          align-items: center;
+          margin-top: 128px;
+        }
+        .trial-title::before {
+          content: "";
+          width: 60px;
+          margin-right: 7px;
+          border-top: 3px solid $text-beige;
+        }
+
+        // トライアル利用のステップ
+        .trial-steps {
+          margin-top: 72px;
+          display: grid;
+          // 行の高さ
+          grid-template-rows: 544px 544px;
+          // 列の幅
+          grid-template-columns: 334px 334px 334px;
+          // 空間　縦と横
+          gap: 90px 58px;
+
+          // grid-template-areas:
+          //   ". . ."
+          //   ". . .";
+
+          .trial-step {
+            width: 334px;
+            // ステップの番号
+            .step-number {
+              font-weight: 700;
+              font-size: 26px;
+              line-height: 23px;
+              color: $text-beige;
+            }
+            // ステップのタイトル
+            .step-title {
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 23px;
+              margin-top: 20px;
+            }
+
+            // ステップのイメージ
+            .step-image {
+              width: 334px;
+              height: 244px;
+              margin: 30px 0;
+            }
+
+            .step-sentence {
+              font-size: 18px;
+              line-height: 28px;
+              width: 100%;
+            }
+
+            .step-line-friends {
+              margin-top: 30px;
+            }
+
+            // LINEをお持ちでない方
+            .no-line-user {
+              width: 354px;
+              height: 357px;
+              background-color: $back-beige;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+
+              .no-line-title {
+                width: 323px;
+                font-size: 26px;
+                font-weight: 700;
+                line-height: 23px;
+                text-align: center;
+                padding-top: 54px;
+              }
+
+              .no-line-sentence {
+                width: 323px;
+                font-size: 21px;
+                line-height: 33px;
+                text-align: center;
+                margin-top: 34px;
+              }
+
+              .reserve-link {
+                width: 289px;
+                height: 60px;
+                background-color: $text-black;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                margin-top: 34px;
+              }
+            }
+          }
+        }
+      }
+
+      // メンバー利用
+      .member-use {
+        .member-use-title {
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 43.44px;
+          letter-spacing: 0.2rem;
+          color: $text-beige;
+          display: flex;
+          text-align: center;
+          align-items: center;
+          margin-top: 128px;
+        }
+        .member-use-title::before {
+          content: "";
+          width: 60px;
+          margin-right: 7px;
+          border-top: 3px solid $text-beige;
+        }
+
+        // メンバー利用のステップ
+        .member-use-steps {
+          margin-top: 72px;
+          padding-bottom: 150px;
+          display: grid;
+          // 行の高さ
+          grid-template-rows: 510px;
+          // 列の幅
+          grid-template-columns: 334px 334px 334px;
+          // 空間　縦と横
+          gap: 90px 58px;
+
+          .member-step {
+            width: 334px;
+            // ステップの番号
+            .member-number {
+              font-weight: 700;
+              font-size: 26px;
+              line-height: 23px;
+              color: $text-beige;
+            }
+            // ステップのタイトル
+            .member-title {
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 23px;
+              margin-top: 20px;
+            }
+
+            // ステップのイメージ
+            .member-image {
+              width: 334px;
+              height: 244px;
+              margin: 30px 0;
+            }
+
+            .member-sentence {
+              font-size: 18px;
+              line-height: 28px;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .how-to-use-wrapper {
+    width: 337px;
+    margin: 0 auto;
+    margin-top: 163px;
+
+    .page-title {
+      font-family: $montserrat;
+      color: transparent;
+      font-size: 60px;
+      font-weight: 400;
+      line-height: 40px;
+      -webkit-text-stroke: 1px $text-beige;
+    }
+
+    .how-title {
+      font-weight: 300;
+      font-size: 28px;
+      line-height: 40px;
+      font-family: $noto-serif;
+      margin-top: 20px;
+    }
+
+    // ご利用方法の内容
+    .how-to-use-contents {
+      width: 335px;
+
+      // トライアル利用
+      .trial-use {
+        .trial-title {
+          font-weight: 700;
+          font-size: 26px;
+          line-height: 37.65px;
+          letter-spacing: 0.2rem;
+          color: $text-beige;
+          display: flex;
+          text-align: center;
+          align-items: center;
+          margin-top: 120px;
+        }
+        .trial-title::before {
+          content: "";
+          width: 17px;
+          margin-right: 7px;
+          border-top: 3px solid $text-beige;
+        }
+
+        // トライアル利用のステップ
+        .trial-steps {
+          margin-top: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap: 60px;
+
+          .trial-step {
+            width: 334px;
+            // ステップの番号
+            .step-number {
+              font-weight: 700;
+              font-size: 26px;
+              line-height: 23px;
+              color: $text-beige;
+            }
+            // ステップのタイトル
+            .step-title {
+              font-weight: 700;
+              line-height: 23px;
+              margin-top: 10px;
+            }
+
+            // ステップのイメージ
+            .step-image {
+              width: 334px;
+              height: 244px;
+              margin: 20px 0;
+            }
+
+            // ステップの説明
+            .step-sentence {
+              font-size: 14px;
+              line-height: 28px;
+              width: 100%;
+            }
+
+            .step-line-friends {
+              margin-top: 20px;
+            }
+
+            // LINEをお持ちでない方
+            .no-line-user {
+              width: 335px;
+              height: 357px;
+              background-color: $back-beige;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+
+              .no-line-title {
+                width: 323px;
+                font-size: 23px;
+                font-weight: 700;
+                line-height: 23px;
+                text-align: center;
+                padding-top: 54px;
+              }
+
+              .no-line-sentence {
+                width: 323px;
+                line-height: 33px;
+                text-align: center;
+                margin-top: 20px;
+              }
+
+              .reserve-link {
+                width: 289px;
+                height: 60px;
+                background-color: $back-darkbrown;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                margin-top: 20px;
+              }
+            }
+          }
+        }
+      }
+
+      // メンバー利用
+      .member-use {
+        .member-use-title {
+          font-weight: 700;
+          font-size: 26px;
+          line-height: 37.65px;
+          letter-spacing: 0.2rem;
+          color: $text-beige;
+          display: flex;
+          text-align: center;
+          align-items: center;
+          margin-top: 120px;
+        }
+        .member-use-title::before {
+          content: "";
+          width: 17px;
+          margin-right: 7px;
+          border-top: 3px solid $text-beige;
+        }
+
+        // メンバー利用のステップ
+        .member-use-steps {
+          margin-top: 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap: 60px;
+
+          .member-step {
+            width: 334px;
+            // ステップの番号
+            .member-number {
+              font-weight: 700;
+              font-size: 26px;
+              line-height: 23px;
+              color: $text-beige;
+            }
+            // ステップのタイトル
+            .member-title {
+              font-size: 16px;
+              font-weight: 700;
+              line-height: 23px;
+              margin-top: 10px;
+            }
+
+            // ステップのイメージ
+            .member-image {
+              width: 334px;
+              height: 244px;
+              margin: 20px 0;
+            }
+
+            .member-sentence {
+              font-size: 14px;
+              line-height: 28px;
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .hour-plan {
+        width: 337px;
+        margin: 0 auto;
+        margin-top: 150px;
+
+        .page-title {
+          font-family: $montserrat;
+          color: transparent;
+          font-size: 50px;
+          font-weight: 400;
+          line-height: 38px;
+          -webkit-text-stroke: 1px $text-beige;
+        }
+
+        .how-title {
+          font-weight: 300;
+          font-size: 28px;
+          line-height: 40px;
+          font-family: $noto-serif;
+          margin-top: 20px;
+        }
+
+        .hour-table {
+          margin-top: 100px;
+          margin-bottom: 180px;
+          overflow-x: auto;
+          white-space: nowrap;
+          scrollbar-color: black yellow;
+
+          table {
+            width: 591px;
+            height: 379px;
+            font-size: 10px;
+
+            .play-hours {
+              padding-left: 40px;
+            }
+
+            th {
+              background-color: $back-darkbrown;
+              color: white;
+              text-align: left;
+              padding: 0 20px;
+            }
+
+            td {
+              height: 52px;
+              border-bottom: 1px solid $text-black;
+              padding: 0 20px;
+            }
+
+            th:last-child,
+            td:last-child {
+              text-align: right;
+            }
+
+            .table-premium {
+              height: 75px;
+              background-color: $back-beige;
+
+              // おすすめ
+              .premium-plan::before {
+                content: "";
+                background-image: url("./images/おすすめ.svg");
+                display: inline-block;
+                width: 33px;
+                height: 11px;
+                background-size: contain;
+                margin-right: 5px;
+              }
+
+              // 年間契約で割引
+              .premium-plan::after {
+                content: "";
+                background-image: url("./images/年間契約.svg");
+                display: inline-block;
+                width: 58px;
+                height: 12px;
+                background-size: contain;
+                margin-left: 4px;
+                margin-bottom: 2px;
+              }
+
+              // 20％オフ
+              .premium-discount:before {
+                content: "";
+                background-image: url("./images/premiumoff.svg");
+                display: inline-block;
+                width: 35px;
+                height: 35px;
+                background-size: contain;
+                margin-right: 8px;
+                margin-bottom: 2px;
+              }
+            }
+
+            .allday::before {
+              content: "";
+              background-image: url("./images/24hours.svg");
+              display: inline-block;
+              width: 15px;
+              height: 15px;
+              background-size: contain;
+              margin-right: 8px;
+              margin-bottom: 2px;
+            }
+
+            .day::before {
+              content: "";
+              background-image: url("./images/dayhours.svg");
+              display: inline-block;
+              width: 15px;
+              height: 15px;
+              background-size: contain;
+              margin-right: 8px;
+              margin-bottom: 2px;
+            }
+
+            .night::before {
+              content: "";
+              background-image: url("./images/nighthours.svg");
+              display: inline-block;
+              width: 15px;
+              height: 15px;
+              background-size: contain;
+              margin-right: 8px;
+              margin-bottom: 2px;
+            }
+
+            .midnight::before {
+              content: "";
+              background-image: url("./images/midnight.svg");
+              display: inline-block;
+              width: 15px;
+              height: 15px;
+              background-size: contain;
+              margin-right: 8px;
+              margin-bottom: 2px;
+            }
+          }
+        }
+
+        .hour-table-scrollbar-thumb {
+          background: #ffe6ea;
+          background-color: red;
+        }
+      }
+    }
+  }
+}

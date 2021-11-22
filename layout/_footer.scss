@@ -1,0 +1,46 @@
+// フッター
+footer {
+  height: 869px;
+  height: 392px;
+  background-color: $back-brown;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  padding: 96px 200px 96px 221px;
+
+  .footer-company-infomation {
+    line-height: 24px;
+    margin-top: 33.34px;
+  }
+
+  .footer-links {
+    width: 354px;
+    line-height: 17px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 52px;
+  }
+
+  .footer-sns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-sns-icons {
+    width: 153px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+  }
+
+  .footer-follow-us {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: $montserrat;
+  }
+}

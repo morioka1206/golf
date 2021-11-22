@@ -1,0 +1,946 @@
+@media screen and (min-width: 601px) {
+  // ファーストビューの部分
+  .top-section {
+    width: 100%;
+
+    // ファーストビュー画像
+    .first-view-images {
+      width: 1480px;
+      height: 733px;
+      overflow: hidden;
+      position: relative;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    // それぞれのスライド画像
+    .first-image {
+      z-index: 10;
+      opacity: 0;
+      width: 1480px;
+      height: 733px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      top: 92px;
+      -webkit-animation: anime 36s 0s infinite;
+      animation: anime 36s 0s infinite;
+    }
+
+    // 2番目
+    .first-image:nth-of-type(2) {
+      -webkit-animation-delay: 6s;
+      animation-delay: 6s;
+    }
+
+    // 3番目
+    .first-image:nth-of-type(3) {
+      -webkit-animation-delay: 12s;
+      animation-delay: 12s;
+    }
+
+    // 4番目
+    .first-image:nth-of-type(4) {
+      -webkit-animation-delay: 18s;
+      animation-delay: 18s;
+    }
+
+    // 5番目
+    .first-image:nth-of-type(5) {
+      -webkit-animation-delay: 24s;
+      animation-delay: 24s;
+    }
+
+    // 6番目
+    .first-image:nth-of-type(6) {
+      -webkit-animation-delay: 30s;
+      animation-delay: 30s;
+    }
+
+    // ファーストビューのアニメーション
+    @keyframes anime {
+      0% {
+        opacity: 0;
+      }
+      8% {
+        opacity: 1;
+      }
+      17% {
+        opacity: 1;
+      }
+      25% {
+        opacity: 0;
+        transform: scale(1.2);
+        z-index: 9;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    // トップ画像右下のコンタクトアス
+    .contact-us {
+      position: absolute;
+      top: 573px;
+      left: 1320px;
+      z-index: 6000;
+    }
+  }
+
+  // トップ画像下のGOLFERS24紹介部分
+  .top-introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 0 100px;
+    margin: 150px 0;
+
+    // 文章部分
+    .top-introduction-text {
+      color: $text-gray;
+      width: 693px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .top-introduction-title {
+      font-family: $noto-serif;
+      font-size: 40px;
+      line-height: 70px;
+      font-weight: 300;
+    }
+
+    .top-introduction-sentence {
+      line-height: 50px;
+    }
+
+    .top-introduction-image {
+      width: 647px;
+      height: 680px;
+    }
+  }
+
+  // GOLFERS24の特徴
+  .second-section {
+    width: 100%;
+    height: 4275px;
+    background-color: $back-beige;
+
+    .second-section-title {
+      font-family: $noto-serif;
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 40px;
+      text-align: center;
+      padding-top: 100px;
+      color: $text-gray;
+    }
+
+    .sm-second-section-features {
+      display: none;
+    }
+
+    .second-section-features {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 100px auto 200px;
+      gap: 100px;
+      padding: 0 185px;
+      color: $text-black;
+
+      // 特徴
+      .feature {
+        width: 1397px;
+        height: 687px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .feature-text-wrapper {
+          width: 597px;
+          height: 575px;
+          position: relative;
+
+          // 特徴のテキストボックス（奇数）
+          .feature-text-box {
+            width: 597px;
+            height: 575px;
+            background-color: $back-beige;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            z-index: 300;
+            position: absolute;
+            left: 170px;
+
+            // 特徴のタイトル
+            .feature-title {
+              width: 527px;
+              font-family: $noto-serif;
+              font-size: 28px;
+              font-weight: 300;
+              line-height: 40px;
+            }
+
+            .feature-sentence {
+              width: 512px;
+              line-height: 50px;
+              margin-top: 60px;
+            }
+          }
+
+          // 特徴のテキストボックス（偶数）
+          .feature-text-box-even {
+            width: 597px;
+            height: 575px;
+            background-color: $back-beige;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: column;
+            z-index: 300;
+            position: absolute;
+            left: -170px;
+
+            // 特徴のタイトル
+            .feature-title {
+              width: 527px;
+              font-family: $noto-serif;
+              font-size: 28px;
+              font-weight: 300;
+              line-height: 40px;
+            }
+
+            .feature-sentence {
+              width: 512px;
+              line-height: 50px;
+              margin-top: 60px;
+            }
+          }
+        }
+
+        .feature-image {
+          width: 800px;
+          height: 687px;
+          background-color: aqua;
+        }
+      }
+
+      // 特徴を交互に表示
+      .feature:nth-of-type(even) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  // ご利用の流れ
+  .third-section {
+    height: 342px;
+    background-color: #a59c84;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    gap: 218px;
+
+    .third-section-how-to-use-text {
+      margin-top: 90px;
+      color: white;
+
+      .how-to-use-title {
+        font-family: $noto-serif;
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 40px;
+      }
+
+      .sm-how-to-use-sentence {
+        display: none;
+      }
+
+      .how-to-use-sentence {
+        width: 506px;
+        line-height: 50px;
+        margin-top: 50px;
+      }
+    }
+
+    .third-section-how-to-use-image {
+      width: 342px;
+      height: 37px;
+      margin-top: 215px;
+    }
+  }
+
+  // 店舗一覧
+  .forth-section {
+    width: 100%;
+    .forth-section-list-of-stores {
+      padding-top: 126px;
+      // 店舗一覧タイトル
+      .forth-section-stores-title {
+        font-family: $noto-serif;
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        position: relative;
+      }
+
+      .forth-section-stores-title::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        top: 188px;
+        width: 1px;
+        height: 90px;
+        margin: auto;
+        background-color: $text-gray;
+      }
+    }
+    // 店舗一覧
+    .forth-section-stores {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 58px;
+      margin-top: 178px;
+
+      .forth-section-store {
+        width: 334px;
+        height: 356px;
+
+        .forth-section-store-image img {
+          width: 334px;
+          height: 242px;
+        }
+
+        .forth-section-store-infomation {
+          margin-top: 33px;
+
+          .forth-section-store-name {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 23px;
+            text-align: center;
+          }
+
+          .forth-section-store-address {
+            font-size: 14px;
+            line-height: 23px;
+            margin-top: 12px;
+          }
+        }
+      }
+    }
+
+    .forth-section-view-more {
+      width: 182px;
+      height: 50px;
+      margin: 102px auto 200px;
+    }
+  }
+
+  // NEWS
+  .fifth-section {
+    height: 969px;
+    background-color: $back-beige;
+
+    .fifth-section-title {
+      font-family: $noto-serif;
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 40px;
+      padding-top: 126px;
+      text-align: center;
+      position: relative;
+    }
+
+    .fifth-section-title::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0px;
+      top: 314px;
+      width: 1px;
+      height: 90px;
+      margin: auto;
+      background-color: $text-gray;
+    }
+
+    .fifth-section-list-of-news {
+      width: 1016px;
+      margin: 0 auto;
+      margin-top: 172px;
+
+      .fifth-section-news {
+        width: 100%;
+        height: 96px;
+        display: flex;
+        align-items: center;
+        gap: 94px;
+        border-bottom: 1px solid $line-gray3;
+
+        .fifth-section-news-date {
+          font-family: $montserrat;
+          line-height: 19.5px;
+          letter-spacing: 0.2rem;
+        }
+
+        .fifth-section-news-content {
+          line-height: 23.17px;
+        }
+      }
+
+      .fifth-section-news:nth-of-type(1) {
+        border-top: 1px solid $line-gray3;
+      }
+    }
+
+    .fifth-section-view-more {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 102px;
+    }
+  }
+
+  // SNS
+  .sixth-section {
+    height: 288px;
+    background-color: $back-khaki;
+    color: white;
+
+    .sm-sixth-section-follow-message {
+      display: none;
+    }
+
+    .sixth-section-follow-message {
+      font-size: 20px;
+      line-height: 50px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 68px;
+      padding-bottom: 43px;
+    }
+
+    .sixth-sns-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 21px;
+
+      .sixth-sns-button {
+        width: 282px;
+        height: 50px;
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $montserrat;
+        font-weight: 600;
+        line-height: 19.5px;
+
+        p {
+          width: 176.64px;
+          height: 20px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .sixth-sns-icon {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  // ファーストビューの部分
+  .top-section {
+    width: 100%;
+
+    .header-smartphone {
+      // filter: brightness(0) invert(1);
+      background-color: transparent;
+    }
+
+    // ファーストビュー画像
+    .first-view-images {
+      width: 375px;
+      height: 700px;
+      overflow: hidden;
+      position: relative;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    // それぞれのスライド画像
+    .first-image {
+      z-index: 10;
+      opacity: 0;
+      width: 375px;
+      height: 700px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      top: 0;
+      -webkit-animation: anime 36s 0s infinite;
+      animation: anime 36s 0s infinite;
+    }
+
+    // 2番目
+    .first-image:nth-of-type(2) {
+      -webkit-animation-delay: 6s;
+      animation-delay: 6s;
+    }
+
+    // 3番目
+    .first-image:nth-of-type(3) {
+      -webkit-animation-delay: 12s;
+      animation-delay: 12s;
+    }
+
+    // 4番目
+    .first-image:nth-of-type(4) {
+      -webkit-animation-delay: 18s;
+      animation-delay: 18s;
+    }
+
+    // 5番目
+    .first-image:nth-of-type(5) {
+      -webkit-animation-delay: 24s;
+      animation-delay: 24s;
+    }
+
+    // 6番目
+    .first-image:nth-of-type(6) {
+      -webkit-animation-delay: 30s;
+      animation-delay: 30s;
+    }
+
+    // ファーストビューのアニメーション
+    @keyframes anime {
+      0% {
+        opacity: 0;
+      }
+      8% {
+        opacity: 1;
+      }
+      17% {
+        opacity: 1;
+      }
+      25% {
+        opacity: 0;
+        transform: scale(1.2);
+        z-index: 9;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    // トップ画像右下のコンタクトアス
+    .contact-us {
+      position: absolute;
+      top: 573px;
+      left: 1320px;
+      z-index: 6000;
+    }
+  }
+
+  // トップ画像下のGOLFERS24紹介部分
+  .top-introduction {
+    width: 375px;
+    height: 1392px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 150px 0;
+    background-color: white;
+
+    // 文章部分
+    .top-introduction-text {
+      color: $text-gray;
+      width: 335px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .top-introduction-title {
+      font-family: $noto-serif;
+      font-size: 30px;
+      line-height: 60px;
+      font-weight: 300;
+    }
+
+    .top-introduction-sentence {
+      line-height: 40px;
+      margin-top: 20px;
+    }
+
+    .top-introduction-image img {
+      width: 335px;
+      height: 352px;
+      margin-top: 60px;
+    }
+  }
+
+  // GOLFERS24の特徴
+  .second-section {
+    width: 375px;
+    height: 900px;
+    background-color: $back-beige;
+
+    .second-section-title {
+      font-family: $noto-serif;
+      font-weight: 300;
+      font-size: 34px;
+      line-height: 40px;
+      text-align: center;
+      padding-top: 113px;
+    }
+
+    .second-section-features {
+      display: none;
+    }
+
+    .sm-second-section-features {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $text-black;
+
+      .swiper {
+        padding-bottom: 40px;
+      }
+
+      .swiper-slide {
+        width: 200px;
+        height: 200px;
+        background-color: $back-beige2;
+        position: relative;
+      }
+
+      .swiper-pagination {
+        position: absolute;
+        top: 640px;
+      }
+
+      // 特徴
+      .feature {
+        width: 335px;
+        height: 535px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        background-color: $back-beige;
+        margin-top: 100px;
+
+        .feature-text-wrapper {
+          width: 340px;
+
+          // 特徴のテキストボックス
+          .feature-text-box {
+            width: 340px;
+            background-color: $back-beige;
+
+            // 特徴のタイトル
+            .feature-title {
+              width: 340px;
+              font-family: $noto-serif;
+              font-size: 18px;
+              font-weight: 300;
+              line-height: 30px;
+              text-align: center;
+              margin: 0 auto;
+            }
+
+            .feature-sentence {
+              width: 340px;
+              font-size: 12px;
+              line-height: 23px;
+              margin-top: 20px;
+            }
+          }
+        }
+
+        .feature-image img {
+          width: 335px;
+          height: 240px;
+        }
+      }
+    }
+  }
+
+  // ご利用の流れ
+  .third-section {
+    width: 375px;
+    height: 497px;
+    background-color: #a59c84;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .third-section-how-to-use-text {
+      margin-top: 80px;
+      color: white;
+
+      .how-to-use-title {
+        font-family: $noto-serif;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 60px;
+      }
+
+      .how-to-use-sentence {
+        display: none;
+      }
+
+      .sm-how-to-use-sentence {
+        width: 335px;
+        line-height: 50px;
+        margin-top: 60px;
+      }
+    }
+
+    .third-section-how-to-use-image img {
+      width: 259px;
+      height: 37px;
+      margin-top: 60px;
+    }
+  }
+
+  // 店舗一覧
+  .forth-section {
+    width: 375px;
+    height: 1748px;
+    .forth-section-list-of-stores {
+      padding-top: 100px;
+      // 店舗一覧タイトル
+      .forth-section-stores-title {
+        font-family: $noto-serif;
+        font-weight: 300;
+        font-size: 34px;
+        line-height: 40px;
+        text-align: center;
+        position: relative;
+      }
+
+      .forth-section-stores-title::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        top: 120px;
+        width: 1px;
+        height: 40px;
+        margin: auto;
+        background-color: $text-gray;
+      }
+    }
+    // 店舗一覧
+    .forth-section-stores {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 60px;
+      margin-top: 120px;
+
+      .forth-section-store {
+        width: 334px;
+        height: 356px;
+
+        .forth-section-store-image img {
+          width: 334px;
+          height: 242px;
+        }
+
+        .forth-section-store-infomation {
+          margin-top: 33px;
+
+          .forth-section-store-name {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 23px;
+            text-align: center;
+          }
+
+          .forth-section-store-address {
+            font-size: 14px;
+            line-height: 23px;
+            margin-top: 12px;
+          }
+        }
+      }
+    }
+
+    .forth-section-view-more {
+      width: 182px;
+      height: 50px;
+      margin: 100px auto 150px;
+    }
+  }
+
+  // NEWS
+  .fifth-section {
+    width: 375px;
+    height: 969px;
+    background-color: $back-beige;
+
+    .fifth-section-title {
+      font-family: $noto-serif;
+      font-weight: 300;
+      font-size: 34px;
+      line-height: 40px;
+      padding-top: 100px;
+      text-align: center;
+      position: relative;
+    }
+
+    .fifth-section-title::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0px;
+      top: 230px;
+      width: 1px;
+      height: 40px;
+      margin: auto;
+      background-color: $text-gray;
+    }
+
+    .fifth-section-list-of-news {
+      width: 335px;
+      margin: 0 auto;
+      margin-top: 172px;
+
+      .fifth-section-news {
+        width: 100%;
+        height: 121px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        border-bottom: 1px solid $line-gray3;
+        font-size: 14px;
+
+        .fifth-section-news-date {
+          font-family: $montserrat;
+          line-height: 17.07px;
+          letter-spacing: 0.2rem;
+        }
+
+        .fifth-section-news-content {
+          line-height: 20.27px;
+        }
+      }
+
+      .fifth-section-news:nth-of-type(1) {
+        border-top: 1px solid $line-gray3;
+      }
+    }
+
+    .fifth-section-view-more {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 102px;
+    }
+  }
+
+  // SNS
+  .sixth-section {
+    width: 375px;
+    height: 520px;
+    background-color: $back-khaki;
+    color: white;
+
+    .sixth-section-follow-message {
+      display: none;
+    }
+
+    .sm-sixth-section-follow-message {
+      font-size: 20px;
+      line-height: 40px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 80px;
+      padding-bottom: 50px;
+    }
+
+    .sixth-sns-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+
+      .sixth-sns-button {
+        width: 282px;
+        height: 50px;
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $montserrat;
+        font-weight: 600;
+        line-height: 19.5px;
+        letter-spacing: 0.2rem;
+
+        p {
+          width: 176.64px;
+          height: 20px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .sixth-sns-icon {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
+
+:root {
+  --swiper-pagination-color: #a59c84;
+  --swiper-pagination-bullet-size: 10px;
+  --swiper-pagination-bullet-width: 10px;
+  --swiper-pagination-bullet-height: 10px;
+}

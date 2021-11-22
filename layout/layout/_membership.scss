@@ -1,0 +1,66 @@
+@media screen and (min-width: 601px) {
+  .memberhip-wrapper {
+    width: 1166px;
+    margin: 0 auto;
+
+    // 会員規約タイトル
+    .membership-title {
+      font-family: $noto-serif;
+      font-size: 40px;
+      font-weight: 300;
+      line-height: 40px;
+      text-align: center;
+      margin-top: 150px;
+    }
+
+    // 会員規約の前提文章
+    .memberhip-description {
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+      margin: 70px 0 76px;
+    }
+
+    // 会員規約の内容
+    .membership-content {
+      line-height: 32px;
+      padding-top: 76px;
+      padding-bottom: 150px;
+      border-top: 1px solid $text-black;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .memberhip-wrapper {
+    width: 355px;
+    margin: 0 auto;
+
+    // 会員規約タイトル
+    .membership-title {
+      font-family: $noto-serif;
+      font-size: 40px;
+      font-weight: 300;
+      line-height: 40px;
+      text-align: center;
+      margin-top: 150px;
+    }
+
+    // 会員規約の前提文章
+    .memberhip-description {
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+      margin: 70px 0 76px;
+    }
+
+    // 会員規約の内容
+    .membership-content {
+      font-size: 14px;
+      line-height: 32px;
+      padding-top: 70px;
+      padding-bottom: 150px;
+      border-top: 1px solid $text-black;
+    }
+  }
+}

@@ -1,0 +1,432 @@
+@media screen and (min-width: 601px) {
+  .page-title {
+    font-family: $montserrat;
+    color: transparent;
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 40px;
+    -webkit-text-stroke: 1px $text-beige;
+    position: absolute;
+    top: -90px;
+    left: -240px;
+  }
+
+  .form-wrapper {
+    width: 1166px;
+    margin: 0 auto;
+    margin-top: 252px;
+    position: relative;
+
+    .form-title {
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 40px;
+      letter-spacing: 0.2rem;
+      font-family: $noto-serif;
+    }
+
+    .form-contents {
+      width: 100%;
+      margin: 160px 0;
+      line-height: 23.17px;
+
+      .form-line-contact {
+        .form-line-title {
+          width: 366px;
+          font-size: 26px;
+          font-weight: 700;
+          line-height: 37.65px;
+          color: $back-beige2;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+        }
+
+        .form-line-caution {
+          margin-top: 60px;
+          margin-bottom: 30px;
+        }
+
+        .form-line-link {
+          margin-bottom: 150px;
+        }
+      }
+
+      .form-caution {
+        margin-top: 60px;
+        margin-bottom: 30px;
+      }
+
+      // フォーム
+      .form-mobile {
+        display: none;
+      }
+
+      .form {
+        input {
+          height: 73.27px;
+          background-color: $back-input;
+        }
+
+        .select-form-inquiry,
+        .form-name,
+        .form-email {
+          height: 138.62px;
+          display: flex;
+          align-items: center;
+          border-top: 1px solid $text-gray;
+        }
+
+        // 必須
+        .form-required {
+          width: 66px;
+          height: 30.69px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 67px;
+          color: white;
+          background-color: $back-darkbrown;
+        }
+
+        // お問い合わせ内容セレクト
+        .select-form-inquiry {
+          position: relative;
+          .form-required {
+            margin-left: 23px;
+          }
+
+          .form-select-option {
+            width: 414px;
+            height: 73.27px;
+            background-color: $back-input;
+            -webkit-appearance: none;
+            appearance: none; /* デフォルトのスタイルを無効 */
+            padding-left: 10px; /* 文字が左に寄るので右にずらす */
+            background-image: url(./images/select-arrow.svg);
+            background-position: right 20px center;
+            background-repeat: no-repeat;
+            background-size: 14px 14px;
+          }
+        }
+
+        .form-name .form-required {
+          margin-left: 103px;
+        }
+
+        .form-email .form-required {
+          margin-left: 40px;
+        }
+
+        .detail-form-inquiry .form-required {
+          margin-top: 57.43px;
+          margin-left: 57px;
+        }
+
+        .form-name input,
+        .form-email input {
+          width: 873px;
+          background-color: $back-input;
+        }
+
+        // お問い合わせ内容入力
+        .detail-form-inquiry {
+          height: 237.62px;
+          border-top: 1px solid $text-black;
+          padding-top: 32.67px;
+          display: flex;
+        }
+
+        .detail-form-inquiry label {
+          display: flex;
+          align-items: flex-start;
+          margin-top: 57.43px;
+        }
+
+        // お問い合わせ内容入力テキストエリア
+        .detail-form-inquiry textarea {
+          background-color: $back-input;
+          width: 873px;
+          height: 204.95px;
+        }
+
+        // プライバシーポリシー注意
+        .sm-form-privacy-policy-caution {
+          display: none;
+        }
+
+        .form-privacy-policy-caution {
+          display: flex;
+          justify-content: center;
+          margin-top: 100px;
+          margin-bottom: 30px;
+        }
+
+        .form-privacy-policy-caution::before {
+          font-family: "Font Awesome 5 Free";
+          content: "\f35d";
+          font-weight: 700;
+          margin-right: 4px;
+        }
+
+        // プライバシーポリシー
+        .form-privacy-policy {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          gap: 12px;
+          margin-bottom: 70px;
+        }
+
+        .form-submit {
+          width: 282px;
+          height: 49.51px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+          border: 1px solid $text-black;
+
+          p {
+            margin-left: 55px;
+          }
+
+          p::after {
+            content: "→";
+            margin-left: 55px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form-wrapper {
+    width: 335px;
+    margin: 0 auto;
+    margin-top: 163px;
+
+    .page-title {
+      font-family: $montserrat;
+      color: transparent;
+      font-size: 60px;
+      font-weight: 400;
+      line-height: 40px;
+      -webkit-text-stroke: 1px $text-beige;
+    }
+
+    .form-title {
+      font-weight: 300;
+      font-size: 28px;
+      line-height: 40px;
+      font-family: $noto-serif;
+      margin-top: 20px;
+    }
+
+    .form-contents {
+      width: 100%;
+      margin: 160px 0;
+      line-height: 23.17px;
+
+      .form-line-contact {
+        .form-line-title {
+          width: 335px;
+          height: 33px;
+          font-size: 23px;
+          font-weight: 700;
+          line-height: 33.3px;
+          color: $back-beige2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 7px;
+        }
+
+        .form-line-title img {
+          width: 25.28px;
+          height: 24.09px;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          margin-top: 2px;
+        }
+
+        .form-line-caution {
+          margin-top: 60px;
+          margin-bottom: 30px;
+        }
+
+        .form-line-link {
+          margin-bottom: 150px;
+        }
+      }
+
+      .form-caution {
+        margin-top: 60px;
+        margin-bottom: 30px;
+      }
+
+      // フォーム
+      .form {
+        display: none;
+      }
+
+      .form-mobile {
+        // 入力
+        input {
+          height: 74px;
+          background-color: $back-input;
+        }
+
+        .select-form-inquiry,
+        .form-name,
+        .form-email {
+          height: 177px;
+          border-top: 1px solid $text-gray;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .form-content-title {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+
+          label {
+            font-size: 14px;
+            line-height: 20.27px;
+          }
+        }
+
+        // 必須
+        .form-required {
+          width: 43.41px;
+          height: 23px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 17.38px;
+          margin-left: 12.5px;
+          padding-bottom: 2px;
+          color: white;
+          background-color: $back-darkbrown;
+        }
+
+        // お問い合わせ内容セレクト
+        .select-form-inquiry {
+          position: relative;
+
+          .form-select-option {
+            width: 335px;
+            height: 73.27px;
+            background-color: $back-input;
+            -webkit-appearance: none;
+            appearance: none; /* デフォルトのスタイルを無効 */
+            padding-left: 10px; /* 文字が左に寄るので右にずらす */
+            background-image: url(./images/select-arrow.svg);
+            background-position: right 20px center;
+            background-repeat: no-repeat;
+            background-size: 14px 14px;
+          }
+        }
+
+        .form-name input,
+        .form-email input {
+          width: 335px;
+          background-color: $back-input;
+        }
+
+        // お問い合わせ内容入力
+        .detail-form-inquiry {
+          height: 316px;
+          border-top: 1px solid $text-black;
+          padding-top: 30px;
+
+          .form-content-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            label {
+              font-size: 14px;
+              line-height: 20.27px;
+            }
+          }
+        }
+
+        // お問い合わせ内容入力テキストエリア
+        .detail-form-inquiry textarea {
+          background-color: $back-input;
+          width: 335px;
+          height: 204.95px;
+        }
+
+        .form-privacy-policy-caution {
+          display: none;
+        }
+
+        // プライバシーポリシー注意
+        .sm-form-privacy-policy-caution {
+          width: 247px;
+          font-size: 12px;
+          line-height: 20.27px;
+          margin: 0 auto;
+          text-align: center;
+          margin-top: 80px;
+          margin-bottom: 30px;
+
+          p {
+            display: inline-block;
+          }
+        }
+
+        .sm-form-privacy-policy-caution::before {
+          font-family: "Font Awesome 5 Free";
+          content: "\f35d";
+          font-weight: 700;
+          margin-right: 9.4px;
+        }
+
+        // プライバシーポリシー
+        .form-privacy-policy {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          font-size: 14px;
+          gap: 8.3px;
+          margin-bottom: 61px;
+        }
+
+        .form-submit {
+          width: 266px;
+          height: 50px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+          border: 1px solid $text-black;
+
+          p {
+            margin-left: 37.1px;
+          }
+
+          p::after {
+            content: "→";
+            margin-left: 37.1px;
+          }
+        }
+      }
+    }
+  }
+}

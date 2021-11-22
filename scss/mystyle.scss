@@ -1,0 +1,73 @@
+// テキストカラー
+$text-black: #333333;
+$text-gray: #555555;
+$text-beige: #cbc3ad;
+
+// ラインカラー
+$line-gray1: #e8e8e8;
+$line-gray2: #d1d1d1;
+$line-gray3: #b0b0b0;
+
+// メインカラー
+$blue: #1ba2e6;
+$blue-shadow: #0e78ad;
+$orange: #fea801;
+$orange-shadow: #c18208;
+
+// 背景色
+$back-gray: #f1f3f5;
+$back-blue: #89c7e6;
+$back-beige: #edeae2;
+$back-darkbeige: #a59c84;
+$back-brown: #4e4224;
+$back-black: #000000;
+$back-khaki: #a59c84;
+
+// WEBフォント
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+// Noto Sans
+$noto: "Noto Sans JP", sans-serif;
+$noto-serif: "Noto Serif JP", serif;
+
+// Acmin Pro
+$acmin: acumin-pro, sans-serif;
+
+// Montserrat
+$montserrat: "Montserrat", sans-serif;
+
+html {
+  scroll-behavior: smooth;
+}
+
+// リンクの下線と青色をなしに
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// pのmarginをクリアに
+p {
+  margin: 0;
+}
+
+// スタイルの基本セット
+body {
+  width: 100%;
+  height: 100%;
+  min-width: 1600px;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  font-family: $noto;
+  font-size: 16px;
+  color: $text-black;
+  font-weight: 400;
+}
+
+@import "/layout/header";
+@import "layout/footer";
+@import "layout/index";
+@import "layout/contact-us";
+@import "layout/how-to-use";

@@ -1,0 +1,219 @@
+// デスクトップ用ヘッダー
+@media screen and (min-width: 601px) {
+  .header-smartphone {
+    display: none;
+  }
+
+  .header-desktop {
+    width: 100%;
+    min-width: 1600px;
+    height: 97px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px;
+    color: black;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+
+    #menu-btn-check {
+      display: none;
+    }
+
+    // ナビゲーション
+    .header-navi-contents {
+      width: 494px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      line-height: 17px;
+      margin-left: 290px;
+      margin-right: 350px;
+    }
+
+    // SNSのアイコン
+    .header-sns-icons {
+      width: 107px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 25px;
+    }
+
+    // ヘッダーのロゴ
+    .header-logo img {
+      width: 170px;
+      height: 26.66px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-desktop {
+    display: none;
+  }
+
+  .header-smartphone {
+    height: 92px;
+    width: 375px;
+    min-width: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3000;
+    padding-left: 20px;
+
+    // ロゴのサイズを変更
+    .header-logo img {
+      width: 130px;
+      height: 20.39px;
+    }
+
+    .header-humberger {
+      width: 100%;
+      height: 100%;
+    }
+
+    .menubtn {
+      width: 100%;
+      z-index: 3000;
+      position: fixed;
+      top: 20px;
+      left: 320px;
+      display: flex;
+      height: 60px;
+      width: 60px;
+      justify-content: center;
+      align-items: center;
+
+      span,
+      span:before,
+      span:after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 25px;
+        border-radius: 3px;
+        background-color: $text-black;
+        position: absolute;
+        z-index: 1000;
+      }
+
+      span:before {
+        bottom: 8px;
+        transform: rotate(0);
+        transition: 0.4s;
+      }
+
+      span:after {
+        top: 8px;
+        transform: rotate(0);
+        transition: 0.4s;
+      }
+    }
+
+    #menu-btn-check:checked ~ .menubtn span {
+      background-color: rgba(
+        255,
+        255,
+        255,
+        0
+      ); /*メニューオープン時は真ん中の線を透明にする*/
+    }
+    #menu-btn-check:checked ~ .menubtn span::before {
+      bottom: 0;
+      transform: rotate(45deg);
+      background-color: white;
+      filter: brightness(1) invert(0);
+      transition: 0.5s;
+    }
+    #menu-btn-check:checked ~ .menubtn span::after {
+      top: 0;
+      transform: rotate(-45deg);
+      background-color: white;
+      filter: brightness(1) invert(0);
+      transition: 0.5s;
+    }
+
+    #menu-btn-check {
+      display: none;
+    }
+
+    .hide-menu {
+      width: 375px;
+      height: 100%;
+      z-index: 300;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      background-color: $back-beige2;
+    }
+
+    nav {
+      background-color: $back-beige2;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 1000px;
+      z-index: 100;
+    }
+
+    .hide-contents {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      margin-top: 110px;
+
+      .menu-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        line-height: 17px;
+        gap: 40px;
+      }
+
+      .sm-nav-contact-us {
+        width: 282px;
+        height: 50px;
+        border: 1px solid white;
+        font-family: $montserrat;
+        font-weight: 600;
+        line-height: 19.5px;
+        letter-spacing: 0.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 52px;
+      }
+
+      .sm-nav-sns {
+        font-family: $montserrat;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 51px;
+
+        .sm-nav-sns-icons {
+          width: 153px;
+          display: flex;
+          justify-content: space-between;
+          font-size: 30px;
+          margin-top: 9px;
+        }
+      }
+    }
+  }
+}

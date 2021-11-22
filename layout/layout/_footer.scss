@@ -1,0 +1,116 @@
+// フッター
+footer {
+  height: 869px;
+  height: 392px;
+  background-color: $back-brown;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  padding: 96px 200px 96px 221px;
+
+  .footer-company-infomation {
+    line-height: 24px;
+    margin-top: 33.34px;
+  }
+
+  .footer-links {
+    width: 354px;
+    line-height: 17px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 52px;
+  }
+
+  .sm-footer-sns {
+    display: none;
+  }
+
+  .footer-sns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-sns-icons {
+    width: 153px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+  }
+
+  .footer-follow-us {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: $montserrat;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    width: 375px;
+    height: 400px;
+    padding: 20px;
+    flex-direction: column;
+
+    .footer-logo img {
+      width: 130px;
+      height: 20.39px;
+      margin-top: 30px;
+    }
+
+    .footer-company-infomation {
+      font-size: 14px;
+      line-height: 24px;
+      margin: 39.61px 12px 0;
+    }
+
+    // ページリンク
+    .footer-links {
+      width: 312px;
+      font-size: 12px;
+      line-height: 17px;
+    }
+
+    .footer-sns {
+      display: none;
+    }
+
+    // スマホ用SNS
+    .sm-footer-sns {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 34px;
+      .footer-follow-us {
+        font-size: 14px;
+        line-height: 24px;
+        font-family: $montserrat;
+      }
+
+      .footer-follow-us {
+        text-align: center;
+      }
+
+      .footer-sns-icons {
+        width: 153px;
+        font-size: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+      }
+    }
+
+    .footer-copyright {
+      font-size: 12px;
+      line-height: 17px;
+      text-align: center;
+      margin-top: 11px;
+    }
+  }
+}
