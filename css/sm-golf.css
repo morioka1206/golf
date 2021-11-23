@@ -1175,7 +1175,7 @@ footer .footer-follow-us {
   width: 1368px;
   height: 317px;
   color: #edeae2;
-  background-image: url(./images/contact-us-backimage.png);
+  background-image: url(../images/contact-us-backimage.png);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1209,6 +1209,7 @@ footer .footer-follow-us {
     height: 360px;
     padding: 70px 0;
     justify-content: space-between;
+    background-image: url(../images/contact-us-backimage.png);
     background-position: center;
     background-size: cover;
   }
