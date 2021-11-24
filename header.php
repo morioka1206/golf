@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
   <link rel="stylesheet" href="<?php echo get_theme_file_uri(); ?>/css/sm-golf.css" media="only screen and (max-width:600px)">
-  <link rel="stylesheet" href="<?php echo get_theme_file_uri(); ?>/css/golf.css" media="only screen and (min-width: 601px)">
+  <link rel="stylesheet" href="<?php echo get_theme_file_uri(); ?>/css/pc-golf.css" media="only screen and (min-width: 601px)">
   <!-- webフォント -->
   <link rel="stylesheet" href="https://use.typekit.net/szq6kdr.css">
   <script src="https://kit.fontawesome.com/e0b0272f60.js" crossorigin="anonymous"></script>
@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- formrun -->
+  <script src="https://sdk.form.run/js/v2/formrun.js"></script>
   <title>GOLFERS24</title>
   <?php
   wp_enqueue_script('jquery');

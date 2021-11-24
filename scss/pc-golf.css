@@ -234,7 +234,7 @@ body {
   }
 }
 footer {
-  height: 869px;
+  width: 100%;
   height: 392px;
   background-color: #4e4224;
   display: flex;
@@ -1228,11 +1228,6 @@ footer .footer-follow-us {
     left: -240px;
   }
 
-  .hour-plan {
-    display: none;
-  }
-
-
   .how-to-use-wrapper {
     width: 1118px;
     margin: 0 auto;
@@ -1805,7 +1800,7 @@ footer .footer-follow-us {
     height: 490px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(./images/top-img01.png);
+    background-image: url(../images/top-img01.png);
   }
   .store-details-wrapper .store-detail-introduction {
     width: 1118px;
@@ -1998,12 +1993,6 @@ footer .footer-follow-us {
   }
   .sm-store-details-wrapper .store-detail-information .store-detail-hours .store-detail-hours-title {
     width: 56px;
-  }
-  .sm-store-details-wrapper .store-contact {
-    height: 400px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
   }
 }
 @media screen and (min-width: 601px) {
@@ -2487,7 +2476,7 @@ footer .footer-follow-us {
     /* デフォルトのスタイルを無効 */
     padding-left: 10px;
     /* 文字が左に寄るので右にずらす */
-    background-image: url(../images/select-arrow.svg);
+    background-image: url(./images/select-arrow.svg);
     background-position: right 20px center;
     background-repeat: no-repeat;
     background-size: 14px 14px;
@@ -2675,7 +2664,7 @@ footer .footer-follow-us {
     /* デフォルトのスタイルを無効 */
     padding-left: 10px;
     /* 文字が左に寄るので右にずらす */
-    background-image: url(../images/select-arrow.svg);
+    background-image: url(./images/select-arrow.svg);
     background-position: right 20px center;
     background-repeat: no-repeat;
     background-size: 14px 14px;
@@ -2782,7 +2771,7 @@ footer .footer-follow-us {
 .company-image {
   width: 100vw;
   height: 360px;
-  background-image: url(../images/company-image.png);
+  background-image: url(./images/company-image.png);
   background-position: center;
   background-size: cover;
   margin-top: 103px;
@@ -2873,4 +2862,4 @@ footer .footer-follow-us {
     padding-bottom: 150px;
     border-top: 1px solid #555555;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=pc-golf.css.map */

@@ -234,7 +234,7 @@ body {
   }
 }
 footer {
-  height: 869px;
+  width: 100%;
   height: 392px;
   background-color: #4e4224;
   display: flex;
@@ -1174,7 +1174,7 @@ footer .footer-follow-us {
   width: 1368px;
   height: 317px;
   color: #edeae2;
-  background-image: url(./images/contact-us-backimage.png);
+  background-image: url(../images/contact-us-backimage.png);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1993,12 +1993,6 @@ footer .footer-follow-us {
   }
   .sm-store-details-wrapper .store-detail-information .store-detail-hours .store-detail-hours-title {
     width: 56px;
-  }
-  .sm-store-details-wrapper .store-contact {
-    height: 400px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
   }
 }
 @media screen and (min-width: 601px) {
@@ -2868,4 +2862,4 @@ footer .footer-follow-us {
     padding-bottom: 150px;
     border-top: 1px solid #555555;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=golfstyle.css.map */

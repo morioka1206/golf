@@ -87,16 +87,16 @@ body {
   scroll-padding-top: 92px;
 }
 
-@import "layout/header";
-@import "layout/footer";
-@import "layout/index";
-@import "layout/contact-us";
-@import "layout/how-to-use";
-@import "layout/locations";
-@import "layout/store-details";
-@import "layout/news";
-@import "layout/news-detail";
-@import "layout/questions";
-@import "layout/form";
-@import "layout/sm-company";
-@import "layout/membership";
+@import "../layout/layout/header";
+@import "../layout/layout/footer";
+@import "../layout/layout/index";
+@import "../layout/layout/contact-us";
+@import "../layout/layout/how-to-use";
+@import "../layout/layout/locations";
+@import "../layout/layout/store-details";
+@import "../layout/layout/news";
+@import "../layout/layout/news-detail";
+@import "../layout/layout/questions";
+@import "../layout/layout/form";
+@import "../layout/layout/sm-company";
+@import "../layout/layout/membership";
