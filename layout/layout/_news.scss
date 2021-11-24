@@ -77,6 +77,41 @@
         border-top: 1px solid $line-gray2;
       }
     }
+    .pagination,
+    .navigation {
+      width: 345.43px;
+      height: 20px;
+      font-family: $montserrat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 150px;
+
+      .page-numbers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .prev {
+        width: 11.43px;
+        height: 20px;
+        background-image: url(../images/naviarrow-prev.svg);
+        margin-right: 74px;
+        background-position: center;
+      }
+
+      .next {
+        width: 11.43px;
+        height: 20px;
+        background-image: url(../images/naviarrow-next.svg);
+        padding-left: 74px;
+        background-position: center;
+      }
+    }
   }
 }
 
