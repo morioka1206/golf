@@ -2814,7 +2814,7 @@ footer .footer-follow-us {
 .company-image {
   width: 100vw;
   height: 360px;
-  background-image: url(./images/company-image.png);
+  background-image: url(../images/company-image.png);
   background-position: center;
   background-size: cover;
   margin-top: 103px;
@@ -2866,8 +2866,17 @@ footer .footer-follow-us {
     text-align: center;
     margin-top: 150px;
   }
+  .memberhip-wrapper .special-commercial-title {
+    font-family: "Noto Serif JP", serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 75px;
+  }
   .memberhip-wrapper .memberhip-description {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 30px;
     text-align: center;
     margin: 70px 0 76px;
@@ -2891,6 +2900,15 @@ footer .footer-follow-us {
     line-height: 40px;
     text-align: center;
     margin-top: 150px;
+  }
+  .memberhip-wrapper .special-commercial-title {
+    font-family: "Noto Serif JP", serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 75px;
   }
   .memberhip-wrapper .memberhip-description {
     font-size: 18px;

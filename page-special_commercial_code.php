@@ -4,7 +4,7 @@
 
   <?php
   $args = array(
-    'post_type' => 'member-ship',
+    'post_type' => 'special-commercial',
     // 全件取得、数を指定すればその数だけ取得する。
     'posts_per_page' => -1,
   );
@@ -15,12 +15,7 @@
     <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
 
 
-      <div class="membership-title"><?php echo SCF::get('title'); ?></div>
-      <div class="memberhip-description">
-        <p>
-          <?php echo SCF::get('definition') ?>
-        </p>
-      </div>
+      <div class="special-commercial-title"><?php echo SCF::get('title'); ?></div>
 
       <!-- 会員規約の内容 -->
       <div class="membership-content">

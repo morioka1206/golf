@@ -13,9 +13,19 @@
       margin-top: 150px;
     }
 
+    .special-commercial-title {
+      font-family: $noto-serif;
+      font-size: 40px;
+      font-weight: 300;
+      line-height: 40px;
+      text-align: center;
+      margin-top: 150px;
+      margin-bottom: 75px;
+    }
+
     // 会員規約の前提文章
     .memberhip-description {
-      font-size: 18px;
+      font-size: 17px;
       line-height: 30px;
       text-align: center;
       margin: 70px 0 76px;
@@ -44,6 +54,16 @@
       line-height: 40px;
       text-align: center;
       margin-top: 150px;
+    }
+
+    .special-commercial-title {
+      font-family: $noto-serif;
+      font-size: 40px;
+      font-weight: 300;
+      line-height: 40px;
+      text-align: center;
+      margin-top: 150px;
+      margin-bottom: 75px;
     }
 
     // 会員規約の前提文章

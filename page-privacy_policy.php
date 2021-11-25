@@ -4,7 +4,7 @@
 
   <?php
   $args = array(
-    'post_type' => 'member-ship',
+    'post_type' => 'privacy_policy',
     // 全件取得、数を指定すればその数だけ取得する。
     'posts_per_page' => -1,
   );

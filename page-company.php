@@ -28,12 +28,8 @@
 
 
 <!-- CONTACT US -->
-<div id="contact-us"></div>
+<?php get_template_part('contact-us') ?>
+
 
 <!-- フッター -->
-<footer id="footer">
-</footer>
-
-</body>
-
-</html>
+<?php get_footer(); ?>
