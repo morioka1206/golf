@@ -8,7 +8,7 @@
     <?php
     $category = get_the_category();
     $args = array(
-      'post_type' => 'post',
+      'post_type' => 'news',
       'orderby'  => 'date'
     );
     $st_query = new WP_Query($args);
@@ -20,10 +20,13 @@
         <!-- デスクトップ１つ１つのニュース -->
         <a href="<?php the_permalink(); ?>">
           <div class="news">
-            <div class="news-date"><?php the_time("Y.n.j"); ?></div>
-            <div class="news-tag"><?php $cats = get_the_category(); ?>
-              <?php echo $cats[0]->name; ?></div>
-            <div class="news-content"><?php the_title(); ?></div>
+            <div class="news-date"><?php $date = SCF::get('date');
+                                    echo $date; ?></div>
+            <div class="news-tag"><?php $tag = SCF::get('tag');
+                                  echo $tag; ?>
+            </div>
+            <div class="news-content"><?php $title = SCF::get('title');
+                                      echo $title; ?></div>
           </div>
         </a>
       <?php endwhile; ?>

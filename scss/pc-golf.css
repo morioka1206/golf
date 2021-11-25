@@ -1381,6 +1381,9 @@ footer .footer-follow-us {
     line-height: 28px;
     width: 100%;
   }
+  .how-to-use-wrapper .hour-plan {
+    display: none;
+  }
 }
 @media screen and (max-width: 600px) {
   .how-to-use-wrapper {

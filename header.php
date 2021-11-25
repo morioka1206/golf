@@ -33,12 +33,12 @@
       </div>
       <!-- ヘッダーのナビゲーションメニュー -->
       <div class="header-navi-contents">
-        <div class="header-navi-content"><a href="index.html">TOP</a></div>
-        <div class="header-navi-content"><a href="how-to-use.html">ご利用の流れ</a></div>
-        <div class="header-navi-content"><a href="locations.html">店舗一覧</a></div>
-        <div class="header-navi-content"><a href="news.html">NEWS</a></div>
-        <div class="header-navi-content"><a href="questions.html">F&Q</a></div>
-        <div class="header-navi-content"><a href="company.html">会社概要</a></div>
+        <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/')); ?>"></div>
+        <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/how-to-use')); ?>">ご利用の流れ</a></div>
+        <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/locations')); ?>">店舗一覧</a></div>
+        <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/newslist')); ?>">NEWS</a></div>
+        <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/questions')); ?>">F&Q</a></div>
+        <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/company')); ?>">会社概要</a></div>
       </div>
       <!-- ヘッダーのSNSリンク -->
       <div class="header-sns-icons">

@@ -6,7 +6,7 @@
   <div class="list-of-stores">
     <?php
     $args = array(
-      'post_type' => 'shop',
+      'post_type' => 'store',
       'posts_per_page' => -1,
     );
     $st_query = new WP_Query($args);
