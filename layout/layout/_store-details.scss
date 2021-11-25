@@ -4,17 +4,24 @@
   }
 
   .store-details-wrapper {
-    width: 1118px;
     margin: 0 auto;
     padding-bottom: 150px;
 
     // 店舗詳細のトップ画像
     .store-details-top-image {
+      display: flex;
+      justify-content: center;
       width: 100%;
       height: 490px;
       background-repeat: no-repeat;
       background-size: cover;
       background-image: url(../images/top-img01.png);
+
+      img {
+        width: 100%;
+        height: 490px;
+        object-fit: cover;
+      }
     }
 
     // 店舗詳細情報
@@ -34,6 +41,7 @@
 
         .store-introduction-sentence {
           width: 680px;
+          height: 200px;
           line-height: 50px;
           margin: 0 auto;
           margin-top: 60px;
@@ -42,86 +50,108 @@
 
       .store-detail-images {
         width: 1118px;
-        margin-top: 60px;
+        margin-top: 100px;
         display: grid;
         grid-template-rows: 244px;
         // 列の幅
         grid-template-columns: 334px 334px 334px;
         // 空間 横
         gap: 58px;
+
+        .store-detail-image img {
+          width: 335px;
+          height: 242px;
+          object-fit: cover;
+        }
       }
     }
 
     // Googleマップ
     .google-map {
+      width: 1119px;
+      height: 513px;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin: 0 auto;
+
+      iframe {
+        width: 1119px;
+        height: 513px;
+      }
     }
 
     // 店舗詳細情報
-    .store-detail-information {
-      width: 428px;
+    .store-detail-information-wrapper {
+      width: 1119px;
+      height: 173px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0 auto;
       margin-top: 73px;
 
-      // 店舗名
-      .store-detail-name {
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 23px;
-      }
-
-      // 店舗住所
-      .store-detail-address {
-        font-size: 14px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        gap: 39px;
-        margin-top: 12px;
-
-        .store-detail-address-title {
-          width: 56px;
+      .store-detail-information {
+        width: 428px;
+        // 店舗名
+        .store-detail-name {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 23px;
         }
-      }
 
-      // 店舗番号
-      .store-detail-tel {
-        font-size: 14px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        margin-top: 23px;
-        gap: 39px;
+        // 店舗住所
+        .store-detail-address {
+          font-size: 14px;
+          line-height: 23px;
+          display: flex;
+          align-items: center;
+          gap: 39px;
+          margin-top: 12px;
 
-        .store-detail-tel-title {
-          width: 56px;
+          .store-detail-address-title {
+            width: 56px;
+          }
         }
-      }
 
-      // 店舗メールアドレス
-      .store-detail-mail {
-        font-size: 14px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        gap: 39px;
+        // 店舗番号
+        .store-detail-tel {
+          font-size: 14px;
+          line-height: 23px;
+          display: flex;
+          align-items: center;
+          margin-top: 23px;
+          gap: 39px;
 
-        .store-detail-mail-title {
-          width: 56px;
+          .store-detail-tel-title {
+            width: 56px;
+          }
         }
-      }
 
-      // 店舗営業時間
-      .store-detail-hours {
-        font-size: 14px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        gap: 39px;
+        // 店舗メールアドレス
+        .store-detail-mail {
+          font-size: 14px;
+          line-height: 23px;
+          display: flex;
+          align-items: center;
+          gap: 39px;
 
-        .store-detail-hours-title {
-          width: 56px;
+          .store-detail-mail-title {
+            width: 56px;
+          }
+        }
+
+        // 店舗営業時間
+        .store-detail-hours {
+          font-size: 14px;
+          line-height: 23px;
+          display: flex;
+          align-items: center;
+          gap: 39px;
+
+          .store-detail-hours-title {
+            width: 56px;
+          }
         }
       }
     }
@@ -193,6 +223,11 @@
       align-items: center;
       margin: 0 auto;
       margin-top: 150px;
+
+      iframe {
+        width: 335px;
+        height: 300px;
+      }
     }
 
     // 店舗詳細情報

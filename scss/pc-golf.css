@@ -1799,16 +1799,23 @@ footer .footer-follow-us {
   }
 
   .store-details-wrapper {
-    width: 1118px;
     margin: 0 auto;
     padding-bottom: 150px;
   }
   .store-details-wrapper .store-details-top-image {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 490px;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../images/top-img01.png);
+  }
+  .store-details-wrapper .store-details-top-image img {
+    width: 100%;
+    height: 490px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .store-details-wrapper .store-detail-introduction {
     width: 1118px;
@@ -1825,33 +1832,55 @@ footer .footer-follow-us {
   }
   .store-details-wrapper .store-detail-introduction .store-introduction-text .store-introduction-sentence {
     width: 680px;
+    height: 200px;
     line-height: 50px;
     margin: 0 auto;
     margin-top: 60px;
   }
   .store-details-wrapper .store-detail-introduction .store-detail-images {
     width: 1118px;
-    margin-top: 60px;
+    margin-top: 100px;
     display: grid;
     grid-template-rows: 244px;
     grid-template-columns: 334px 334px 334px;
     gap: 58px;
   }
+  .store-details-wrapper .store-detail-introduction .store-detail-images .store-detail-image img {
+    width: 335px;
+    height: 242px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .store-details-wrapper .google-map {
+    width: 1119px;
+    height: 513px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
   }
-  .store-details-wrapper .store-detail-information {
-    width: 428px;
+  .store-details-wrapper .google-map iframe {
+    width: 1119px;
+    height: 513px;
+  }
+  .store-details-wrapper .store-detail-information-wrapper {
+    width: 1119px;
+    height: 173px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
     margin-top: 73px;
   }
-  .store-details-wrapper .store-detail-information .store-detail-name {
+  .store-details-wrapper .store-detail-information-wrapper .store-detail-information {
+    width: 428px;
+  }
+  .store-details-wrapper .store-detail-information-wrapper .store-detail-information .store-detail-name {
     font-size: 20px;
     font-weight: 700;
     line-height: 23px;
   }
-  .store-details-wrapper .store-detail-information .store-detail-address {
+  .store-details-wrapper .store-detail-information-wrapper .store-detail-information .store-detail-address {
     font-size: 14px;
     line-height: 23px;
     display: flex;
@@ -1859,10 +1888,10 @@ footer .footer-follow-us {
     gap: 39px;
     margin-top: 12px;
   }
-  .store-details-wrapper .store-detail-information .store-detail-address .store-detail-address-title {
+  .store-details-wrapper .store-detail-information-wrapper .store-detail-information .store-detail-address .store-detail-address-title {
     width: 56px;
   }
-  .store-details-wrapper .store-detail-information .store-detail-tel {
+  .store-details-wrapper .store-detail-information-wrapper .store-detail-information .store-detail-tel {
     font-size: 14px;
     line-height: 23px;
     display: flex;
@@ -1870,27 +1899,27 @@ footer .footer-follow-us {
     margin-top: 23px;
     gap: 39px;
   }
-  .store-details-wrapper .store-detail-information .store-detail-tel .store-detail-tel-title {
+  .store-details-wrapper .store-detail-information-wrapper .store-detail-information .store-detail-tel .store-detail-tel-title {
     width: 56px;
   }
-  .store-details-wrapper .store-detail-information .store-detail-mail {
+  .store-details-wrapper .store-detail-information-wrapper .store-detail-information .store-detail-mail {
     font-size: 14px;
     line-height: 23px;
     display: flex;
     align-items: center;
     gap: 39px;
   }
-  .store-details-wrapper .store-detail-information .store-detail-mail .store-detail-mail-title {
+  .store-details-wrapper .store-detail-information-wrapper .store-detail-information .store-detail-mail .store-detail-mail-title {
     width: 56px;
   }
-  .store-details-wrapper .store-detail-information .store-detail-hours {
+  .store-details-wrapper .store-detail-information-wrapper .store-detail-information .store-detail-hours {
     font-size: 14px;
     line-height: 23px;
     display: flex;
     align-items: center;
     gap: 39px;
   }
-  .store-details-wrapper .store-detail-information .store-detail-hours .store-detail-hours-title {
+  .store-details-wrapper .store-detail-information-wrapper .store-detail-information .store-detail-hours .store-detail-hours-title {
     width: 56px;
   }
 }
@@ -1949,6 +1978,10 @@ footer .footer-follow-us {
     align-items: center;
     margin: 0 auto;
     margin-top: 150px;
+  }
+  .sm-store-details-wrapper .google-map iframe {
+    width: 335px;
+    height: 300px;
   }
   .sm-store-details-wrapper .store-detail-information {
     width: 335px;
