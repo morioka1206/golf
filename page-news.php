@@ -6,21 +6,28 @@
   <!-- ニュース全体 -->
   <div class="news-list">
     <?php
-    while (have_posts()) :
-      the_post();
+    $category = get_the_category();
+    $args = array(
+      'post_type' => 'post',
+      'orderby'  => 'date'
+    );
+    $st_query = new WP_Query($args);
     ?>
-      <!-- デスクトップ１つ１つのニュース -->
-      <a href="<?php the_permalink(); ?>">
-        <div class="news">
-          <div class="news-date"><?php the_time("Y.n.j"); ?></div>
-          <div class="news-tag"><?php $cats = get_the_category(); ?>
-            <?php echo $cats[0]->name; ?></div>
-          <div class="news-content"><?php the_title(); ?></div>
-        </div>
-      </a>
-    <?php
-    endwhile;
-    ?>
+
+    <?php if ($st_query->have_posts()) : ?>
+      <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
+
+        <!-- デスクトップ１つ１つのニュース -->
+        <a href="<?php the_permalink(); ?>">
+          <div class="news">
+            <div class="news-date"><?php the_time("Y.n.j"); ?></div>
+            <div class="news-tag"><?php $cats = get_the_category(); ?>
+              <?php echo $cats[0]->name; ?></div>
+            <div class="news-content"><?php the_title(); ?></div>
+          </div>
+        </a>
+      <?php endwhile; ?>
+    <?php endif; ?>
 
     <!-- モバイル１つ１つのニュース -->
     <?php

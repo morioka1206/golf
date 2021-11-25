@@ -12,7 +12,7 @@
   <div>
     <?php the_title(); ?>
     <?php the_content(); ?>
-    <?php echo SCF::get('content'); ?>
+    <?php echo SCF::get('title'); ?>
   </div>
 </body>
 

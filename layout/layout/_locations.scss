@@ -27,13 +27,9 @@
 
     // ご利用方法の内容
     .list-of-stores {
-      display: grid;
-      grid-template-rows: 427px 427px 427px;
-      // 列の幅
-      grid-template-columns: 334px 334px 334px;
-      // 空間　縦と横
-      gap: 130px 58px;
-
+      display: flex;
+      flex-wrap: wrap;
+      gap: 56px;
       margin-top: 153px;
       padding-bottom: 130px;
 
@@ -43,7 +39,14 @@
 
         // お店の写真
         .store-image {
-          height: 244px;
+          width: 335px;
+          height: 242px;
+          background-color: $back-beige2;
+
+          img {
+            width: 335px;
+            height: 242px;
+          }
         }
 
         // 店舗名

@@ -1697,10 +1697,9 @@ footer .footer-follow-us {
     font-family: "Noto Serif JP", serif;
   }
   .location-wrapper .list-of-stores {
-    display: grid;
-    grid-template-rows: 427px 427px 427px;
-    grid-template-columns: 334px 334px 334px;
-    gap: 130px 58px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 56px;
     margin-top: 153px;
     padding-bottom: 130px;
   }
@@ -1709,7 +1708,13 @@ footer .footer-follow-us {
     height: 427px;
   }
   .location-wrapper .list-of-stores .store .store-image {
-    height: 244px;
+    width: 335px;
+    height: 242px;
+    background-color: #cec6b0;
+  }
+  .location-wrapper .list-of-stores .store .store-image img {
+    width: 335px;
+    height: 242px;
   }
   .location-wrapper .list-of-stores .store .store-name {
     width: 100%;
@@ -2061,6 +2066,41 @@ footer .footer-follow-us {
   }
   .news-wrapper .news-list .news:first-of-type {
     border-top: 1px solid #d1d1d1;
+  }
+  .news-wrapper .pagination,
+.news-wrapper .navigation {
+    width: 345.43px;
+    height: 20px;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 150px;
+  }
+  .news-wrapper .pagination .page-numbers,
+.news-wrapper .navigation .page-numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .news-wrapper .pagination .prev,
+.news-wrapper .navigation .prev {
+    width: 11.43px;
+    height: 20px;
+    background-image: url(../images/naviarrow-prev.svg);
+    margin-right: 74px;
+    background-position: center;
+  }
+  .news-wrapper .pagination .next,
+.news-wrapper .navigation .next {
+    width: 11.43px;
+    height: 20px;
+    background-image: url(../images/naviarrow-next.svg);
+    padding-left: 74px;
+    background-position: center;
   }
 }
 @media screen and (max-width: 600px) {
@@ -2476,7 +2516,7 @@ footer .footer-follow-us {
     /* デフォルトのスタイルを無効 */
     padding-left: 10px;
     /* 文字が左に寄るので右にずらす */
-    background-image: url(./images/select-arrow.svg);
+    background-image: url(../images/select-arrow.svg);
     background-position: right 20px center;
     background-repeat: no-repeat;
     background-size: 14px 14px;
