@@ -5,9 +5,22 @@
   <div class="first-view-images">
     <div class="swiper slider1">
       <div class="swiper-wrapper">
-        <div class="first-image swiper-slide" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/top-introducton.png);"></div>
-        <div class="first-image swiper-slide" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/feature1.png);"></div>
-        <div class="first-image swiper-slide" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/top-introducton.png);"></div>
+        <?php
+        $args = array(
+          'post_type' => 'top-image',
+          // 全件取得、数を指定すればその数だけ取得する。
+          'posts_per_page' => -1,
+        );
+        $st_query = new WP_Query($args);
+        ?>
+
+        <?php if ($st_query->have_posts()) : ?>
+          <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
+
+            <div class="first-image swiper-slide" style="background-image: url(<?php $image = SCF::get('image');
+                                                                                echo wp_get_attachment_url($image); ?>);"></div>
+          <?php endwhile; ?>
+        <?php endif; ?>
       </div>
     </div>
     <a href="<?php echo esc_url(home_url('/')); ?>">
