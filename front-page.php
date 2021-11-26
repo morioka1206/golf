@@ -3,12 +3,13 @@
 <div class="top-section">
   <!-- トップ画像 -->
   <div class="first-view-images">
-    <div class="first-image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/top-img01.png);"></div>
-    <div class="first-image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/top-img01.png);"></div>
-    <div class="first-image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/top-img01.png);"></div>
-    <div class="first-image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/top-img01.png);"></div>
-    <div class="first-image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/top-img01.png);"></div>
-    <div class="first-image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/top-img01.png);"></div>
+    <div class="swiper slider1">
+      <div class="swiper-wrapper">
+        <div class="first-image swiper-slide" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/top-introducton.png);"></div>
+        <div class="first-image swiper-slide" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/feature1.png);"></div>
+        <div class="first-image swiper-slide" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/top-introducton.png);"></div>
+      </div>
+    </div>
     <a href="<?php echo esc_url(home_url('/')); ?>">
       <div class="contact-us"><img src="<?php echo get_template_directory_uri(); ?>/images/CONTACT US.svg" alt=""></div>
     </a>
@@ -164,5 +165,30 @@
 
 <!-- CONTACT US -->
 <?php get_template_part('contact-us') ?>
+
+<!-- スクロール位置に応じて色を変える -->
+<script>
+  window.onscroll = function() {
+    var windowWidth = window.innerWidth;
+    var scrollTop = window.pageYOffset; //スクロール量を取得
+
+    if (scrollTop <= -1) {
+      $('.header-smartphone').css('background-color', 'trasparent');
+      $('.header-smartphone img, .menubtn').css('filter', 'brightness(1) invert(0)');
+      $('.header-smartphone').css('transition', '0.1s')
+    } else if (scrollTop > 670) {
+      $('.header-smartphone').css('background-color', 'white');
+      $('.header-smartphone img, .menubtn').css('filter', 'brightness(1) invert(0)');
+      // $('.header-smartphone').css('transition', '0.05s')
+    } else if (scrollTop < 680) {
+      $('.header-smartphone').css('background-color', 'transparent');
+      $('.header-smartphone img, .menubtn').css('filter', 'brightness(0) invert(1)');
+      $('.header-smartphone').css('transition', '0.1s')
+    }
+
+
+  };
+</script>
+
 
 <?php get_footer(); ?>

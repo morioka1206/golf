@@ -39,35 +39,94 @@
 </footer>
 
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-
-<!-- スクロール位置に応じて色を変える -->
-<script>
-  window.onscroll = function() {
-    var windowWidth = window.innerWidth;
-    var scrollTop = window.pageYOffset; //スクロール量を取得
-
-    if (scrollTop <= -1) {
-      $('.header-smartphone').css('background-color', 'trasparent');
-      $('.header-smartphone img, .menubtn').css('filter', 'brightness(1) invert(0)');
-      $('.header-smartphone').css('transition', '0.1s')
-    } else if (scrollTop > 670) {
-      $('.header-smartphone').css('background-color', 'white');
-      $('.header-smartphone img, .menubtn').css('filter', 'brightness(1) invert(0)');
-      // $('.header-smartphone').css('transition', '0.05s')
-    } else if (scrollTop < 680) {
-      $('.header-smartphone').css('background-color', 'transparent');
-      $('.header-smartphone img, .menubtn').css('filter', 'brightness(0) invert(1)');
-      $('.header-smartphone').css('transition', '0.1s')
-    }
-
-
-  };
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js">
 </script>
 
 <script>
-  let swiper = new Swiper('.swiper', {
+  let store_detail_images = new Swiper('.store-detail-images', {
+    // オプション
+
+    // 繰り返し表示する
+    loop: true,
+
+    // 間隔を指定
+    spaceBetween: 20,
+
+    // 一度に表示するスライド数
+    slidesPerView: 1.5,
+
+    // センターにもってくる
+    centeredSlides: true,
+
+    // 自動で変わる
+    autoplay: {
+      delay: 3000
+    },
+
+    // 複製する数を指定
+    loopedSlides: 6,
+
+    // ページネーション
+    pagination: {
+      el: '.swiper-pagination',
+      // クリックに反応させる
+      clickable: true
+    },
+
+    // ナビゲーションの矢印
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // スクロールバー
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+    // 必要なオプションを指定する
+  });
+</script>
+
+
+
+<script>
+  let slider1 = new Swiper('.slider1', {
+    // オプション
+    effect: 'fade',
+
+    // 繰り返し表示する
+    loop: true,
+
+    // 自動で変わる
+    autoplay: {
+      delay: 5000
+    },
+
+    speed: 2000, //２秒かけてフェードで切り替わる
+
+    // ページネーション
+    pagination: {
+      el: '.swiper-pagination',
+      // クリックに反応させる
+      clickable: true
+    },
+
+    // ナビゲーションの矢印
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // スクロールバー
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+    // 必要なオプションを指定する
+  });
+</script>
+
+<script>
+  let slider2 = new Swiper('.slider2', {
     // オプション
 
     // 繰り返し表示する

@@ -207,9 +207,15 @@
         margin-top: 100px;
         overflow: hidden;
 
-        img {
+        .store-detail-image {
           width: 250px;
           height: 200px;
+
+          img {
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+          }
         }
       }
     }

@@ -93,9 +93,12 @@
 
     <div class="store-detail-images">
       <div class="swiper-wrapper">
-        <div class="store-detail-image swiper-slide"><?php echo SCF::get('small-image1') ?></div>
-        <div class="store-detail-image swiper-slide"><?php echo SCF::get('small-image2') ?></div>
-        <div class="store-detail-image swiper-slide"><?php echo SCF::get('small-image3') ?></div>
+        <div class="store-detail-image swiper-slide"><?php $small_image = SCF::get('small-image1');
+                                                      echo wp_get_attachment_image($small_image, 'small'); ?></div>
+        <div class="store-detail-image swiper-slide"><?php $small_image = SCF::get('small-image2');
+                                                      echo wp_get_attachment_image($small_image, 'small'); ?></div>
+        <div class="store-detail-image swiper-slide"><?php $small_image = SCF::get('small-image3');
+                                                      echo wp_get_attachment_image($small_image, 'small'); ?></div>
       </div>
     </div>
   </div>
@@ -153,86 +156,6 @@
 <?php get_template_part('contact-us') ?>
 
 
-
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-<script>
-  let store_detail_images = new Swiper('.store-detail-images', {
-    // オプション
-
-    // 繰り返し表示する
-    loop: true,
-
-    // 間隔を指定
-    spaceBetween: 20,
-
-    // 一度に表示するスライド数
-    slidesPerView: 1.5,
-
-    // センターにもってくる
-    centeredSlides: true,
-
-    // 自動で変わる
-    autoplay: {
-      delay: 3000
-    },
-
-    // 複製する数を指定
-    loopedSlides: 6,
-
-    // ページネーション
-    pagination: {
-      el: '.swiper-pagination',
-      // クリックに反応させる
-      clickable: true
-    },
-
-    // ナビゲーションの矢印
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    // スクロールバー
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-    // 必要なオプションを指定する
-  });
-</script>
-
-<script>
-  let swiper = new Swiper('.swiper', {
-    // オプション
-
-    // 繰り返し表示する
-    loop: true,
-
-    // 自動で変わる
-    autoplay: {
-      delay: 3000
-    },
-
-    // ページネーション
-    pagination: {
-      el: '.swiper-pagination',
-      // クリックに反応させる
-      clickable: true
-    },
-
-    // ナビゲーションの矢印
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    // スクロールバー
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-    // 必要なオプションを指定する
-  });
-</script>
 
 <!-- フッター -->
 <?php get_footer(); ?>

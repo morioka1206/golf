@@ -44,7 +44,7 @@
 
   <!-- スマホ用GOFLERS２４の特徴 -->
   <div class="sm-second-section-features">
-    <div class="swiper">
+    <div class="slider2 swiper">
       <div class="swiper-wrapper">
 
         <?php

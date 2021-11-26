@@ -102,13 +102,11 @@
 
     // ご利用方法の内容
     .list-of-stores {
-      display: grid;
-      grid-template-rows: 307px 307px 307px 307px;
-      // 列の幅
-      grid-template-columns: 163px 163px;
-      // 空間　縦と横
-      gap: 40px 11px;
-
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 11px;
       margin-top: 196px;
       padding-bottom: 150px;
 
