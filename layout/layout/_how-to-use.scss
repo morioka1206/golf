@@ -60,10 +60,6 @@
           // 空間　縦と横
           gap: 90px 58px;
 
-          // grid-template-areas:
-          //   ". . ."
-          //   ". . .";
-
           .trial-step {
             width: 334px;
             // ステップの番号
@@ -73,6 +69,7 @@
               line-height: 23px;
               color: $text-beige;
             }
+
             // ステップのタイトル
             .step-title {
               font-size: 20px;

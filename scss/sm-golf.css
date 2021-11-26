@@ -715,69 +715,6 @@ footer .footer-follow-us {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
-    left: 0;
-    top: 0;
-    -webkit-animation: anime 36s 0s infinite;
-    animation: anime 36s 0s infinite;
-  }
-  .top-section .first-image:nth-of-type(2) {
-    -webkit-animation-delay: 6s;
-    animation-delay: 6s;
-  }
-  .top-section .first-image:nth-of-type(3) {
-    -webkit-animation-delay: 12s;
-    animation-delay: 12s;
-  }
-  .top-section .first-image:nth-of-type(4) {
-    -webkit-animation-delay: 18s;
-    animation-delay: 18s;
-  }
-  .top-section .first-image:nth-of-type(5) {
-    -webkit-animation-delay: 24s;
-    animation-delay: 24s;
-  }
-  .top-section .first-image:nth-of-type(6) {
-    -webkit-animation-delay: 30s;
-    animation-delay: 30s;
-  }
-  @-webkit-keyframes anime {
-    0% {
-      opacity: 0;
-    }
-    8% {
-      opacity: 1;
-    }
-    17% {
-      opacity: 1;
-    }
-    25% {
-      opacity: 0;
-      transform: scale(1.2);
-      z-index: 9;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  @keyframes anime {
-    0% {
-      opacity: 0;
-    }
-    8% {
-      opacity: 1;
-    }
-    17% {
-      opacity: 1;
-    }
-    25% {
-      opacity: 0;
-      transform: scale(1.2);
-      z-index: 9;
-    }
-    100% {
-      opacity: 0;
-    }
   }
   .top-section .contact-us {
     position: absolute;
@@ -929,7 +866,6 @@ footer .footer-follow-us {
 
   .forth-section {
     width: 375px;
-    height: 1748px;
   }
   .forth-section .forth-section-list-of-stores {
     padding-top: 100px;

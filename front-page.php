@@ -63,7 +63,6 @@
 <?php get_template_part('features') ?>
 
 <!-- ご利用の流れ -->
-<div id="third-section"></div>
 <?php get_template_part('third-section') ?>
 
 

@@ -23,12 +23,18 @@
 
 // 会社イメージ写真
 .company-image {
-  width: 375px;
+  width: 100vw;
   height: 230px;
   background-image: url(./images/company-image.png);
   background-position: center;
   background-size: cover;
   margin-top: 100px;
+
+  img {
+    width: 100vw;
+    height: 230px;
+    object-fit: cover;
+  }
 }
 
 .company-information {
@@ -75,7 +81,8 @@
     margin-bottom: 150px;
 
     iframe {
-      width: 375px;
+      width: 335px;
+      height: 300px;
     }
   }
 }

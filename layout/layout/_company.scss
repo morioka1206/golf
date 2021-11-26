@@ -33,6 +33,12 @@
   background-position: center;
   background-size: cover;
   margin-top: 103px;
+
+  img {
+    width: 100vw;
+    height: 360px;
+    object-fit: cover;
+  }
 }
 
 .company-information {
@@ -71,5 +77,10 @@
 
   .google-map {
     margin-bottom: 150px;
+
+    iframe {
+      width: 1166px;
+      height: 300px;
+    }
   }
 }

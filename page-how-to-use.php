@@ -9,51 +9,64 @@
     <div class="trial-use">
       <div class="trial-title">トライアル利用</div>
       <div class="trial-steps">
-        <!-- ステップ1 -->
-        <div class="trial-step">
-          <div class="step-number">STEP1</div>
-          <div class="step-title">公式LINEの友達追加</div>
-          <div class="step-image"><img src="<?php echo get_theme_file_uri(); ?>/images/trial-step1.png" alt=""></div>
-          <div class="step-sentence">GOLFERS24公式LINEを友達追加してください。
-            公式LINEにてトライアル予約をご案内させていただきます。</div>
-          <div class="step-line-friends"><img src="<?php echo get_theme_file_uri(); ?>/images/公式ラインはこちらから.svg" alt=""></div>
-        </div>
 
-        <!-- ステップ2 -->
-        <div class="trial-step">
-          <div class="step-number">STEP2</div>
-          <div class="step-title">トライアル予約</div>
-          <div class="step-image"><img src="<?php echo get_theme_file_uri(); ?>/images/trial-step2.png" alt=""></div>
-          <div class="step-sentence">
-            <p>公式LINEのトーク画面より予約サイトにアクセスしてください。</p>
-            <p>若葉マークが付いている枠であればトライアル予約が可能です。</p>
-          </div>
-        </div>
+        <?php
+        $args = array(
+          'post_type' => 'how-to-use-trial1',
+          // 全件取得、数を指定すればその数だけ取得する。
+          'posts_per_page' => 1,
+          'order' => 'ASC'
+        );
+        $st_query = new WP_Query($args);
+        ?>
 
-        <!-- ステップ3 -->
-        <div class="trial-step">
-          <div class="step-number">STEP3</div>
-          <div class="step-title">ご来店</div>
-          <div class="step-image"><img src="<?php echo get_theme_file_uri(); ?>/images/trial-step3.png" alt=""></div>
-          <div class="step-sentence">ご予約日の予約時間になりましたら直接店舗へとお越しください。</div>
-        </div>
+        <?php if ($st_query->have_posts()) : ?>
+          <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
 
-        <!-- ステップ4 -->
-        <div class="trial-step">
-          <div class="step-number">STEP4</div>
-          <div class="step-title">トライアル体験</div>
-          <div class="step-image"><img src="<?php echo get_theme_file_uri(); ?>/images/trial-step4.png" alt=""></div>
-          <div class="step-sentence">スタッフよりマシン使用方法をご案内後、思う存分お試しいただけます。</div>
-        </div>
 
-        <!-- ステップ5 -->
-        <div class="trial-step">
-          <div class="step-number">STEP5</div>
-          <div class="step-title">入会ご案内</div>
-          <div class="step-image"><img src="<?php echo get_theme_file_uri(); ?>/images/trial-step5.png" alt=""></div>
-          <div class="step-sentence">入会をご希望の方はご案内させていただきます。
-            複数プランがございますので、ご自身のスタイルに合わせて最適なプランをご提案させていただきます。</div>
-        </div>
+
+            <!-- ステップ1 -->
+            <div class="trial-step">
+              <div class="step-number"><?php echo SCF::get('step'); ?></div>
+              <div class="step-title"><?php echo SCF::get('title'); ?></div>
+              <div class="step-image"><?php $image = SCF::get('image');
+                                      echo wp_get_attachment_image($image, 'large'); ?></div>
+              <div class="step-sentence"><?php echo SCF::get('text'); ?></div>
+              <div class="step-line-friends"><img src="<?php echo get_theme_file_uri(); ?>/images/公式ラインはこちらから.svg" alt=""></div>
+            </div>
+
+          <?php endwhile; ?>
+        <?php endif; ?>
+
+
+        <?php
+        $args = array(
+          'post_type' => 'how-to-use-trial',
+          // 全件取得、数を指定すればその数だけ取得する。
+          'posts_per_page' => -1,
+          'order' => 'ASC'
+        );
+        $st_query = new WP_Query($args);
+        ?>
+
+        <?php if ($st_query->have_posts()) : ?>
+          <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
+
+
+
+            <!-- ステップ5 -->
+            <div class="trial-step">
+              <div class="step-number"><?php echo SCF::get('step'); ?></div>
+              <div class="step-title"><?php echo SCF::get('title'); ?></div>
+              <div class="step-image"><?php $image = SCF::get('image');
+                                      echo wp_get_attachment_image($image, 'large'); ?></div>
+              <div class="step-sentence"><?php echo SCF::get('text'); ?></div>
+            </div>
+
+          <?php endwhile; ?>
+        <?php endif; ?>
+
+
 
         <!-- ステップ6 -->
         <div class="trial-step">
@@ -70,6 +83,7 @@
           </div>
         </div>
 
+
       </div>
     </div>
 
@@ -77,29 +91,30 @@
     <div class="member-use">
       <div class="member-use-title">会員利用</div>
       <div class="member-use-steps">
-        <!-- ステップ1 -->
-        <div class="member-step">
-          <div class="member-number">STEP1</div>
-          <div class="member-title">システム上で予約</div>
-          <div class="member-image"><img src="<?php echo get_theme_file_uri(); ?>/images/member-step1.png" alt=""></div>
-          <div class="member-sentence">専用のシステムにてお好きな日時でご予約いただけます。
-            完全オンラインの即時予約なので、ストレスなくスムーズにご予約いただけます。</div>
-        </div>
-        <!-- ステップ2 -->
-        <div class="member-step">
-          <div class="member-number">STEP2</div>
-          <div class="member-title">ご来店</div>
-          <div class="member-image"><img src="<?php echo get_theme_file_uri(); ?>/images/trial-step3.png" alt=""></div>
-          <div class="member-sentence">ご予約時にスマホ上で自動発行される電子錠を店舗扉にかざし解錠、入館いただけます。
-            完全個室の自分専用練習場で、思う存分練習を楽しんでください。</div>
-        </div>
-        <!-- ステップ3 -->
-        <div class="member-step">
-          <div class="member-number">STEP3</div>
-          <div class="member-title">システム上で予約</div>
-          <div class="member-image"><img src="<?php echo get_theme_file_uri(); ?>/images/trial-step5.png" alt=""></div>
-          <div class="member-sentence">ゴミは各自お持ち帰りいただき、ご退店となります。</div>
-        </div>
+
+        <?php
+        $args = array(
+          'post_type' => 'how-to-use-member',
+          // 全件取得、数を指定すればその数だけ取得する。
+          'posts_per_page' => -1,
+          'order' => 'ASC'
+        );
+        $st_query = new WP_Query($args);
+        ?>
+
+        <?php if ($st_query->have_posts()) : ?>
+          <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
+            <!-- ステップ1 -->
+            <div class="member-step">
+              <div class="member-number"><?php echo SCF::get('step'); ?></div>
+              <div class="member-title"><?php echo SCF::get('title'); ?></div>
+              <div class="member-image"><?php $image = SCF::get('image');
+                                        echo wp_get_attachment_image($image, 'large'); ?></div>
+              <div class="member-sentence"><?php echo SCF::get('text'); ?></div>
+            </div>
+
+          <?php endwhile; ?>
+        <?php endif; ?>
       </div>
     </div>
 

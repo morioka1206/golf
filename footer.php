@@ -19,10 +19,10 @@
       </div>
     </div>
     <div class="footer-links">
-      <a href="company.html">会社概要</a>
-      <a href="membership.html">会員規約</a>
-      <a href="#">プライバシーポリシー</a>
-      <a href="#">特商法</a></a>
+      <a href="<?php echo esc_url(home_url('/company')); ?>">会社概要</a>
+      <a href="<?php echo esc_url(home_url('/membership')); ?>">会員規約</a>
+      <a href="<?php echo esc_url(home_url('/privacy_policy')); ?>">プライバシーポリシー</a>
+      <a href="<?php echo esc_url(home_url('/special_commercial_code')); ?>">特商法</a></a>
     </div>
     <p class="footer-copyright">copyright表記が入ります</p>
   </div>
