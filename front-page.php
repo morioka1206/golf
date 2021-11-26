@@ -15,22 +15,34 @@
   </div>
   <!-- トップ画像下のGOLFERS24紹介 -->
   <div class="top-introduction">
-    <div class="top-introduction-text">
-      <div class="top-introduction-title"><?php bloginfo('description'); ?></div>
-      <div class="top-introduction-sentence">
-        <p>GOLFERS24は1打席のみのあなた専用ゴルフラウンジです。</p>
-        <p>空調の整った完全個室のラグジュアリーな空間で、ゆったりとリラックスしながら練習が可能。ゲストも招待いただけるので、
-          ご家族やご友人、恋人はもちろんお仕事での打ち合わせなどの様々なシーンで利用いただける環境をご用意いたしました。</p>
-        <p>
-          会員であることに価値を感じていただきながら、ゴルフももっと身近なものへ。
-          それが全く新しいインドアゴルフ場、GOLFERS24の目指す形です。
-        </p>
-      </div>
-    </div>
-    <div class="top-introduction-image">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/top-introducton.png" alt="">
-    </div>
+
+    <?php
+    $args = array(
+      'post_type' => 'introduction',
+      // 全件取得、数を指定すればその数だけ取得する。
+      'posts_per_page' => -1,
+    );
+    $st_query = new WP_Query($args);
+    ?>
+
+    <?php if ($st_query->have_posts()) : ?>
+      <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
+
+
+        <div class="top-introduction-text">
+          <div class="top-introduction-title"><?php echo SCF::get('title') ?></div>
+          <div class="top-introduction-sentence">
+            <?php echo SCF::get('introduction-text'); ?>
+          </div>
+        </div>
+        <div class="top-introduction-image">
+          <?php $image = SCF::get('image');
+          echo wp_get_attachment_image($image, 'larage'); ?>
+        </div>
   </div>
+
+<?php endwhile; ?>
+<?php endif; ?>
 </div>
 
 <!-- GOLFERS24の特徴 -->
@@ -48,46 +60,39 @@
     <div class="forth-section-stores-title">店舗一覧</div>
     <!-- 店舗一覧 -->
     <div class="forth-section-stores">
-      <!-- 店舗1 -->
-      <div class="forth-section-store">
-        <div class="forth-section-store-image"><img src="<?php echo get_template_directory_uri(); ?>/images/store-image1.png" alt=""></div>
-        <div class="forth-section-store-infomation">
-          <div class="forth-section-store-name">福岡大濠公園店</div>
-          <div class="forth-section-store-address">
-            <p>〒000-0000</p>
-            <p>住所が入ります。住所が入ります。住所が入ります。</p>
-          </div>
-        </div>
-      </div>
+      <?php
+      $args = array(
+        'post_type' => 'store',
+        // 全件取得、数を指定すればその数だけ取得する。
+        'posts_per_page' => 3,
+      );
+      $st_query = new WP_Query($args);
+      ?>
 
-      <!-- 店舗2 -->
-      <div class="forth-section-store">
-        <div class="forth-section-store-image"><img src="<?php echo get_template_directory_uri(); ?>/images/store-image1.png" alt=""></div>
-        <div class="forth-section-store-infomation">
-          <div class="forth-section-store-name">福岡天神店</div>
-          <div class="forth-section-store-address">
-            <p>〒000-0000</p>
-            <p>住所が入ります。住所が入ります。住所が入ります。</p>
-          </div>
-        </div>
-      </div>
+      <?php if ($st_query->have_posts()) : ?>
+        <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
 
-      <!-- 店舗3 -->
-      <div class="forth-section-store">
-        <div class="forth-section-store-image"><img src="<?php echo get_template_directory_uri(); ?>/images/store-image1.png" alt=""></div>
-        <div class="forth-section-store-infomation">
-          <div class="forth-section-store-name">大阪店</div>
-          <div class="forth-section-store-address">
-            <p>〒000-0000</p>
-            <p>住所が入ります。住所が入ります。住所が入ります。</p>
+
+          <!-- 店舗1 -->
+          <div class="forth-section-store">
+            <div class="forth-section-store-image"><img src="<?php echo get_template_directory_uri(); ?>/images/store-image1.png" alt=""></div>
+            <div class="forth-section-store-infomation">
+              <div class="forth-section-store-name"><?php echo SCF::get('store-name'); ?></div>
+              <div class="forth-section-store-address">
+                <p>〒<?php echo SCF::get('postal-code'); ?></p>
+                <p><?php echo SCF::get('address'); ?></p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+
     </div>
-    <!-- VIEW MOREボタン -->
-    <div class="forth-section-view-more">
-      <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/view-more-button.svg" alt=""></a>
-    </div>
+
+  <?php endwhile; ?>
+<?php endif; ?>
+<!-- VIEW MOREボタン -->
+<div class="forth-section-view-more">
+  <a href="<?php echo esc_url(home_url('/locations')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/view-more-button.svg" alt=""></a>
+</div>
   </div>
 </div>
 
@@ -96,25 +101,34 @@
   <div class="fifth-section-title">NEWS</div>
   <div class="fifth-section-list-of-news">
 
-    <!-- ニュース1 -->
-    <div class="fifth-section-news">
-      <div class="fifth-section-news-date">2021.00.00</div>
-      <div class="fifth-section-news-content">新着ニュースが入ります。新着ニュースが入ります。</div>
-    </div>
+    <?php
+    $args = array(
+      'post_type' => 'news',
+      // 全件取得、数を指定すればその数だけ取得する。
+      'posts_per_page' => 3,
+    );
+    $st_query = new WP_Query($args);
+    ?>
 
-    <!-- ニュース2 -->
-    <div class="fifth-section-news">
-      <div class="fifth-section-news-date">2021.00.00</div>
-      <div class="fifth-section-news-content">新着ニュースが入ります。新着ニュースが入ります。</div>
-    </div>
-    <!-- ニュース3 -->
-    <div class="fifth-section-news">
-      <div class="fifth-section-news-date">2021.00.00</div>
-      <div class="fifth-section-news-content">新着ニュースが入ります。新着ニュースが入ります。</div>
-    </div>
+    <?php if ($st_query->have_posts()) : ?>
+      <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
+
+
+        <a href="<?php the_permalink(); ?>">
+          <div class="fifth-section-news">
+            <div class="fifth-section-news-date"><?php echo SCF::get('date') ?></div>
+            <div class="fifth-section-news-content"><?php echo SCF::get('title') ?></div>
+          </div>
+        </a>
+
+      <?php endwhile; ?>
+    <?php endif; ?>
+
   </div>
+
+
   <!-- VIEW MOREボタン -->
-  <div class="fifth-section-view-more"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/view-more-button.svg" alt=""></a></div>
+  <div class="fifth-section-view-more"><a href="<?php echo esc_url(home_url('/newslist')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/view-more-button.svg" alt=""></a></div>
 </div>
 
 <!-- SNS -->

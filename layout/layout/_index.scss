@@ -125,6 +125,12 @@
     .top-introduction-image {
       width: 647px;
       height: 680px;
+
+      img {
+        width: 647px;
+        height: 680px;
+        object-fit: cover;
+      }
     }
   }
 
@@ -608,6 +614,7 @@
       width: 335px;
       height: 352px;
       margin-top: 60px;
+      object-fit: cover;
     }
   }
 

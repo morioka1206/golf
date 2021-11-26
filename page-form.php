@@ -128,12 +128,12 @@
 
       <!-- デスクトップ用注意書き -->
       <div class="form-privacy-policy-caution">
-        <a href="./membership.html" style="border-bottom: 1px solid ;">プライバシーポリシー</a>同意の上、送信してください。
+        <a href="<?php echo esc_url(home_url('/privacy_policy')); ?>" style="border-bottom: 1px solid ;">プライバシーポリシー</a>同意の上、送信してください。
       </div>
 
       <!-- モバイル用注意書き -->
       <div class="sm-form-privacy-policy-caution">
-        <p><a href="./membership.html" style="border-bottom: 1px solid ;">プライバシーポリシー</a></p>
+        <p><a href="<?php echo esc_url(home_url('/privacy_policy')); ?>" style="border-bottom: 1px solid ;">プライバシーポリシー</a></p>
         <p>に同意の上、送信してください。</p>
       </div>
 
@@ -175,7 +175,3 @@
 
 <!-- フッター -->
 <?php get_footer(); ?>
-
-</body>
-
-</html>

@@ -455,6 +455,12 @@ footer .footer-follow-us {
     width: 647px;
     height: 680px;
   }
+  .top-introduction .top-introduction-image img {
+    width: 647px;
+    height: 680px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 
   .second-section {
     width: 100%;
@@ -875,6 +881,8 @@ footer .footer-follow-us {
     width: 335px;
     height: 352px;
     margin-top: 60px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   .second-section {
@@ -1190,7 +1198,7 @@ footer .footer-follow-us {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   line-height: 19.5px;
-  letter-spacing: 10%;
+  letter-spacing: 0.1rem;
   border: 1px solid #edeae2;
   display: flex;
   justify-content: center;
@@ -1701,6 +1709,7 @@ footer .footer-follow-us {
   }
   .location-wrapper .list-of-stores {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 56px;
     margin-top: 153px;

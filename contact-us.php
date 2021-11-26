@@ -7,7 +7,7 @@
     </div>
 
     <!-- CONTACT USボタン -->
-    <a href="form.html">
+    <a href="<?php echo esc_url(home_url('/form')); ?>">
       <div class="contact-us-button">CONTACT US</div>
     </a>
   </div>

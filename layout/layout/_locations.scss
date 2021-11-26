@@ -28,6 +28,7 @@
     // ご利用方法の内容
     .list-of-stores {
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
       gap: 56px;
       margin-top: 153px;
