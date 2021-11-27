@@ -25,6 +25,50 @@
       background-size: cover;
     }
 
+    .first-view-images {
+      @-webkit-keyframes zoomUp {
+        0% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+        100% {
+          -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+        }
+      }
+
+      @keyframes zoomUp {
+        /* 1.15倍させる指定 */
+        0% {
+          // -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+        100% {
+          // -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+        }
+      }
+
+      .swiper-slide {
+        overflow: hidden;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .swiper-slide-active .slide-img,
+      .swiper-slide-duplicate-active .slide-img,
+      .swiper-slide-prev .slide-img {
+        animation: zoomUp 12s linear 0s;
+        animation-fill-mode: both;
+      }
+
+      .slide-img {
+        background-size: cover;
+        background-position: center center; /* 背景画像は中央を軸に表示させる */
+        height: 733px; /* 600pxの高さで表示させる */
+      }
+    }
+
     // トップ画像右下のコンタクトアス
     .contact-us {
       position: absolute;
@@ -462,6 +506,11 @@
       left: 1320px;
       z-index: 6000;
     }
+  }
+
+  //imgタグだと下に隙間ができるのでblockに。
+  .slide-img img {
+    display: block;
   }
 
   // トップ画像下のGOLFERS24紹介部分

@@ -17,8 +17,10 @@
         <?php if ($st_query->have_posts()) : ?>
           <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
 
-            <div class="first-image swiper-slide" style="background-image: url(<?php $image = SCF::get('image');
-                                                                                echo wp_get_attachment_url($image); ?>);"></div>
+            <div class="swiper-slide">
+              <div class="first-image slide-img" style="background-image: url(<?php $image = SCF::get('image');
+                                                                              echo wp_get_attachment_url($image); ?>);"></div>
+            </div>
           <?php endwhile; ?>
         <?php endif; ?>
       </div>
