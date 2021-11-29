@@ -28,9 +28,11 @@
   <?php wp_body_open(); ?>
   <header id="header">
     <div class="header-desktop">
-      <div class="header-logo">
-        <img src="<?php echo get_theme_file_uri(); ?>/images/logo.svg" alt="GOLFERS24ロゴ">
-      </div>
+      <a href="<?php echo esc_url(home_url('/')); ?>">
+        <div class="header-logo">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/logo.svg" alt="GOLFERS24ロゴ">
+        </div>
+      </a>
       <!-- ヘッダーのナビゲーションメニュー -->
       <div class="header-navi-contents">
         <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/')); ?>"></div>

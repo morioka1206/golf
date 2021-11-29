@@ -22,7 +22,7 @@
       <div class="form-caution">メールフォームでのお問い合わせも受け付けております。下記に必要事項を入力し、確認画面へお進みください。</div>
     </div>
     <!-- フォーム -->
-    <form class="form" action="https://form.run/api/v1/r/1g5ihaqer4ouruczzchjdgrv" method="post">
+    <form class="form" action="https://form.run/api/v1/r/1g5ihaqer4ouruczzchjdgrv" method="post" data-formrun-confirm="true">
       <!-- ↓自由に要素を追加・編集することができます -->
       <!-- お問い合わせ内容 -->
       <div class="select-form-inquiry">
@@ -57,7 +57,7 @@
       </div>
 
       <div class="form-privacy-policy-caution">
-        <a href="./membership.html" style="border-bottom: 1px solid ;">プライバシーポリシー</a>同意の上、送信してください。
+        <a href="<?php echo esc_url(home_url('/privacy_policy')); ?>" style="border-bottom: 1px solid ;">プライバシーポリシー</a>同意の上、送信してください。
       </div>
 
       <div class="form-privacy-policy">
@@ -79,6 +79,7 @@
         <label for="_formrun_gotcha">If you are a human, ignore this field</label>
         <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
       </div>
+      <a href="javascript:void(0)" class="btn btn-default" data-formrun-back-button>戻る</a>
 
       <button type="submit" class="form-submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">確認画面へ進む</button>
     </form>
@@ -157,6 +158,7 @@
         <label for="_formrun_gotcha">If you are a human, ignore this field</label>
         <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
       </div>
+      <a href="javascript:void(0)" class="btn btn-default" data-formrun-back-button>戻る</a>
 
       <button type="submit" class="form-submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">
         <p>確認画面へ進む</p>

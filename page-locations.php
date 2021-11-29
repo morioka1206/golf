@@ -28,7 +28,7 @@
             <p>〒<?php echo SCF::get('postal-code'); ?></p>
             <p><?php echo SCF::get('address'); ?></p>
           </div>
-          <div class="store-link"><a href="#"><img src="<?php echo get_theme_file_uri(); ?>/images/店舗ページへ.svg" alt=""></a></div>
+          <div class="store-link"><a href="<?php the_permalink(); ?>"><img src="<?php echo get_theme_file_uri(); ?>/images/店舗ページへ.svg" alt=""></a></div>
         </div>
 
       <?php endwhile; ?>
