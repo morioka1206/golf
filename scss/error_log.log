@@ -73,3 +73,5 @@
 11/24/21 3:59:54: sm-golf.scss - `layout/header` file not found for @import: sm-golf.scss on line 90, at column 1
 11/27/21 8:18:23: pc-golf.scss - unclosed block: failed at `` /Applications/MAMP/htdocs/wp01/wp-content/themes/golf/scss/../layout/layout/_index.scss on line 876, at column 0
 11/27/21 8:18:23: sm-golf.scss - unclosed block: failed at `` /Applications/MAMP/htdocs/wp01/wp-content/themes/golf/scss/../layout/layout/_index.scss on line 876, at column 0
+11/30/21 4:48:21: pc-golf.scss - parse error: failed at `background-color: ;` /Applications/MAMP/htdocs/wp01/wp-content/themes/golf/scss/../layout/layout/_footer.scss on line 57, at column 5
+11/30/21 4:48:21: sm-golf.scss - parse error: failed at `background-color: ;` /Applications/MAMP/htdocs/wp01/wp-content/themes/golf/scss/../layout/layout/_footer.scss on line 57, at column 5

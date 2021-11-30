@@ -32,7 +32,7 @@
               <div class="step-image"><?php $image = SCF::get('image');
                                       echo wp_get_attachment_image($image, 'large'); ?></div>
               <div class="step-sentence"><?php echo SCF::get('text'); ?></div>
-              <div class="step-line-friends"><img src="<?php echo get_theme_file_uri(); ?>/images/公式ラインはこちらから.svg" alt=""></div>
+              <div class="step-line-friends"><a href="https://lin.ee/7Ii8MCV"><img src="<?php echo get_theme_file_uri(); ?>/images/公式ラインはこちらから.svg" alt=""></a></div>
             </div>
 
           <?php endwhile; ?>
@@ -77,9 +77,11 @@
               <p>こちらより予約サイトへ</p>
               <p>アクセスしてください。</p>
             </div>
-            <div class="reserve-link">
-              <p>予約サイトはこちらから</p>
-            </div>
+            <a href="https://golfers24.hacomono.jp/">
+              <div class="reserve-link">
+                <p>予約サイトはこちらから</p>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -134,32 +136,32 @@
           <tr>
             <td>レギュラープラン</td>
             <td class="allday">0時〜24時</td>
-            <td>30,000円</td>
+            <td>33,000円</td>
           </tr>
           <tr class="table-premium">
             <td class="premium-plan">プレミアムプラン</td>
             <td class="allday">0時〜24時</td>
-            <td class="premium-discount">24,000円</td>
+            <td class="premium-discount">26,400円</td>
           </tr>
           <tr>
             <td>デイプラン</td>
             <td class=day>6時〜17時</td>
-            <td>22,000円</td>
+            <td>24,200円</td>
           </tr>
           <tr>
             <td>ナイトプラン</td>
             <td class="night">17時〜24時</td>
-            <td>20,000円</td>
+            <td>22,000円</td>
           </tr>
           <tr>
             <td>ミッドナイトプラン</td>
             <td class="midnight">0時〜6時</td>
-            <td>18,000円</td>
+            <td>19,800円</td>
           </tr>
           <tr>
             <td>入会金</td>
             <td></td>
-            <td>10,000円</td>
+            <td>11,000円</td>
           </tr>
         </table>
       </div>

@@ -52,7 +52,7 @@ body {
 
   .header-desktop {
     width: 100%;
-    min-width: 1600px;
+    min-width: 1400px;
     height: 97px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -75,7 +75,7 @@ body {
     display: none;
   }
   .header-desktop .header-navi-contents {
-    width: 494px;
+    width: 561px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -663,7 +663,23 @@ footer .footer-follow-us {
     line-height: 50px;
     margin-top: 60px;
   }
-  .second-section .second-section-features .feature .feature-text-wrapper .feature-text-box-even {
+  .second-section .second-section-features .feature .feature-image {
+    width: 800px;
+    height: 687px;
+    background-color: aqua;
+  }
+  .second-section .second-section-features .feature:nth-of-type(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .second-section .second-section-features .feature:nth-of-type(even) .feature-text-wrapper {
+    width: 597px;
+    height: 575px;
+    position: relative;
+  }
+  .second-section .second-section-features .feature:nth-of-type(even) .feature-text-wrapper .feature-text-box {
     width: 597px;
     height: 575px;
     background-color: #edeae2;
@@ -684,28 +700,17 @@ footer .footer-follow-us {
     position: absolute;
     left: -170px;
   }
-  .second-section .second-section-features .feature .feature-text-wrapper .feature-text-box-even .feature-title {
+  .second-section .second-section-features .feature:nth-of-type(even) .feature-text-wrapper .feature-text-box .feature-title {
     width: 527px;
     font-family: "Noto Serif JP", serif;
     font-size: 28px;
     font-weight: 300;
     line-height: 40px;
   }
-  .second-section .second-section-features .feature .feature-text-wrapper .feature-text-box-even .feature-sentence {
+  .second-section .second-section-features .feature:nth-of-type(even) .feature-text-wrapper .feature-text-box .feature-sentence {
     width: 512px;
     line-height: 50px;
     margin-top: 60px;
-  }
-  .second-section .second-section-features .feature .feature-image {
-    width: 800px;
-    height: 687px;
-    background-color: aqua;
-  }
-  .second-section .second-section-features .feature:nth-of-type(even) {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
   }
 
   .third-section {

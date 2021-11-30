@@ -158,6 +158,7 @@
         <label for="_formrun_gotcha">If you are a human, ignore this field</label>
         <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
       </div>
+
       <a href="javascript:void(0)" class="btn btn-default" data-formrun-back-button>戻る</a>
 
       <button type="submit" class="form-submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">

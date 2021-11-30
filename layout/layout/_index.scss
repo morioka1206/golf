@@ -175,7 +175,7 @@
             flex-direction: column;
             z-index: 300;
             position: absolute;
-            left: 170px;
+            left: 190px;
 
             // 特徴のタイトル
             .feature-title {
@@ -221,7 +221,8 @@
             flex-direction: column;
             z-index: 300;
             position: absolute;
-            left: -170px;
+
+            left: -190px;
 
             // 特徴のタイトル
             .feature-title {
@@ -233,7 +234,7 @@
             }
 
             .feature-sentence {
-              width: 512px;
+              width: 540px;
               line-height: 50px;
               margin-top: 60px;
             }

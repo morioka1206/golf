@@ -35,8 +35,9 @@
 
         .store-introduction-name {
           font-size: 36px;
-          font-weight: 700;
-          line-height: 52.13px;
+          font-weight: 400;
+          line-height: 51.3px;
+          font-family: $noto-serif;
         }
 
         .store-introduction-sentence {
@@ -45,6 +46,7 @@
           line-height: 50px;
           margin: 0 auto;
           margin-top: 60px;
+          font-size: 14px;
         }
       }
 
@@ -92,7 +94,7 @@
       margin-top: 73px;
 
       .store-detail-information {
-        width: 428px;
+        width: 600px;
         // 店舗名
         .store-detail-name {
           font-size: 20px;
