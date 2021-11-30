@@ -35,7 +35,7 @@
       </a>
       <!-- ヘッダーのナビゲーションメニュー -->
       <div class="header-navi-contents">
-        <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/')); ?>"></div>
+        <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/')); ?>">TOP</a></div>
         <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/how-to-use')); ?>">ご利用の流れ</a></div>
         <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/locations')); ?>">店舗一覧</a></div>
         <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/newslist')); ?>">NEWS</a></div>
@@ -44,9 +44,9 @@
       </div>
       <!-- ヘッダーのSNSリンク -->
       <div class="header-sns-icons">
-        <div class="header-facebook"><i class="fab fa-facebook-square"></i></div>
-        <div class="header-instagram"><i class="fab fa-instagram"></i></div>
-        <div class="header-line"><i class="fab fa-line"></i></div>
+        <div class="header-facebook"><a href="https://ja-jp.facebook.com/"><i class="fab fa-facebook-square"></a></i></div>
+        <div class="header-instagram"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></div>
+        <div class="header-line"><a href="https://lin.ee/7Ii8MCV"><i class="fab fa-line"></a></i></div>
       </div>
 
     </div>

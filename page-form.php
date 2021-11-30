@@ -12,7 +12,7 @@
         <p>日々最新情報もお届けしております。</p>
       </div>
       <div class="form-line-link">
-        <a href="#"><img src="<?php echo get_theme_file_uri(); ?>/images/公式LINEはこちら.svg" alt=""></a>
+        <a href="https://lin.ee/7Ii8MCV"><img src="<?php echo get_theme_file_uri(); ?>/images/公式LINEはこちら.svg" alt=""></a>
       </div>
     </div>
 
@@ -28,31 +28,31 @@
       <div class="select-form-inquiry">
         <label>お問い合わせ内容</label>
         <div class="form-required">必須</div>
-        <select name="お問い合わせ内容" class="form-select-option" id="">
-          <option value="">利用するには</option>
-          </option>
-          <option value=""></option>
-          <option value=""></option>
+        <select name="お問い合わせ内容" class="form-select-option" id="form" required>
+          <option selected disabled>選択してください</option>
+          <option value="料金について">料金について</option>
+          <option value="改善してほしい">改善して欲しい</option>
+          <option value="その他">その他</option>
         </select>
       </div>
 
       <div class="form-name">
         <label>お名前</label>
         <div class="form-required">必須</div>
-        <input name="お名前" type="text">
+        <input name="お名前" type="text" required>
       </div>
 
       <div class="form-email">
         <label>メールアドレス</label>
         <div class="form-required">必須</div>
-        <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
+        <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required required>
         <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
       </div>
 
       <div class="detail-form-inquiry">
         <label>お問い合わせ</label>
         <div class="form-required">必須</div>
-        <textarea name="お問い合わせ" data-formrun-required></textarea>
+        <textarea name="お問い合わせ" data-formrun-required required></textarea>
         <div data-formrun-show-if-error="お問い合わせ">お問い合わせ内容を入力してください</div>
       </div>
 
@@ -61,7 +61,7 @@
       </div>
 
       <div class="form-privacy-policy">
-        <input type="checkbox" id="privacy-policy" name="個人情報利用同意" data-formrun-required>
+        <input type="checkbox" id="privacy-policy" name="個人情報利用同意" data-formrun-required required>
         <div data-formrun-show-if-error="個人情報利用同意">同意してください</div>
         <label for="privacy-policy">同意する</label>
       </div>

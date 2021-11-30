@@ -192,9 +192,26 @@
               margin-top: 60px;
             }
           }
+        }
+
+        .feature-image {
+          width: 800px;
+          height: 687px;
+          background-color: aqua;
+        }
+      }
+
+      // 特徴を交互に表示
+      .feature:nth-of-type(even) {
+        flex-direction: row-reverse;
+
+        .feature-text-wrapper {
+          width: 597px;
+          height: 575px;
+          position: relative;
 
           // 特徴のテキストボックス（偶数）
-          .feature-text-box-even {
+          .feature-text-box {
             width: 597px;
             height: 575px;
             background-color: $back-beige;
@@ -222,17 +239,6 @@
             }
           }
         }
-
-        .feature-image {
-          width: 800px;
-          height: 687px;
-          background-color: aqua;
-        }
-      }
-
-      // 特徴を交互に表示
-      .feature:nth-of-type(even) {
-        flex-direction: row-reverse;
       }
     }
   }
