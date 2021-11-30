@@ -2,38 +2,38 @@
   .page-title {
     font-family: $montserrat;
     color: transparent;
-    font-size: 120px;
+    font-size: 102px;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 34px;
     -webkit-text-stroke: 1px $text-beige;
     position: absolute;
-    top: -90px;
-    left: -240px;
+    top: -76.5px;
+    left: -204px;
   }
 
   .how-to-use-wrapper {
-    width: 1118px;
+    width: 950.3px;
     margin: 0 auto;
-    margin-top: 252px;
+    margin-top: 214.2px;
     position: relative;
 
     .how-title {
       font-weight: 300;
-      font-size: 30px;
-      line-height: 40px;
+      font-size: 25.5px;
+      line-height: 34px;
       letter-spacing: 0.2rem;
       font-family: $noto-serif;
     }
 
     // ご利用方法の内容
     .how-to-use-contents {
-      width: 1118px;
+      width: 950.3px;
 
       // トライアル利用
       .trial-use {
         .trial-title {
           font-weight: 700;
-          font-size: 30px;
+          font-size: 24px;
           line-height: 43.44px;
           letter-spacing: 0.2rem;
           color: $text-beige;
@@ -204,9 +204,9 @@
       }
     }
     .hour-plan {
-      width: 1166px;
+      width: 991.1px;
       margin: 0 auto;
-      margin-top: 150px;
+      margin-top: 127.5px;
       // position: relative;
       margin: 0 auto;
 
@@ -234,7 +234,7 @@
         margin-bottom: 180px;
 
         table {
-          width: 1166px;
+          width: 991.1px;
           height: 748px;
           font-size: 18px;
           padding: 0 60px;

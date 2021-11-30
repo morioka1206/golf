@@ -6,12 +6,11 @@
 
   .header-desktop {
     width: 100%;
-    min-width: 1600px;
-    height: 97px;
+    height: 82.5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 60px;
+    padding: 0 51px;
     color: black;
     background-color: white;
     position: fixed;
@@ -25,29 +24,29 @@
 
     // ナビゲーション
     .header-navi-contents {
-      width: 494px;
+      width: 420px;
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 30px;
-      line-height: 17px;
-      margin-left: 290px;
-      margin-right: 350px;
+      gap: 25.5px;
+      line-height: 13.6px;
+      margin-left: 246.5px;
+      margin-right: 297.5px;
     }
 
     // SNSのアイコン
     .header-sns-icons {
-      width: 107px;
+      width: 91px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 25px;
+      font-size: 21px;
     }
 
     // ヘッダーのロゴ
     .header-logo img {
-      width: 170px;
-      height: 26.66px;
+      width: 144.5px;
+      height: 22.7px;
     }
   }
 }

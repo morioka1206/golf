@@ -5,9 +5,9 @@
       <img src="<?php echo get_theme_file_uri(); ?>/images/logo-white.svg" alt="GOLFERS24ロゴ">
     </div>
     <div class="footer-company-infomation">
-      <p class="footer-company-name">株式会社XXXXX</p>
-      <p class="footer-postalcode">〒000-0000</p>
-      <p class="footer-company-address">東京都XXX区XXXX0-0-0 〇〇ビル</p>
+      <p class="footer-company-name">株式会社StudioX</p>
+      <p class="footer-postalcode">〒106-0032</p>
+      <p class="footer-company-address">東京都港区六本木7-14-23</p>
       </p>
     </div>
     <div class="sm-footer-sns">
