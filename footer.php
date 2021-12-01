@@ -14,16 +14,16 @@
       <div class="sm-footer-sns">
         <p class="footer-follow-us">FOLLOW US</p>
         <div class="footer-sns-icons">
-          <div class="footer-facebook"><i class="fab fa-facebook-square"></i></div>
-          <div class="footer-instagram"><i class="fab fa-instagram"></i></div>
-          <div class="footer-line"><i class="fab fa-line"></i></div>
+          <div class="footer-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><i class="fab fa-facebook-square"></i></a></div>
+          <div class="footer-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja"><i class="fab fa-instagram"></i></a></div>
+          <div class="footer-line"><a href="https://lin.ee/7Ii8MCV"><i class="fab fa-line"></i></a></div>
         </div>
       </div>
       <div class="footer-links">
-        <a href="<?php echo esc_url(home_url('/company')); ?>">会社概要</a>
-        <a href="<?php echo esc_url(home_url('/membership')); ?>">会員規約</a>
-        <a href="<?php echo esc_url(home_url('/privacy_policy')); ?>">プライバシーポリシー</a>
-        <a href="<?php echo esc_url(home_url('/special_commercial_code')); ?>">特商法</a></a>
+        <div class="footer-company"><a href="<?php echo esc_url(home_url('/company')); ?>">会社概要</a></div>
+        <div class="footer-membership"><a href="<?php echo esc_url(home_url('/membership')); ?>">会員規約</a></div>
+        <div class="footer-privacy"><a href="<?php echo esc_url(home_url('/privacy_policy')); ?>">プライバシーポリシー</a></div>
+        <div class="footer-special"><a href="<?php echo esc_url(home_url('/special_commercial_code')); ?>">特商法</a></a></div>
       </div>
     </div>
 

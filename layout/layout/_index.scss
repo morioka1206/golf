@@ -153,35 +153,17 @@
 
       // 特徴
       .feature {
-        width: 1397px;
+        width: 1480px;
         height: 687px;
         display: flex;
         justify-content: center;
         align-items: center;
 
         .feature-text-wrapper {
-          width: 767px;
+          width: 597px;
           height: 575px;
           position: relative;
-          display: flex;
-          justify-content: center;
-          align-items: flex-start;
-          flex-direction: column;
-
-          // 特徴のタイトル
-          .feature-title {
-            width: 527px;
-            font-family: $noto-serif;
-            font-size: 28px;
-            font-weight: 300;
-            line-height: 40px;
-          }
-
-          .feature-sentence {
-            width: 512px;
-            line-height: 50px;
-            margin-top: 60px;
-          }
+          z-index: 1;
 
           // 特徴のテキストボックス（奇数）
           .feature-text-box {
@@ -192,18 +174,33 @@
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
-            z-index: 2;
-            position: absolute;
-            top: 20px;
-            left: 170px;
+            z-index: 300;
+            transform: translateX(40px);
+            // position: absolute;
+            // left: 210px;
+
+            // 特徴のタイトル
+            .feature-title {
+              width: 527px;
+              font-family: $noto-serif;
+              font-size: 28px;
+              font-weight: 300;
+              line-height: 40px;
+            }
+
+            .feature-sentence {
+              width: 512px;
+              line-height: 50px;
+              margin-top: 60px;
+            }
           }
         }
 
         .feature-image {
-          width: 720px;
-          height: 618px;
+          width: 800px;
+          height: 687px;
           background-color: aqua;
-          z-index: 20;
+          transform: translateX(-40px);
         }
       }
 
@@ -215,31 +212,11 @@
           width: 597px;
           height: 575px;
           position: relative;
-          display: flex;
-          justify-content: center;
-          align-items: flex-end;
-          flex-direction: column;
-          z-index: 3000;
-
-          // 特徴のタイトル
-          .feature-title {
-            width: 527px;
-            font-family: $noto-serif;
-            font-size: 28px;
-            font-weight: 300;
-            line-height: 40px;
-          }
-
-          .feature-sentence {
-            width: 512px;
-            line-height: 50px;
-            margin-top: 60px;
-          }
+          z-index: 1;
 
           // 特徴のテキストボックス（偶数）
           .feature-text-box {
             width: 597px;
-            width: 150px;
             height: 575px;
             background-color: $back-beige;
             display: flex;
@@ -247,14 +224,32 @@
             align-items: flex-end;
             flex-direction: column;
             z-index: 300;
-            position: absolute;
-            left: -150px;
+            // position: absolute;
+
+            // left: -170px;
+            transform: translateX(-40px);
+
+            // 特徴のタイトル
+            .feature-title {
+              width: 527px;
+              font-family: $noto-serif;
+              font-size: 28px;
+              font-weight: 300;
+              line-height: 40px;
+            }
+
+            .feature-sentence {
+              width: 512px;
+              line-height: 50px;
+              margin-top: 60px;
+            }
           }
         }
         .feature-image {
           width: 800px;
           height: 687px;
           background-color: aqua;
+          transform: translateX(40px);
         }
       }
     }
@@ -501,14 +496,14 @@
 
     // ファーストビュー画像
     .first-view-images {
-      width: 375px;
+      width: 100%;
       height: 700px;
       overflow: hidden;
       position: relative;
       margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
     }
 
     .first-view-images {
@@ -558,7 +553,7 @@
     // それぞれのスライド画像
     .first-image {
       z-index: 10;
-      width: 375px;
+      width: 100%;
       height: 700px;
       background-position: center center;
       background-repeat: no-repeat;
@@ -581,7 +576,7 @@
 
   // トップ画像下のGOLFERS24紹介部分
   .top-introduction {
-    width: 375px;
+    width: 100%;
     height: 1392px;
     display: flex;
     justify-content: center;
@@ -622,8 +617,8 @@
 
   // GOLFERS24の特徴
   .second-section {
-    width: 375px;
-    height: 900px;
+    width: 100%;
+    height: 100%;
     background-color: $back-beige;
 
     .second-section-title {
@@ -646,7 +641,7 @@
       color: $text-black;
 
       .swiper {
-        padding-bottom: 40px;
+        padding-bottom: 180px;
       }
 
       .swiper-slide {
@@ -710,7 +705,7 @@
 
   // ご利用の流れ
   .third-section {
-    width: 375px;
+    width: 100%;
     height: 497px;
     background-color: #a59c84;
     display: flex;
@@ -749,7 +744,7 @@
 
   // 店舗一覧
   .forth-section {
-    width: 375px;
+    width: 100%;
     // height: 1748px;
     .forth-section-list-of-stores {
       padding-top: 100px;
@@ -822,7 +817,7 @@
 
   // NEWS
   .fifth-section {
-    width: 375px;
+    width: 100%;
     height: 969px;
     background-color: $back-beige;
 
@@ -890,7 +885,7 @@
 
   // SNS
   .sixth-section {
-    width: 375px;
+    width: 100%;
     height: 520px;
     background-color: $back-khaki;
     color: white;
