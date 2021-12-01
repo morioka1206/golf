@@ -17,6 +17,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <!-- formrun -->
   <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
   <title>GOLFERS24</title>
   <?php
   wp_enqueue_script('jquery');

@@ -6,7 +6,7 @@
         <img src="<?php echo get_theme_file_uri(); ?>/images/logo-white.svg" alt="GOLFERS24ロゴ">
       </div>
       <div class="footer-company-infomation">
-        <p class="footer-company-name">株式会社STUDIOX</p>
+        <p class="footer-company-name">株式会社StudioX</p>
         <p class="footer-postalcode">〒106-0032</p>
         <p class="footer-company-address">東京都港区六本木7-14-23</p>
         </p>
@@ -38,7 +38,7 @@
     </div>
   </div>
   <div class="copyright">
-    <p class="footer-copyright">© STUDIOX All rights reserved.</p>
+    <p class="footer-copyright">© StudioX All rights reserved.</p>
   </div>
 </footer>
 

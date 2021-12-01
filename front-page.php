@@ -3,12 +3,11 @@
 <div class="top-section">
   <!-- トップ画像 -->
   <div class="first-view-images">
-    <div class="swiper slider1">
+    <!-- <div class="swiper slider1">
       <div class="swiper-wrapper">
         <?php
         $args = array(
           'post_type' => 'top-image',
-          // 全件取得、数を指定すればその数だけ取得する。
           'posts_per_page' => -1,
         );
         $st_query = new WP_Query($args);
@@ -24,7 +23,7 @@
           <?php endwhile; ?>
         <?php endif; ?>
       </div>
-    </div>
+    </div> -->
     <a href="<?php echo esc_url(home_url('/')); ?>">
       <div class="contact-us"><a href="<?php echo esc_url(home_url('/form')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/CONTACT US.svg" alt=""></a></div>
     </a>
@@ -162,7 +161,7 @@
         <p>Facebook</p>
       </div>
     </a>
-    <a href="https://www.facebook.com/Golfers24-107676011730422/">
+    <a href="https://www.instagram.com/golfers24_official/?hl=ja">
       <div class="sixth-sns-button">
         <i class="fab fa-instagram sixth-sns-icon"></i>
         <p>Instagram</p>

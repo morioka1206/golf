@@ -13,6 +13,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      background-image: url(../images/top-abobe.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
     }
 
     // それぞれのスライド画像
@@ -501,9 +506,10 @@
       overflow: hidden;
       position: relative;
       margin: 0 auto;
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
+      background-image: url(../images/top-abobe.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
     }
 
     .first-view-images {

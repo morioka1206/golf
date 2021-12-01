@@ -68,9 +68,21 @@
           background-color: $back-input;
         }
 
+        label {
+          width: 200px;
+        }
+
+        .form-label {
+          // width: 400px;
+          display: flex;
+          // justify-content: center;
+          align-items: center;
+        }
+
         .select-form-inquiry,
         .form-name,
         .form-email {
+          width: 106.5%;
           height: 138.62px;
           display: flex;
           align-items: center;
@@ -93,7 +105,7 @@
         .select-form-inquiry {
           position: relative;
           .form-required {
-            margin-left: 23px;
+            margin-left: 40px;
           }
 
           .form-select-option {
@@ -111,7 +123,7 @@
         }
 
         .form-name .form-required {
-          margin-left: 103px;
+          margin-left: 40px;
         }
 
         .form-email .form-required {
@@ -120,7 +132,7 @@
 
         .detail-form-inquiry .form-required {
           margin-top: 57.43px;
-          margin-left: 57px;
+          margin-left: 40px;
         }
 
         .form-name input,
@@ -131,6 +143,7 @@
 
         // お問い合わせ内容入力
         .detail-form-inquiry {
+          width: 106.5%;
           height: 237.62px;
           border-top: 1px solid $text-black;
           padding-top: 32.67px;
@@ -189,6 +202,7 @@
           align-items: center;
           background-color: white;
           border: 1px solid $text-black;
+          padding-left: 40px;
 
           p {
             margin-left: 55px;
@@ -270,12 +284,7 @@
         margin-bottom: 30px;
       }
 
-      // フォーム
       .form {
-        display: none;
-      }
-
-      .form-mobile {
         // 入力
         input {
           height: 74px;
@@ -291,6 +300,13 @@
           justify-content: center;
           align-items: flex-start;
           flex-direction: column;
+        }
+
+        .form-label {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin-bottom: 20px;
         }
 
         .form-content-title {
@@ -369,13 +385,9 @@
           height: 204.95px;
         }
 
-        .form-privacy-policy-caution {
-          display: none;
-        }
-
         // プライバシーポリシー注意
-        .sm-form-privacy-policy-caution {
-          width: 247px;
+        .form-privacy-policy-caution {
+          width: 235px;
           font-size: 12px;
           line-height: 20.27px;
           margin: 0 auto;
@@ -388,7 +400,7 @@
           }
         }
 
-        .sm-form-privacy-policy-caution::before {
+        .form-privacy-policy-caution::before {
           font-family: "Font Awesome 5 Free";
           content: "\f35d";
           font-weight: 700;
@@ -416,6 +428,7 @@
           align-items: center;
           background-color: white;
           border: 1px solid $text-black;
+          padding-left: 42px;
 
           p {
             margin-left: 37.1px;
