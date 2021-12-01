@@ -144,6 +144,7 @@
       width: 335px;
       margin-top: 142px;
       margin-bottom: 200px;
+      border-top: 1px solid $line-gray2;
 
       // 1つ1つのニュース
       .news {
@@ -192,8 +193,8 @@
         }
       }
 
-      .news:first-of-type {
-        border-top: 1px solid $line-gray2;
+      .sm-news {
+        border-bottom: 1px solid $line-gray2;
       }
     }
   }

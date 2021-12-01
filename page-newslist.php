@@ -34,25 +34,33 @@
 
     <!-- モバイル１つ１つのニュース -->
     <?php
-    while (have_posts()) :
-      the_post();
+    $category = get_the_category();
+    $args = array(
+      'post_type' => 'news',
+      'orderby'  => 'date'
+    );
+    $st_query = new WP_Query($args);
     ?>
-      <a href="<?php the_permalink(); ?>">
-        <div class="sm-news">
-          <div class="news-date"><?php the_time("Y.n.j"); ?></div>
-          <div class="news-tag"><?php $cats = get_the_category(); ?>
-            <?php echo $cats[0]->name; ?></div>
-          <div class="news-content"><?php the_title(); ?></div>
-        </div>
-      </a>
-    <?php
-    endwhile;
-    ?>
-    <div class="sm-news">
-      <div class="news-tag">NEWS</div>
-      <div class="news-date">2021.00.00</div>
-      <div class="news-content">新着ニュースが入ります。新着ニュースが入ります。</div>
-    </div>
+
+
+
+    <?php if ($st_query->have_posts()) : ?>
+      <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
+
+        <a href="<?php the_permalink(); ?>">
+          <div class="sm-news">
+            <div class="news-tag"><?php $tag = SCF::get('tag');
+                                  echo $tag; ?></div>
+            <div class="news-date"><?php $date = SCF::get('date');
+                                    echo $date; ?></div>
+
+            <div class="news-content"><?php $title = SCF::get('title');
+                                      echo $title; ?></div>
+          </div>
+        </a>
+      <?php endwhile; ?>
+    <?php endif; ?>
+
   </div>
 
   <?php the_posts_pagination(
@@ -74,7 +82,3 @@
 
 <!-- フッター -->
 <?php get_footer(); ?>
-
-</body>
-
-</html>

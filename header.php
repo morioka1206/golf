@@ -30,7 +30,7 @@
     <div class="header-desktop">
       <a href="<?php echo esc_url(home_url('/')); ?>">
         <div class="header-logo">
-          <img src="<?php echo get_theme_file_uri(); ?>/images/logo.svg" alt="GOLFERS24ロゴ">
+          <a href=""><img src="<?php echo get_theme_file_uri(); ?>/images/logo.svg" alt="GOLFERS24ロゴ"></a>
         </div>
       </a>
       <!-- ヘッダーのナビゲーションメニュー -->
@@ -44,8 +44,8 @@
       </div>
       <!-- ヘッダーのSNSリンク -->
       <div class="header-sns-icons">
-        <div class="header-facebook"><a href="https://ja-jp.facebook.com/"><i class="fab fa-facebook-square"></a></i></div>
-        <div class="header-instagram"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></div>
+        <div class="header-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><i class="fab fa-facebook-square"></a></i></div>
+        <div class="header-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja"><i class="fab fa-instagram"></i></a></div>
         <div class="header-line"><a href="https://lin.ee/7Ii8MCV"><i class="fab fa-line"></a></i></div>
       </div>
 
@@ -54,9 +54,11 @@
 
     <!-- スマホ用ヘッダー -->
     <div class="header-smartphone">
-      <div class="header-logo">
-        <img src="<?php echo get_theme_file_uri(); ?>/images/logo.svg" alt="GOLFERS24ロゴ">
-      </div>
+      <a href="<?php echo esc_url(home_url('/')); ?>">
+        <div class="header-logo">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/logo.svg" alt="GOLFERS24ロゴ">
+        </div>
+      </a>
 
       <div class="header-humberger">
         <input type="checkbox" id="menu-btn-check">
@@ -65,32 +67,34 @@
           <nav>
             <div class="hide-contents">
               <div class="menu-list">
-                <a href="index.html">
+                <a href="<?php echo esc_url(home_url('/')); ?>">
                   <div class="menu">TOP</div>
                 </a>
-                <a href="how-to-use.html">
+                <a href="<?php echo esc_url(home_url('/how-to-use')); ?>">
                   <div class="menu">ご利用の流れ・体験予約</div>
                 </a>
-                <a href="locations.html">
+                <a href="<?php echo esc_url(home_url('/locations')); ?>">
                   <div class="menu">店舗一覧</div>
                 </a>
-                <a href="news.html">
+                <a href="<?php echo esc_url(home_url('/newslist')); ?>">
                   <div class="menu">NEWS</div>
                 </a>
-                <a href="questions.html">
+                <a href="<?php echo esc_url(home_url('/questions')); ?>">
                   <div class="menu">F&Q</div>
                 </a>
-                <a href="company.html">
+                <a href="<?php echo esc_url(home_url('/company')); ?>">
                   <div class="menu">会社概要</div>
                 </a>
               </div>
-              <div class="sm-nav-contact-us">CONTACT US</div>
+              <a href="<?php echo esc_url(home_url('/form')); ?>">
+                <div class="sm-nav-contact-us">CONTACT US</div>
+              </a>
               <div class="sm-nav-sns">
                 <p>FOLLOW US</p>
                 <div class="sm-nav-sns-icons">
-                  <div class="sm-header-facebook"><i class="fab fa-facebook-square"></i></div>
-                  <div class="sm-header-instagram"><i class="fab fa-instagram"></i></div>
-                  <div class="sm-header-line"><i class="fab fa-line"></i></div>
+                  <div class="sm-header-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><i class="fab fa-facebook-square"></i></a></div>
+                  <div class="sm-header-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja"><i class="fab fa-instagram"></i></a></div>
+                  <div class="sm-header-line"><a href="https://lin.ee/7Ii8MCV"><i class="fab fa-line"></i></a></div>
                 </div>
               </div>
             </div>

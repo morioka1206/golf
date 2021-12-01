@@ -31,8 +31,8 @@
     <div class="footer-sns">
       <p class="footer-follow-us">FOLLOW US</p>
       <div class="footer-sns-icons">
-        <div class="footer-facebook"><a href="https://ja-jp.facebook.com/"><i class="fab fa-facebook-square"></i></a href=""></div>
-        <div class="footer-instagram"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></div>
+        <div class="footer-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><i class="fab fa-facebook-square"></i></a href=""></div>
+        <div class="footer-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja"><i class="fab fa-instagram"></i></a></div>
         <div class="footer-line"><a href="https://lin.ee/7Ii8MCV"><i class="fab fa-line"></a></i></div>
       </div>
     </div>

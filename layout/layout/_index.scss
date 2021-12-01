@@ -160,9 +160,28 @@
         align-items: center;
 
         .feature-text-wrapper {
-          width: 597px;
+          width: 767px;
           height: 575px;
           position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+
+          // 特徴のタイトル
+          .feature-title {
+            width: 527px;
+            font-family: $noto-serif;
+            font-size: 28px;
+            font-weight: 300;
+            line-height: 40px;
+          }
+
+          .feature-sentence {
+            width: 512px;
+            line-height: 50px;
+            margin-top: 60px;
+          }
 
           // 特徴のテキストボックス（奇数）
           .feature-text-box {
@@ -173,31 +192,18 @@
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
-            z-index: 300;
+            z-index: 2;
             position: absolute;
-            left: 190px;
-
-            // 特徴のタイトル
-            .feature-title {
-              width: 527px;
-              font-family: $noto-serif;
-              font-size: 28px;
-              font-weight: 300;
-              line-height: 40px;
-            }
-
-            .feature-sentence {
-              width: 512px;
-              line-height: 50px;
-              margin-top: 60px;
-            }
+            top: 20px;
+            left: 170px;
           }
         }
 
         .feature-image {
-          width: 800px;
-          height: 687px;
+          width: 720px;
+          height: 618px;
           background-color: aqua;
+          z-index: 20;
         }
       }
 
@@ -209,10 +215,31 @@
           width: 597px;
           height: 575px;
           position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          flex-direction: column;
+          z-index: 3000;
+
+          // 特徴のタイトル
+          .feature-title {
+            width: 527px;
+            font-family: $noto-serif;
+            font-size: 28px;
+            font-weight: 300;
+            line-height: 40px;
+          }
+
+          .feature-sentence {
+            width: 512px;
+            line-height: 50px;
+            margin-top: 60px;
+          }
 
           // 特徴のテキストボックス（偶数）
           .feature-text-box {
             width: 597px;
+            width: 150px;
             height: 575px;
             background-color: $back-beige;
             display: flex;
@@ -221,24 +248,13 @@
             flex-direction: column;
             z-index: 300;
             position: absolute;
-
-            left: -190px;
-
-            // 特徴のタイトル
-            .feature-title {
-              width: 527px;
-              font-family: $noto-serif;
-              font-size: 28px;
-              font-weight: 300;
-              line-height: 40px;
-            }
-
-            .feature-sentence {
-              width: 540px;
-              line-height: 50px;
-              margin-top: 60px;
-            }
+            left: -150px;
           }
+        }
+        .feature-image {
+          width: 800px;
+          height: 687px;
+          background-color: aqua;
         }
       }
     }

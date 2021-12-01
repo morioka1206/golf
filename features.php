@@ -22,14 +22,15 @@
 
         <div class="feature">
           <div class="feature-text-wrapper">
-            <div class="feature-text-box">
-              <div class="feature-title">
-                <p><?php echo SCF::get('feature-title') ?></p>
-              </div>
-              <div class="feature-sentence">
-                <p><?php echo SCF::get('feature-content') ?></p>
-              </div>
+
+            <div class="feature-title">
+              <p><?php echo SCF::get('feature-title') ?></p>
             </div>
+            <div class="feature-sentence">
+              <p><?php echo SCF::get('feature-content') ?></p>
+            </div>
+            <!-- <div class="feature-text-box">
+            </div> -->
           </div>
           <div class="feature-image"><?php $image = SCF::get('image');
                                       echo wp_get_attachment_image($image, 'large'); ?></div>
