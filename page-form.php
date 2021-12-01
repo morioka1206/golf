@@ -28,7 +28,7 @@
       <div class="select-form-inquiry">
         <label>お問い合わせ内容</label>
         <div class="form-required">必須</div>
-        <select name="お問い合わせ内容" class="form-select-option" id="form" required>
+        <select name="お問い合わせ内容" class="form-select-option" id="form">
           <option selected disabled>選択してください</option>
           <option value="料金について">料金について</option>
           <option value="改善してほしい">改善して欲しい</option>
@@ -158,13 +158,14 @@
         <label for="_formrun_gotcha">If you are a human, ignore this field</label>
         <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
       </div>
-
       <a href="javascript:void(0)" class="btn btn-default" data-formrun-back-button>戻る</a>
 
       <button type="submit" class="form-submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">
         <p>確認画面へ進む</p>
       </button>
     </form>
+
+    <?php echo do_shortcode('[mwform_formkey key="183"]') ?>
 
 
   </div>

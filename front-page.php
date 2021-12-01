@@ -156,19 +156,19 @@
     <p> フォローして最新情報をGET</p>
   </div>
   <div class="sixth-sns-buttons">
-    <a href="#">
+    <a href="https://www.facebook.com/Golfers24-107676011730422/">
       <div class="sixth-sns-button">
         <i class="fab fa-facebook-square sixth-sns-icon"></i>
         <p>Facebook</p>
       </div>
     </a>
-    <a href="#">
+    <a href="https://www.facebook.com/Golfers24-107676011730422/">
       <div class="sixth-sns-button">
         <i class="fab fa-instagram sixth-sns-icon"></i>
         <p>Instagram</p>
       </div>
     </a>
-    <a href="#">
+    <a href="https://lin.ee/7Ii8MCV">
       <div class="sixth-sns-button">
         <i class="fab fa-line sixth-sns-icon"></i>
         <p>公式LINE</p>
