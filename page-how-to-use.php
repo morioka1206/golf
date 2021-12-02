@@ -3,11 +3,11 @@
 
 <div class="how-to-use-wrapper">
   <div class="page-title">How to use</div>
-  <div class="how-title">GOLFERS24ご利用の流れ</div>
+  <div class="how-title">GOLFERS24ご利用の流れ・体験予約</div>
   <div class="how-to-use-contents">
     <!-- トライアル利用 -->
     <div class="trial-use">
-      <div class="trial-title">トライアル利用</div>
+      <div class="trial-title">体験予約</div>
       <div class="trial-steps">
 
         <?php
