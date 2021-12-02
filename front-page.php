@@ -79,6 +79,7 @@
         'post_type' => 'store',
         // 全件取得、数を指定すればその数だけ取得する。
         'posts_per_page' => 3,
+        'order' => 'ASC',
       );
       $st_query = new WP_Query($args);
       ?>
@@ -89,7 +90,9 @@
 
           <!-- 店舗1 -->
           <div class="forth-section-store">
-            <div class="forth-section-store-image"><img src="<?php echo get_template_directory_uri(); ?>/images/store-image1.png" alt=""></div>
+            <a href="<?php the_permalink(); ?>">
+              <div class="forth-section-store-image"><img src="<?php echo get_template_directory_uri(); ?>/images/store-image1.png" alt=""></div>
+            </a>
             <div class="forth-section-store-infomation">
               <div class="forth-section-store-name"><?php echo SCF::get('store-name'); ?></div>
               <div class="forth-section-store-address">
@@ -98,15 +101,15 @@
               </div>
             </div>
           </div>
-
+        <?php endwhile; ?>
+      <?php endif; ?>
     </div>
 
-  <?php endwhile; ?>
-<?php endif; ?>
-<!-- VIEW MOREボタン -->
-<div class="forth-section-view-more">
-  <a href="<?php echo esc_url(home_url('/locations')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/view-more-button.svg" alt=""></a>
-</div>
+
+    <!-- VIEW MOREボタン -->
+    <div class="forth-section-view-more">
+      <a href="<?php echo esc_url(home_url('/locations')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/view-more-button.svg" alt=""></a>
+    </div>
   </div>
 </div>
 

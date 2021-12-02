@@ -180,7 +180,7 @@
             align-items: flex-start;
             flex-direction: column;
             z-index: 300;
-            transform: translateX(40px);
+            transform: translateX(80px);
             // position: absolute;
             // left: 210px;
 
@@ -205,7 +205,7 @@
           width: 800px;
           height: 687px;
           background-color: aqua;
-          transform: translateX(-40px);
+          transform: translateX(-80px);
         }
       }
 
@@ -232,7 +232,7 @@
             // position: absolute;
 
             // left: -170px;
-            transform: translateX(-40px);
+            transform: translateX(-80px);
 
             // 特徴のタイトル
             .feature-title {
@@ -254,7 +254,7 @@
           width: 800px;
           height: 687px;
           background-color: aqua;
-          transform: translateX(40px);
+          transform: translateX(80px);
         }
       }
     }
@@ -347,6 +347,7 @@
           margin-top: 33px;
 
           .forth-section-store-name {
+            height: 45px;
             font-size: 20px;
             font-weight: 700;
             line-height: 23px;
@@ -356,7 +357,7 @@
           .forth-section-store-address {
             font-size: 14px;
             line-height: 23px;
-            margin-top: 12px;
+            margin-top: 14px;
           }
         }
       }
@@ -365,7 +366,11 @@
     .forth-section-view-more {
       width: 182px;
       height: 50px;
-      margin: 102px auto 200px;
+      margin: 122px auto 200px;
+    }
+
+    .forth-section-view-more:hover {
+      opacity: 0.7;
     }
   }
 
@@ -431,6 +436,10 @@
       justify-content: center;
       align-items: center;
       margin-top: 102px;
+    }
+
+    .fifth-section-view-more:hover {
+      opacity: 0.7;
     }
   }
 
@@ -818,6 +827,13 @@
       width: 182px;
       height: 50px;
       margin: 100px auto 150px;
+      background-color: $back-darkbrown;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: $montserrat;
+      color: white;
+      letter-spacing: 0.1rem;
     }
   }
 

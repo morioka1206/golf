@@ -7,6 +7,7 @@
     <?php
     $args = array(
       'post_type' => 'store',
+      'order' => 'ASC',
       'posts_per_page' => -1,
     );
     $st_query = new WP_Query($args);
@@ -17,12 +18,14 @@
 
         <!-- 店舗1 -->
         <div class="store">
-          <div class="store-image">
-            <?php
-            $image = SCF::get('image');
-            echo wp_get_attachment_image($image, 'medium');
-            ?>
-          </div>
+          <a href="<?php the_permalink(); ?>">
+            <div class="store-image">
+              <?php
+              $image = SCF::get('image');
+              echo wp_get_attachment_image($image, 'medium');
+              ?>
+            </div>
+          </a>
           <div class="store-name"><?php echo SCF::get('store-name'); ?></div>
           <div class="store-address">
             <p>〒<?php echo SCF::get('postal-code'); ?></p>
