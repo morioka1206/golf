@@ -84,7 +84,7 @@
         <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
 
 
-          <div class="top-introduction-text">
+          <div class="top-introduction-text animation">
             <div class="top-introduction-title"><?php echo SCF::get('title') ?></div>
             <div class="top-introduction-sentence">
               <?php echo SCF::get('introduction-text'); ?>
@@ -95,6 +95,7 @@
             echo wp_get_attachment_image($image, 'larage'); ?>
           </div>
     </div>
+
 
   <?php endwhile; ?>
 <?php endif; ?>
@@ -109,7 +110,7 @@
 
   <!-- 店舗一覧 -->
   <div class="forth-section">
-    <div class="forth-section-list-of-stores">
+    <div class="forth-section-list-of-stores animation">
       <!-- 店舗一覧タイトル -->
       <div class="forth-section-stores-title">店舗一覧</div>
       <!-- 店舗一覧 -->
@@ -154,7 +155,7 @@
   </div>
 
   <!-- NEWS -->
-  <div class="fifth-section">
+  <div class="fifth-section animation">
     <div class="fifth-section-title">NEWS</div>
     <div class="fifth-section-list-of-news">
 
@@ -190,7 +191,7 @@
 
   <!-- SNS -->
   <div class="sixth-section">
-    <div class="sixth-section-follow-message">
+    <div class="sixth-section-follow-message animation">
       <p>各種SNS更新中！フォローして最新情報をGET</p>
     </div>
     <div class="sm-sixth-section-follow-message">
@@ -246,32 +247,33 @@
     };
   </script>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>
+    $(function() {
+      var h = $(window).height();
+
+      $('#wrap').css('display', 'none');
+      $('#loader-bg ,#loader').height(h).css('display', 'block');
+    });
+
+    $(window).load(function() { //全ての読み込みが完了したら実行
+      $('#loader-bg').delay(900).fadeOut(800);
+      $('#loader').delay(600).fadeOut(400);
+      $('#wrap').css('display', 'block');
+    });
+
+    //10秒たったら強制的にロード画面を非表示
+    $(function() {
+      setTimeout('stopload()', 10000);
+    });
+
+    function stopload() {
+      $('#wrap').css('display', 'block');
+      $('#loader-bg').delay(1200).fadeOut(900);
+      $('#loader').delay(700).fadeOut(600);
+    }
+  </script>
+
+
+  <?php get_footer(); ?>
 </div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>
-  $(function() {
-    var h = $(window).height();
-
-    $('#wrap').css('display', 'none');
-    $('#loader-bg ,#loader').height(h).css('display', 'block');
-  });
-
-  $(window).load(function() { //全ての読み込みが完了したら実行
-    $('#loader-bg').delay(900).fadeOut(800);
-    $('#loader').delay(600).fadeOut(400);
-    $('#wrap').css('display', 'block');
-  });
-
-  //10秒たったら強制的にロード画面を非表示
-  $(function() {
-    setTimeout('stopload()', 10000);
-  });
-
-  function stopload() {
-    $('#wrap').css('display', 'block');
-    $('#loader-bg').delay(1200).fadeOut(900);
-    $('#loader').delay(700).fadeOut(600);
-  }
-</script>
-<?php get_footer(); ?>

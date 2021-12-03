@@ -106,6 +106,7 @@
         background-color: white;
         display: flex;
         justify-content: flex-start;
+        transform: translateY(-10px);
       }
 
       .first-news {
@@ -200,6 +201,15 @@
     padding: 0 100px;
     margin: 150px 0;
 
+    @keyframes sliden {
+      0% {
+        clip-path: inset(0 0 0 100%);
+      }
+      100% {
+        clip-path: inset(0);
+      }
+    }
+
     // 文章部分
     .top-introduction-text {
       color: $text-gray;
@@ -230,6 +240,8 @@
         width: 647px;
         height: 680px;
         object-fit: cover;
+        transition: all 0.9s;
+        animation: 2s linear sliden;
       }
     }
   }
