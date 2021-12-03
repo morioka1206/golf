@@ -50,8 +50,15 @@
         <?php endif; ?>
       </div>
     </div> -->
-    <a href="<?php echo esc_url(home_url('/')); ?>">
-      <div class="contact-us"><a href="<?php echo esc_url(home_url('/form')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/CONTACT US.svg" alt=""></a></div>
+    <a href="<?php echo esc_url(home_url('/form')); ?>">
+      <div class="contact-us">
+        <div class="contact-us-text">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/CONTACT US-text.svg" alt="">
+        </div>
+        <div class="contact-us-mail">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/mail.png" alt="">
+        </div>
+      </div>
     </a>
   </div>
   <!-- トップ画像下のGOLFERS24紹介 -->

@@ -141,11 +141,31 @@
     }
 
     // トップ画像右下のコンタクトアス
+    @keyframes rotation {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
     .contact-us {
       position: absolute;
       top: 573px;
       left: 1320px;
       z-index: 300;
+    }
+
+    .contact-us-text {
+      animation: 4s linear infinite rotation;
+      position: relative;
+    }
+
+    .contact-us-mail {
+      position: absolute;
+      top: 33%;
+      left: 30%;
     }
   }
 
@@ -603,6 +623,10 @@
     .header-smartphone {
       // filter: brightness(0) invert(1);
       background-color: transparent;
+    }
+
+    .first-news {
+      display: none;
     }
 
     // ファーストビュー画像
