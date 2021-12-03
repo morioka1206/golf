@@ -3,6 +3,32 @@
 <div class="top-section">
   <!-- トップ画像 -->
   <div class="first-view-images">
+
+    <div class="first-news-wrapper">
+      <div class="first-news swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide news-contents">
+            <div class="news-tag">NEWS</div>
+            <div class="news-date">2021.00.00</div>
+            <div class="news-title">新着ニュースのタイトル入ります。</div>
+          </div>
+          <div class="swiper-slide news-contents">
+            <div class="news-tag">NEWS</div>
+            <div class="news-date">2021.00.00</div>
+            <div class="news-title">新着ニュースのタイトル入ります。</div>
+          </div>
+          <div class="swiper-slide news-contents">
+            <div class="news-tag">NEWS</div>
+            <div class="news-date">2021.00.00</div>
+            <div class="news-title">新着ニュースのタイトル入ります。</div>
+          </div>
+        </div>
+        <!-- 前ページボタン -->
+        <div class="swiper-button-prev"></div>
+        <!-- 次ページボタン -->
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
     <!-- <div class="swiper slider1">
       <div class="swiper-wrapper">
         <?php

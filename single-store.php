@@ -139,12 +139,12 @@
       <!-- 店舗電話番号 -->
       <div class="store-detail-tel">
         <div class="store-detail-tel-title">TEL</div>
-        <div class="store-detail-tel-content"><?php echo SCF::get('tel') ?></div>
+        <div class="store-detail-tel-content"><a href="tel:<?php echo SCF::get('tel') ?>"><?php echo SCF::get('tel') ?></a></div>
       </div>
       <!-- 店舗メールアドレス -->
       <div class="store-detail-mail">
         <div class="store-detail-mail-title">Mail</div>
-        <div class="store-detail-mail-content"><?php echo SCF::get('email') ?></div>
+        <div class="store-detail-mail-content"><a href="mailto:<?php echo SCF::get('email') ?>"><?php echo SCF::get('email') ?></a></div>
       </div>
       <!-- 店舗営業時間 -->
       <div class="store-detail-hours">

@@ -46,6 +46,43 @@
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js">
 </script>
 
+<!-- ファーストビューのニュースのスライド -->
+<script>
+  let first_news = new Swiper('.first-news', {
+    // オプション
+
+    // 繰り返し表示する
+    loop: true,
+
+    // 自動で変わる
+    autoplay: {
+      delay: 4000
+    },
+
+
+    // 複製する数を指定
+    loopedSlides: 6,
+
+    // ページネーション
+    pagination: {
+      el: '.swiper-pagination',
+      // クリックに反応させる
+      clickable: true
+    },
+
+    // ナビゲーションの矢印
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // 必要なオプションを指定する
+  });
+</script>
+
+
+
+<!-- モバイルの特徴紹介のスライド -->
 <script>
   let store_detail_images = new Swiper('.store-detail-images', {
     // オプション
@@ -93,6 +130,7 @@
 
 
 
+<!-- ファーストビューの画像のスライド -->
 <script>
   let slider1 = new Swiper('.slider1', {
     // オプション
