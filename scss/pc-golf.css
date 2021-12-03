@@ -45,6 +45,32 @@ body {
   padding-top: 97px;
 }
 
+@-webkit-keyframes loader {
+  0% {
+    -webkit-clip-path: inset(0 0 0 100%);
+            clip-path: inset(0 0 0 100%);
+  }
+  100% {
+    -webkit-clip-path: inset(0);
+            clip-path: inset(0);
+  }
+}
+
+@keyframes loader {
+  0% {
+    -webkit-clip-path: inset(0 0 0 100%);
+            clip-path: inset(0 0 0 100%);
+  }
+  100% {
+    -webkit-clip-path: inset(0);
+            clip-path: inset(0);
+  }
+}
+#loader {
+  -webkit-animation: 0.5s linear loader;
+          animation: 0.5s linear loader;
+}
+
 /*アニメーション要素のスタイル*/
 .animation {
   opacity: 0;
@@ -73,12 +99,28 @@ body {
           transform: translateY(100px);
 }
 
+.animation4 {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-clip-path: inset(0 0 0 100%);
+          clip-path: inset(0 0 0 100%);
+}
+
 /*アニメーション要素までスクロールした時のスタイル*/
 .active {
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.intro-active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-clip-path: inset(0);
+          clip-path: inset(0);
 }
 
 @media screen and (min-width: 601px) {
@@ -633,6 +675,8 @@ footer .copyright {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   .top-section .first-view-images .first-news {
     width: 100%;
@@ -800,8 +844,6 @@ footer .copyright {
        object-fit: cover;
     -webkit-transition: all 0.9s;
     transition: all 0.9s;
-    -webkit-animation: 2s linear sliden;
-            animation: 2s linear sliden;
   }
 
   .second-section {

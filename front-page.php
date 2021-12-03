@@ -90,7 +90,7 @@
               <?php echo SCF::get('introduction-text'); ?>
             </div>
           </div>
-          <div class="top-introduction-image">
+          <div class="top-introduction-image animation4 ">
             <?php $image = SCF::get('image');
             echo wp_get_attachment_image($image, 'larage'); ?>
           </div>
@@ -198,7 +198,7 @@
       <p>各種SNS更新中！</p>
       <p> フォローして最新情報をGET</p>
     </div>
-    <div class="sixth-sns-buttons">
+    <div class="sixth-sns-buttons animation">
       <a href="https://www.facebook.com/Golfers24-107676011730422/">
         <div class="sixth-sns-button">
           <i class="fab fa-facebook-square sixth-sns-icon"></i>

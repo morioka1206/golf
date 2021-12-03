@@ -86,6 +86,20 @@ body {
   padding-top: 97px;
 }
 
+// ローディング画面アニメーション
+@keyframes loader {
+  0% {
+    clip-path: inset(0 0 0 100%);
+  }
+  100% {
+    clip-path: inset(0);
+  }
+}
+
+#loader {
+  animation: 0.5s linear loader;
+}
+
 // ふわっとアニメーション
 /*アニメーション要素のスタイル*/
 .animation {
@@ -109,11 +123,24 @@ body {
   transform: translateY(100px);
 }
 
+.animation4 {
+  opacity: 0;
+  visibility: hidden;
+  transition: 3s;
+  clip-path: inset(0 0 0 100%);
+}
+
 /*アニメーション要素までスクロールした時のスタイル*/
 .active {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+
+.intro-active {
+  opacity: 1;
+  visibility: visible;
+  clip-path: inset(0);
 }
 
 @import "../layout/layout/header";

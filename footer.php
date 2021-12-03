@@ -200,6 +200,7 @@
   });
 </script>
 
+<!-- ふわっとアニメーション -->
 <script>
   $(function() {
     $(window).on('load scroll', function() {
@@ -220,6 +221,52 @@
   });
 </script>
 
+<script>
+  $(function() {
+    $(window).on('load scroll', function() {
+      $('.animation4').each(function() {
+        //ターゲットの位置を取得
+        var target = $(this).offset().top;
+        //スクロール量を取得
+        var scroll = $(window).scrollTop();
+        //ウィンドウの高さを取得
+        var height = $(window).height();
+        //ターゲットまでスクロールするとフェードインする
+        if (scroll > target - height) {
+          //クラスを付与
+          $(this).addClass('intro-active');
+        }
+      });
+    });
+  });
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+  $(function() {
+    var h = $(window).height();
+
+    $('#wrap').css('display', 'none');
+    $('#loader-bg ,#loader').height(h).css('display', 'block');
+  });
+
+  $(window).load(function() { //全ての読み込みが完了したら実行
+    $('#loader-bg').delay(400).fadeOut(600);
+    $('#loader').delay(400).fadeOut(800);
+    $('#wrap').css('display', 'block');
+  });
+
+  //10秒たったら強制的にロード画面を非表示
+  $(function() {
+    setTimeout('stopload()', 10000);
+  });
+
+  function stopload() {
+    $('#wrap').css('display', 'block');
+    $('#loader-bg').delay(1200).fadeOut(900);
+    $('#loader').delay(700).fadeOut(600);
+  }
+</script>
 
 
 
