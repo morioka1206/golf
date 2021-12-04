@@ -15,8 +15,8 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!-- formrun -->
-  <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+  <!-- 無限スクロール -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jscroll/2.4.1/jquery.jscroll.min.js"></script>
   <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
   <title>GOLFERS24</title>
   <?php
