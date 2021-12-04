@@ -157,6 +157,183 @@
       }
     }
   }
+  .hour-plan {
+    width: 1166px;
+    margin: 0 auto;
+    margin-top: 150px;
+    // position: relative;
+    margin: 0 auto;
+
+    .page-title {
+      font-family: $montserrat;
+      color: transparent;
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 38px;
+      -webkit-text-stroke: 1px $text-beige;
+      display: none;
+    }
+
+    .how-title {
+      font-weight: 300;
+      font-size: 36px;
+      line-height: 51.73px;
+      font-family: $noto-serif;
+      display: flex;
+      justify-content: center;
+    }
+
+    .hour-table {
+      margin-top: 100px;
+      margin-bottom: 180px;
+
+      table {
+        width: 1166px;
+        height: 748px;
+        font-size: 18px;
+        padding: 0 60px;
+
+        .play-hours {
+          text-align: left;
+        }
+
+        th {
+          height: 78px;
+          background-color: $back-darkbrown;
+          color: white;
+          text-align: left;
+        }
+
+        th:nth-of-type(1) {
+          padding-left: 60px;
+          width: 42%;
+        }
+
+        th:nth-of-type(2) {
+          padding: 0;
+          width: 32%;
+          padding-left: 50px;
+        }
+
+        th:nth-of-type(3) {
+          padding-right: 60px;
+          width: 26%;
+        }
+
+        td {
+          height: 103px;
+          border-bottom: 1px solid $text-black;
+        }
+
+        td:nth-of-type(1) {
+          padding-left: 60px;
+        }
+
+        td:nth-of-type(2) {
+          // padding-left: 30px;
+        }
+
+        td:nth-of-type(3) {
+          padding-right: 60px;
+        }
+
+        th:last-child,
+        td:last-child {
+          text-align: right;
+        }
+
+        .table-premium {
+          height: 156px;
+          background-color: $back-beige;
+
+          // おすすめ
+          .premium-plan::before {
+            content: "";
+            background-image: url("../images/おすすめ.svg");
+            display: inline-block;
+            width: 66px;
+            height: 22px;
+            background-size: contain;
+            margin-right: 10px;
+            margin-bottom: 3px;
+          }
+
+          // 年間契約で割引
+          .premium-plan::after {
+            content: "";
+            background-image: url("../images/年間契約.svg");
+            display: inline-block;
+            width: 116px;
+            height: 24px;
+            background-size: contain;
+            margin-left: 10px;
+            margin-bottom: 3px;
+          }
+
+          // 20％オフ
+          .premium-discount:before {
+            content: "";
+            background-image: url("../images/premiumoff.svg");
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            background-size: contain;
+            margin-right: 18px;
+            margin-bottom: 2px;
+          }
+        }
+
+        .allday::before {
+          content: "";
+          background-image: url("../images/24hours.svg");
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          background-size: contain;
+          margin-right: 28px;
+          margin-bottom: 2px;
+        }
+
+        .day::before {
+          content: "";
+          background-image: url("../images/dayhours.svg");
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          background-size: contain;
+          margin-right: 28px;
+          margin-bottom: 2px;
+        }
+
+        .night::before {
+          content: "";
+          background-image: url("../images/nighthours.svg");
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          background-size: contain;
+          margin-right: 28px;
+          margin-bottom: 2px;
+        }
+
+        .midnight::before {
+          content: "";
+          background-image: url("../images/midnight.svg");
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          background-size: contain;
+          margin-right: 28px;
+          margin-bottom: 2px;
+        }
+      }
+    }
+
+    .hour-table-scrollbar-thumb {
+      background: #ffe6ea;
+      background-color: red;
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -309,6 +486,154 @@
           width: 56px;
         }
       }
+    }
+  }
+
+  .hour-plan {
+    width: 337px;
+    margin: 0 auto;
+    margin-top: 150px;
+
+    .page-title {
+      font-family: $montserrat;
+      color: transparent;
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 38px;
+      -webkit-text-stroke: 1px $text-beige;
+    }
+
+    .how-title {
+      font-weight: 300;
+      font-size: 28px;
+      line-height: 40px;
+      font-family: $noto-serif;
+      margin-top: 20px;
+    }
+
+    .hour-table {
+      margin-top: 100px;
+      margin-bottom: 180px;
+      overflow-x: auto;
+      white-space: nowrap;
+      scrollbar-color: black yellow;
+
+      table {
+        width: 591px;
+        height: 379px;
+        font-size: 10px;
+
+        .play-hours {
+          padding-left: 40px;
+        }
+
+        th {
+          background-color: $back-darkbrown;
+          color: white;
+          text-align: left;
+          padding: 0 20px;
+        }
+
+        td {
+          height: 52px;
+          border-bottom: 1px solid $text-black;
+          padding: 0 20px;
+        }
+
+        th:last-child,
+        td:last-child {
+          text-align: right;
+        }
+
+        .table-premium {
+          height: 75px;
+          background-color: $back-beige;
+
+          // おすすめ
+          .premium-plan::before {
+            content: "";
+            background-image: url("../images/おすすめ.svg");
+            display: inline-block;
+            width: 33px;
+            height: 11px;
+            background-size: contain;
+            margin-right: 5px;
+          }
+
+          // 年間契約で割引
+          .premium-plan::after {
+            content: "";
+            background-image: url("../images/年間契約.svg");
+            display: inline-block;
+            width: 58px;
+            height: 12px;
+            background-size: contain;
+            margin-left: 4px;
+            margin-bottom: 2px;
+          }
+
+          // 20％オフ
+          .premium-discount:before {
+            content: "";
+            background-image: url("../images/premiumoff.svg");
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            background-size: contain;
+            margin-right: 8px;
+            margin-bottom: 2px;
+          }
+        }
+
+        .allday::before {
+          content: "";
+          background-image: url("../images/24hours.svg");
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          background-size: contain;
+          margin-right: 8px;
+          margin-bottom: 2px;
+        }
+
+        .day::before {
+          content: "";
+          background-image: url("../images/dayhours.svg");
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          background-size: contain;
+          margin-right: 8px;
+          margin-bottom: 2px;
+        }
+
+        .night::before {
+          content: "";
+          background-image: url("../images/nighthours.svg");
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          background-size: contain;
+          margin-right: 8px;
+          margin-bottom: 2px;
+        }
+
+        .midnight::before {
+          content: "";
+          background-image: url("../images/midnight.svg");
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          background-size: contain;
+          margin-right: 8px;
+          margin-bottom: 2px;
+        }
+      }
+    }
+
+    .hour-table-scrollbar-thumb {
+      background: #ffe6ea;
+      background-color: red;
     }
   }
 }

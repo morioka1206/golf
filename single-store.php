@@ -155,11 +155,58 @@
     <?php endwhile; ?>
   </div>
 
+  <!-- プランごとの利用時間 -->
+  <div class="hour-plan">
+    <div class="page-title">Member Fee</div>
+    <div class="how-title">料金プラン</div>
+
+    <!-- 利用時間の表 -->
+    <div class="hour-table">
+      <table>
+        <tr>
+          <th>プラン</th>
+          <th class="play-hours">利用時間</th>
+          <th>価格(税込)</th>
+        </tr>
+        <tr>
+          <td>レギュラープラン</td>
+          <td class="allday">0時〜24時</td>
+          <td>33,000円</td>
+        </tr>
+        <tr class="table-premium">
+          <td class="premium-plan">プレミアムプラン</td>
+          <td class="allday">0時〜24時</td>
+          <td class="premium-discount">26,400円</td>
+        </tr>
+        <tr>
+          <td>デイプラン</td>
+          <td class=day>6時〜17時</td>
+          <td>24,200円</td>
+        </tr>
+        <tr>
+          <td>ナイトプラン</td>
+          <td class="night">17時〜24時</td>
+          <td>22,000円</td>
+        </tr>
+        <tr>
+          <td>ミッドナイトプラン</td>
+          <td class="midnight">0時〜6時</td>
+          <td>19,800円</td>
+        </tr>
+        <tr>
+          <td>入会金</td>
+          <td></td>
+          <td>11,000円</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
 
 
 
   <!-- ご利用の流れ -->
-  <div id="third-section"></div>
+  <?php get_template_part('third-section') ?>
 
 
   <!-- GOLFERS24の特徴 -->
