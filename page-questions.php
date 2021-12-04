@@ -1,10 +1,3 @@
-<div id="loader-bg">
-  <div id="loader">
-    <img src="<?php echo get_theme_file_uri(); ?>/images/loading_logo.png" alt="Now Loading..." />
-    <!-- <p>Now Loading...</p> -->
-  </div>
-</div>
-<div id="wrap">
   <?php get_header(); ?>
 
   <div class="questions-wrapper">
@@ -133,4 +126,3 @@
 
   <!-- フッター -->
   <?php get_footer(); ?>
-</div>
