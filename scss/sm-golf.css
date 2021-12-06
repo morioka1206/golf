@@ -95,8 +95,8 @@ body {
 
 @-webkit-keyframes loader {
   0% {
-    -webkit-clip-path: inset(0 0 0 100%);
-            clip-path: inset(0 0 0 100%);
+    -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
   }
   100% {
     -webkit-clip-path: inset(0);
@@ -106,8 +106,8 @@ body {
 
 @keyframes loader {
   0% {
-    -webkit-clip-path: inset(0 0 0 100%);
-            clip-path: inset(0 0 0 100%);
+    -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
   }
   100% {
     -webkit-clip-path: inset(0);
@@ -115,8 +115,8 @@ body {
   }
 }
 #loader {
-  -webkit-animation: 0.5s linear loader;
-          animation: 0.5s linear loader;
+  -webkit-animation: 1s linear infinite loader;
+          animation: 1s linear infinite loader;
 }
 
 /*アニメーション要素のスタイル*/
@@ -145,15 +145,6 @@ body {
   transition: 1s;
   -webkit-transform: translateY(100px);
           transform: translateY(100px);
-}
-
-.animation4 {
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: 3s;
-  transition: 3s;
-  -webkit-clip-path: inset(0 0 0 100%);
-          clip-path: inset(0 0 0 100%);
 }
 
 /*アニメーション要素までスクロールした時のスタイル*/
@@ -785,8 +776,8 @@ footer .copyright {
     z-index: 1;
   }
   .top-section .contact-us-text {
-    -webkit-animation: 4s linear infinite rotation;
-            animation: 4s linear infinite rotation;
+    -webkit-animation: 7.5s linear infinite rotation;
+            animation: 7.5s linear infinite rotation;
     position: relative;
   }
   .top-section .contact-us-mail {
@@ -811,8 +802,8 @@ footer .copyright {
   }
   @-webkit-keyframes sliden {
     0% {
-      -webkit-clip-path: inset(0 0 0 100%);
-              clip-path: inset(0 0 0 100%);
+      -webkit-clip-path: inset(0 100% 0 0);
+              clip-path: inset(0 100% 0 0);
     }
     100% {
       -webkit-clip-path: inset(0);
@@ -821,8 +812,8 @@ footer .copyright {
   }
   @keyframes sliden {
     0% {
-      -webkit-clip-path: inset(0 0 0 100%);
-              clip-path: inset(0 0 0 100%);
+      -webkit-clip-path: inset(0 100% 0 0);
+              clip-path: inset(0 100% 0 0);
     }
     100% {
       -webkit-clip-path: inset(0);
@@ -1485,11 +1476,10 @@ footer .copyright {
     width: 340px;
   }
   .second-section .sm-second-section-features .feature .feature-text-wrapper .feature-text-box {
-    width: 340px;
+    width: 310px;
     background-color: #edeae2;
   }
   .second-section .sm-second-section-features .feature .feature-text-wrapper .feature-text-box .feature-title {
-    width: 340px;
     font-family: "Noto Serif JP", serif;
     font-size: 18px;
     font-weight: 300;
@@ -1498,7 +1488,6 @@ footer .copyright {
     margin: 0 auto;
   }
   .second-section .sm-second-section-features .feature .feature-text-wrapper .feature-text-box .feature-sentence {
-    width: 340px;
     font-size: 12px;
     line-height: 23px;
     margin-top: 20px;
@@ -2873,6 +2862,158 @@ footer .copyright {
   .store-details-wrapper .store-detail-information-wrapper .store-detail-information .store-detail-hours .store-detail-hours-title {
     width: 56px;
   }
+
+  .hour-plan {
+    width: 1166px;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin: 0 auto;
+  }
+  .hour-plan .page-title {
+    font-family: "Montserrat", sans-serif;
+    color: transparent;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 38px;
+    -webkit-text-stroke: 1px #cbc3ad;
+    display: none;
+  }
+  .hour-plan .how-title {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 51.73px;
+    font-family: "Noto Serif JP", serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hour-plan .hour-table {
+    margin-top: 100px;
+    margin-bottom: 180px;
+  }
+  .hour-plan .hour-table table {
+    width: 1166px;
+    height: 748px;
+    font-size: 18px;
+    padding: 0 60px;
+  }
+  .hour-plan .hour-table table .play-hours {
+    text-align: left;
+  }
+  .hour-plan .hour-table table th {
+    height: 78px;
+    background-color: #483b19;
+    color: white;
+    text-align: left;
+  }
+  .hour-plan .hour-table table th:nth-of-type(1) {
+    padding-left: 60px;
+    width: 42%;
+  }
+  .hour-plan .hour-table table th:nth-of-type(2) {
+    padding: 0;
+    width: 32%;
+    padding-left: 50px;
+  }
+  .hour-plan .hour-table table th:nth-of-type(3) {
+    padding-right: 60px;
+    width: 26%;
+  }
+  .hour-plan .hour-table table td {
+    height: 103px;
+    border-bottom: 1px solid #555555;
+  }
+  .hour-plan .hour-table table td:nth-of-type(1) {
+    padding-left: 60px;
+  }
+  .hour-plan .hour-table table td:nth-of-type(3) {
+    padding-right: 60px;
+  }
+  .hour-plan .hour-table table th:last-child,
+.hour-plan .hour-table table td:last-child {
+    text-align: right;
+  }
+  .hour-plan .hour-table table .table-premium {
+    height: 156px;
+    background-color: #edeae2;
+  }
+  .hour-plan .hour-table table .table-premium .premium-plan::before {
+    content: "";
+    background-image: url("../images/おすすめ.svg");
+    display: inline-block;
+    width: 66px;
+    height: 22px;
+    background-size: contain;
+    margin-right: 10px;
+    margin-bottom: 3px;
+  }
+  .hour-plan .hour-table table .table-premium .premium-plan::after {
+    content: "";
+    background-image: url("../images/年間契約.svg");
+    display: inline-block;
+    width: 116px;
+    height: 24px;
+    background-size: contain;
+    margin-left: 10px;
+    margin-bottom: 3px;
+  }
+  .hour-plan .hour-table table .table-premium .premium-discount:before {
+    content: "";
+    background-image: url("../images/premiumoff.svg");
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-size: contain;
+    margin-right: 18px;
+    margin-bottom: 2px;
+  }
+  .hour-plan .hour-table table .allday::before {
+    content: "";
+    background-image: url("../images/24hours.svg");
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    margin-right: 28px;
+    margin-bottom: 2px;
+  }
+  .hour-plan .hour-table table .day::before {
+    content: "";
+    background-image: url("../images/dayhours.svg");
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    margin-right: 28px;
+    margin-bottom: 2px;
+  }
+  .hour-plan .hour-table table .night::before {
+    content: "";
+    background-image: url("../images/nighthours.svg");
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    margin-right: 28px;
+    margin-bottom: 2px;
+  }
+  .hour-plan .hour-table table .midnight::before {
+    content: "";
+    background-image: url("../images/midnight.svg");
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    margin-right: 28px;
+    margin-bottom: 2px;
+  }
+  .hour-plan .hour-table-scrollbar-thumb {
+    background: #ffe6ea;
+    background-color: red;
+  }
 }
 @media screen and (max-width: 600px) {
   .store-details-wrapper {
@@ -3018,6 +3159,134 @@ footer .copyright {
   }
   .sm-store-details-wrapper .store-detail-information .store-detail-hours .store-detail-hours-title {
     width: 56px;
+  }
+
+  .hour-plan {
+    width: 337px;
+    margin: 0 auto;
+    margin-top: 0px;
+  }
+  .hour-plan .page-title {
+    font-family: "Montserrat", sans-serif;
+    color: transparent;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 38px;
+    -webkit-text-stroke: 1px #cbc3ad;
+  }
+  .hour-plan .how-title {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 40px;
+    font-family: "Noto Serif JP", serif;
+    margin-top: 20px;
+  }
+  .hour-plan .hour-table {
+    margin-top: 100px;
+    margin-bottom: 180px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-color: black yellow;
+  }
+  .hour-plan .hour-table table {
+    width: 591px;
+    height: 379px;
+    font-size: 10px;
+  }
+  .hour-plan .hour-table table .play-hours {
+    padding-left: 40px;
+  }
+  .hour-plan .hour-table table th {
+    background-color: #483b19;
+    color: white;
+    text-align: left;
+    padding: 0 20px;
+  }
+  .hour-plan .hour-table table td {
+    height: 52px;
+    border-bottom: 1px solid #555555;
+    padding: 0 20px;
+  }
+  .hour-plan .hour-table table th:last-child,
+.hour-plan .hour-table table td:last-child {
+    text-align: right;
+  }
+  .hour-plan .hour-table table .table-premium {
+    height: 75px;
+    background-color: #edeae2;
+  }
+  .hour-plan .hour-table table .table-premium .premium-plan::before {
+    content: "";
+    background-image: url("../images/おすすめ.svg");
+    display: inline-block;
+    width: 33px;
+    height: 11px;
+    background-size: contain;
+    margin-right: 5px;
+  }
+  .hour-plan .hour-table table .table-premium .premium-plan::after {
+    content: "";
+    background-image: url("../images/年間契約.svg");
+    display: inline-block;
+    width: 58px;
+    height: 12px;
+    background-size: contain;
+    margin-left: 4px;
+    margin-bottom: 2px;
+  }
+  .hour-plan .hour-table table .table-premium .premium-discount:before {
+    content: "";
+    background-image: url("../images/premiumoff.svg");
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-size: contain;
+    margin-right: 8px;
+    margin-bottom: 2px;
+  }
+  .hour-plan .hour-table table .allday::before {
+    content: "";
+    background-image: url("../images/24hours.svg");
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    margin-right: 8px;
+    margin-bottom: 2px;
+  }
+  .hour-plan .hour-table table .day::before {
+    content: "";
+    background-image: url("../images/dayhours.svg");
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    margin-right: 8px;
+    margin-bottom: 2px;
+  }
+  .hour-plan .hour-table table .night::before {
+    content: "";
+    background-image: url("../images/nighthours.svg");
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    margin-right: 8px;
+    margin-bottom: 2px;
+  }
+  .hour-plan .hour-table table .midnight::before {
+    content: "";
+    background-image: url("../images/midnight.svg");
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    margin-right: 8px;
+    margin-bottom: 2px;
+  }
+  .hour-plan .hour-table-scrollbar-thumb {
+    background: #ffe6ea;
+    background-color: red;
   }
 }
 @media screen and (min-width: 601px) {

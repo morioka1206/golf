@@ -70,6 +70,10 @@
               color: $text-beige;
             }
 
+            a:hover {
+              opacity: 0.7;
+            }
+
             // ステップのタイトル
             .step-title {
               font-size: 20px;
@@ -382,6 +386,10 @@
       .hour-table-scrollbar-thumb {
         background: #ffe6ea;
         background-color: red;
+      }
+
+      .sm-arrow {
+        display: none;
       }
     }
   }
@@ -726,6 +734,15 @@
         .hour-table-scrollbar-thumb {
           background: #ffe6ea;
           background-color: red;
+        }
+
+        .sm-arrorw {
+          margin-top: 50px;
+          width: 300px;
+          height: 20px;
+          border-bottom: 1px solid $text-black;
+          border-right: 1px solid $text-black;
+          transform: skew(55deg);
         }
       }
     }

@@ -51,13 +51,17 @@
   let first_news = new Swiper('.first-news', {
     // オプション
 
+
     // 繰り返し表示する
     loop: true,
 
-    // 自動で変わる
+    //自動再生する場合
     autoplay: {
-      delay: 4000
+      delay: 4000, //4秒後に次の画像に代わる
     },
+    speed: 2100, //スライドのスピードをミリ秒で調整
+
+    slidesPerView: 1, //画像を何枚表示するか
 
 
     // 複製する数を指定
@@ -291,9 +295,8 @@
   });
 </script>
 
-
-</div>
 <?php wp_footer(); ?>
+</div>
 </body>
 
 </html>

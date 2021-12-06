@@ -199,6 +199,7 @@
           <td>11,000円</td>
         </tr>
       </table>
+      <div class="sm-arrorw"></div>
     </div>
   </div>
 

@@ -164,6 +164,7 @@
               <td>11,000円</td>
             </tr>
           </table>
+          <div class="sm-arrorw"></div>
         </div>
       </div>
     </div>
@@ -171,7 +172,6 @@
 
 
   <!-- CONTACT US -->
-  <div id="contact-us"></div>
   <?php get_template_part('contact-us'); ?>
 
   <!-- フッター -->

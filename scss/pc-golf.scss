@@ -94,7 +94,7 @@ body {
   top: 0;
   left: 0;
   background: #edeae2;
-  padding: 4% 0;
+  padding: 30% 0;
   z-index: 6000;
 }
 #loader {
@@ -114,7 +114,7 @@ body {
 // ローディング画面アニメーション
 @keyframes loader {
   0% {
-    clip-path: inset(0 0 0 100%);
+    clip-path: inset(0 100% 0 0);
   }
   100% {
     clip-path: inset(0);
@@ -122,7 +122,7 @@ body {
 }
 
 #loader {
-  animation: 0.5s linear loader;
+  animation: 1.8s linear infinite loader;
 }
 
 /*アニメーション前の指定*/
@@ -166,8 +166,8 @@ body {
 .animation4 {
   opacity: 0;
   visibility: hidden;
-  transition: 3s;
-  clip-path: inset(0 0 0 100%);
+  transition: 4s;
+  clip-path: inset(0 100% 0 0);
 }
 
 /*アニメーション要素までスクロールした時のスタイル*/
@@ -181,6 +181,37 @@ body {
   opacity: 1;
   visibility: visible;
   clip-path: inset(0);
+}
+
+.pagination {
+  margin: 40px 0 0;
+}
+.nav-links {
+  display: flex;
+}
+.pagination .page-numbers {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 20px 25px;
+  color: #333;
+  border-radius: 3px;
+  box-shadow: 0 3px 3px #999;
+  background: #fff;
+}
+.pagination .current {
+  padding: 20px 25px;
+  background: #69a4db;
+  color: #fff;
+}
+.pagination .prev,
+.pagination .next {
+  background: transparent;
+  box-shadow: none;
+  color: #69a4db;
+}
+.pagination .dots {
+  background: transparent;
+  box-shadow: none;
 }
 
 @import "../layout/layout/header";

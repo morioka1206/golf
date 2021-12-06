@@ -7,19 +7,18 @@
     <div class="first-news-wrapper">
       <div class="first-news swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide news-contents">
+          <?php
+          $args = array(
+            'post_type' => 'news',
+            // 全件取得、数を指定すればその数だけ取得する。
+            'posts_per_page' => -1,
+          );
+          $st_query = new WP_Query($args);
+          ?>
 
-            <?php
-            $args = array(
-              'post_type' => 'news',
-              // 全件取得、数を指定すればその数だけ取得する。
-              'posts_per_page' => -1,
-            );
-            $st_query = new WP_Query($args);
-            ?>
-
-            <?php if ($st_query->have_posts()) : ?>
-              <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
+          <?php if ($st_query->have_posts()) : ?>
+            <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
+              <div class="swiper-slide news-contents">
 
 
                 <div class="news-tag"><?php $tag = SCF::get('tag');
@@ -29,9 +28,10 @@
                 <div class="news-title"><?php $title = SCF::get('title');
                                         echo $title; ?></div>
 
-              <?php endwhile; ?>
-            <?php endif; ?>
-          </div>
+
+              </div>
+            <?php endwhile; ?>
+          <?php endif; ?>
         </div>
         <!-- 前ページボタン -->
         <div class="swiper-button-prev"></div>

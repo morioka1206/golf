@@ -53,7 +53,7 @@ body {
   top: 0;
   left: 0;
   background: #edeae2;
-  padding: 4% 0;
+  padding: 30% 0;
   z-index: 6000;
 }
 
@@ -73,8 +73,8 @@ body {
 
 @-webkit-keyframes loader {
   0% {
-    -webkit-clip-path: inset(0 0 0 100%);
-            clip-path: inset(0 0 0 100%);
+    -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
   }
   100% {
     -webkit-clip-path: inset(0);
@@ -84,8 +84,8 @@ body {
 
 @keyframes loader {
   0% {
-    -webkit-clip-path: inset(0 0 0 100%);
-            clip-path: inset(0 0 0 100%);
+    -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
   }
   100% {
     -webkit-clip-path: inset(0);
@@ -93,8 +93,8 @@ body {
   }
 }
 #loader {
-  -webkit-animation: 0.5s linear loader;
-          animation: 0.5s linear loader;
+  -webkit-animation: 1.8s linear infinite loader;
+          animation: 1.8s linear infinite loader;
 }
 
 /*アニメーション前の指定*/
@@ -151,10 +151,10 @@ body {
 .animation4 {
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: 3s;
-  transition: 3s;
-  -webkit-clip-path: inset(0 0 0 100%);
-          clip-path: inset(0 0 0 100%);
+  -webkit-transition: 4s;
+  transition: 4s;
+  -webkit-clip-path: inset(0 100% 0 0);
+          clip-path: inset(0 100% 0 0);
 }
 
 /*アニメーション要素までスクロールした時のスタイル*/
@@ -170,6 +170,47 @@ body {
   visibility: visible;
   -webkit-clip-path: inset(0);
           clip-path: inset(0);
+}
+
+.pagination {
+  margin: 40px 0 0;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pagination .page-numbers {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 20px 25px;
+  color: #333;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 3px 3px #999;
+          box-shadow: 0 3px 3px #999;
+  background: #fff;
+}
+
+.pagination .current {
+  padding: 20px 25px;
+  background: #69a4db;
+  color: #fff;
+}
+
+.pagination .prev,
+.pagination .next {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #69a4db;
+}
+
+.pagination .dots {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 @media screen and (min-width: 601px) {
@@ -786,8 +827,8 @@ footer .copyright {
     z-index: 1;
   }
   .top-section .contact-us-text {
-    -webkit-animation: 4s linear infinite rotation;
-            animation: 4s linear infinite rotation;
+    -webkit-animation: 9.8s linear infinite rotation;
+            animation: 9.8s linear infinite rotation;
     position: relative;
   }
   .top-section .contact-us-mail {
@@ -812,8 +853,8 @@ footer .copyright {
   }
   @-webkit-keyframes sliden {
     0% {
-      -webkit-clip-path: inset(0 0 0 100%);
-              clip-path: inset(0 0 0 100%);
+      -webkit-clip-path: inset(0 100% 0 0);
+              clip-path: inset(0 100% 0 0);
     }
     100% {
       -webkit-clip-path: inset(0);
@@ -822,8 +863,8 @@ footer .copyright {
   }
   @keyframes sliden {
     0% {
-      -webkit-clip-path: inset(0 0 0 100%);
-              clip-path: inset(0 0 0 100%);
+      -webkit-clip-path: inset(0 100% 0 0);
+              clip-path: inset(0 100% 0 0);
     }
     100% {
       -webkit-clip-path: inset(0);
@@ -1358,10 +1399,7 @@ footer .copyright {
     background-size: cover;
   }
   .top-section .contact-us {
-    position: absolute;
-    top: 573px;
-    left: 1320px;
-    z-index: 6000;
+    display: none;
   }
 
   .slide-img img {
@@ -1488,9 +1526,22 @@ footer .copyright {
   .second-section .sm-second-section-features .feature .feature-text-wrapper .feature-text-box {
     width: 340px;
     background-color: #edeae2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .second-section .sm-second-section-features .feature .feature-text-wrapper .feature-text-box .feature-title {
-    width: 340px;
+    height: 60px;
     font-family: "Noto Serif JP", serif;
     font-size: 18px;
     font-weight: 300;
@@ -1499,14 +1550,22 @@ footer .copyright {
     margin: 0 auto;
   }
   .second-section .sm-second-section-features .feature .feature-text-wrapper .feature-text-box .feature-sentence {
-    width: 340px;
+    width: 300px;
+    height: 190px;
     font-size: 12px;
     line-height: 23px;
     margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .second-section .sm-second-section-features .feature .feature-image img {
     width: 335px;
     height: 240px;
+    margin-top: 30px;
   }
 
   .third-section {
@@ -1966,6 +2025,9 @@ footer .copyright {
     line-height: 23px;
     color: #cbc3ad;
   }
+  .how-to-use-wrapper .how-to-use-contents .trial-use .trial-steps .trial-step a:hover {
+    opacity: 0.7;
+  }
   .how-to-use-wrapper .how-to-use-contents .trial-use .trial-steps .trial-step .step-title {
     font-size: 20px;
     font-weight: 700;
@@ -2242,6 +2304,9 @@ footer .copyright {
   .how-to-use-wrapper .hour-plan .hour-table-scrollbar-thumb {
     background: #ffe6ea;
     background-color: red;
+  }
+  .how-to-use-wrapper .hour-plan .sm-arrow {
+    display: none;
   }
 }
 @media screen and (max-width: 600px) {
@@ -2571,6 +2636,15 @@ footer .copyright {
   .how-to-use-wrapper .how-to-use-contents .hour-plan .hour-table-scrollbar-thumb {
     background: #ffe6ea;
     background-color: red;
+  }
+  .how-to-use-wrapper .how-to-use-contents .hour-plan .sm-arrorw {
+    margin-top: 50px;
+    width: 300px;
+    height: 20px;
+    border-bottom: 1px solid #555555;
+    border-right: 1px solid #555555;
+    -webkit-transform: skew(55deg);
+            transform: skew(55deg);
   }
 }
 @media screen and (min-width: 601px) {
@@ -3176,7 +3250,7 @@ footer .copyright {
   .hour-plan {
     width: 337px;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 0px;
   }
   .hour-plan .page-title {
     font-family: "Montserrat", sans-serif;
@@ -3299,6 +3373,15 @@ footer .copyright {
   .hour-plan .hour-table-scrollbar-thumb {
     background: #ffe6ea;
     background-color: red;
+  }
+  .hour-plan .sm-arrorw {
+    margin-top: 50px;
+    width: 300px;
+    height: 20px;
+    border-bottom: 1px solid #555555;
+    border-right: 1px solid #555555;
+    -webkit-transform: skew(55deg);
+            transform: skew(55deg);
   }
 }
 @media screen and (min-width: 601px) {

@@ -79,15 +79,11 @@
             </div>
 
 
-
-            <!-- <div class="swiper-pagination"></div> -->
-
-
-
           <?php endwhile; ?>
         <?php endif; ?>
-        <div class="swiper-pagination"></div>
       </div>
+      <div class="swiper-pagination"></div>
+
 
 
     </div>
