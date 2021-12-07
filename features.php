@@ -21,12 +21,12 @@
 
 
         <div class="feature">
-          <div class="feature-text-wrapper animation2">
-            <div class="feature-text-box animation3">
-              <div class="feature-title">
+          <div class="feature-text-wrapper">
+            <div class="feature-text-box ">
+              <div class="feature-title animation3">
                 <p><?php echo SCF::get('feature-title') ?></p>
               </div>
-              <div class="feature-sentence">
+              <div class="feature-sentence animation3">
                 <p><?php echo SCF::get('feature-content') ?></p>
               </div>
             </div>

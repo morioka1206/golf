@@ -116,7 +116,7 @@
 
 @media screen and (max-width: 600px) {
   .news-wrapper {
-    width: 335px;
+    width: calc(100% - 40px);
     margin: 0 auto;
     margin-top: 163px;
 
@@ -140,9 +140,13 @@
 
     // ニュース全体
     .news-list {
-      width: 335px;
+      width: 100%;
+      margin: 0 auto;
       margin-top: 142px;
       margin-bottom: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       // 1つ1つのニュース
       .news {

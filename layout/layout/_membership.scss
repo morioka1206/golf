@@ -43,7 +43,7 @@
 
 @media screen and (max-width: 600px) {
   .memberhip-wrapper {
-    width: 355px;
+    width: calc(100% - 40px);
     margin: 0 auto;
 
     // 会員規約タイトル

@@ -399,7 +399,7 @@
 
 @media screen and (max-width: 600px) {
   .how-to-use-wrapper {
-    width: 337px;
+    width: 89%;
     margin: 0 auto;
     margin-top: 163px;
 
@@ -454,7 +454,7 @@
           gap: 60px;
 
           .trial-step {
-            width: 334px;
+            width: 89%;
             // ステップの番号
             .step-number {
               font-weight: 700;
@@ -471,7 +471,7 @@
 
             // ステップのイメージ
             .step-image {
-              width: 334px;
+              width: 89%;
               height: 244px;
               margin: 20px 0;
             }
@@ -489,7 +489,7 @@
 
             // LINEをお持ちでない方
             .no-line-user {
-              width: 335px;
+              width: 89%;
               height: 357px;
               background-color: $back-beige;
               display: flex;
@@ -559,7 +559,7 @@
           gap: 60px;
 
           .member-step {
-            width: 334px;
+            width: 89%;
             // ステップの番号
             .member-number {
               font-weight: 700;
@@ -577,7 +577,7 @@
 
             // ステップのイメージ
             .member-image {
-              width: 334px;
+              width: 89%;
               height: 244px;
               margin: 20px 0;
             }
@@ -592,7 +592,7 @@
       }
 
       .hour-plan {
-        width: 337px;
+        width: 89%;
         margin: 0 auto;
         margin-top: 150px;
 

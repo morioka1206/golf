@@ -78,6 +78,10 @@
       }
 
       // ファーストビューのニュースのスライド
+      .sm-first-news-wrapper {
+        display: none;
+      }
+
       .first-news-wrapper {
         width: 920px;
         height: 80px;
@@ -87,6 +91,7 @@
         display: flex;
         justify-content: flex-start;
         transform: translateY(-10px);
+        z-index: 10;
 
         .first-news-title {
           width: 110px;
@@ -102,6 +107,7 @@
 
         .swiper {
           width: 810px;
+          display: flex;
         }
       }
 
@@ -142,13 +148,28 @@
             align-items: center;
           }
         }
+
+        .swiper-buttons {
+          display: flex;
+          // margin-left: 10px;
+          // flex-direction: row-reverse;
+        }
+
         .swiper-button-prev {
-          transform: translateX(640px);
-          z-index: 5000;
+          transform: translateX(660px);
+          width: 41px;
+          background-color: white;
+          display: flex;
+          justify-content: flex-start;
         }
 
         .swiper-button-next {
-          transform: translateX(-80px);
+          transform: translateX(40px);
+          width: 140px;
+          background-color: white;
+          // padding-left: 20px;
+          display: flex;
+          justify-content: flex-start;
         }
 
         .swiper-button-prev::after,
@@ -181,7 +202,7 @@
     }
 
     .contact-us-text {
-      animation: 9.8s linear infinite rotation;
+      animation: 14s linear infinite rotation;
       position: relative;
     }
 
@@ -683,7 +704,7 @@
     }
 
     .contact-us-text {
-      animation: 9.8s linear infinite rotation;
+      animation: 14s linear infinite rotation;
       position: relative;
     }
 
@@ -695,23 +716,21 @@
 
     // ファーストビューのニュースのスライド
     .first-news-wrapper {
-      width: 335px;
+      display: none;
+    }
+    .sm-first-news-wrapper {
+      width: 89%;
       height: 160px;
-      // z-index: 3000;
       margin: 520px 20px 20px;
       background-color: white;
       display: flex;
+      align-items: flex-start;
       justify-content: flex-start;
       flex-direction: column;
-      transform: translateY(-10px);
-      padding: 0 30px;
+      padding-left: 30px;
       position: relative;
 
       .first-news-title {
-        // width: 110px;
-        display: flex;
-        align-items: center;
-        // justify-content: center;
         font-family: $montserrat;
         font-size: 14px;
         line-height: 17.07px;
@@ -720,56 +739,61 @@
         margin-top: 30px;
       }
 
-      .swiper {
-        width: 335px;
-        // top: 60px;
-        left: 30px;
+      .swiper-wrapper {
         position: absolute;
+        top: 50px;
       }
-    }
 
-    .first-news {
-      width: 100%;
-      height: 160px;
+      .first-news {
+        width: 100%;
+        height: 160px;
 
-      // ニュースの情報
-      .news-contents {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 13px;
-        margin-top: 60px;
-
-        .news-date {
-          font-family: $montserrat;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 17.07px;
-          letter-spacing: 0.1rem;
-          margin-right: 42px;
-        }
-
-        .news-title {
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 17.07px;
+        // ニュースの情報
+        .news-contents {
           display: flex;
-          align-items: center;
+          align-items: flex-start;
+          justify-content: flex-start;
+          flex-direction: column;
+          gap: 13px;
+          margin-top: 18px;
+
+          .news-date {
+            font-family: $montserrat;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17.07px;
+            letter-spacing: 0.1rem;
+            margin-right: 42px;
+          }
+
+          .news-title {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17.07px;
+            display: flex;
+            align-items: center;
+          }
         }
-      }
-      .swiper-button-prev {
-        transform: translate(210px, -40px);
-      }
 
-      .swiper-button-next {
-        transform: translate(-50px, -40px);
-      }
+        .swiper-button-prev {
+          // transform: translate(220px, -40px);
+          position: absolute;
+          top: 25%;
+          left: 75%;
+        }
 
-      .swiper-button-prev::after,
-      .swiper-button-next::after {
-        font-weight: 900;
-        font-size: 18px;
-        color: $text-black;
+        .swiper-button-next {
+          position: absolute;
+          top: 25%;
+          right: 9%;
+        }
+
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+          font-weight: 900;
+          font-size: 18px;
+          color: $text-black;
+        }
       }
     }
 
@@ -885,16 +909,17 @@
     }
 
     .top-introduction-image img {
-      width: 335px;
+      width: 100%;
       height: 352px;
       margin-top: 60px;
       object-fit: cover;
+      max-width: 0 auto;
     }
   }
 
   // GOLFERS24の特徴
   .second-section {
-    width: 100%;
+    width: calc(100% -40px);
     height: 100%;
     background-color: $back-beige;
 
@@ -921,12 +946,12 @@
         padding-bottom: 180px;
       }
 
-      .swiper-slide {
-        width: 200px;
-        height: 200px;
-        background-color: $back-beige2;
-        position: relative;
-      }
+      // .swiper-slide {
+      //   width: 200px;
+      //   height: 200px;
+      //   background-color: $back-beige2;
+      //   position: relative;
+      // }
 
       .swiper-pagination {
         position: absolute;
@@ -935,7 +960,7 @@
 
       // 特徴
       .feature {
-        width: 335px;
+        width: 100%;
         height: 535px;
         display: flex;
         justify-content: space-between;
@@ -945,13 +970,14 @@
         margin-top: 100px;
 
         .feature-text-wrapper {
-          width: 340px;
+          width: 100%;
 
           // 特徴のテキストボックス
           .feature-text-box {
-            width: 340px;
+            width: calc(100% - 40px);
             background-color: $back-beige;
             display: flex;
+            margin: 0 auto;
             justify-content: center;
             align-items: center;
             flex-direction: column;
@@ -968,10 +994,11 @@
             }
 
             .feature-sentence {
-              width: 300px;
+              width: 90%;
               height: 190px;
               font-size: 12px;
               line-height: 23px;
+              margin: 0 auto;
               margin-top: 20px;
               display: flex;
               justify-content: center;
@@ -979,9 +1006,14 @@
           }
         }
 
+        .feare-image {
+          width: calc(100% - 40px);
+        }
+
         .feature-image img {
           width: 335px;
           height: 240px;
+          object-fit: cover;
           margin-top: 30px;
         }
       }
@@ -997,9 +1029,15 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0 auto;
 
     .third-section-how-to-use-text {
       margin-top: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
       color: white;
 
       .how-to-use-title {
@@ -1014,7 +1052,7 @@
       }
 
       .sm-how-to-use-sentence {
-        width: 335px;
+        width: calc(100% - 40px);
         line-height: 50px;
         margin-top: 60px;
       }
@@ -1070,15 +1108,25 @@
       margin-top: 120px;
 
       .forth-section-store {
-        width: 334px;
+        width: calc(100% - 40px);
         height: 356px;
+        margin: 0 auto;
+
+        .forth-section-store-image {
+          width: 100%;
+          height: 242px;
+          display: flex;
+          justify-content: center;
+        }
 
         .forth-section-store-image img {
-          width: 334px;
-          height: 242px;
+          width: 100%;
+          // height: 242px;
+          object-fit: cover;
         }
 
         .forth-section-store-infomation {
+          width: 100%;
           margin-top: 33px;
 
           .forth-section-store-name {
@@ -1141,7 +1189,7 @@
     }
 
     .fifth-section-list-of-news {
-      width: 335px;
+      width: 89%;
       margin: 0 auto;
       margin-top: 172px;
 

@@ -4,9 +4,49 @@
   <!-- トップ画像 -->
   <div class="first-view-images">
 
+    <!-- デスクトップ用ニューススライダー -->
     <div class="first-news-wrapper">
       <div class="first-news-title">NEWS</div>
       <div class="first-news swiper">
+        <div class="swiper-wrapper">
+          <?php
+          $args = array(
+            'post_type' => 'news',
+            // 全件取得、数を指定すればその数だけ取得する。
+            'posts_per_page' => -1,
+          );
+          $st_query = new WP_Query($args);
+          ?>
+
+          <?php if ($st_query->have_posts()) : ?>
+            <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
+              <div class="swiper-slide news-contents">
+
+
+                <!-- <div class="news-tag">NEWS</div> -->
+                <div class="news-date"><?php $date = SCF::get('date');
+                                        echo $date; ?></div>
+                <div class="news-title"><?php $title = SCF::get('title');
+                                        echo $title; ?></div>
+
+
+              </div>
+            <?php endwhile; ?>
+          <?php endif; ?>
+        </div>
+        <div class="swiper-buttons">
+          <!-- 前ページボタン -->
+          <div class="swiper-button-prev"></div>
+          <!-- 次ページボタン -->
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- スマホ用ニューススライダー -->
+    <div class="sm-first-news-wrapper swiper">
+      <div class="first-news-title">NEWS</div>
+      <div class="first-news">
         <div class="swiper-wrapper">
           <?php
           $args = array(
@@ -195,14 +235,14 @@
 
 <!-- SNS -->
 <div class="sixth-section">
-  <div class="sixth-section-follow-message animation">
+  <div class="sixth-section-follow-message">
     <p>各種SNS更新中！フォローして最新情報をGET</p>
   </div>
   <div class="sm-sixth-section-follow-message">
     <p>各種SNS更新中！</p>
     <p> フォローして最新情報をGET</p>
   </div>
-  <div class="sixth-sns-buttons animation">
+  <div class="sixth-sns-buttons">
     <a href="https://www.facebook.com/Golfers24-107676011730422/">
       <div class="sixth-sns-button">
         <i class="fab fa-facebook-square sixth-sns-icon"></i>

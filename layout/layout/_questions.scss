@@ -76,7 +76,7 @@
 @media screen and (max-width: 600px) {
   // よくある質問
   .questions-wrapper {
-    width: 335px;
+    width: calc(100% - 40px);
     margin: 0 auto;
     margin-top: 163px;
 

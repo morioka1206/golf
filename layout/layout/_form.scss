@@ -225,7 +225,7 @@
 
 @media screen and (max-width: 600px) {
   .form-wrapper {
-    width: 335px;
+    width: 89%;
     margin: 0 auto;
     margin-top: 163px;
 
@@ -253,7 +253,7 @@
 
       .form-line-contact {
         .form-line-title {
-          width: 335px;
+          width: 89%;
           height: 33px;
           font-size: 23px;
           font-weight: 700;
@@ -346,7 +346,7 @@
           position: relative;
 
           .form-select-option {
-            width: 335px;
+            width: 89%;
             height: 73.27px;
             background-color: $back-input;
             -webkit-appearance: none;
