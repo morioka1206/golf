@@ -132,7 +132,7 @@
         <div class="store-detail-address">
           <div class="store-detail-address-title">住所</div>
           <div class="store-detail-address-content">
-            <p>〒<?php echo SCF::get('postal-code') ?></p>
+            <p><?php echo SCF::get('postal-code') ?></p>
             <p><?php echo SCF::get('address') ?></p>
           </div>
         </div>

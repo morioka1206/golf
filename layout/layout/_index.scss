@@ -80,18 +80,34 @@
       // ファーストビューのニュースのスライド
       .first-news-wrapper {
         width: 920px;
-        height: 120px;
+        height: 80px;
         z-index: 3000;
         margin: 613px 280px 30px;
         background-color: white;
         display: flex;
         justify-content: flex-start;
         transform: translateY(-10px);
+
+        .first-news-title {
+          width: 110px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: $montserrat;
+          font-size: 14px;
+          line-height: 17.07px;
+          letter-spacing: 0.1rem;
+          font-weight: 700;
+        }
+
+        .swiper {
+          width: 810px;
+        }
       }
 
       .first-news {
         width: 100%;
-        height: 120px;
+        height: 80px;
 
         // ニュースの情報
         .news-contents {
@@ -127,17 +143,18 @@
           }
         }
         .swiper-button-prev {
-          transform: translateX(720px);
+          transform: translateX(640px);
           z-index: 5000;
         }
 
         .swiper-button-next {
-          transform: translateX(-100px);
+          transform: translateX(-80px);
         }
 
         .swiper-button-prev::after,
         .swiper-button-next::after {
-          font-size: 16px;
+          font-weight: 900;
+          font-size: 18px;
           color: $text-black;
         }
       }
@@ -367,12 +384,16 @@
     width: 100%;
     height: 342px;
     background-color: #a59c84;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    // padding-right: 350px;
+    gap: 218px;
 
     .third-section-wrapper {
-      width: 100%;
       padding-top: 90px;
-      position: relative;
-      padding-left: 272px;
+      width: 506px;
+      padding-bottom: 72px;
     }
 
     .third-section-how-to-use-text {
@@ -406,9 +427,11 @@
     }
 
     .third-section-arrow-wrapper {
-      position: absolute;
-      top: 210px;
-      left: 1000px;
+      padding-bottom: 120px;
+      width: 342px;
+      // padding-left: 20px;
+      position: relative;
+
       p {
         font-weight: 400;
         line-height: 19.5px;
@@ -419,15 +442,18 @@
     }
 
     .third-section-how-to-use-arrow {
-      width: 220px;
+      width: 342px;
       height: 37px;
       border-bottom: 1px solid white;
       border-right: 1px solid white;
       transform: skew(45deg);
       transition: 0.6s;
+      position: absolute;
+      left: 0px;
+      top: 20px;
     }
     .third-section-how-to-use-arrow:hover {
-      width: 342px;
+      width: 480px;
     }
   }
 
@@ -500,6 +526,7 @@
       width: 182px;
       height: 50px;
       margin: 122px auto 200px;
+      transition: 0.5s;
     }
 
     .forth-section-view-more:hover {
@@ -559,7 +586,7 @@
         }
       }
 
-      .fifth-section-news:nth-of-type(1) {
+      .list-of-news {
         border-top: 1px solid $line-gray3;
       }
     }
@@ -569,6 +596,7 @@
       justify-content: center;
       align-items: center;
       margin-top: 102px;
+      transition: 0.5s;
     }
 
     .fifth-section-view-more:hover {
@@ -636,13 +664,113 @@
   .top-section {
     width: 100%;
 
-    .header-smartphone {
-      // filter: brightness(0) invert(1);
-      background-color: transparent;
+    // トップ画像右下のコンタクトアス
+    @keyframes rotation {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .contact-us {
+      position: absolute;
+      top: 380px;
+      left: 65%;
+      z-index: 1;
+      transform: scale(0.7);
+    }
+
+    .contact-us-text {
+      animation: 9.8s linear infinite rotation;
+      position: relative;
+    }
+
+    .contact-us-mail {
+      position: absolute;
+      top: 33%;
+      left: 30%;
+    }
+
+    // ファーストビューのニュースのスライド
+    .first-news-wrapper {
+      width: 335px;
+      height: 160px;
+      // z-index: 3000;
+      margin: 520px 20px 20px;
+      background-color: white;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      transform: translateY(-10px);
+      padding: 0 30px;
+      position: relative;
+
+      .first-news-title {
+        // width: 110px;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        font-family: $montserrat;
+        font-size: 14px;
+        line-height: 17.07px;
+        letter-spacing: 0.1rem;
+        font-weight: 700;
+        margin-top: 30px;
+      }
+
+      .swiper {
+        width: 335px;
+        // top: 60px;
+        left: 30px;
+        position: absolute;
+      }
     }
 
     .first-news {
-      display: none;
+      width: 100%;
+      height: 160px;
+
+      // ニュースの情報
+      .news-contents {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 13px;
+        margin-top: 60px;
+
+        .news-date {
+          font-family: $montserrat;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17.07px;
+          letter-spacing: 0.1rem;
+          margin-right: 42px;
+        }
+
+        .news-title {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17.07px;
+          display: flex;
+          align-items: center;
+        }
+      }
+      .swiper-button-prev {
+        transform: translate(210px, -40px);
+      }
+
+      .swiper-button-next {
+        transform: translate(-50px, -40px);
+      }
+
+      .swiper-button-prev::after,
+      .swiper-button-next::after {
+        font-weight: 900;
+        font-size: 18px;
+        color: $text-black;
+      }
     }
 
     // ファーストビュー画像
@@ -713,7 +841,7 @@
     }
 
     .contact-us {
-      display: none;
+      // display: none;
     }
   }
 
@@ -724,7 +852,7 @@
 
   // トップ画像下のGOLFERS24紹介部分
   .top-introduction {
-    width: 100%;
+    width: calc(100% - 40px);
     height: 1392px;
     display: flex;
     justify-content: center;
@@ -732,11 +860,12 @@
     flex-direction: column;
     padding: 150px 0;
     background-color: white;
+    margin: 0 auto;
 
     // 文章部分
     .top-introduction-text {
       color: $text-gray;
-      width: 335px;
+      // width: 335px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1110,8 +1239,16 @@
 }
 
 :root {
+  // ページネーションの現在の色
   --swiper-pagination-color: #a59c84;
+  // ページネーション現在以外の色
+  --swiper-pagination-bullet-inactive-color: white;
+  // ページネーションのbulletのサイズ（なくても良さそう）
   --swiper-pagination-bullet-size: 10px;
+  // ページネーションbulletの横幅
   --swiper-pagination-bullet-width: 10px;
+  // ページネーションbulletの高さ
   --swiper-pagination-bullet-height: 10px;
+  // ページネーションのbulletの透明度
+  --swiper-pagination-bullet-inactive-opacity: 1;
 }

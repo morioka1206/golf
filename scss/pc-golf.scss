@@ -86,6 +86,37 @@ body {
   padding-top: 97px;
 }
 
+@function vw($width, $px) {
+  @return $px / $width * 100vw;
+}
+
+@media screen and (max-width: 1400px) {
+  html {
+    zoom: 0.95;
+  }
+}
+@media screen and (max-width: 1250px) {
+  html {
+    zoom: 0.85;
+  }
+}
+@media screen and (max-width: 1150px) {
+  html {
+    zoom: 0.8;
+  }
+}
+@media screen and (max-width: 1000px) {
+  html {
+    zoom: 0.75;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    zoom: 0.7;
+  }
+}
+
 #loader-bg {
   display: none;
   position: fixed;
@@ -94,7 +125,7 @@ body {
   top: 0;
   left: 0;
   background: #edeae2;
-  padding: 30% 0;
+  padding: 80% 0;
   z-index: 6000;
 }
 #loader {
@@ -122,7 +153,7 @@ body {
 }
 
 #loader {
-  animation: 1.8s linear infinite loader;
+  animation: 2.3s linear infinite loader;
 }
 
 /*アニメーション前の指定*/
@@ -166,7 +197,7 @@ body {
 .animation4 {
   opacity: 0;
   visibility: hidden;
-  transition: 4s;
+  transition: 2s;
   clip-path: inset(0 100% 0 0);
 }
 

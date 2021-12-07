@@ -100,7 +100,7 @@ body {
 #loader {
   display: none;
   position: fixed;
-  top: 50%;
+  top: 60%;
   left: 50%;
   width: 200px;
   height: 200px;
@@ -137,7 +137,7 @@ body {
 }
 
 #loader {
-  animation: 1s linear infinite loader;
+  animation: 2s linear infinite loader;
 }
 
 // ふわっとアニメーション
@@ -163,12 +163,12 @@ body {
   transform: translateY(100px);
 }
 
-// .animation4 {
-//   opacity: 0;
-//   visibility: hidden;
-//   transition: 3s;
-//   clip-path: inset(0 100% 0 0);
-// }
+.animation4 {
+  opacity: 0;
+  visibility: hidden;
+  transition: 3s;
+  clip-path: inset(0 100% 0 0);
+}
 
 /*アニメーション要素までスクロールした時のスタイル*/
 .active {

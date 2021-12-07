@@ -67,14 +67,19 @@ footer {
 
     .footer-wrapper {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
+      margin: 0 auto;
+
+      .footer-contents {
+        width: 335px;
+      }
 
       .footer-logo img {
         width: 130px;
         height: 20.39px;
         margin-top: 30px;
-        margin-left: 20px;
+        // margin-left: 20px;
       }
 
       .footer-company-infomation {
@@ -85,17 +90,17 @@ footer {
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
-        margin-left: 20px;
+        // margin-left: 20px;
       }
 
       // ページリンク
       .footer-links {
-        // width: 312px;
+        width: 312px;
         font-size: 12px;
         line-height: 17px;
         display: flex;
         justify-content: center;
-        gap: 20px;
+        gap: 15px;
       }
 
       .footer-sns {
@@ -104,6 +109,7 @@ footer {
 
       // スマホ用SNS
       .sm-footer-sns {
+        width: 100%;
         display: flex !important;
         justify-content: center;
         align-items: center;

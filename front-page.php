@@ -5,6 +5,7 @@
   <div class="first-view-images">
 
     <div class="first-news-wrapper">
+      <div class="first-news-title">NEWS</div>
       <div class="first-news swiper">
         <div class="swiper-wrapper">
           <?php
@@ -21,8 +22,7 @@
               <div class="swiper-slide news-contents">
 
 
-                <div class="news-tag"><?php $tag = SCF::get('tag');
-                                      echo $tag; ?></div>
+                <!-- <div class="news-tag">NEWS</div> -->
                 <div class="news-date"><?php $date = SCF::get('date');
                                         echo $date; ?></div>
                 <div class="news-title"><?php $title = SCF::get('title');
@@ -113,11 +113,11 @@
 
 <!-- 店舗一覧 -->
 <div class="forth-section">
-  <div class="forth-section-list-of-stores animation">
+  <div class="forth-section-list-of-stores">
     <!-- 店舗一覧タイトル -->
     <div class="forth-section-stores-title">店舗一覧</div>
     <!-- 店舗一覧 -->
-    <div class="forth-section-stores">
+    <div class="forth-section-stores animation">
       <?php
       $args = array(
         'post_type' => 'store',
@@ -140,7 +140,7 @@
             <div class="forth-section-store-infomation">
               <div class="forth-section-store-name"><?php echo SCF::get('store-name'); ?></div>
               <div class="forth-section-store-address">
-                <p>〒<?php echo SCF::get('postal-code'); ?></p>
+                <p><?php echo SCF::get('postal-code'); ?></p>
                 <p><?php echo SCF::get('address'); ?></p>
               </div>
             </div>
@@ -158,33 +158,34 @@
 </div>
 
 <!-- NEWS -->
-<div class="fifth-section animation">
+<div class="fifth-section">
   <div class="fifth-section-title">NEWS</div>
   <div class="fifth-section-list-of-news">
+    <div class="list-of-news animation">
 
-    <?php
-    $args = array(
-      'post_type' => 'news',
-      // 全件取得、数を指定すればその数だけ取得する。
-      'posts_per_page' => 3,
-    );
-    $st_query = new WP_Query($args);
-    ?>
+      <?php
+      $args = array(
+        'post_type' => 'news',
+        // 全件取得、数を指定すればその数だけ取得する。
+        'posts_per_page' => 3,
+      );
+      $st_query = new WP_Query($args);
+      ?>
 
-    <?php if ($st_query->have_posts()) : ?>
-      <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
+      <?php if ($st_query->have_posts()) : ?>
+        <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
 
 
-        <a href="<?php the_permalink(); ?>">
-          <div class="fifth-section-news">
-            <div class="fifth-section-news-date"><?php echo SCF::get('date') ?></div>
-            <div class="fifth-section-news-content"><?php echo SCF::get('title') ?></div>
-          </div>
-        </a>
+          <a href="<?php the_permalink(); ?>">
+            <div class="fifth-section-news">
+              <div class="fifth-section-news-date"><?php echo SCF::get('date') ?></div>
+              <div class="fifth-section-news-content"><?php echo SCF::get('title') ?></div>
+            </div>
+          </a>
 
-      <?php endwhile; ?>
-    <?php endif; ?>
-
+        <?php endwhile; ?>
+      <?php endif; ?>
+    </div>
   </div>
 
 

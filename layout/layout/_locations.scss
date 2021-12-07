@@ -72,6 +72,7 @@
 
         .store-link {
           margin-top: 33px;
+          transition: 0.5s;
         }
 
         .store-link:hover {
@@ -84,7 +85,7 @@
 
 @media screen and (max-width: 600px) {
   .location-wrapper {
-    width: 360px;
+    width: 337px;
     margin: 0 auto;
     margin-top: 163px;
 
@@ -149,6 +150,11 @@
 
         .store-link {
           margin-top: 15px;
+
+          img {
+            width: 163px;
+            object-fit: cover;
+          }
         }
       }
     }
