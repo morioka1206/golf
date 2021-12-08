@@ -11,6 +11,28 @@
     left: -240px;
   }
 
+  .location-select {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    transform: translate(88%, 110%);
+
+    select {
+      border: 1px #d1d1d1 solid;
+      border-radius: 20px;
+      width: 159px;
+      height: 39px;
+      padding-right: 10px;
+      -webkit-appearance: none;
+      appearance: none; /* デフォルトのスタイルを無効 */
+      padding-left: 10px; /* 文字が左に寄るので右にずらす */
+      background-image: url(../images/location-select.svg);
+      background-position: right 20px center;
+      background-repeat: no-repeat;
+      background-size: 14px 14px;
+    }
+  }
+
   .location-wrapper {
     width: 1118px;
     margin: 0 auto;

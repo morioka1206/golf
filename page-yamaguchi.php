@@ -56,7 +56,7 @@
         <option value="<?php echo esc_url(home_url('okinawa')); ?>">沖縄県</option>
       </select>
     </div>
-    <div class="location-title">店舗一覧</div>
+    <div class="location-title">店舗</div>
     <div class="jscroll-wrapper">
       <div class="jscroll">
         <div class="list-of-stores">
@@ -66,6 +66,11 @@
           $the_query = new WP_Query(array(
             'post_status' => 'store',
             'post_type' => 'store',
+            'meta_query' => array(array(
+              'key' => 'address',
+              'value' => '山口県',
+              'compare' => 'LIKE'
+            )),
             'paged' => $paged,
             'posts_per_page' => -1, // 表示件数
             // 'orderby'     => 'date',

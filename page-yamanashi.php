@@ -66,6 +66,11 @@
           $the_query = new WP_Query(array(
             'post_status' => 'store',
             'post_type' => 'store',
+            'meta_query' => array(array(
+              'key' => 'address',
+              'value' => '山梨県',
+              'compare' => 'LIKE'
+            )),
             'paged' => $paged,
             'posts_per_page' => -1, // 表示件数
             // 'orderby'     => 'date',
