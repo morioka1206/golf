@@ -14,7 +14,7 @@
       -webkit-text-stroke: 1px $text-beige;
       position: absolute;
       top: -90px;
-      left: -240px;
+      left: -19%;
     }
 
     .news-title {
@@ -31,7 +31,7 @@
       margin-top: 142px;
       margin-bottom: 200px;
 
-      .news-wrapper {
+      .news-list-wrapper {
         border-top: 1px solid $line-gray2;
       }
 
@@ -67,8 +67,8 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-left: 53px;
-          margin-right: 103px;
+          margin-left: 42px;
+          margin-right: 60px;
         }
 
         .news-content {
@@ -76,40 +76,40 @@
         }
       }
     }
-    .pagination,
-    .navigation {
-      width: 345.43px;
-      height: 20px;
-      font-family: $montserrat;
+  }
+  .pnavi {
+    // width: 345.43px;
+    height: 20px;
+    font-family: $montserrat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 150px;
+    margin-top: 60px;
+    gap: 20px;
+
+    .page-numbers {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0 auto;
-      text-align: center;
-      margin-bottom: 150px;
+    }
 
-      .page-numbers {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-      }
+    .prev {
+      width: 11.43px;
+      height: 20px;
+      background-image: url(../images/naviarrow-prev.svg);
+      margin-right: 74px;
+      background-position: center;
+    }
 
-      .prev {
-        width: 11.43px;
-        height: 20px;
-        background-image: url(../images/naviarrow-prev.svg);
-        margin-right: 74px;
-        background-position: center;
-      }
-
-      .next {
-        width: 11.43px;
-        height: 20px;
-        background-image: url(../images/naviarrow-next.svg);
-        padding-left: 74px;
-        background-position: center;
-      }
+    .next {
+      width: 11.43px;
+      height: 20px;
+      background-image: url(../images/naviarrow-next.svg);
+      padding-left: 74px;
+      background-position: center;
     }
   }
 }
@@ -142,18 +142,17 @@
     .news-list {
       width: 100%;
       margin: 0 auto;
-      margin-top: 142px;
-      margin-bottom: 200px;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      margin-top: 77px;
 
       // 1つ1つのニュース
       .news {
         display: none;
       }
 
-      .news-wrapper {
+      .news-list-wrapper {
         border-top: 1px solid $line-gray2;
       }
 
@@ -202,6 +201,41 @@
       .sm-news {
         border-bottom: 1px solid $line-gray2;
       }
+    }
+  }
+  .pnavi {
+    // width: 345.43px;
+    height: 20px;
+    font-family: $montserrat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 150px;
+    margin-top: 60px;
+    gap: 20px;
+
+    .page-numbers {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .prev {
+      width: 11.43px;
+      height: 20px;
+      background-image: url(../images/naviarrow-prev.svg);
+      margin-right: 74px;
+      background-position: center;
+    }
+
+    .next {
+      width: 11.43px;
+      height: 20px;
+      background-image: url(../images/naviarrow-next.svg);
+      padding-left: 74px;
+      background-position: center;
     }
   }
 }

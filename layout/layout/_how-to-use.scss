@@ -8,7 +8,7 @@
     -webkit-text-stroke: 1px $text-beige;
     position: absolute;
     top: -90px;
-    left: -240px;
+    left: -19%;
   }
 
   .how-to-use-wrapper {
@@ -135,7 +135,7 @@
               .reserve-link {
                 width: 289px;
                 height: 60px;
-                background-color: $text-black;
+                background-color: $back-darkbrown;
                 color: white;
                 display: flex;
                 justify-content: center;
@@ -399,7 +399,7 @@
 
 @media screen and (max-width: 600px) {
   .how-to-use-wrapper {
-    width: 89%;
+    width: calc(100% - 40px);
     margin: 0 auto;
     margin-top: 163px;
 
@@ -422,7 +422,8 @@
 
     // ご利用方法の内容
     .how-to-use-contents {
-      width: 335px;
+      // width: ;
+      margin: 0 auto;
 
       // トライアル利用
       .trial-use {
@@ -454,7 +455,7 @@
           gap: 60px;
 
           .trial-step {
-            width: 89%;
+            // width: 89%;
             // ステップの番号
             .step-number {
               font-weight: 700;
@@ -471,7 +472,7 @@
 
             // ステップのイメージ
             .step-image {
-              width: 89%;
+              // width: 89%;
               height: 244px;
               margin: 20px 0;
             }
@@ -489,7 +490,6 @@
 
             // LINEをお持ちでない方
             .no-line-user {
-              width: 89%;
               height: 357px;
               background-color: $back-beige;
               display: flex;
@@ -559,7 +559,7 @@
           gap: 60px;
 
           .member-step {
-            width: 89%;
+            // width: 89%;
             // ステップの番号
             .member-number {
               font-weight: 700;
@@ -592,7 +592,7 @@
       }
 
       .hour-plan {
-        width: 89%;
+        // width: 89%;
         margin: 0 auto;
         margin-top: 150px;
 
@@ -601,7 +601,7 @@
           color: transparent;
           font-size: 50px;
           font-weight: 400;
-          line-height: 38px;
+          line-height: 46px;
           -webkit-text-stroke: 1px $text-beige;
         }
 

@@ -5,7 +5,6 @@
     <div class="location-select">
       <p>地域選択</p>
       <select onChange="location.href=value;">
-        <option value="" selected disabled></option>
         <option value="<?php echo esc_url(home_url('locations')); ?>">全国</option>
         <option value="<?php echo esc_url(home_url('hokkaido')); ?>">北海道</option>
         <option value="<?php echo esc_url(home_url('aomori')); ?>">青森県</option>
@@ -49,7 +48,7 @@
         <option value="<?php echo esc_url(home_url('fukuoka')); ?>">福岡県</option>
         <option value="<?php echo esc_url(home_url('saga')); ?>">佐賀県</option>
         <option value="<?php echo esc_url(home_url('nagasaki')); ?>">長崎県</option>
-        <option value="<?php echo esc_url(home_url('kumamoto')); ?>">熊本県</option>
+        <option value="<?php echo esc_url(home_url('kumamoto')); ?>" selected>熊本県</option>
         <option value="<?php echo esc_url(home_url('ooita')); ?>">大分県</option>
         <option value="<?php echo esc_url(home_url('miyazaki')); ?>">宮崎県</option>
         <option value="<?php echo esc_url(home_url('kagoshima')); ?>">鹿児島県</option>

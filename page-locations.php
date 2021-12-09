@@ -5,7 +5,6 @@
     <div class="location-select">
       <p>地域選択</p>
       <select onChange="location.href=value;">
-        <option value="" selected disabled></option>
         <option value="<?php echo esc_url(home_url('locations')); ?>">全国</option>
         <option value="<?php echo esc_url(home_url('hokkaido')); ?>">北海道</option>
         <option value="<?php echo esc_url(home_url('aomori')); ?>">青森県</option>
@@ -67,7 +66,7 @@
             'post_status' => 'store',
             'post_type' => 'store',
             'paged' => $paged,
-            'posts_per_page' => -1, // 表示件数
+            'posts_per_page' => 6, // 表示件数
             // 'orderby'     => 'date',
             'order' => 'ASC'
           ));

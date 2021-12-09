@@ -5,24 +5,14 @@
     <div class="news-title">ニュース</div>
     <!-- ニュース全体 -->
     <div class="news-list">
-      <div class="news-wrapper">
+      <div class="news-list-wrapper">
         <?php
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-        // $category = get_the_category();
-        // $args = array(
-        //   'post_type' => 'news',
-        //   'paged' => $paged,
-        //   'posts_per_page' => -1, // 表示件数
-        //   'orderby'     => 'date',
-        //   'order' => 'DESC'
-        // );
-        // $st_query = new WP_Query($args);
-
         $the_query = new WP_Query(array(
           'post_type' => 'news',
           'post_status' => 'news',
           'paged' => $paged,
-          'posts_per_page' => -1, // 表示件数
+          'posts_per_page' => 4, // 表示件数
           'orderby'     => 'date',
           'order' => 'DESC'
         ));
@@ -84,19 +74,7 @@
 
       </div>
       <!-- pagenation -->
-      <div class="pagenation">
-        <?php
-        if ($the_query->max_num_pages > 1) {
-          echo paginate_links(array(
-            'base' => get_pagenum_link(1) . '%_%',
-            'format' => 'page/%#%/',
-            'current' => max(1, $paged),
-            'mid_size' => 1,
-            'total' => $the_query->max_num_pages
-          ));
-        }
-        wp_reset_postdata(); ?>
-      </div><!-- /pagenation -->
+
       <div class="pnavi">
         <?php //ページリスト表示処理
         global $wp_rewrite;
@@ -115,12 +93,11 @@
           'total' => $the_query->max_num_pages,
           'mid_size' => 1,
           'current' => ($paged ? $paged : 1),
-          'prev_text' => '< 前へ',
-          'next_text' => '次へ >',
+          'prev_text' => '',
+          'next_text' => '',
         ));
         ?>
       </div>
-
     </div>
 
 

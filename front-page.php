@@ -24,10 +24,12 @@
 
 
                 <!-- <div class="news-tag">NEWS</div> -->
-                <div class="news-date"><?php $date = SCF::get('date');
-                                        echo $date; ?></div>
-                <div class="news-title"><?php $title = SCF::get('title');
-                                        echo $title; ?></div>
+                <a href="<?php the_permalink(); ?>">
+                  <div class="news-date"><?php $date = SCF::get('date');
+                                          echo $date; ?></div>
+                  <div class="news-title"><?php $title = SCF::get('title');
+                                          echo $title; ?></div>
+                </a>
 
 
               </div>
@@ -46,6 +48,7 @@
     <!-- スマホ用ニューススライダー -->
     <div class="sm-first-news-wrapper swiper">
       <div class="first-news-title">NEWS</div>
+      <div class="swiper-block"></div>
       <div class="first-news">
         <div class="swiper-wrapper">
           <?php
@@ -63,13 +66,15 @@
 
 
                 <!-- <div class="news-tag">NEWS</div> -->
-                <div class="news-date"><?php $date = SCF::get('date');
-                                        echo $date; ?></div>
-                <div class="news-title"><?php $title = SCF::get('title');
-                                        echo $title; ?></div>
-
+                <a href="<?php the_permalink(); ?>">
+                  <div class="news-date"><?php $date = SCF::get('date');
+                                          echo $date; ?></div>
+                  <div class="news-title"><?php $title = SCF::get('title');
+                                          echo $title; ?></div>
+                </a>
 
               </div>
+
             <?php endwhile; ?>
           <?php endif; ?>
         </div>
@@ -157,7 +162,7 @@
     <!-- 店舗一覧タイトル -->
     <div class="forth-section-stores-title">店舗一覧</div>
     <!-- 店舗一覧 -->
-    <div class="forth-section-stores animation">
+    <div class="forth-section-stores">
       <?php
       $args = array(
         'post_type' => 'store',
@@ -173,7 +178,7 @@
 
 
           <!-- 店舗1 -->
-          <div class="forth-section-store">
+          <div class="forth-section-store animation">
             <a href="<?php the_permalink(); ?>">
               <div class="forth-section-store-image"><img src="<?php echo get_template_directory_uri(); ?>/images/store-image1.png" alt=""></div>
             </a>
