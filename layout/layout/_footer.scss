@@ -119,6 +119,7 @@ footer {
         align-items: center;
         flex-direction: column;
         margin-top: 34px;
+        transform: translate(-2px);
 
         .footer-follow-us {
           font-size: 14px;
@@ -137,6 +138,7 @@ footer {
           justify-content: space-between;
           align-items: center;
           margin-top: 9px;
+          transform: translateX(-15px);
         }
       }
     }

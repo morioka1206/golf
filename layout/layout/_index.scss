@@ -335,8 +335,6 @@
             flex-direction: column;
             z-index: 300;
             transform: translateX(80px);
-            // position: absolute;
-            // left: 210px;
 
             // 特徴のタイトル
             .feature-title {
@@ -383,9 +381,7 @@
             align-items: flex-end;
             flex-direction: column;
             z-index: 300;
-            // position: absolute;
-
-            // left: -170px;
+            padding-left: 85px;
             transform: translateX(-80px);
 
             // 特徴のタイトル
