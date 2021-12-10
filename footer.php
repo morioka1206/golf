@@ -14,9 +14,9 @@
       <div class="sm-footer-sns">
         <p class="footer-follow-us">FOLLOW US</p>
         <div class="footer-sns-icons">
-          <div class="footer-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><i class="fab fa-facebook-square"></i></a></div>
-          <div class="footer-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja"><i class="fab fa-instagram"></i></a></div>
-          <div class="footer-line"><a href="https://lin.ee/7Ii8MCV"><i class="fab fa-line"></i></a></div>
+          <div class="footer-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-facebook-icon.svg" alt=""></a></div>
+          <div class="footer-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-insta-icon.svg" alt=""></a></div>
+          <div class="footer-line"><a href="https://lin.ee/7Ii8MCV"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-line-icon.svg" alt=""></a></div>
         </div>
       </div>
       <div class="footer-links">
@@ -28,12 +28,12 @@
     </div>
 
 
-    <div class="footer-sns">
+    <div class="footer-sns animation5">
       <p class="footer-follow-us">FOLLOW US</p>
       <div class="footer-sns-icons">
-        <div class="footer-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><i class="fab fa-facebook-square"></i></a href=""></div>
-        <div class="footer-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja"><i class="fab fa-instagram"></i></a></div>
-        <div class="footer-line"><a href="https://lin.ee/7Ii8MCV"><i class="fab fa-line"></a></i></div>
+        <div class="footer-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-facebook-icon.svg" alt=""></a></div>
+        <div class="footer-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-insta-icon.svg" alt=""></a></div>
+        <div class="footer-line"><a href="https://lin.ee/7Ii8MCV"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-line-icon.svg" alt=""></a></div>
       </div>
     </div>
   </div>

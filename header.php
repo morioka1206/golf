@@ -50,9 +50,9 @@
         </div>
         <!-- ヘッダーのSNSリンク -->
         <div class="header-sns-icons">
-          <div class="header-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><i class="fab fa-facebook-square"></a></i></div>
-          <div class="header-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja"><i class="fab fa-instagram"></i></a></div>
-          <div class="header-line"><a href="https://lin.ee/7Ii8MCV"><i class="fab fa-line"></a></i></div>
+          <div class="header-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-facebook-icon.svg" alt=""></a></div>
+          <div class="header-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-insta-icon.svg" alt=""></a></div>
+          <div class="header-line"><a href="https://lin.ee/7Ii8MCV"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-line-icon.svg" alt=""></a></div>
         </div>
 
       </div>
@@ -98,9 +98,9 @@
                 <div class="sm-nav-sns">
                   <p>FOLLOW US</p>
                   <div class="sm-nav-sns-icons">
-                    <div class="sm-header-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><i class="fab fa-facebook-square"></i></a></div>
-                    <div class="sm-header-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja"><i class="fab fa-instagram"></i></a></div>
-                    <div class="sm-header-line"><a href="https://lin.ee/7Ii8MCV"><i class="fab fa-line"></i></a></div>
+                    <div class="sm-header-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><img src="<?php echo get_template_directory_uri(); ?>/images/sm-hum-facebook.svg" alt=""></a></div>
+                    <div class="sm-header-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja"><img src="<?php echo get_template_directory_uri(); ?>/images/sm-hum-insta.svg" alt=""></a></div>
+                    <div class="sm-header-line"><a href="https://lin.ee/7Ii8MCV"><img src="<?php echo get_template_directory_uri(); ?>/images/sm-hum-line.svg" alt=""></a></div>
                   </div>
                 </div>
               </div>

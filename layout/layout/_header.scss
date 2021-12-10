@@ -45,6 +45,7 @@
       gap: 18px;
       font-size: 25px;
       flex-wrap: nowrap;
+      transform: translateY(-17%);
     }
 
     // ヘッダーのロゴ
@@ -207,14 +208,14 @@
         font-size: 14px;
         line-height: 24px;
         text-align: center;
-        margin-top: 51px;
+        margin-top: 35px;
 
         .sm-nav-sns-icons {
           width: 153px;
           display: flex;
           justify-content: space-between;
           font-size: 30px;
-          margin-top: 9px;
+          margin-top: 12px;
         }
       }
     }
