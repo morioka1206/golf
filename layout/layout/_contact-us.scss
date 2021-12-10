@@ -37,6 +37,12 @@
       align-items: center;
       position: relative;
       z-index: 1;
+      transition: 0.5s;
+    }
+
+    .contact-us-button:hover {
+      color: #a59c84;
+      z-index: 1;
     }
 
     .contact-us-button::before {
@@ -46,18 +52,19 @@
       position: absolute;
       top: -1px;
       left: -1px;
-      z-index: -1;
-      color: $back-khaki;
+      color: $back-black;
       border: 1px solid white;
       background-color: white;
       transform-origin: 100% 50%;
       transform: scaleX(0);
-      transition: transform ease 0.6s;
+      transition: transform ease 0.5s;
+      z-index: -1;
     }
 
     .contact-us-button:hover::before {
       transform-origin: 0 50%;
       transform: scaleX(1);
+      z-index: -1;
     }
   }
 }

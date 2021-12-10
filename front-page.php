@@ -20,11 +20,11 @@
 
           <?php if ($st_query->have_posts()) : ?>
             <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
-              <div class="swiper-slide news-contents">
+              <div class="swiper-slide">
 
 
                 <!-- <div class="news-tag">NEWS</div> -->
-                <a href="<?php the_permalink(); ?>">
+                <a href="<?php the_permalink(); ?>" class="news-contents">
                   <div class="news-date"><?php $date = SCF::get('date');
                                           echo $date; ?></div>
                   <div class="news-title"><?php $title = SCF::get('title');
@@ -160,7 +160,7 @@
 <div class="forth-section">
   <div class="forth-section-list-of-stores">
     <!-- 店舗一覧タイトル -->
-    <div class="forth-section-stores-title">店舗一覧</div>
+    <div class="forth-section-stores-title animation">店舗一覧</div>
     <!-- 店舗一覧 -->
     <div class="forth-section-stores">
       <?php
@@ -196,17 +196,17 @@
 
 
     <!-- VIEW MOREボタン -->
-    <div class="forth-section-view-more">
-      <a href="<?php echo esc_url(home_url('/locations')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/view-more-button.svg" alt=""></a>
+    <div class="forth-section-view-more animation5">
+      <a href="<?php echo esc_url(home_url('/locations')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/view-more-button.svg" alt="" class="animation5"></a>
     </div>
   </div>
 </div>
 
 <!-- NEWS -->
 <div class="fifth-section">
-  <div class="fifth-section-title">NEWS</div>
-  <div class="fifth-section-list-of-news">
-    <div class="list-of-news animation">
+  <div class="fifth-section-title animation">NEWS</div>
+  <div class="fifth-section-list-of-news animation">
+    <div class="list-of-news ">
 
       <?php
       $args = array(
@@ -235,7 +235,7 @@
 
 
   <!-- VIEW MOREボタン -->
-  <div class="fifth-section-view-more"><a href="<?php echo esc_url(home_url('/newslist')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/view-more-button.svg" alt=""></a></div>
+  <div class="fifth-section-view-more"><a href="<?php echo esc_url(home_url('/newslist')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/view-more-button.svg" alt="" class="animation5"></a></div>
 </div>
 
 <!-- SNS -->

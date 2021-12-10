@@ -201,6 +201,13 @@ body {
   clip-path: inset(0 100% 0 0);
 }
 
+.animation5 {
+  opacity: 0;
+  visibility: hidden;
+  transition: 4s;
+  transform: translateY(35px);
+}
+
 /*アニメーション要素までスクロールした時のスタイル*/
 .active {
   opacity: 1;

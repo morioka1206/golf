@@ -12,7 +12,7 @@
           'post_type' => 'news',
           'post_status' => 'news',
           'paged' => $paged,
-          'posts_per_page' => 4, // 表示件数
+          'posts_per_page' => 5, // 表示件数
           'orderby'     => 'date',
           'order' => 'DESC'
         ));
@@ -45,7 +45,7 @@
         $args = array(
           'post_type' => 'news',
           'paged' => $paged,
-          'posts_per_page' => 2, // 表示件数
+          'posts_per_page' => 5, // 表示件数
           'orderby'     => 'date',
           'order' => 'DESC'
 

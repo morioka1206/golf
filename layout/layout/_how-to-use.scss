@@ -71,10 +71,6 @@
               transition: 0.5s;
             }
 
-            a:hover {
-              opacity: 0.7;
-            }
-
             // ステップのタイトル
             .step-title {
               font-size: 20px;
@@ -142,6 +138,11 @@
                 align-items: center;
                 margin: 0 auto;
                 margin-top: 34px;
+                transition: 0.5s;
+              }
+
+              .reserve-link:hover {
+                opacity: 0.7;
               }
             }
           }

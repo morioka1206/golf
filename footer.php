@@ -208,7 +208,7 @@
 <script>
   $(function() {
     $(window).on('load scroll', function() {
-      $('.animation, .animation2, .animation3').each(function() {
+      $('.animation, .animation2, .animation3, .animation5').each(function() {
         //ターゲットの位置を取得
         var target = $(this).offset().top;
         //スクロール量を取得
