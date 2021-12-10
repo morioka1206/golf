@@ -681,8 +681,10 @@
           align-items: center;
         }
 
-        .sixth-sns-icon {
-          font-size: 26px;
+        img {
+          width: 23px;
+          height: 23px;
+          transform: translateY(-2%);
         }
       }
     }

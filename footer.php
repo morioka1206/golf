@@ -28,7 +28,7 @@
     </div>
 
 
-    <div class="footer-sns animation5">
+    <div class="footer-sns">
       <p class="footer-follow-us">FOLLOW US</p>
       <div class="footer-sns-icons">
         <div class="footer-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-facebook-icon.svg" alt=""></a></div>
@@ -208,7 +208,7 @@
 <script>
   $(function() {
     $(window).on('load scroll', function() {
-      $('.animation, .animation2, .animation3, .animation5').each(function() {
+      $('.animation, .animation2, .animation3, .animation5, .animation6').each(function() {
         //ターゲットの位置を取得
         var target = $(this).offset().top;
         //スクロール量を取得

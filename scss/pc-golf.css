@@ -191,6 +191,15 @@ body {
           transform: translateY(35px);
 }
 
+.animation6 {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+}
+
 /*アニメーション要素までスクロールした時のスタイル*/
 .active {
   opacity: 1;
@@ -307,6 +316,8 @@ body {
     font-size: 25px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    -webkit-transform: translateY(-17%);
+            transform: translateY(-17%);
   }
   .header-desktop .header-logo img {
     width: 170px;
@@ -499,7 +510,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     text-align: center;
-    margin-top: 51px;
+    margin-top: 35px;
   }
   .header-smartphone .hide-contents .sm-nav-sns .sm-nav-sns-icons {
     width: 153px;
@@ -510,7 +521,7 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     font-size: 30px;
-    margin-top: 9px;
+    margin-top: 12px;
   }
 }
 footer {
@@ -574,6 +585,8 @@ footer .footer-wrapper .footer-sns-icons {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 30px;
+  -webkit-transform: translateY(-14%);
+          transform: translateY(-14%);
 }
 footer .footer-wrapper .footer-follow-us {
   font-size: 14px;
@@ -690,13 +703,12 @@ footer .copyright {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0;
+    margin-top: 9px;
   }
   footer .footer-copyright {
     font-size: 12px;
     line-height: 17px;
     text-align: center;
-    margin-top: 11px;
     margin-bottom: 5px;
   }
 }
@@ -3867,7 +3879,7 @@ footer .copyright {
     width: 11.43px;
     height: 20px;
     background-image: url(../images/naviarrow-next.svg);
-    padding-left: 74px;
+    margin-left: 74px;
     background-position: center;
   }
 }

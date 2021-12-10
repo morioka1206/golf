@@ -158,9 +158,9 @@
 
 <!-- 店舗一覧 -->
 <div class="forth-section">
-  <div class="forth-section-list-of-stores">
+  <div class="forth-section-list-of-stores animation">
     <!-- 店舗一覧タイトル -->
-    <div class="forth-section-stores-title animation">店舗一覧</div>
+    <div class="forth-section-stores-title">店舗一覧</div>
     <!-- 店舗一覧 -->
     <div class="forth-section-stores">
       <?php
@@ -178,7 +178,7 @@
 
 
           <!-- 店舗1 -->
-          <div class="forth-section-store animation">
+          <div class="forth-section-store">
             <a href="<?php the_permalink(); ?>">
               <div class="forth-section-store-image"><img src="<?php echo get_template_directory_uri(); ?>/images/store-image1.png" alt=""></div>
             </a>
@@ -196,46 +196,50 @@
 
 
     <!-- VIEW MOREボタン -->
-    <div class="forth-section-view-more animation5">
-      <a href="<?php echo esc_url(home_url('/locations')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/view-more-button.svg" alt="" class="animation5"></a>
+    <div class="forth-section-view-more">
+      <a href="<?php echo esc_url(home_url('/locations')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/view-more-button.svg" alt=""></a>
     </div>
   </div>
 </div>
 
 <!-- NEWS -->
-<div class="fifth-section">
-  <div class="fifth-section-title animation">NEWS</div>
-  <div class="fifth-section-list-of-news animation">
-    <div class="list-of-news ">
+<div class="fifth-section ">
+  <div class="fifth-section-wrapper animation">
+    <div class="fifth-section-title">NEWS</div>
+    <div class="fifth-section-list-of-news">
+      <div class="list-of-news ">
 
-      <?php
-      $args = array(
-        'post_type' => 'news',
-        // 全件取得、数を指定すればその数だけ取得する。
-        'posts_per_page' => 3,
-      );
-      $st_query = new WP_Query($args);
-      ?>
+        <?php
+        $args = array(
+          'post_type' => 'news',
+          // 全件取得、数を指定すればその数だけ取得する。
+          'posts_per_page' => 3,
+        );
+        $st_query = new WP_Query($args);
+        ?>
 
-      <?php if ($st_query->have_posts()) : ?>
-        <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
+        <?php if ($st_query->have_posts()) : ?>
+          <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
 
 
-          <a href="<?php the_permalink(); ?>">
-            <div class="fifth-section-news">
-              <div class="fifth-section-news-date"><?php echo SCF::get('date') ?></div>
-              <div class="fifth-section-news-content"><?php echo SCF::get('title') ?></div>
-            </div>
-          </a>
+            <a href="<?php the_permalink(); ?>">
+              <div class="fifth-section-news">
+                <div class="fifth-section-news-date"><?php echo SCF::get('date') ?></div>
+                <div class="fifth-section-news-content"><?php echo SCF::get('title') ?></div>
+              </div>
+            </a>
 
-        <?php endwhile; ?>
-      <?php endif; ?>
+          <?php endwhile; ?>
+        <?php endif; ?>
+      </div>
     </div>
+
+    <!-- VIEW MOREボタン -->
+    <div class="fifth-section-view-more"><a href="<?php echo esc_url(home_url('/newslist')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/view-more-button.svg" alt=""></a></div>
   </div>
 
 
-  <!-- VIEW MOREボタン -->
-  <div class="fifth-section-view-more"><a href="<?php echo esc_url(home_url('/newslist')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/view-more-button.svg" alt="" class="animation5"></a></div>
+
 </div>
 
 <!-- SNS -->
@@ -250,19 +254,19 @@
   <div class="sixth-sns-buttons">
     <a href="https://www.facebook.com/Golfers24-107676011730422/">
       <div class="sixth-sns-button">
-        <i class="fab fa-facebook-square sixth-sns-icon"></i>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-facebook-icon.svg" alt="">
         <p>Facebook</p>
       </div>
     </a>
     <a href="https://www.instagram.com/golfers24_official/?hl=ja">
       <div class="sixth-sns-button">
-        <i class="fab fa-instagram sixth-sns-icon"></i>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-insta-icon.svg" alt="">
         <p>Instagram</p>
       </div>
     </a>
     <a href="https://lin.ee/7Ii8MCV">
       <div class="sixth-sns-button">
-        <i class="fab fa-line sixth-sns-icon"></i>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-line-icon.svg" alt="">
         <p>公式LINE</p>
       </div>
     </a>
