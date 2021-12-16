@@ -22,6 +22,7 @@
   <?php
   wp_enqueue_script('jquery');
   wp_head(); ?>
+  <meta name="google-site-verification" content="n0hUvjheYaYE9NSZKNjmSR0JSGev2lm7OeZCIyDmNog" />
 </head>
 
 

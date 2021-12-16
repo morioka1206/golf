@@ -25,11 +25,12 @@
       padding-right: 10px;
       -webkit-appearance: none;
       appearance: none; /* デフォルトのスタイルを無効 */
-      padding-left: 10px; /* 文字が左に寄るので右にずらす */
+      padding-left: 15px; /* 文字が左に寄るので右にずらす */
       background-image: url(../images/location-select.svg);
       background-position: right 20px center;
       background-repeat: no-repeat;
       background-size: 14px 14px;
+      font-size: 16px;
     }
   }
 
@@ -139,7 +140,7 @@
         padding-right: 10px;
         -webkit-appearance: none;
         appearance: none; /* デフォルトのスタイルを無効 */
-        padding-left: 10px; /* 文字が左に寄るので右にずらす */
+        padding-left: 15px; /* 文字が左に寄るので右にずらす */
         background-image: url(../images/location-select.svg);
         background-position: right 20px center;
         background-repeat: no-repeat;

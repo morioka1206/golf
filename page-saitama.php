@@ -19,8 +19,8 @@
         <option value="<?php echo esc_url(home_url('saitama')); ?>" selected>埼玉県</option>
         <option value="<?php echo esc_url(home_url('chiba')); ?>">千葉県</option>
         <option value="<?php echo esc_url(home_url('tokyo')); ?>">東京都</option>
-        <option value="<?php echo esc_url(home_url('kawagawa')); ?>">神奈川県</option>
-        <option value="<?php echo esc_url(home_url('niitaga')); ?>">新潟県</option>
+        <option value="<?php echo esc_url(home_url('kanagawa')); ?>">神奈川県</option>
+        <option value="<?php echo esc_url(home_url('niigata')); ?>">新潟県</option>
         <option value="<?php echo esc_url(home_url('toyama')); ?>">富山県</option>
         <option value="<?php echo esc_url(home_url('ishikawa')); ?>">石川県</option>
         <option value="<?php echo esc_url(home_url('fukui')); ?>">福井県</option>

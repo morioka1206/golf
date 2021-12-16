@@ -19,8 +19,8 @@
         <option value="<?php echo esc_url(home_url('saitama')); ?>">埼玉県</option>
         <option value="<?php echo esc_url(home_url('chiba')); ?>">千葉県</option>
         <option value="<?php echo esc_url(home_url('tokyo')); ?>">東京都</option>
-        <option value="<?php echo esc_url(home_url('kawagawa')); ?>">神奈川県</option>
-        <option value="<?php echo esc_url(home_url('niitaga')); ?>">新潟県</option>
+        <option value="<?php echo esc_url(home_url('kanagawa')); ?>">神奈川県</option>
+        <option value="<?php echo esc_url(home_url('niigata')); ?>">新潟県</option>
         <option value="<?php echo esc_url(home_url('toyama')); ?>">富山県</option>
         <option value="<?php echo esc_url(home_url('ishikawa')); ?>">石川県</option>
         <option value="<?php echo esc_url(home_url('fukui')); ?>">福井県</option>
@@ -38,7 +38,7 @@
         <option value="<?php echo esc_url(home_url('wakayama')); ?>">和歌山県</option>
         <option value="<?php echo esc_url(home_url('tottori')); ?>">鳥取県</option>
         <option value="<?php echo esc_url(home_url('shimane')); ?>">島根県</option>
-        <option value="<?php echo esc_url(home_url('okayama')); ?>" selected>岡山県</option>
+        <option value="<?php echo esc_url(home_url('okayama')); ?>">岡山県</option>
         <option value="<?php echo esc_url(home_url('hiroshima')); ?>">広島県</option>
         <option value="<?php echo esc_url(home_url('yamaguchi')); ?>">山口県</option>
         <option value="<?php echo esc_url(home_url('tokushima')); ?>">徳島県</option>
@@ -52,7 +52,7 @@
         <option value="<?php echo esc_url(home_url('ooita')); ?>">大分県</option>
         <option value="<?php echo esc_url(home_url('miyazaki')); ?>">宮崎県</option>
         <option value="<?php echo esc_url(home_url('kagoshima')); ?>">鹿児島県</option>
-        <option value="<?php echo esc_url(home_url('okinawa')); ?>">沖縄県</option>
+        <option value="<?php echo esc_url(home_url('okinawa')); ?>" selected>沖縄県</option>
       </select>
     </div>
     <div class="location-title">店舗</div>

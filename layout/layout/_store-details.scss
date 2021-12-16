@@ -406,18 +406,22 @@
 
     // Googleマップ
     .google-map {
-      width: 89%;
+      width: 335px;
       height: 300px;
       display: flex;
       justify-content: center;
       align-items: center;
       margin: 0 auto;
       margin-top: 150px;
+      min-width: 335px !important;
 
       iframe {
+        margin: 0;
+        padding: 0;
         width: 100%;
+        min-width: 335px !important;
         height: 300px;
-        object-fit: cover;
+        // object-fit: cover;
       }
     }
 
