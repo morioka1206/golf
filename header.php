@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
-  <link rel="stylesheet" href="<?php echo get_theme_file_uri(); ?>/css/sm-golf.css" media="only screen and (max-width:600px)">
-  <link rel="stylesheet" href="<?php echo get_theme_file_uri(); ?>/css/pc-golf.css" media="only screen and (min-width: 601px)">
+  <link rel="stylesheet" href="<?php echo get_theme_file_uri(); ?>/scss/sm-golf.css" media="only screen and (max-width:600px)">
+  <link rel="stylesheet" href="<?php echo get_theme_file_uri(); ?>/scss/pc-golf.css" media="only screen and (min-width: 601px)">
   <!-- webフォント -->
   <link rel="stylesheet" href="https://use.typekit.net/szq6kdr.css">
   <script src="https://kit.fontawesome.com/e0b0272f60.js" crossorigin="anonymous"></script>
@@ -37,23 +37,33 @@
   <div id="wrap">
     <header id="header">
       <div class="header-desktop">
-        <div class="header-logo">
-          <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_theme_file_uri(); ?>/images/logo.svg" alt="GOLFERS24ロゴ"></a>
-        </div>
-        <!-- ヘッダーのナビゲーションメニュー -->
-        <div class="header-navi-contents">
-          <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/')); ?>">TOP</a></div>
-          <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/how-to-use')); ?>">ご利用の流れ</a></div>
-          <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/locations')); ?>">店舗一覧</a></div>
-          <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/newslist')); ?>">NEWS</a></div>
-          <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/questions')); ?>">F&Q</a></div>
-          <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/company')); ?>">会社概要</a></div>
+        <div class="header-left">
+          <div class="header-logo">
+            <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_theme_file_uri(); ?>/images/logo.svg" alt="GOLFERS24ロゴ"></a>
+          </div>
+          <!-- ヘッダーのナビゲーションメニュー -->
+          <div class="header-navi-contents">
+            <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/')); ?>">TOP</a></div>
+            <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/how-to-use')); ?>">ご利用の流れ・体験予約</a></div>
+            <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/locations')); ?>">店舗一覧</a></div>
+            <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/newslist')); ?>">NEWS</a></div>
+            <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/questions')); ?>">F&Q</a></div>
+            <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/company')); ?>">会社概要</a></div>
+          </div>
         </div>
         <!-- ヘッダーのSNSリンク -->
-        <div class="header-sns-icons">
-          <div class="header-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-facebook-icon.svg" alt=""></a></div>
-          <div class="header-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-insta-icon.svg" alt=""></a></div>
-          <div class="header-line"><a href="https://lin.ee/7Ii8MCV"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-line-icon.svg" alt=""></a></div>
+        <div class="header-right">
+          <a href="<?php echo esc_url(home_url('/how-to-use')); ?>">
+            <div class="header-trial-lesson">体験予約</div>
+          </a>
+          <a href="<?php echo esc_url(home_url('/form')); ?>">
+            <div class="header-contact-us">お問い合わせ</div>
+          </a>
+          <div class="header-sns-icons">
+            <div class="header-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-facebook-icon.svg" alt=""></a></div>
+            <div class="header-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-insta-icon.svg" alt=""></a></div>
+            <div class="header-line"><a href="https://lin.ee/7Ii8MCV"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-line-icon.svg" alt=""></a></div>
+          </div>
         </div>
 
       </div>

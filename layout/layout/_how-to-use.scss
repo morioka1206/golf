@@ -25,6 +25,10 @@
       font-family: $noto-serif;
     }
 
+    .sm-how-title {
+      display: none;
+    }
+
     // ご利用方法の内容
     .how-to-use-contents {
       width: 1118px;
@@ -321,7 +325,7 @@
               background-image: url("../images/年間契約.svg");
               display: inline-block;
               width: 116px;
-              height: 24px;
+              height: 25px;
               background-size: contain;
               margin-left: 10px;
               margin-bottom: 3px;
@@ -407,18 +411,22 @@
     .page-title {
       font-family: $montserrat;
       color: transparent;
-      font-size: 60px;
+      font-size: 46px;
       font-weight: 400;
       line-height: 40px;
       -webkit-text-stroke: 1px $text-beige;
     }
 
     .how-title {
+      display: none;
+    }
+
+    .sm-how-title {
       font-weight: 300;
-      font-size: 28px;
-      line-height: 40px;
+      font-size: 26px;
+      line-height: 37px;
       font-family: $noto-serif;
-      margin-top: 20px;
+      margin-top: 18px;
     }
 
     // ご利用方法の内容
@@ -593,14 +601,14 @@
       }
 
       .hour-plan {
-        // width: 89%;
         margin: 0 auto;
         margin-top: 150px;
+        padding-bottom: 150px;
 
         .page-title {
           font-family: $montserrat;
           color: transparent;
-          font-size: 50px;
+          font-size: 46px;
           font-weight: 400;
           line-height: 46px;
           -webkit-text-stroke: 1px $text-beige;
@@ -608,15 +616,15 @@
 
         .how-title {
           font-weight: 300;
-          font-size: 28px;
-          line-height: 40px;
+          font-size: 26px;
+          line-height: 37px;
           font-family: $noto-serif;
-          margin-top: 20px;
+          margin-top: 19px;
         }
 
         .hour-table {
           margin-top: 100px;
-          margin-bottom: 180px;
+          margin-bottom: 0 !important;
           overflow-x: auto;
           white-space: nowrap;
           scrollbar-color: black yellow;
@@ -635,6 +643,7 @@
               color: white;
               text-align: left;
               padding: 0 20px;
+              border: none;
             }
 
             td {
@@ -738,15 +747,16 @@
           background: #ffe6ea;
           background-color: red;
         }
-
-        .sm-arrorw {
-          margin-top: 50px;
-          width: 300px;
-          height: 20px;
-          border-bottom: 1px solid $text-black;
-          border-right: 1px solid $text-black;
-          transform: skew(55deg);
-        }
+      }
+      .sm-arrorw {
+        margin-top: 45px;
+        width: 250px;
+        height: 20px;
+        border-bottom: 3px solid #86b78b;
+        border-right: 5px solid #86b78b;
+        border-bottom: 3px dashed $back-darkbrown;
+        border-right: 5px dotted $back-darkbrown;
+        transform: skew(55deg);
       }
     }
   }

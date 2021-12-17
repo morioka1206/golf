@@ -1097,6 +1097,8 @@
   .forth-section {
     width: 100%;
     // height: 1748px;
+    background-color: white;
+    padding-bottom: 150px;
     .forth-section-list-of-stores {
       padding-top: 100px;
       // 店舗一覧タイトル
@@ -1172,7 +1174,7 @@
     .forth-section-view-more {
       width: 182px;
       height: 50px;
-      margin: 100px auto 150px;
+      margin: 100px auto 0;
       background-color: $back-darkbrown;
       display: flex;
       justify-content: center;

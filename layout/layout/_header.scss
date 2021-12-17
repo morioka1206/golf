@@ -25,33 +25,100 @@
       display: none;
     }
 
-    // ナビゲーション
-    .header-navi-contents {
+    // ヘッダー左側（ロゴとナビ）
+    .header-left {
       display: flex;
-      justify-content: center;
       align-items: center;
-      gap: 30px;
-      line-height: 17px;
-      margin-left: 290px;
-      margin-right: 350px;
+      gap: 50px;
+
+      // ヘッダーのロゴ
+      .header-logo img {
+        width: 170px;
+        height: 26.66px;
+      }
+
+      // ナビゲーション
+      .header-navi-contents {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        line-height: 17px;
+        // margin-left: 290px;
+        // margin-right: 350px;
+      }
     }
 
-    // SNSのアイコン
-    .header-sns-icons {
-      width: 107px;
+    // ヘッダーの右側
+    .header-right {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: flex-end;
       gap: 18px;
-      font-size: 25px;
-      flex-wrap: nowrap;
-      transform: translateY(-17%);
-    }
+      // 体験予約
+      .header-trial-lesson,
+      .header-contact-us {
+        width: 124px;
+        height: 35px;
+        font-size: 12px;
+        line-height: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        border: 1px solid $text-black;
+        font-size: 12px;
+        line-height: 17px;
+        position: relative;
+        transition: 1.5s;
+      }
 
-    // ヘッダーのロゴ
-    .header-logo img {
-      width: 170px;
-      height: 26.66px;
+      .header-trial-lesson:hover,
+      .header-contact-us:hover {
+        transition: 1.5s;
+        color: white;
+        z-index: 1;
+      }
+
+      .header-trial-lesson:before,
+      .header-contact-us:before {
+        content: "";
+        width: 101.5%;
+        height: 106%;
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        color: $back-black;
+        border: 1px solid $back-darkbrown;
+        background-color: $back-darkbrown;
+        transform-origin: 100% 50%;
+        transform: scaleX(0);
+        transition: transform ease 0.8s;
+        z-index: -1;
+      }
+
+      .header-trial-lesson:hover::before,
+      .header-contact-us:hover::before {
+        transform-origin: 0% 0%;
+        transform: scaleX(1);
+        z-index: -1;
+      }
+
+      // SNSのアイコン
+      .header-sns-icons {
+        width: 107px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+        font-size: 25px;
+        flex-wrap: nowrap;
+        transform: translateY(-17%);
+
+        img {
+          width: 23px;
+          height: 23px;
+        }
+      }
     }
   }
 }

@@ -4,6 +4,10 @@
   <div class="how-to-use-wrapper">
     <div class="page-title">How to use</div>
     <div class="how-title">GOLFERS24ご利用の流れ・体験予約</div>
+    <div class="sm-how-title">
+      <p>GOLFERS24ご利用の流れ</p>
+      <p>体験予約</p>
+    </div>
     <div class="how-to-use-contents">
       <!-- トライアル利用 -->
       <div class="trial-use">
@@ -123,7 +127,7 @@
       <!-- プランごとの利用時間 -->
       <div class="hour-plan">
         <div class="page-title">Member Fee</div>
-        <div class="how-title">料金プラン</div>
+        <div class="sm-how-title">料金プラン</div>
 
         <!-- 利用時間の表 -->
         <div class="hour-table">
@@ -176,10 +180,10 @@
                   <td><?php echo SCF::get('admission'); ?></td>
                 </tr>
               </table>
-              <div class="sm-arrorw"></div>
             <?php endwhile; ?>
           <?php endif; ?>
         </div>
+        <div class="sm-arrorw"></div>
       </div>
     </div>
   </div>
