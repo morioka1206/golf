@@ -127,7 +127,9 @@
       <!-- プランごとの利用時間 -->
       <div class="hour-plan">
         <div class="page-title">Member Fee</div>
+
         <div class="sm-how-title">料金プラン</div>
+        <div class="how-title">料金プラン</div>
 
         <!-- 利用時間の表 -->
         <div class="hour-table">

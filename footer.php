@@ -86,7 +86,7 @@
 
 
 
-<!-- モバイルの特徴紹介のスライド -->
+<!-- モバイルの店舗詳細のスライド -->
 <script>
   let store_detail_images = new Swiper('.store-detail-images', {
     // オプション
@@ -115,7 +115,7 @@
     pagination: {
       el: '.swiper-pagination',
       // クリックに反応させる
-      clickable: true
+      // clickable: true
     },
 
     // ナビゲーションの矢印
@@ -171,6 +171,7 @@
   });
 </script>
 
+<!-- モバイルの特徴紹介のスライド -->
 <script>
   let slider2 = new Swiper('.slider2', {
     // オプション
