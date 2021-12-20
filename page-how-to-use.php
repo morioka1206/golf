@@ -37,10 +37,27 @@
                                         echo wp_get_attachment_image($image, 'large'); ?></div>
                 <div class="step-sentence"><?php echo SCF::get('text'); ?></div>
                 <div class="step-line-friends"><a href="https://lin.ee/7Ii8MCV"><img src="<?php echo get_theme_file_uri(); ?>/images/公式ラインはこちらから.svg" alt=""></a></div>
+                <div class="trial-step">
+                  <div class="no-line-user">
+                    <div class="no-line-title">LINEをお持ちでない方</div>
+                    <div class="no-line-sentence">
+                      <p>LINEをお持ちでない方は</p>
+                      <p>こちらより予約サイトへ</p>
+                      <p>アクセスしてください。</p>
+                    </div>
+                    <a href="https://golfers24.hacomono.jp/">
+                      <div class="reserve-link">
+                        <p>予約サイトはこちらから</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
               </div>
 
             <?php endwhile; ?>
           <?php endif; ?>
+
+
 
 
           <?php
@@ -73,7 +90,7 @@
 
 
           <!-- ステップ6 -->
-          <div class="trial-step">
+          <!-- <div class="trial-step">
             <div class="no-line-user">
               <div class="no-line-title">LINEをお持ちでない方</div>
               <div class="no-line-sentence">
@@ -87,7 +104,7 @@
                 </div>
               </a>
             </div>
-          </div>
+          </div> -->
 
 
         </div>

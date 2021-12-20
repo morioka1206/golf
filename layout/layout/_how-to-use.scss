@@ -107,13 +107,14 @@
 
             // LINEをお持ちでない方
             .no-line-user {
-              width: 354px;
+              width: 335px;
               height: 357px;
               background-color: $back-beige;
               display: flex;
               justify-content: center;
               align-items: center;
               flex-direction: column;
+              margin-top: 120px;
 
               .no-line-title {
                 width: 323px;
@@ -505,6 +506,7 @@
               justify-content: center;
               align-items: center;
               flex-direction: column;
+              margin-top: 60px;
 
               .no-line-title {
                 width: 323px;
