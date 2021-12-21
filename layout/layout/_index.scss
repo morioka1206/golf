@@ -24,28 +24,27 @@
       background-position: center center;
     }
 
+    .first-top-image {
+      position: absolute;
+      width: 1480px;
+      height: 733px;
+      left: 0;
+      top: 0;
+    }
+
     // それぞれのスライド画像
     .first-image {
-      z-index: 30;
+      z-index: 100;
       // width: 1480px;
       height: 733px;
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
+      animation: zoomUP;
+      // background-image: url(../images/top-abobe.jpeg);
     }
 
     .first-view-images {
-      @-webkit-keyframes zoomUp {
-        0% {
-          -webkit-transform: scale(1);
-          transform: scale(1);
-        }
-        100% {
-          -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-        }
-      }
-
       @keyframes zoomUp {
         /* 1.15倍させる指定 */
         0% {
@@ -67,14 +66,14 @@
       .swiper-slide-active .slide-img,
       .swiper-slide-duplicate-active .slide-img,
       .swiper-slide-prev .slide-img {
-        animation: zoomUp 12s linear 0s;
+        animation: zoomUp 12s linear 0s 1 normal both;
         animation-fill-mode: both;
       }
 
       .slide-img {
         background-size: cover;
         background-position: center center; /* 背景画像は中央を軸に表示させる */
-        height: 733px; /* 600pxの高さで表示させる */
+        // height: 733px; /* 600pxの高さで表示させる */
       }
 
       // ファーストビューのニュースのスライド
@@ -91,7 +90,10 @@
         display: flex;
         justify-content: flex-start;
         transform: translateY(-10px);
-        z-index: 10;
+        z-index: 200;
+        position: absolute;
+        left: 0;
+        top: 0;
 
         .first-news-title {
           width: 110px;
@@ -212,7 +214,7 @@
       left: 1320px;
       // 余白なしのバージョン
       left: 85%;
-      z-index: 1;
+      z-index: 100;
     }
 
     .contact-us-text {

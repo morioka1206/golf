@@ -145,7 +145,8 @@
 
     // 自動で変わる
     autoplay: {
-      delay: 5000
+      delay: 4000,
+      disableOnInteraction: false,
     },
 
     speed: 2000, //２秒かけてフェードで切り替わる

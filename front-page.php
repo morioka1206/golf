@@ -3,6 +3,27 @@
 <div class="top-section">
   <!-- トップ画像 -->
   <div class="first-view-images">
+    <div class="first-top-image  swiper slider1">
+      <div class="swiper-wrapper">
+        <?php
+        $args = array(
+          'post_type' => 'top-image',
+          'posts_per_page' => -1,
+        );
+        $st_query = new WP_Query($args);
+        ?>
+
+        <?php if ($st_query->have_posts()) : ?>
+          <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
+            <div class="swiper-slide">
+              <div class="first-image slide-img" style="background-image: url(<?php $image = SCF::get('image');
+                                                                              echo wp_get_attachment_url($image); ?>);"></div>
+            </div>
+
+          <?php endwhile; ?>
+        <?php endif; ?>
+      </div>
+    </div>
 
     <!-- デスクトップ用ニューススライダー -->
     <div class="first-news-wrapper">
@@ -84,27 +105,6 @@
         <div class="swiper-button-next"></div>
       </div>
     </div>
-    <!-- <div class="swiper slider1">
-      <div class="swiper-wrapper">
-        <?php
-        $args = array(
-          'post_type' => 'top-image',
-          'posts_per_page' => -1,
-        );
-        $st_query = new WP_Query($args);
-        ?>
-
-        <?php if ($st_query->have_posts()) : ?>
-          <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
-
-            <div class="swiper-slide">
-              <div class="first-image slide-img" style="background-image: url(<?php $image = SCF::get('image');
-                                                                              echo wp_get_attachment_url($image); ?>);"></div>
-            </div>
-          <?php endwhile; ?>
-        <?php endif; ?>
-      </div>
-    </div> -->
     <a href="<?php echo esc_url(home_url('/form')); ?>">
       <div class="contact-us">
         <div class="contact-us-text">
@@ -115,39 +115,54 @@
         </div>
       </div>
     </a>
-  </div>
-  <!-- トップ画像下のGOLFERS24紹介 -->
-  <div class="top-introduction">
-
-    <?php
-    $args = array(
-      'post_type' => 'introduction',
-      // 全件取得、数を指定すればその数だけ取得する。
-      'posts_per_page' => -1,
-    );
-    $st_query = new WP_Query($args);
-    ?>
-
-    <?php if ($st_query->have_posts()) : ?>
-      <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
 
 
-        <div class="top-introduction-text animation">
-          <div class="top-introduction-title"><?php echo SCF::get('title') ?></div>
-          <div class="top-introduction-sentence">
-            <?php echo SCF::get('introduction-text'); ?>
-          </div>
-        </div>
-        <div class="top-introduction-image animation4 ">
-          <?php $image = SCF::get('image');
-          echo wp_get_attachment_image($image, 'larage'); ?>
-        </div>
+
   </div>
 
-
-<?php endwhile; ?>
-<?php endif; ?>
 </div>
+
+
+<!-- トップ画像下のGOLFERS24紹介 -->
+<div class="top-introduction">
+
+  <?php
+  $args = array(
+    'post_type' => 'introduction',
+    // 全件取得、数を指定すればその数だけ取得する。
+    'posts_per_page' => -1,
+  );
+  $st_query = new WP_Query($args);
+  ?>
+
+  <?php if ($st_query->have_posts()) : ?>
+    <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
+
+
+      <div class="top-introduction-text animation">
+        <div class="top-introduction-title"><?php echo SCF::get('title') ?></div>
+        <div class="top-introduction-sentence">
+          <?php echo SCF::get('introduction-text'); ?>
+        </div>
+      </div>
+      <div class="top-introduction-image animation4 ">
+        <?php $image = SCF::get('image');
+        echo wp_get_attachment_image($image, 'larage'); ?>
+      </div>
+
+    <?php endwhile; ?>
+  <?php endif; ?>
+</div>
+
+<div class="top-section swiper slider1">
+  <div class="first-views-images swiper-wrapper">
+    <div class="swiper-slide"><img src="./images/店舗ページへ.svg" alt="">kk</div>
+    <div class="swiper-slide"><img src="./images/店舗ページへ.svg" alt="">kkkk１</div>
+    <div class="swiper-slide"><img src="./images/店舗ページへ.svg" alt="">kkkkk２</div>
+  </div>
+</div>
+
+
 
 <!-- GOLFERS24の特徴 -->
 <?php get_template_part('features') ?>
@@ -203,8 +218,8 @@
 </div>
 
 <!-- NEWS -->
-<div class="fifth-section ">
-  <div class="fifth-section-wrapper animation">
+<div class="fifth-section animation">
+  <div>
     <div class="fifth-section-title">NEWS</div>
     <div class="fifth-section-list-of-news">
       <div class="list-of-news ">
@@ -233,13 +248,11 @@
         <?php endif; ?>
       </div>
     </div>
-
-    <!-- VIEW MOREボタン -->
-    <div class="fifth-section-view-more"><a href="<?php echo esc_url(home_url('/newslist')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/view-more-button.svg" alt=""></a></div>
   </div>
 
 
-
+  <!-- VIEW MOREボタン -->
+  <div class="fifth-section-view-more"><a href="<?php echo esc_url(home_url('/newslist')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/view-more-button.svg" alt=""></a></div>
 </div>
 
 <!-- SNS -->
