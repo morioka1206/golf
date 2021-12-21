@@ -581,7 +581,7 @@ footer .copyright {
       transform: scale(1);
     }
     100% {
-      transform: scale(1.25);
+      transform: scale(1.15);
     }
   }
   @keyframes zoomUp {
@@ -590,7 +590,7 @@ footer .copyright {
       transform: scale(1);
     }
     100% {
-      transform: scale(1.25);
+      transform: scale(1.15);
     }
   }
   .top-section .first-view-images .swiper-slide {
@@ -601,8 +601,8 @@ footer .copyright {
   .top-section .first-view-images .swiper-slide-active .slide-img,
 .top-section .first-view-images .swiper-slide-duplicate-active .slide-img,
 .top-section .first-view-images .swiper-slide-prev .slide-img {
-    -webkit-animation: zoomUp 12s linear 0s 1 normal both;
-            animation: zoomUp 12s linear 0s 1 normal both;
+    -webkit-animation: zoomUp 16s linear 0s 1 normal both;
+            animation: zoomUp 16s linear 0s 1 normal both;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
   }
@@ -1197,6 +1197,7 @@ footer .copyright {
     flex-direction: column;
     padding-left: 30px;
     position: relative;
+    z-index: 20;
   }
   .top-section .sm-first-news-wrapper .first-news-title {
     font-family: "Montserrat", sans-serif;
@@ -1273,6 +1274,13 @@ footer .copyright {
     background-repeat: no-repeat;
     background-position: center center;
   }
+  .top-section .first-top-image {
+    position: absolute;
+    width: 375px;
+    height: 700px;
+    top: 0;
+    left: 0;
+  }
   @-webkit-keyframes zoomUp {
     0% {
       transform: scale(1);
@@ -1287,7 +1295,7 @@ footer .copyright {
       transform: scale(1);
     }
     100% {
-      transform: scale(1.25);
+      transform: scale(1.15);
     }
   }
   .top-section .first-view-images .swiper-slide {

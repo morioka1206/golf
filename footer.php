@@ -145,11 +145,14 @@
 
     // 自動で変わる
     autoplay: {
-      delay: 4000,
+      delay: 5000,
       disableOnInteraction: false,
     },
 
-    speed: 2000, //２秒かけてフェードで切り替わる
+    speed: 6500, //２秒かけてフェードで切り替わる
+
+    // 複製する数を指定
+    loopedSlides: 8,
 
     // ページネーション
     pagination: {
