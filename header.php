@@ -53,17 +53,6 @@
         </div>
         <!-- ヘッダーの予約などリンク -->
         <div class="header-right">
-          <!-- <a href="<?php echo esc_url(home_url('/how-to-use')); ?>">
-            <div class="header-trial-lesson">体験予約</div>
-          </a>
-          <a href="<?php echo esc_url(home_url('/form')); ?>">
-            <div class="header-contact-us">お問い合わせ</div>
-          </a>
-          <div class="header-sns-icons">
-            <div class="header-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-facebook-icon.svg" alt=""></a></div>
-            <div class="header-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-insta-icon.svg" alt=""></a></div>
-            <div class="header-line"><a href="https://lin.ee/7Ii8MCV"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-line-icon.svg" alt=""></a></div>
-          </div> -->
           <div class="header-sns-icons">
             <div class="header-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-facebook-icon.svg" alt=""></a></div>
             <div class="header-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-insta-icon.svg" alt=""></a></div>
@@ -110,9 +99,19 @@
                     <div class="menu">会社概要</div>
                   </a>
                 </div>
-                <a href="<?php echo esc_url(home_url('/form')); ?>">
-                  <div class="sm-nav-contact-us">CONTACT US</div>
-                </a>
+
+                <div class="humberger-links">
+                  <a href="https://lin.ee/7Ii8MCV" target="_blank">
+                    <div class="sm-nav-line"><img src="<?php echo get_theme_file_uri(); ?>/images/humberger-line.svg" alt=""></div>
+                  </a>
+                  <a href="https://golfers24.hacomono.jp/" target="_blank">
+                    <div class="sm-nav-web-reserve"><img src="<?php echo get_theme_file_uri(); ?>/images/humberger-webreserve.svg" alt=""></div>
+                  </a>
+                  <a href="<?php echo esc_url(home_url('/form')); ?>">
+                    <div class="sm-nav-contact-us"><img src="<?php echo get_theme_file_uri(); ?>/images/humberger-contact-us.svg" alt=""></div>
+                  </a>
+                </div>
+
                 <div class="sm-nav-sns">
                   <p>FOLLOW US</p>
                   <div class="sm-nav-sns-icons">
