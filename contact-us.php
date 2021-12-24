@@ -17,10 +17,8 @@
       <div class="contact-us-button">体験予約</div>
     </a> -->
     <div class="reserve-buttons">
-      <div class="web-reserve">
-        <div class="web-reserve-button"><img src="<?php echo get_theme_file_uri(); ?>/images/contact-us-WEBで無料体験予約.svg" alt=""></div>
-      </div>
-      <div class="line-reserve"><img src="<?php echo get_theme_file_uri(); ?>/images/contact-us-LINEで無料体験予約.svg" alt=""></div>
+      <a href="https://lin.ee/7Ii8MCV" class="line-reserve"><img src="<?php echo get_theme_file_uri(); ?>/images/contact-us-LINEで無料体験予約.svg" alt=""></a>
+      <a href="https://golfers24.hacomono.jp/" class="web-reserve"><img src="<?php echo get_theme_file_uri(); ?>/images/contact-us-WEBで無料体験予約.svg" alt=""></a>
     </div>
   </div>
 </div>

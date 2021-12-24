@@ -12,7 +12,7 @@
           <p>日々最新情報もお届けしております。</p>
         </div>
         <div class="form-line-link">
-          <a href="https://lin.ee/7Ii8MCV"><img src="<?php echo get_theme_file_uri(); ?>/images/公式LINEはこちら.svg" alt=""></a>
+          <a href="https://lin.ee/7Ii8MCV"><img src="<?php echo get_theme_file_uri(); ?>/images/contact-LINE友達.svg" alt=""></a>
         </div>
       </div>
 

@@ -64,8 +64,12 @@
             <div class="header-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-insta-icon.svg" alt=""></a></div>
             <div class="header-line"><a href="https://lin.ee/7Ii8MCV"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-line-icon.svg" alt=""></a></div>
           </div> -->
+          <div class="header-sns-icons">
+            <div class="header-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-facebook-icon.svg" alt=""></a></div>
+            <div class="header-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-insta-icon.svg" alt=""></a></div>
+          </div>
+          <a href="https://lin.ee/7Ii8MCV/"><img src="<?php echo get_template_directory_uri(); ?>/images/LINEで無料体験予約.svg" alt=""></a>
           <a href="https://golfers24.hacomono.jp/"><img src="<?php echo get_template_directory_uri(); ?>/images/WEBで無料体験予約.svg" alt=""></a>
-          <a href="https://golfers24.hacomono.jp/"><img src="<?php echo get_template_directory_uri(); ?>/images/LINEで無料体験予約.svg" alt=""></a>
           <a href="<?php echo esc_url(home_url('/form')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/お問い合わせ.svg" alt=""></a>
         </div>
 

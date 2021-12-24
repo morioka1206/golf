@@ -10,136 +10,22 @@
     </div>
     <div class="how-to-use-contents">
       <!-- トライアル利用 -->
-      <div class="trial-use">
-        <div class="trial-title">体験予約</div>
-        <div class="trial-steps">
+      <div class="trial-steps">
+        <div class="steps-title">無料体験の流れ</div>
 
-          <?php
-          $args = array(
-            'post_type' => 'how-to-use-trial1',
-            // 全件取得、数を指定すればその数だけ取得する。
-            'posts_per_page' => 1,
-            'order' => 'ASC'
-          );
-          $st_query = new WP_Query($args);
-          ?>
+        <!-- 利用の流れ -->
+        <div class="steps">
+          <!-- それぞれの流れ -->
 
-          <?php if ($st_query->have_posts()) : ?>
-            <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
-
-
-
-              <!-- ステップ1 -->
-              <div class="trial-step">
-                <div class="step-number"><?php echo SCF::get('step'); ?></div>
-                <div class="step-title"><?php echo SCF::get('title'); ?></div>
-                <div class="step-image"><?php $image = SCF::get('image');
-                                        echo wp_get_attachment_image($image, 'large'); ?></div>
-                <div class="step-sentence"><?php echo SCF::get('text'); ?></div>
-                <div class="step-line-friends"><a href="https://lin.ee/7Ii8MCV"><img src="<?php echo get_theme_file_uri(); ?>/images/公式ラインはこちらから.svg" alt=""></a></div>
-                <div class="trial-step">
-                  <div class="no-line-user">
-                    <div class="no-line-title">LINEをお持ちでない方</div>
-                    <div class="no-line-sentence">
-                      <p>LINEをお持ちでない方は</p>
-                      <p>こちらより予約サイトへ</p>
-                      <p>アクセスしてください。</p>
-                    </div>
-                    <a href="https://golfers24.hacomono.jp/">
-                      <div class="reserve-link">
-                        <p>予約サイトはこちらから</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-            <?php endwhile; ?>
-          <?php endif; ?>
-
-
-
-
-          <?php
-          $args = array(
-            'post_type' => 'how-to-use-trial',
-            // 全件取得、数を指定すればその数だけ取得する。
-            'posts_per_page' => -1,
-            'order' => 'ASC'
-          );
-          $st_query = new WP_Query($args);
-          ?>
-
-          <?php if ($st_query->have_posts()) : ?>
-            <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
-
-
-
-              <!-- ステップ5 -->
-              <div class="trial-step">
-                <div class="step-number"><?php echo SCF::get('step'); ?></div>
-                <div class="step-title"><?php echo SCF::get('title'); ?></div>
-                <div class="step-image"><?php $image = SCF::get('image');
-                                        echo wp_get_attachment_image($image, 'large'); ?></div>
-                <div class="step-sentence"><?php echo SCF::get('text'); ?></div>
-              </div>
-
-            <?php endwhile; ?>
-          <?php endif; ?>
-
-
-
-          <!-- ステップ6 -->
-          <!-- <div class="trial-step">
-            <div class="no-line-user">
-              <div class="no-line-title">LINEをお持ちでない方</div>
-              <div class="no-line-sentence">
-                <p>LINEをお持ちでない方は</p>
-                <p>こちらより予約サイトへ</p>
-                <p>アクセスしてください。</p>
-              </div>
-              <a href="https://golfers24.hacomono.jp/">
-                <div class="reserve-link">
-                  <p>予約サイトはこちらから</p>
-                </div>
-              </a>
-            </div>
-          </div> -->
-
-
+          <!-- STEP1 -->
+          <div class="step">
+            <div class="step-title">公式LINEの友達追加</div>
+            .step-ex
+          </div>
         </div>
-      </div>
 
+      </div>
       <!-- 会員利用 -->
-      <div class="member-use">
-        <div class="member-use-title">会員利用</div>
-        <div class="member-use-steps">
-
-          <?php
-          $args = array(
-            'post_type' => 'how-to-use-member',
-            // 全件取得、数を指定すればその数だけ取得する。
-            'posts_per_page' => -1,
-            'order' => 'ASC'
-          );
-          $st_query = new WP_Query($args);
-          ?>
-
-          <?php if ($st_query->have_posts()) : ?>
-            <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
-              <!-- ステップ1 -->
-              <div class="member-step">
-                <div class="member-number"><?php echo SCF::get('step'); ?></div>
-                <div class="member-title"><?php echo SCF::get('title'); ?></div>
-                <div class="member-image"><?php $image = SCF::get('image');
-                                          echo wp_get_attachment_image($image, 'large'); ?></div>
-                <div class="member-sentence"><?php echo SCF::get('text'); ?></div>
-              </div>
-
-            <?php endwhile; ?>
-          <?php endif; ?>
-        </div>
-      </div>
 
       <!-- プランごとの利用時間 -->
       <div class="hour-plan">

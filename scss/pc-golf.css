@@ -280,8 +280,27 @@ body {
   .header-desktop .header-right {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     gap: 5px;
     margin-right: 0.1%;
+  }
+  .header-desktop .header-right a {
+    transition: 0.2s;
+  }
+  .header-desktop .header-right a:hover {
+    opacity: 0.7;
+  }
+  .header-desktop .header-right .header-sns-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: nowrap;
+    margin-right: 20px;
+  }
+  .header-desktop .header-right .header-sns-icons img {
+    width: 23px;
+    height: 23px;
   }
   .header-desktop .header-right .header-trial-lesson,
 .header-desktop .header-right .header-contact-us {
@@ -326,20 +345,6 @@ body {
     transform-origin: 0% 0%;
     transform: scaleX(1);
     z-index: -1;
-  }
-  .header-desktop .header-right .header-sns-icons {
-    width: 107px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 18px;
-    font-size: 25px;
-    flex-wrap: nowrap;
-    transform: translateY(-17%);
-  }
-  .header-desktop .header-right .header-sns-icons img {
-    width: 23px;
-    height: 23px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1055,7 +1060,7 @@ footer .copyright {
     font-weight: 300;
     font-size: 30px;
     line-height: 40px;
-    background-color: #483b19;
+    background-color: #f13529;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1870,9 +1875,10 @@ footer .copyright {
     box-sizing: border-box;
     border: 2.7px solid white;
     overflow: hidden;
+    transition: 0.7s;
   }
-  .contact-us-section .contact-us-wrapper .reserve-buttons .web-reserve-button {
-    border-radius: 3px;
+  .contact-us-section .contact-us-wrapper .reserve-buttons .web-reserve:hover {
+    opacity: 0.7;
   }
   .contact-us-section .contact-us-wrapper .reserve-buttons .line-reserve {
     width: 230px;
@@ -1882,8 +1888,13 @@ footer .copyright {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
     border: 2.7px solid white;
     overflow: hidden;
+    transition: 0.7s;
+  }
+  .contact-us-section .contact-us-wrapper .reserve-buttons .line-reserve:hover {
+    opacity: 0.7;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1913,9 +1924,49 @@ footer .copyright {
     display: none;
   }
   .contact-us-section .sm-contact-us-text {
-    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 35px;
     text-align: center;
-    margin-bottom: 38px;
+    margin-bottom: 24px;
+  }
+  .contact-us-section .reserve-buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact-us-section .reserve-buttons .web-reserve {
+    width: 230px;
+    height: 60px;
+    border-radius: 4px;
+    background-color: #f13529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2.7px solid white;
+    overflow: hidden;
+    transition: 0.7s;
+  }
+  .contact-us-section .reserve-buttons .web-reserve:hover {
+    opacity: 0.7;
+  }
+  .contact-us-section .reserve-buttons .line-reserve {
+    width: 230px;
+    height: 60px;
+    border-radius: 4px;
+    background-color: #06c755;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2.7px solid white;
+    overflow: hidden;
+    transition: 0.7s;
+  }
+  .contact-us-section .reserve-buttons .line-reserve:hover {
+    opacity: 0.7;
   }
   .contact-us-section .contact-us-button {
     width: 282px;
@@ -1991,151 +2042,34 @@ footer .copyright {
   }
   .how-to-use-wrapper .how-to-use-contents {
     width: 1118px;
+    margin-top: 80px;
   }
-  .how-to-use-wrapper .how-to-use-contents .trial-use .trial-title {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 43.44px;
-    letter-spacing: 0.2rem;
-    color: #cbc3ad;
+  .how-to-use-wrapper .how-to-use-contents .steps-title {
+    color: #483b19;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 46.34px;
+    left: 0.1rem;
+  }
+  .how-to-use-wrapper .how-to-use-contents .steps {
     display: flex;
-    text-align: center;
-    align-items: center;
-    margin-top: 128px;
+    flex-direction: column;
+    gap: 30px;
   }
-  .how-to-use-wrapper .how-to-use-contents .trial-use .trial-title::before {
-    content: "";
-    width: 60px;
-    margin-right: 7px;
-    border-top: 3px solid #cbc3ad;
-  }
-  .how-to-use-wrapper .how-to-use-contents .trial-use .trial-steps {
-    margin-top: 72px;
-    display: grid;
-    grid-template-columns: 334px 334px 334px;
-    gap: 90px 58px;
-  }
-  .how-to-use-wrapper .how-to-use-contents .trial-use .trial-steps .trial-step {
-    width: 334px;
-  }
-  .how-to-use-wrapper .how-to-use-contents .trial-use .trial-steps .trial-step .step-number {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 23px;
-    color: #cbc3ad;
-    transition: 0.5s;
-  }
-  .how-to-use-wrapper .how-to-use-contents .trial-use .trial-steps .trial-step .step-title {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 23px;
-    margin-top: 20px;
-  }
-  .how-to-use-wrapper .how-to-use-contents .trial-use .trial-steps .trial-step .step-image {
-    width: 334px;
-    height: 244px;
-    margin: 30px 0;
-  }
-  .how-to-use-wrapper .how-to-use-contents .trial-use .trial-steps .trial-step .step-sentence {
-    font-size: 18px;
-    line-height: 28px;
+  .how-to-use-wrapper .how-to-use-contents .step {
     width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 13px 20px 20px;
   }
-  .how-to-use-wrapper .how-to-use-contents .trial-use .trial-steps .trial-step .step-line-friends {
-    margin-top: 30px;
-    transition: 0.5s;
-  }
-  .how-to-use-wrapper .how-to-use-contents .trial-use .trial-steps .trial-step .step-line-friends:hover {
-    opacity: 0.7;
-  }
-  .how-to-use-wrapper .how-to-use-contents .trial-use .trial-steps .trial-step .no-line-user {
-    width: 335px;
-    height: 357px;
+  .how-to-use-wrapper .how-to-use-contents .trial-steps {
+    width: 100%;
+    height: 1250px;
     background-color: #edeae2;
+    padding: 40px 0 80px;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 120px;
-  }
-  .how-to-use-wrapper .how-to-use-contents .trial-use .trial-steps .trial-step .no-line-user .no-line-title {
-    width: 323px;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 23px;
-    text-align: center;
-    padding-top: 54px;
-  }
-  .how-to-use-wrapper .how-to-use-contents .trial-use .trial-steps .trial-step .no-line-user .no-line-sentence {
-    width: 323px;
-    font-size: 21px;
-    line-height: 33px;
-    text-align: center;
-    margin-top: 34px;
-  }
-  .how-to-use-wrapper .how-to-use-contents .trial-use .trial-steps .trial-step .no-line-user .reserve-link {
-    width: 289px;
-    height: 60px;
-    background-color: #483b19;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 34px;
-    transition: 0.5s;
-  }
-  .how-to-use-wrapper .how-to-use-contents .trial-use .trial-steps .trial-step .no-line-user .reserve-link:hover {
-    opacity: 0.7;
-  }
-  .how-to-use-wrapper .how-to-use-contents .member-use .member-use-title {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 43.44px;
-    letter-spacing: 0.2rem;
-    color: #cbc3ad;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    margin-top: 128px;
-  }
-  .how-to-use-wrapper .how-to-use-contents .member-use .member-use-title::before {
-    content: "";
-    width: 60px;
-    margin-right: 7px;
-    border-top: 3px solid #cbc3ad;
-  }
-  .how-to-use-wrapper .how-to-use-contents .member-use .member-use-steps {
-    margin-top: 72px;
-    padding-bottom: 150px;
-    display: grid;
-    grid-template-columns: 334px 334px 334px;
-    gap: 90px 58px;
-  }
-  .how-to-use-wrapper .how-to-use-contents .member-use .member-use-steps .member-step {
-    width: 334px;
-  }
-  .how-to-use-wrapper .how-to-use-contents .member-use .member-use-steps .member-step .member-number {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 23px;
-    color: #cbc3ad;
-  }
-  .how-to-use-wrapper .how-to-use-contents .member-use .member-use-steps .member-step .member-title {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 23px;
-    margin-top: 20px;
-  }
-  .how-to-use-wrapper .how-to-use-contents .member-use .member-use-steps .member-step .member-image {
-    width: 334px;
-    height: 244px;
-    margin: 30px 0;
-  }
-  .how-to-use-wrapper .how-to-use-contents .member-use .member-use-steps .member-step .member-sentence {
-    font-size: 18px;
-    line-height: 28px;
-    width: 100%;
   }
   .how-to-use-wrapper .hour-plan {
     width: 1166px;

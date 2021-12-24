@@ -53,8 +53,32 @@
     .header-right {
       display: flex;
       justify-content: flex-end;
+      align-items: center;
       gap: 5px;
       margin-right: 0.1%;
+
+      a {
+        transition: 0.2s;
+      }
+
+      a:hover {
+        opacity: 0.7;
+      }
+
+      .header-sns-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+        flex-wrap: nowrap;
+        margin-right: 20px;
+
+        img {
+          width: 23px;
+          height: 23px;
+        }
+      }
+
       // 体験予約
       .header-trial-lesson,
       .header-contact-us {
@@ -102,23 +126,6 @@
         transform-origin: 0% 0%;
         transform: scaleX(1);
         z-index: -1;
-      }
-
-      // SNSのアイコン
-      .header-sns-icons {
-        width: 107px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 18px;
-        font-size: 25px;
-        flex-wrap: nowrap;
-        transform: translateY(-17%);
-
-        img {
-          width: 23px;
-          height: 23px;
-        }
       }
     }
   }
