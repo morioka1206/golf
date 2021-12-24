@@ -42,13 +42,14 @@
         font-weight: bold;
         line-height: 46.34px;
         left: 0.1rem;
+        margin-bottom: 10px;
       }
 
       // 手順
       .steps {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        width: 100%;
       }
 
       .step {
@@ -56,18 +57,93 @@
         height: auto;
         background-color: white;
         padding: 13px 20px 20px;
+        color: $text-black;
+        position: relative;
+        margin-top: 30px;
+      }
+
+      .step-title {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 23px;
+        display: flex;
+        align-items: center;
+        margin-left: 60px;
+      }
+
+      // 見えている流れの説明
+      .step-explanation {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20.27px;
+        text-align: justify;
+        margin-top: 26px;
+      }
+
+      // 流れの注意
+      .step-caution {
+        color: #f13529;
+        font-size: 12px;
+        line-height: 17.38px;
+        text-align: justify;
+        margin-top: 10px;
+      }
+
+      .step-number {
+        position: absolute;
+        top: 0;
+        left: 10px;
+      }
+
+      // LINEとウェブ予約はこちら
+      .how-to-line-webreserve {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+
+        // LINE
+        .how-to-line-link {
+          width: 455px;
+          height: 60px;
+          background-color: #06c755;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        // WEB予約
+        .how-to-webreserve-link {
+          width: 455px;
+          height: 60px;
+          background-color: #f13529;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
       }
 
       // 無料体験の流れ
       .trial-steps {
         width: 100%;
-        height: 1250px;
+        // height: 1250px;
         background-color: $back-beige;
-        padding: 40px 0 80px;
+        padding: 40px 100px 80px;
         display: flex;
         // justify-content: center;
         align-items: center;
         flex-direction: column;
+      }
+
+      .member-steps {
+        width: 100%;
+        background-color: $back-beige;
+        padding: 40px 100px 80px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 80px;
+        margin-bottom: 150px;
       }
 
       // トライアル利用
@@ -257,7 +333,7 @@
       // }
     }
     .hour-plan {
-      width: 1166px;
+      width: 1117px;
       margin: 0 auto;
       margin-top: 150px;
       // position: relative;
@@ -287,7 +363,7 @@
         margin-bottom: 180px;
 
         table {
-          width: 1166px;
+          width: 1117px;
           height: 748px;
           font-size: 18px;
           padding: 0 60px;

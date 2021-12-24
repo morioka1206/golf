@@ -12,13 +12,9 @@
       <p>以下のリンクへお進みください。</p>
     </div>
 
-    <!-- 無料体験予約ボタン -->
-    <!-- <a href="<?php echo esc_url(home_url('/how-to-use')); ?>">
-      <div class="contact-us-button">体験予約</div>
-    </a> -->
     <div class="reserve-buttons">
-      <a href="https://lin.ee/7Ii8MCV" class="line-reserve"><img src="<?php echo get_theme_file_uri(); ?>/images/contact-us-LINEで無料体験予約.svg" alt=""></a>
-      <a href="https://golfers24.hacomono.jp/" class="web-reserve"><img src="<?php echo get_theme_file_uri(); ?>/images/contact-us-WEBで無料体験予約.svg" alt=""></a>
+      <a href="https://lin.ee/7Ii8MCV" class="line-reserve" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/contact-us-LINEで無料体験予約.svg" alt=""></a>
+      <a href="https://golfers24.hacomono.jp/" class="web-reserve" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/contact-us-WEBで無料体験予約.svg" alt=""></a>
     </div>
   </div>
 </div>

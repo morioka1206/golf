@@ -1,8 +1,8 @@
 <!-- フッター -->
 <footer id="footer">
   <div class="sm-footer">
-    <a href=""><img src="<?php echo get_theme_file_uri(); ?>/images/sm-footer-line.svg" alt=""></a>
-    <a href=""><img src="<?php echo get_theme_file_uri(); ?>/images/sm-footer-webreserve.svg" alt=""></a>
+    <a href="https://lin.ee/7Ii8MCV"><img src="<?php echo get_theme_file_uri(); ?>/images/sm-footer-line.svg" alt=""></a>
+    <a href="https://golfers24.hacomono.jp/"><img src="<?php echo get_theme_file_uri(); ?>/images/sm-footer-webreserve.svg" alt=""></a>
   </div>
 
 

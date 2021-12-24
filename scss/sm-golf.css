@@ -2055,29 +2055,91 @@ body {
     font-weight: bold;
     line-height: 46.34px;
     left: 0.1rem;
+    margin-bottom: 10px;
   }
   .how-to-use-wrapper .how-to-use-contents .steps {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    width: 100%;
   }
   .how-to-use-wrapper .how-to-use-contents .step {
     width: 100%;
     height: auto;
     background-color: white;
     padding: 13px 20px 20px;
+    color: #555555;
+    position: relative;
+    margin-top: 30px;
+  }
+  .how-to-use-wrapper .how-to-use-contents .step-title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+  }
+  .how-to-use-wrapper .how-to-use-contents .step-explanation {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20.27px;
+    text-align: justify;
+    margin-top: 26px;
+  }
+  .how-to-use-wrapper .how-to-use-contents .step-caution {
+    color: #f13529;
+    font-size: 12px;
+    line-height: 17.38px;
+    text-align: justify;
+    margin-top: 10px;
+  }
+  .how-to-use-wrapper .how-to-use-contents .step-number {
+    position: absolute;
+    top: 0;
+    left: 10px;
+  }
+  .how-to-use-wrapper .how-to-use-contents .how-to-line-webreserve {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .how-to-use-wrapper .how-to-use-contents .how-to-line-webreserve .how-to-line-link {
+    width: 455px;
+    height: 60px;
+    background-color: #06c755;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .how-to-use-wrapper .how-to-use-contents .how-to-line-webreserve .how-to-webreserve-link {
+    width: 455px;
+    height: 60px;
+    background-color: #f13529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .how-to-use-wrapper .how-to-use-contents .trial-steps {
     width: 100%;
-    height: 1250px;
     background-color: #edeae2;
-    padding: 40px 0 80px;
+    padding: 40px 100px 80px;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
+  .how-to-use-wrapper .how-to-use-contents .member-steps {
+    width: 100%;
+    background-color: #edeae2;
+    padding: 40px 100px 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 150px;
+  }
   .how-to-use-wrapper .hour-plan {
-    width: 1166px;
+    width: 1117px;
     margin: 0 auto;
     margin-top: 150px;
     margin: 0 auto;
@@ -2103,7 +2165,7 @@ body {
     margin-bottom: 180px;
   }
   .how-to-use-wrapper .hour-plan .hour-table table {
-    width: 1166px;
+    width: 1117px;
     height: 748px;
     font-size: 18px;
     padding: 0 60px;

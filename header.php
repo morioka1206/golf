@@ -57,8 +57,8 @@
             <div class="header-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-facebook-icon.svg" alt=""></a></div>
             <div class="header-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-insta-icon.svg" alt=""></a></div>
           </div>
-          <a href="https://lin.ee/7Ii8MCV/"><img src="<?php echo get_template_directory_uri(); ?>/images/LINEで無料体験予約.svg" alt=""></a>
-          <a href="https://golfers24.hacomono.jp/"><img src="<?php echo get_template_directory_uri(); ?>/images/WEBで無料体験予約.svg" alt=""></a>
+          <a href="https://lin.ee/7Ii8MCV/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/LINEで無料体験予約.svg"></a>
+          <a href="https://golfers24.hacomono.jp/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/WEBで無料体験予約.svg"></a>
           <a href="<?php echo esc_url(home_url('/form')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/お問い合わせ.svg" alt=""></a>
         </div>
 
@@ -115,9 +115,9 @@
                 <div class="sm-nav-sns">
                   <p>FOLLOW US</p>
                   <div class="sm-nav-sns-icons">
-                    <div class="sm-header-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><img src="<?php echo get_template_directory_uri(); ?>/images/sm-hum-facebook.svg" alt=""></a></div>
-                    <div class="sm-header-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja"><img src="<?php echo get_template_directory_uri(); ?>/images/sm-hum-insta.svg" alt=""></a></div>
-                    <div class="sm-header-line"><a href="https://lin.ee/7Ii8MCV"><img src="<?php echo get_template_directory_uri(); ?>/images/sm-hum-line.svg" alt=""></a></div>
+                    <div class="sm-header-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/sm-hum-facebook.svg" alt=""></a></div>
+                    <div class="sm-header-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/sm-hum-insta.svg" alt=""></a></div>
+                    <div class="sm-header-line"><a href="https://lin.ee/7Ii8MCV" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/sm-hum-line.svg" target="_blank"></a></div>
                   </div>
                 </div>
               </div>
