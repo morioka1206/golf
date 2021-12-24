@@ -211,6 +211,7 @@ body {
     display: flex;
     justify-content: flex-end;
     gap: 5px;
+    margin-right: 0.1%;
   }
   .header-desktop .header-right .header-trial-lesson,
 .header-desktop .header-right .header-contact-us {
@@ -1734,9 +1735,11 @@ footer .copyright {
     flex-direction: column;
   }
   .contact-us-section .contact-us-wrapper .contact-us-text {
-    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
     text-align: center;
-    margin-bottom: 38px;
+    margin-bottom: 40px;
   }
   .contact-us-section .contact-us-wrapper .sm-contact-us-text {
     display: none;
@@ -1780,6 +1783,37 @@ footer .copyright {
     transform-origin: 0 50%;
     transform: scaleX(1);
     z-index: -1;
+  }
+  .contact-us-section .contact-us-wrapper .reserve-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .contact-us-section .contact-us-wrapper .reserve-buttons .web-reserve {
+    width: 230px;
+    height: 60px;
+    border-radius: 4px;
+    background-color: #f13529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2.7px solid white;
+    overflow: hidden;
+  }
+  .contact-us-section .contact-us-wrapper .reserve-buttons .web-reserve-button {
+    border-radius: 3px;
+  }
+  .contact-us-section .contact-us-wrapper .reserve-buttons .line-reserve {
+    width: 230px;
+    height: 60px;
+    border-radius: 4px;
+    background-color: #06c755;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2.7px solid white;
+    overflow: hidden;
   }
 }
 @media screen and (max-width: 600px) {

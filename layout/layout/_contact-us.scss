@@ -19,9 +19,11 @@
       flex-direction: column;
 
       .contact-us-text {
-        line-height: 50px;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 40px;
         text-align: center;
-        margin-bottom: 38px;
+        margin-bottom: 40px;
       }
 
       .sm-contact-us-text {
@@ -71,6 +73,45 @@
         transform-origin: 0 50%;
         transform: scaleX(1);
         z-index: -1;
+      }
+
+      // 無料体験予約ボタン
+      .reserve-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        // WEBで予約
+        .web-reserve {
+          width: 230px;
+          height: 60px;
+          border-radius: 4px;
+          background-color: #f13529;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          border: 2.7px solid white;
+          overflow: hidden;
+        }
+
+        .web-reserve-button {
+          border-radius: 3px;
+        }
+
+        // LINEで予約
+        .line-reserve {
+          width: 230px;
+          height: 60px;
+          border-radius: 4px;
+          background-color: #06c755;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          // box-sizing: border-box;
+          border: 2.7px solid white;
+          overflow: hidden;
+        }
       }
     }
   }
