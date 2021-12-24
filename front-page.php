@@ -3,7 +3,7 @@
 <div class="top-section">
   <!-- トップ画像 -->
   <div class="first-view-images">
-    <div class="first-top-image  swiper slider1">
+    <!-- <div class="first-top-image  swiper slider1">
       <div class="swiper-wrapper">
         <?php
         $args = array(
@@ -23,7 +23,7 @@
           <?php endwhile; ?>
         <?php endif; ?>
       </div>
-    </div>
+    </div> -->
 
     <!-- デスクトップ用ニューススライダー -->
     <div class="first-news-wrapper">
@@ -154,16 +154,6 @@
   <?php endif; ?>
 </div>
 
-<div class="top-section swiper slider1">
-  <div class="first-views-images swiper-wrapper">
-    <div class="swiper-slide"><img src="./images/店舗ページへ.svg" alt="">kk</div>
-    <div class="swiper-slide"><img src="./images/店舗ページへ.svg" alt="">kkkk１</div>
-    <div class="swiper-slide"><img src="./images/店舗ページへ.svg" alt="">kkkkk２</div>
-  </div>
-</div>
-
-
-
 <!-- GOLFERS24の特徴 -->
 <?php get_template_part('features') ?>
 
@@ -195,7 +185,9 @@
           <!-- 店舗1 -->
           <div class="forth-section-store">
             <a href="<?php the_permalink(); ?>">
-              <div class="forth-section-store-image"><img src="<?php echo get_template_directory_uri(); ?>/images/store-image1.png" alt=""></div>
+              <div class="forth-section-store-image"><?php $image = SCF::get('image');
+                                                      echo wp_get_attachment_image($image, 'large'); ?></div>
+
             </a>
             <div class="forth-section-store-infomation">
               <div class="forth-section-store-name"><?php echo SCF::get('store-name'); ?></div>

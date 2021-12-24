@@ -280,7 +280,7 @@ body {
   .header-desktop .header-right {
     display: flex;
     justify-content: flex-end;
-    gap: 18px;
+    gap: 5px;
   }
   .header-desktop .header-right .header-trial-lesson,
 .header-desktop .header-right .header-contact-us {
@@ -626,6 +626,7 @@ footer .copyright {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../images/golferstop-img01.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -940,7 +941,6 @@ footer .copyright {
   .second-section .second-section-features .feature .feature-image {
     width: 800px;
     height: 687px;
-    background-color: aqua;
     transform: translateX(-80px);
   }
   .second-section .second-section-features .feature:nth-of-type(even) {
@@ -979,7 +979,6 @@ footer .copyright {
   .second-section .second-section-features .feature:nth-of-type(even) .feature-image {
     width: 800px;
     height: 687px;
-    background-color: aqua;
     transform: translateX(80px);
   }
 
