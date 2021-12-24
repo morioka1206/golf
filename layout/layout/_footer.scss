@@ -1,70 +1,93 @@
 // フッター
-footer {
-  width: 100%;
-  height: 392px;
-  background-color: $back-brown;
-  color: white;
-  font-size: 14px;
-  padding: 96px 200px 75px 221px;
-
-  .footer-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .footer-company-infomation {
-      line-height: 24px;
-      margin-top: 33.34px;
-    }
-
-    .footer-links {
-      width: 354px;
-      line-height: 17px;
-      display: flex;
-      justify-content: space-between;
-      margin-top: 52px;
-    }
-
-    .sm-footer-sns {
+@media screen and (min-width: 601px) {
+  footer {
+    .sm-footer {
       display: none;
     }
 
-    .footer-sns {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .footer-sns-icons {
-      width: 153px;
-      font-size: 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-left: 30px;
-      transform: translateY(-14%);
-    }
-
-    .footer-follow-us {
-      font-size: 14px;
-      line-height: 24px;
-      font-family: $montserrat;
-    }
-  }
-
-  .copyright {
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    height: 392px;
     background-color: $back-brown;
-    margin-top: 30px;
+    color: white;
+    font-size: 14px;
+    padding: 96px 200px 75px 221px;
+
+    .footer-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .footer-company-infomation {
+        line-height: 24px;
+        margin-top: 33.34px;
+      }
+
+      .footer-links {
+        width: 354px;
+        line-height: 17px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 52px;
+      }
+
+      .sm-footer-sns {
+        display: none;
+      }
+
+      .footer-sns {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .footer-sns-icons {
+        width: 153px;
+        font-size: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 30px;
+        transform: translateY(-14%);
+      }
+
+      .footer-follow-us {
+        font-size: 14px;
+        line-height: 24px;
+        font-family: $montserrat;
+      }
+    }
+
+    .copyright {
+      display: flex;
+      justify-content: center;
+      background-color: $back-brown;
+      margin-top: 30px;
+    }
   }
 }
 
 @media screen and (max-width: 600px) {
+  .sm-footer {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    z-index: 200;
+  }
   footer {
     width: 100%;
-    height: 400px;
+    // height: 400px;
     padding: 0;
+    background-color: $back-brown;
+    font-size: 14px;
+    color: white;
+    padding-bottom: 100px;
 
     .footer-wrapper {
       display: flex;
