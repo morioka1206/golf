@@ -417,17 +417,16 @@
   .third-section {
     width: 100%;
     height: 342px;
-    background-color: #a59c84;
+    background: linear-gradient(100.96deg, #a59c84 28.49%, #736755 81.36%);
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    // padding-right: 350px;
-    gap: 218px;
+    align-items: center;
 
     .third-section-wrapper {
-      padding-top: 90px;
-      width: 506px;
-      padding-bottom: 72px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
 
     .third-section-how-to-use-text {
@@ -445,9 +444,12 @@
       }
 
       .how-to-use-sentence {
-        width: 506px;
+        font-family: $noto-serif;
+        font-size: 23px;
+        font-weight: 300;
+        line-height: 40px;
         line-height: 50px;
-        margin-top: 50px;
+        text-align: center;
       }
     }
 
@@ -470,19 +472,40 @@
       }
     }
 
+    // ご利用の流れ・体験予約はこちらボタンの矢印
     .third-section-how-to-use-arrow {
-      width: 342px;
-      height: 37px;
-      border-bottom: 1px solid white;
-      border-right: 1px solid white;
+      width: 157px;
+      height: 20px;
+      border-bottom: 2px solid white;
+      border-right: 2.3px solid white;
       transform: skew(45deg);
       transition: 0.6s;
       position: absolute;
-      left: 0px;
-      top: 20px;
+      left: 697px;
+      top: 33%;
     }
     .third-section-how-to-use-arrow:hover {
-      width: 480px;
+      width: 257px;
+    }
+
+    // ご利用の流れ・体験予約はこちらボタン
+    .third-section-how-to-use-button {
+      width: 780px;
+      height: 100px;
+      border-radius: 2px;
+      color: white;
+      font-family: $noto-serif;
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 40px;
+      // background: linear-gradient(to left, $back-darkbrown, #3f3314);
+      background-color: $back-darkbrown;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      margin-top: 18px;
+      position: relative;
     }
   }
 
