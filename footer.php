@@ -1,8 +1,12 @@
 <!-- フッター -->
 <footer id="footer">
+
+  <!-- スマホの追従するフッター -->
   <div class="sm-footer">
-    <a href="https://lin.ee/7Ii8MCV"><img src="<?php echo get_theme_file_uri(); ?>/images/sm-footer-line.svg" alt=""></a>
-    <a href="https://golfers24.hacomono.jp/"><img src="<?php echo get_theme_file_uri(); ?>/images/sm-footer-webreserve.svg" alt=""></a>
+    <!-- <a href="https://lin.ee/7Ii8MCV" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/sm-footer-line.svg" alt=""></a>
+    <a href="https://golfers24.hacomono.jp/" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/sm-footer-webreserve.svg" alt=""></a> -->
+    <a href="https://lin.ee/7Ii8MCV" class="sm-footer-line" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/sm-footer-line.svg" alt=""></a>
+    <a href="https://golfers24.hacomono.jp/" target="_blank" class="sm-footer-web"><img src="<?php echo get_theme_file_uri(); ?>/images/sm-footer-webreserve.svg" alt=""></a>
   </div>
 
 
@@ -20,9 +24,9 @@
       <div class="sm-footer-sns">
         <p class="footer-follow-us">FOLLOW US</p>
         <div class="footer-sns-icons">
-          <div class="footer-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-facebook-icon.svg" alt=""></a></div>
-          <div class="footer-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-insta-icon.svg" alt=""></a></div>
-          <div class="footer-line"><a href="https://lin.ee/7Ii8MCV"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-line-icon.svg" alt=""></a></div>
+          <div class="footer-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-facebook-icon.svg" alt=""></a></div>
+          <div class="footer-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-insta-icon.svg" alt=""></a></div>
+          <div class="footer-line"><a href="https://lin.ee/7Ii8MCV" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-line-icon.svg" alt=""></a></div>
         </div>
       </div>
       <div class="footer-links">
@@ -37,9 +41,9 @@
     <div class="footer-sns">
       <p class="footer-follow-us">FOLLOW US</p>
       <div class="footer-sns-icons">
-        <div class="footer-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-facebook-icon.svg" alt=""></a></div>
-        <div class="footer-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-insta-icon.svg" alt=""></a></div>
-        <div class="footer-line"><a href="https://lin.ee/7Ii8MCV"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-line-icon.svg" alt=""></a></div>
+        <div class="footer-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-facebook-icon.svg" alt=""></a></div>
+        <div class="footer-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-insta-icon.svg" alt=""></a></div>
+        <div class="footer-line"><a href="https://lin.ee/7Ii8MCV" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-line-icon.svg" alt=""></a></div>
       </div>
     </div>
   </div>

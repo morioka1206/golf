@@ -13,8 +13,8 @@
     </div>
 
     <div class="reserve-buttons">
-      <a href="https://lin.ee/7Ii8MCV" class="line-reserve" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/contact-us-LINEで無料体験予約.svg" alt=""></a>
-      <a href="https://golfers24.hacomono.jp/" class="web-reserve" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/contact-us-WEBで無料体験予約.svg" alt=""></a>
+      <a href="https://lin.ee/7Ii8MCV" class="line-reserve" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/contact-us-linereserve.svg" alt=""></a>
+      <a href="https://golfers24.hacomono.jp/" class="web-reserve" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/contact-us-webreserve.svg" alt=""></a>
     </div>
   </div>
 </div>
