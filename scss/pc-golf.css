@@ -268,7 +268,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 60px;
+    padding: 0 60px;
     color: black;
     background-color: white;
     position: fixed;
@@ -287,7 +287,7 @@ body {
     gap: 50px;
   }
   .header-desktop .header-left .header-logo img {
-    height: 28px;
+    height: 31px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -296,6 +296,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     gap: 40px;
+    margin-right: 0.26%;
   }
   .header-desktop .header-right .header-navi-contents {
     display: flex;
