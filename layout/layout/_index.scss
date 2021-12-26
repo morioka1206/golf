@@ -510,6 +510,10 @@
       margin: 0 auto;
       margin-top: 18px;
       position: relative;
+      transition: 0.2s;
+    }
+    .third-section-how-to-use-button:hover {
+      opacity: 0.7;
     }
   }
 

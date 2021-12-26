@@ -662,6 +662,13 @@
         }
       }
 
+      .table-caution {
+        font-size: 14px;
+        line-height: 20.27px;
+        text-align: justify;
+        margin-top: 10px;
+      }
+
       .hour-table-scrollbar-thumb {
         background: #ffe6ea;
         background-color: red;
@@ -1022,7 +1029,7 @@
         }
       }
       .sm-arrorw {
-        margin-top: 45px;
+        margin-top: 30px;
         width: 250px;
         height: 20px;
         border-bottom: 3px solid #0d130e;
@@ -1032,6 +1039,14 @@
         border-bottom: 3px solid $text-black;
         border-right: 5px solid $text-black;
         transform: skew(55deg);
+      }
+
+      .table-caution {
+        width: 335px !important;
+        font-size: 14px;
+        line-height: 20.27px;
+        text-align: justify;
+        margin-top: 24px;
       }
     }
 

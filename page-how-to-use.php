@@ -52,7 +52,7 @@
                     <p>GOLFERS24では専用の予約管理システムを導入しております。</p>
                     <p>まずはシステム使用のための会員登録をお願いいたします。以下に沿って登録を進めてください。</p>
                   </div>
-                  <div class="time-required">所要時間2~3分</div>
+                  <div class="time-required">所要時間1~2分</div>
                 </div>
                 <div class="hide-steps">
                   <!-- 1 -->
@@ -123,7 +123,7 @@
                     <p>そのため、店舗の解錠・施錠はお客様ご自身で行なっていただくこととなりますが、</p>
                     <p>「Akerun」というアプリを使用し簡単に解錠・施錠を行うことができるようになります。</p>
                   </div>
-                  <div class="time-required">所要時間2~3分</div>
+                  <div class="time-required">所要時間1~2分</div>
                 </div>
                 <div class="hide-steps">
                   <!-- 1 -->
@@ -203,7 +203,7 @@
                     <br>
                     <p>当月分の日割り会費＋翌月分の会費＋入会金（11,000円）が決済されます。</p>
                   </div>
-                  <div class="step5-time-required">所要時間2~3分</div>
+                  <div class="step5-time-required">所要時間1~2分</div>
                 </div>
               </div>
             </div>
@@ -347,7 +347,15 @@
               </table>
             <?php endwhile; ?>
           <?php endif; ?>
+          <div class="table-caution">
+            <p>※会員1名に対して1名のゲストを無料で同伴可能です。</p>
+            <p>※90分1コマの予約で、1コマ消化後に次回予約が可能です。</p>
+            <p>※全プラン1日1コマ利用ですが、月のご予約回数に制限はありません。月会費内で使い放題となります。</p>
+            <p>※お支払いはクレジットカードのみとなります。毎月20日に翌月分会費が決済されます。当月10日までのご連絡で当月末での解約が可能です。</p>
+            <p>※予約システムよりご自身にて入会手続きを行っていただきますが、ご不明な点は遠慮なく公式LINEよりお問い合わせ下さい。</p>
+          </div>
         </div>
+
         <div class="sm-arrorw"></div>
       </div>
     </div>

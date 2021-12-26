@@ -41,6 +41,9 @@
           <div class="header-logo">
             <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_theme_file_uri(); ?>/images/logo.svg" alt="GOLFERS24ロゴ"></a>
           </div>
+        </div>
+        <!-- ヘッダーの予約などリンク -->
+        <div class="header-right">
           <!-- ヘッダーのナビゲーションメニュー -->
           <div class="header-navi-contents">
             <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/')); ?>">TOP</a></div>
@@ -50,16 +53,15 @@
             <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/questions')); ?>">F&Q</a></div>
             <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/company')); ?>">会社概要</a></div>
           </div>
-        </div>
-        <!-- ヘッダーの予約などリンク -->
-        <div class="header-right">
           <div class="header-sns-icons">
             <div class="header-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-facebook-icon.svg" alt=""></a></div>
             <div class="header-instagram"><a href="https://www.instagram.com/golfers24_official/?hl=ja"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-insta-icon.svg" alt=""></a></div>
           </div>
-          <a href="https://lin.ee/7Ii8MCV/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/LINEで無料体験予約.svg"></a>
-          <a href="https://golfers24.hacomono.jp/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/WEBで無料体験予約.svg"></a>
-          <a href="<?php echo esc_url(home_url('/form')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/お問い合わせ.svg" alt=""></a>
+          <div class="header-reserve-links">
+            <a href="https://lin.ee/7Ii8MCV/" target="_blank" class="header-line"><img src="<?php echo get_template_directory_uri(); ?>/images/pc-header-line.svg"></a>
+            <a href="https://golfers24.hacomono.jp/" target="_blank" class="header-webreserve"><img src="<?php echo get_template_directory_uri(); ?>/images/pc-header-webreserve.svg"></a>
+            <a href="<?php echo esc_url(home_url('/form')); ?>" class="header-contact-us"><img src="<?php echo get_template_directory_uri(); ?>/images/pc-header-contact-us.svg" alt=""></a>
+          </div>
         </div>
 
       </div>

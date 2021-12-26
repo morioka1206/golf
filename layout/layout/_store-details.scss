@@ -325,6 +325,13 @@
           margin-bottom: 2px;
         }
       }
+
+      .table-caution {
+        font-size: 14px;
+        line-height: 20.27px;
+        text-align: justify;
+        margin-top: 10px;
+      }
     }
 
     .hour-table-scrollbar-thumb {
@@ -639,12 +646,23 @@
       background-color: red;
     }
 
+    .table-caution {
+      font-size: 14px;
+      line-height: 20.27px;
+      text-align: justify;
+      margin-top: 24px;
+    }
+
     .sm-arrorw {
-      margin-top: 50px;
-      width: 300px;
+      margin-top: 30px;
+      width: 250px;
       height: 20px;
-      border-bottom: 1px solid $text-black;
-      border-right: 1px solid $text-black;
+      border-bottom: 3px solid #0d130e;
+      border-right: 5px solid #86b78b;
+      border-bottom: 3px dashed $back-darkbrown;
+      border-right: 5px dotted $back-darkbrown;
+      border-bottom: 3px solid $text-black;
+      border-right: 5px solid $text-black;
       transform: skew(55deg);
     }
   }
