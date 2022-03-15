@@ -2,9 +2,13 @@
 <html lang="ja">
 
 <head>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5CWPFXD');</script>
+	<!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
   <link rel="stylesheet" href="<?php echo get_theme_file_uri(); ?>/scss/sm-golf.css" media="only screen and (max-width:600px)">
   <link rel="stylesheet" href="<?php echo get_theme_file_uri(); ?>/scss/pc-golf.css" media="only screen and (min-width: 601px)">
@@ -27,6 +31,9 @@
 
 
 <body <?php body_class(); ?>>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CWPFXD"　height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
   <?php wp_body_open(); ?>
   <div id="loader-bg">
     <div id="loader">
@@ -50,8 +57,8 @@
             <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/how-to-use')); ?>">ご利用の流れ・体験予約</a></div>
             <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/locations')); ?>">店舗一覧</a></div>
             <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/newslist')); ?>">NEWS</a></div>
-            <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/questions')); ?>">F&Q</a></div>
-            <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/company')); ?>">会社概要</a></div>
+            <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/fc')); ?>">FC加盟店募集</a></div>
+            <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/questions')); ?>">FAQ</a></div>
           </div>
           <div class="header-sns-icons">
             <div class="header-facebook"><a href="https://www.facebook.com/Golfers24-107676011730422/"><img src="<?php echo get_template_directory_uri(); ?>/images/navi-facebook-icon.svg" alt=""></a></div>
@@ -94,11 +101,11 @@
                   <a href="<?php echo esc_url(home_url('/newslist')); ?>">
                     <div class="menu">NEWS</div>
                   </a>
-                  <a href="<?php echo esc_url(home_url('/questions')); ?>">
-                    <div class="menu">F&Q</div>
+                  <a href="<?php echo esc_url(home_url('/fc')); ?>">
+                    <div class="menu">FC加盟店募集</div>
                   </a>
-                  <a href="<?php echo esc_url(home_url('/company')); ?>">
-                    <div class="menu">会社概要</div>
+                  <a href="<?php echo esc_url(home_url('/questions')); ?>">
+                    <div class="menu">FAQ</div>
                   </a>
                 </div>
 

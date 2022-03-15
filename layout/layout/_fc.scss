@@ -1,0 +1,135 @@
+@media screen and (min-width: 601px) {
+  // FCのファーストビュー
+  .fc-title-wrapper {
+    width: calc(100%);
+    height: 888px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    // justify-content: center;
+    padding: 134px 0 182px 161px;
+    align-items: center;
+    background-image: url(../images/FVimg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .fc-title {
+    .main-copy {
+      width: 787px;
+      height: 291px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .sub-copy-wrapper {
+      position: relative;
+      .green-back {
+        width: 770px;
+        height: 81px;
+        background: linear-gradient(
+          270deg,
+          rgba(0, 104, 55, 0) 0%,
+          #006837 15.1%,
+          #006837 81.25%,
+          rgba(0, 104, 55, 0) 100%
+        );
+        mix-blend-mode: multiply;
+      }
+
+      .sub-copy {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -28%);
+      }
+    }
+
+    .top-contact-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 22px;
+      gap: 22px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  // FCのファーストビュー
+  .fc-title-wrapper {
+    align-items: center;
+    background-image: url(../images/FVimg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 56% center;
+  }
+
+  // FCのファーストビュー
+  .fc-title {
+    padding-top: 20%;
+    .main-copy {
+      width: 100%;
+      object-fit: contain;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 33%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .sub-copy-wrapper {
+      width: 85%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin: 100px auto 50px;
+
+      .sub-copy {
+        height: 56px;
+        z-index: 2;
+      }
+
+      .green-back {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(
+          270deg,
+          rgba(0, 104, 55, 0) 0%,
+          #006837 15.1%,
+          #006837 81.25%,
+          rgba(0, 104, 55, 0) 100%
+        );
+        mix-blend-mode: multiply;
+        z-index: 0;
+      }
+    }
+
+    .top-contact-buttons {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10%;
+      padding: 20px 0;
+      margin-top: 50px;
+
+      .line-button img,
+      .mail-button img {
+        height: 60px;
+        margin: 5px;
+      }
+    }
+  }
+}

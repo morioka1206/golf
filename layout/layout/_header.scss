@@ -10,7 +10,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // padding: 0 60px;
     padding-left: 60px;
     color: black;
     background-color: white;
@@ -34,7 +33,7 @@
       // ヘッダーのロゴ
       .header-logo img {
         // width: 170px;
-        height: 28px;
+        height: 31px;
         object-fit: cover;
       }
     }
@@ -45,7 +44,6 @@
       justify-content: flex-end;
       align-items: center;
       gap: 40px;
-      // margin-right: 0.26%;
 
       // ナビゲーション
       .header-navi-contents {

@@ -14,6 +14,14 @@ add_action('after_setup_theme', 'my_setup');
 
 define('WP_SCSS_ALWAYS_RECOMPILE', true);
 
+// 画像を圧縮しない設定
+add_filter('jpeg_quality', function ($arg) {
+  return 100;
+});
+
+// 画像が大きくてもサイズを小さくしない設定
+add_filter('big_image_size_threshold', '__return_false');
+
 function aioseo_disable_term_title_rewrites($disabled)
 {
   return true;
@@ -43,12 +51,9 @@ function post_has_archive($args, $post_type)
   return $args;
 }
 add_filter('register_post_type_args', 'post_has_archive', 10, 2);
-
-
 ?>
 
 <?php
-
 /**
  * ページネーション出力関数
  * $paged : 現在のページ
@@ -109,3 +114,4 @@ function pagination($pages, $paged, $range = 2, $show_only = false)
     echo '</div>';
   }
 }
+?>

@@ -8,8 +8,8 @@
       // 左右に余白
       // width: 1480px;
       // 横100%で表示
-      width: calc(100% - 120px);
-      height: 733px;
+      width: calc(100%);
+      height: 888px;
       overflow: hidden;
       position: relative;
       margin: 0 auto;
@@ -46,241 +46,62 @@
       animation: zoomUP;
       // background-image: url(../images/top-abobe.jpeg);
     }
-
-    .first-view-images {
-      @keyframes zoomUp {
-        /* 1.15倍させる指定 */
-        0% {
-          // -webkit-transform: scale(1);
-          transform: scale(1);
-        }
-        100% {
-          // -webkit-transform: scale(1.25);
-          transform: scale(1.15);
-        }
-      }
-
-      .swiper-slide {
-        overflow: hidden;
-        // -webkit-backface-visibility: hidden;
-        // backface-visibility: hidden;
-      }
-
-      .swiper-slide-active .slide-img,
-      .swiper-slide-duplicate-active .slide-img,
-      .swiper-slide-prev .slide-img {
-        animation: zoomUp 16s linear 0s 1 normal both;
-        animation-fill-mode: both;
-      }
-
-      .slide-img {
-        background-size: cover;
-        background-position: center center; /* 背景画像は中央を軸に表示させる */
-        // height: 733px; /* 600pxの高さで表示させる */
-      }
-
-      // ファーストビューのニュースのスライド
-      .sm-first-news-wrapper {
-        display: none;
-      }
-
-      .first-news-wrapper {
-        width: 920px;
-        height: 80px;
-        z-index: 3000;
-        margin: 613px 280px 30px;
-        background-color: white;
-        display: flex;
-        justify-content: flex-start;
-        transform: translateY(-10px);
-        z-index: 200;
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        .first-news-title {
-          width: 110px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-family: $montserrat;
-          font-size: 14px;
-          line-height: 17.07px;
-          letter-spacing: 0.1rem;
-          font-weight: 700;
-        }
-
-        .swiper {
-          width: 810px;
-          display: flex;
-        }
-      }
-
-      .first-news {
-        width: 100%;
-        height: 80px;
-
-        .swiper-slide {
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-        }
-
-        // ニュースの情報
-        .news-contents {
-          display: flex;
-          align-items: center;
-          justify-content: flex-start;
-          // padding-left: 37px;
-
-          .news-tag {
-            font-family: $montserrat;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 17.07px;
-            letter-spacing: 0.1rem;
-            margin-right: 38px;
-          }
-
-          .news-date {
-            font-family: $montserrat;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 17.07px;
-            letter-spacing: 0.1rem;
-            margin-right: 42px;
-          }
-
-          .news-title {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 17.07px;
-            display: flex;
-            align-items: center;
-          }
-        }
-
-        .swiper-buttons {
-          display: flex;
-          // margin-left: 10px;
-          // flex-direction: row-reverse;
-        }
-
-        .swiper-button-prev {
-          transform: translateX(600px);
-          width: 81px;
-          background-color: white;
-          display: flex;
-          justify-content: flex-start;
-        }
-
-        .swiper-button-next {
-          transform: translateX(10px);
-          width: 140px;
-          background-color: white;
-          // padding-left: 20px;
-          display: flex;
-          justify-content: flex-start;
-        }
-
-        .swiper-button-prev::after,
-        .swiper-button-next::after {
-          font-weight: 900;
-          font-size: 18px;
-          color: $text-black;
-        }
-
-        .swiper-button-prev::after {
-          padding-left: 50px;
-        }
-
-        .swiper-button-next::after {
-          padding-left: 30px;
-        }
-      }
-    }
-
-    // トップ画像右下のコンタクトアス
-    @keyframes rotation {
-      0% {
-        transform: rotate(0);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
-    .contact-us {
-      position: absolute;
-      top: 573px;
-      // 余白ありのバージョン
-      left: 1320px;
-      // 余白なしのバージョン
-      left: 85%;
-      z-index: 100;
-    }
-
-    .contact-us-text {
-      animation: 14s linear infinite rotation;
-      position: relative;
-    }
-
-    .contact-us-mail {
-      position: absolute;
-      top: 33%;
-      left: 30%;
-    }
   }
 
   // トップ画像下のGOLFERS24紹介部分
   .top-introduction {
+    width: 100%;
+    height: 440px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 60px;
-    padding: 0 100px;
-    margin: 150px 0;
+    position: relative;
+    background-color: #261a0b;
 
-    @keyframes sliden {
-      0% {
-        clip-path: inset(0 100% 0 0);
-      }
-      100% {
-        clip-path: inset(0);
-      }
-    }
+    // padding: 0 100px;
+    // margin: 150px 0;
 
     // 文章部分
     .top-introduction-text {
-      color: $text-gray;
-      width: 693px;
+      color: white;
+      height: 100%;
+      width: 1187px;
       display: flex;
       justify-content: center;
       align-items: flex-start;
       flex-direction: column;
-      gap: 40px;
+      padding: 75px 250px 75px 240px;
+      // gap: 40px;
+      z-index: 20;
+      background: linear-gradient(
+        90.17deg,
+        #261a0b 0.14%,
+        #372711 74.4%,
+        rgba(56, 39, 16, 0) 99.83%,
+        rgba(56, 38, 16, 0) 99.84%
+      );
     }
 
-    .top-introduction-title {
-      font-family: $noto-serif;
-      font-size: 40px;
-      line-height: 70px;
-      font-weight: 300;
-    }
+    // .top-introduction-title {
+    //   font-family: $noto-serif;
+    //   font-size: 40px;
+    //   line-height: 70px;
+    //   font-weight: 300;
+    // }
 
     .top-introduction-sentence {
       line-height: 50px;
     }
 
     .top-introduction-image {
-      width: 647px;
-      height: 680px;
+      width: 803px;
+      height: 440px;
+      background: url(../images/top-intro01.png);
 
       img {
-        width: 647px;
-        height: 680px;
+        width: 803px;
+        height: 440px;
         object-fit: cover;
-        transition: all 0.9s;
       }
     }
   }
@@ -288,7 +109,8 @@
   // GOLFERS24の特徴
   .second-section {
     width: 100%;
-    height: 4275px;
+    padding-bottom: 80px;
+    // height: 4275px;
     background-color: $back-beige;
 
     .second-section-title {
@@ -310,40 +132,40 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      margin: 100px auto 200px;
-      gap: 100px;
-      padding: 0 185px;
+      margin: 65px auto 0px;
+      gap: 60px;
+      // padding: 0 185px;
       color: $text-black;
 
       // 特徴
       .feature {
-        width: 1480px;
-        height: 687px;
+        width: 100%;
+        // height: 687px;
         display: flex;
         justify-content: center;
         align-items: center;
 
         .feature-text-wrapper {
-          width: 597px;
-          height: 575px;
+          width: 30%;
+          height: 500px;
           position: relative;
           z-index: 1;
 
           // 特徴のテキストボックス（奇数）
           .feature-text-box {
-            width: 597px;
-            height: 575px;
+            width: 100%;
+            height: 500px;
             background-color: $back-beige;
             display: flex;
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
             z-index: 300;
-            transform: translateX(80px);
+            // transform: translateX(80px);
 
             // 特徴のタイトル
             .feature-title {
-              width: 527px;
+              // width: 527px;
               font-family: $noto-serif;
               font-size: 28px;
               font-weight: 300;
@@ -351,7 +173,7 @@
             }
 
             .feature-sentence {
-              width: 512px;
+              // width: 512px;
               line-height: 50px;
               margin-top: 60px;
             }
@@ -359,9 +181,16 @@
         }
 
         .feature-image {
-          width: 800px;
-          height: 687px;
-          transform: translateX(-80px);
+          width: 38%;
+          height: 500px;
+          margin-left: 1.8%;
+          // transform: translateX(-80px);
+
+          img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+          }
         }
       }
 
@@ -370,27 +199,27 @@
         flex-direction: row-reverse;
 
         .feature-text-wrapper {
-          width: 597px;
-          height: 575px;
+          width: 30%;
+          height: 500px;
           position: relative;
           z-index: 1;
 
           // 特徴のテキストボックス（偶数）
           .feature-text-box {
-            width: 597px;
-            height: 575px;
+            width: 100%;
+            height: 500px;
             background-color: $back-beige;
             display: flex;
             justify-content: center;
             align-items: flex-end;
             flex-direction: column;
             z-index: 300;
-            padding-left: 85px;
-            transform: translateX(-80px);
+            // padding-left: 85px;
+            // transform: translateX(-80px);
 
             // 特徴のタイトル
             .feature-title {
-              width: 527px;
+              width: 100%;
               font-family: $noto-serif;
               font-size: 28px;
               font-weight: 300;
@@ -398,16 +227,22 @@
             }
 
             .feature-sentence {
-              width: 512px;
+              width: 100%;
               line-height: 50px;
               margin-top: 60px;
             }
           }
         }
         .feature-image {
-          width: 800px;
-          height: 687px;
-          transform: translateX(80px);
+          width: 38%;
+          height: 500px;
+          margin-right: 1.8%;
+
+          img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+          }
         }
       }
     }
@@ -444,9 +279,9 @@
       }
 
       .how-to-use-sentence {
-        font-family: $noto-serif;
+        font-family: $noto;
         font-size: 23px;
-        font-weight: 300;
+        font-weight: bold;
         line-height: 40px;
         line-height: 50px;
         text-align: center;
@@ -473,249 +308,249 @@
     }
 
     // ご利用の流れ・体験予約はこちらボタンの矢印
-    .third-section-how-to-use-arrow {
-      width: 157px;
-      height: 20px;
-      border-bottom: 2px solid white;
-      border-right: 2.3px solid white;
-      transform: skew(45deg);
-      transition: 0.6s;
-      position: absolute;
-      left: 697px;
-      top: 33%;
-    }
-    .third-section-how-to-use-arrow:hover {
-      width: 257px;
-    }
+    // .third-section-how-to-use-arrow {
+    //   width: 157px;
+    //   height: 20px;
+    //   border-bottom: 2px solid white;
+    //   border-right: 2.3px solid white;
+    //   transform: skew(45deg);
+    //   transition: 0.6s;
+    //   position: absolute;
+    //   left: 697px;
+    //   top: 33%;
+  }
+  // .third-section-how-to-use-arrow:hover {
+  //   width: 257px;
+  // }
 
-    // ご利用の流れ・体験予約はこちらボタン
-    .sm-third-section-how-to-use-button {
-      display: none;
-    }
-
-    .third-section-how-to-use-button {
-      width: 780px;
-      height: 100px;
-      border-radius: 2px;
-      color: white;
-      font-family: $noto-serif;
-      font-weight: 300;
-      font-size: 30px;
-      line-height: 40px;
-      // background: linear-gradient(to left, $back-darkbrown, #3f3314);
-      background-color: #f13529;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-      margin-top: 18px;
-      position: relative;
-      transition: 0.2s;
-    }
-    .third-section-how-to-use-button:hover {
-      opacity: 0.7;
-    }
+  // ご利用の流れ・体験予約はこちらボタン
+  .sm-third-section-how-to-use-button {
+    display: none;
   }
 
-  // 店舗一覧
-  .forth-section {
-    width: 100%;
-    .forth-section-list-of-stores {
-      padding-top: 126px;
-      // 店舗一覧タイトル
-      .forth-section-stores-title {
-        font-family: $noto-serif;
-        font-weight: 300;
-        font-size: 40px;
-        line-height: 40px;
-        text-align: center;
-        position: relative;
-      }
-
-      .forth-section-stores-title::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0px;
-        top: 188px;
-        width: 1px;
-        height: 90px;
-        margin: auto;
-        background-color: $text-gray;
-      }
-    }
-    // 店舗一覧
-    .forth-section-stores {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 58px;
-      margin-top: 178px;
-
-      .forth-section-store {
-        width: 334px;
-        height: 356px;
-
-        .forth-section-store-image img {
-          width: 334px;
-          height: 242px;
-        }
-
-        .forth-section-store-infomation {
-          margin-top: 33px;
-
-          .forth-section-store-name {
-            height: 45px;
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 23px;
-            text-align: center;
-          }
-
-          .forth-section-store-address {
-            font-size: 14px;
-            line-height: 23px;
-            margin-top: 14px;
-          }
-        }
-      }
-    }
-
-    .forth-section-view-more {
-      width: 182px;
-      height: 50px;
-      margin: 122px auto 200px;
-      transition: 0.5s;
-    }
-
-    .forth-section-view-more:hover {
-      opacity: 0.7;
-    }
+  .third-section-how-to-use-button {
+    width: 780px;
+    height: 100px;
+    border-radius: 2px;
+    color: white;
+    font-family: $noto;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    // background: linear-gradient(to left, $back-darkbrown, #3f3314);
+    background-color: #f13529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 18px;
+    position: relative;
+    transition: 0.2s;
   }
+  .third-section-how-to-use-button:hover {
+    opacity: 0.7;
+  }
+}
 
-  // NEWS
-  .fifth-section {
-    height: 969px;
-    background-color: $back-beige;
-
-    .fifth-section-title {
+// 店舗一覧
+.forth-section {
+  width: 100%;
+  .forth-section-list-of-stores {
+    padding-top: 126px;
+    // 店舗一覧タイトル
+    .forth-section-stores-title {
       font-family: $noto-serif;
       font-weight: 300;
       font-size: 40px;
       line-height: 40px;
-      padding-top: 126px;
       text-align: center;
       position: relative;
     }
 
-    .fifth-section-title::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0px;
-      top: 314px;
-      width: 1px;
-      height: 90px;
-      margin: auto;
-      background-color: $text-gray;
-    }
+    // .forth-section-stores-title::after {
+    //   content: "";
+    //   position: absolute;
+    //   left: 0;
+    //   right: 0;
+    //   bottom: 0px;
+    //   top: 188px;
+    //   width: 1px;
+    //   height: 90px;
+    //   margin: auto;
+    //   background-color: $text-gray;
+    // }
+  }
+  // 店舗一覧
+  .forth-section-stores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 58px;
+    margin-top: 178px;
 
-    .fifth-section-list-of-news {
-      width: 1016px;
-      margin: 0 auto;
-      margin-top: 172px;
+    .forth-section-store {
+      width: 334px;
+      height: 356px;
 
-      .fifth-section-news {
-        width: 100%;
-        height: 96px;
-        display: flex;
-        align-items: center;
-        gap: 94px;
-        border-bottom: 1px solid $line-gray3;
-
-        .fifth-section-news-date {
-          font-family: $montserrat;
-          line-height: 19.5px;
-          letter-spacing: 0.2rem;
-        }
-
-        .fifth-section-news-content {
-          line-height: 23.17px;
-        }
+      .forth-section-store-image img {
+        width: 334px;
+        height: 242px;
       }
 
-      .list-of-news {
-        border-top: 1px solid $line-gray3;
+      .forth-section-store-infomation {
+        margin-top: 33px;
+
+        .forth-section-store-name {
+          height: 45px;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 23px;
+          text-align: center;
+        }
+
+        .forth-section-store-address {
+          font-size: 14px;
+          line-height: 23px;
+          margin-top: 14px;
+        }
       }
-    }
-
-    .fifth-section-view-more {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 102px;
-      transition: 0.5s;
-    }
-
-    .fifth-section-view-more:hover {
-      opacity: 0.7;
     }
   }
 
-  // SNS
-  .sixth-section {
-    height: 288px;
-    background-color: $back-khaki;
-    color: white;
+  .forth-section-view-more {
+    width: 182px;
+    height: 50px;
+    margin: 122px auto 200px;
+    transition: 0.5s;
+  }
 
-    .sm-sixth-section-follow-message {
-      display: none;
+  .forth-section-view-more:hover {
+    opacity: 0.7;
+  }
+}
+
+// NEWS
+.fifth-section {
+  // height: 969px;
+  padding-bottom: 80px;
+  background-color: $back-beige;
+
+  .fifth-section-title {
+    font-family: $noto-serif;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+    padding-top: 126px;
+    text-align: center;
+    position: relative;
+  }
+
+  // .fifth-section-title::after {
+  //   content: "";
+  //   position: absolute;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0px;
+  //   top: 314px;
+  //   width: 1px;
+  //   height: 90px;
+  //   margin: auto;
+  //   background-color: $text-gray;
+  // }
+
+  .fifth-section-list-of-news {
+    width: 1016px;
+    margin: 0 auto;
+    margin-top: 60px;
+
+    .fifth-section-news {
+      width: 100%;
+      height: 96px;
+      display: flex;
+      align-items: center;
+      gap: 94px;
+      border-bottom: 1px solid $line-gray3;
+
+      .fifth-section-news-date {
+        font-family: $montserrat;
+        line-height: 19.5px;
+        letter-spacing: 0.2rem;
+      }
+
+      .fifth-section-news-content {
+        line-height: 23.17px;
+      }
     }
 
-    .sixth-section-follow-message {
-      font-size: 20px;
-      line-height: 50px;
-      text-align: center;
+    .list-of-news {
+      border-top: 1px solid $line-gray3;
+    }
+  }
+
+  .fifth-section-view-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 102px;
+    transition: 0.5s;
+  }
+
+  .fifth-section-view-more:hover {
+    opacity: 0.7;
+  }
+}
+
+// SNS
+.sixth-section {
+  height: 288px;
+  background-color: $back-khaki;
+  color: white;
+
+  .sm-sixth-section-follow-message {
+    display: none;
+  }
+
+  .sixth-section-follow-message {
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 68px;
+    padding-bottom: 43px;
+  }
+
+  .sixth-sns-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+
+    .sixth-sns-button {
+      width: 282px;
+      height: 50px;
+      border: 1px solid white;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-top: 68px;
-      padding-bottom: 43px;
-    }
+      font-family: $montserrat;
+      font-weight: 600;
+      line-height: 19.5px;
 
-    .sixth-sns-buttons {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 21px;
-
-      .sixth-sns-button {
-        width: 282px;
-        height: 50px;
-        border: 1px solid white;
+      p {
+        width: 176.64px;
+        height: 20px;
+        text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: $montserrat;
-        font-weight: 600;
-        line-height: 19.5px;
+      }
 
-        p {
-          width: 176.64px;
-          height: 20px;
-          text-align: center;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        img {
-          width: 23px;
-          height: 23px;
-          transform: translateY(-2%);
-        }
+      img {
+        width: 23px;
+        height: 23px;
+        transform: translateY(-2%);
       }
     }
   }
@@ -828,7 +663,6 @@
         }
 
         .swiper-button-prev {
-          // transform: translate(220px, -40px);
           position: absolute;
           top: 25%;
           left: 75%;
@@ -979,7 +813,7 @@
 
   // GOLFERS24の特徴
   .second-section {
-    width: calc(100% -40px);
+    width: calc(100%);
     height: 100%;
     background-color: $back-beige;
 
@@ -1135,7 +969,6 @@
     }
 
     .sm-third-section-how-to-use-button {
-      width: 280px;
       height: 120px;
       border-radius: 2px;
       color: white;
@@ -1146,24 +979,23 @@
       background-color: #f13529;
       display: flex;
       justify-content: center;
-      flex-direction: column;
-      // margin: 0 auto;
+      align-items: center;
+      margin: 0 auto;
       margin-top: 31px;
-      padding-left: 25px;
       position: relative;
     }
 
-    // ご利用の流れ・体験予約はこちらボタンの矢印
-    .third-section-how-to-use-arrow {
-      width: 35%;
-      height: 20px;
-      border-bottom: 2px solid white;
-      border-right: 3px solid white;
-      transform: skew(45deg);
-      position: absolute;
-      left: 79%;
-      top: 33%;
-    }
+    // // ご利用の流れ・体験予約はこちらボタンの矢印
+    // .third-section-how-to-use-arrow {
+    //   width: 35%;
+    //   height: 20px;
+    //   border-bottom: 2px solid white;
+    //   border-right: 3px solid white;
+    //   transform: skew(45deg);
+    //   position: absolute;
+    //   left: 79%;
+    //   top: 33%;
+    // }
   }
 
   // 店舗一覧

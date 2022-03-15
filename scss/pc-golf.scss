@@ -32,7 +32,9 @@ $back-input: #f2f4f6;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
 // Noto Sans
-$noto: "Noto Sans JP", sans-serif;
+$noto: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体",
+  "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN",
+  "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 $noto-serif: "Noto Serif JP", serif;
 
 // Acmin Pro
@@ -80,10 +82,11 @@ body {
   min-width: 1600px;
   scroll-behavior: smooth;
   font-family: $noto;
-  font-size: 16px;
+  font-size: 17px;
   color: $text-black;
   font-weight: 400;
   padding-top: 80px;
+  letter-spacing: 1px;
 }
 
 @function vw($width, $px) {
@@ -197,60 +200,60 @@ body {
 
 // ふわっとアニメーション
 /*アニメーション要素のスタイル*/
-.animation {
-  opacity: 0;
-  visibility: hidden;
-  transition: 3s;
-  transform: translateY(50px);
-}
+// .animation {
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: 3s;
+//   transform: translateY(50px);
+// }
 
-.animation2 {
-  opacity: 0;
-  visibility: hidden;
-  transition: 4s;
-  transform: translateY(60px);
-}
+// .animation2 {
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: 4s;
+//   transform: translateY(60px);
+// }
 
-.animation3 {
-  opacity: 0;
-  visibility: hidden;
-  transition: 1s;
-  transform: translateY(100px);
-}
+// .animation3 {
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: 1s;
+//   transform: translateY(100px);
+// }
 
-.animation4 {
-  opacity: 0;
-  visibility: hidden;
-  transition: 2s;
-  clip-path: inset(0 100% 0 0);
-}
+// .animation4 {
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: 2s;
+//   clip-path: inset(0 100% 0 0);
+// }
 
-.animation5 {
-  opacity: 0;
-  visibility: hidden;
-  transition: 4s;
-  transform: translateY(35px);
-}
+// .animation5 {
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: 4s;
+//   transform: translateY(35px);
+// }
 
-.animation6 {
-  opacity: 0;
-  visibility: hidden;
-  transition: 2s;
-  transform: translateY(15px);
-}
+// .animation6 {
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: 2s;
+//   transform: translateY(15px);
+// }
 
 /*アニメーション要素までスクロールした時のスタイル*/
-.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
+// .active {
+//   opacity: 1;
+//   visibility: visible;
+//   transform: translateY(0);
+// }
 
-.intro-active {
-  opacity: 1;
-  visibility: visible;
-  clip-path: inset(0);
-}
+// .intro-active {
+//   opacity: 1;
+//   visibility: visible;
+//   clip-path: inset(0);
+// }
 
 .pagination {
   margin: 40px 0 0;
@@ -297,3 +300,4 @@ body {
 @import "../layout/layout/company";
 @import "../layout/layout/membership";
 @import "../layout/layout/finish";
+@import "../layout/layout/fc";

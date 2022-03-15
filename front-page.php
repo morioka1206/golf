@@ -2,123 +2,25 @@
 
 <div class="top-section">
   <!-- トップ画像 -->
-  <div class="first-view-images">
-    <!-- <div class="first-top-image  swiper slider1">
-      <div class="swiper-wrapper">
-        <?php
-        $args = array(
-          'post_type' => 'top-image',
-          'posts_per_page' => -1,
-        );
-        $st_query = new WP_Query($args);
-        ?>
+  <?php
+  $args = array(
+    'post_type' => 'top-view-image',
+    // 全件取得、数を指定すればその数だけ取得する。
+    'posts_per_page' => -1,
+  );
+  $st_query = new WP_Query($args);
+  ?>
 
-        <?php if ($st_query->have_posts()) : ?>
-          <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
-            <div class="swiper-slide">
-              <div class="first-image slide-img" style="background-image: url(<?php $image = SCF::get('image');
-                                                                              echo wp_get_attachment_url($image); ?>);"></div>
-            </div>
+  <?php if ($st_query->have_posts()) : ?>
+    <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
 
-          <?php endwhile; ?>
-        <?php endif; ?>
+      <div class="first-view-images" style="background-image: url(<?php $image = SCF::get('image');
+                                                                  echo wp_get_attachment_url($image); ?>);">
+      <?php endwhile; ?>
+    <?php endif; ?>
+
+
       </div>
-    </div> -->
-
-    <!-- デスクトップ用ニューススライダー -->
-    <div class="first-news-wrapper">
-      <div class="first-news-title">NEWS</div>
-      <div class="first-news swiper">
-        <div class="swiper-wrapper">
-          <?php
-          $args = array(
-            'post_type' => 'news',
-            // 全件取得、数を指定すればその数だけ取得する。
-            'posts_per_page' => -1,
-          );
-          $st_query = new WP_Query($args);
-          ?>
-
-          <?php if ($st_query->have_posts()) : ?>
-            <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
-              <div class="swiper-slide">
-
-
-                <!-- <div class="news-tag">NEWS</div> -->
-                <a href="<?php the_permalink(); ?>" class="news-contents">
-                  <div class="news-date"><?php $date = SCF::get('date');
-                                          echo $date; ?></div>
-                  <div class="news-title"><?php $title = SCF::get('title');
-                                          echo $title; ?></div>
-                </a>
-
-
-              </div>
-            <?php endwhile; ?>
-          <?php endif; ?>
-        </div>
-        <div class="swiper-buttons">
-          <!-- 前ページボタン -->
-          <div class="swiper-button-prev"></div>
-          <!-- 次ページボタン -->
-          <div class="swiper-button-next"></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- スマホ用ニューススライダー -->
-    <div class="sm-first-news-wrapper swiper">
-      <div class="first-news-title">NEWS</div>
-      <div class="swiper-block"></div>
-      <div class="first-news">
-        <div class="swiper-wrapper">
-          <?php
-          $args = array(
-            'post_type' => 'news',
-            // 全件取得、数を指定すればその数だけ取得する。
-            'posts_per_page' => -1,
-          );
-          $st_query = new WP_Query($args);
-          ?>
-
-          <?php if ($st_query->have_posts()) : ?>
-            <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
-              <div class="swiper-slide news-contents">
-
-
-                <!-- <div class="news-tag">NEWS</div> -->
-                <a href="<?php the_permalink(); ?>">
-                  <div class="news-date"><?php $date = SCF::get('date');
-                                          echo $date; ?></div>
-                  <div class="news-title"><?php $title = SCF::get('title');
-                                          echo $title; ?></div>
-                </a>
-
-              </div>
-
-            <?php endwhile; ?>
-          <?php endif; ?>
-        </div>
-        <!-- 前ページボタン -->
-        <div class="swiper-button-prev"></div>
-        <!-- 次ページボタン -->
-        <div class="swiper-button-next"></div>
-      </div>
-    </div>
-    <a href="<?php echo esc_url(home_url('/form')); ?>">
-      <div class="contact-us">
-        <div class="contact-us-text">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/CONTACT US-text.svg" alt="">
-        </div>
-        <div class="contact-us-mail">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/mail.png" alt="">
-        </div>
-      </div>
-    </a>
-
-
-
-  </div>
 
 </div>
 
@@ -146,8 +48,8 @@
         </div>
       </div>
       <div class="top-introduction-image animation4 ">
-        <?php $image = SCF::get('image');
-        echo wp_get_attachment_image($image, 'larage'); ?>
+        <!-- <?php $image = SCF::get('image');
+        echo wp_get_attachment_image($image, 'larage'); ?> -->
       </div>
 
     <?php endwhile; ?>

@@ -32,7 +32,9 @@ $back-input: #f2f4f6;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
 // Noto Sans
-$noto: "Noto Sans JP", sans-serif;
+$noto: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体",
+  "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN",
+  "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 $noto-serif: "Noto Serif JP", serif;
 
 // Acmin Pro
@@ -90,6 +92,7 @@ body {
   color: $text-black;
   font-weight: 400;
   scroll-padding-top: 92px;
+  letter-spacing: 1px;
 }
 
 #loader-bg {
@@ -148,46 +151,46 @@ body {
 
 // ふわっとアニメーション
 /*アニメーション要素のスタイル*/
-.animation {
-  opacity: 0;
-  visibility: hidden;
-  transition: 3s;
-  transform: translateY(50px);
-}
+// .animation {
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: 3s;
+//   transform: translateY(50px);
+// }
 
-.animation2 {
-  opacity: 0;
-  visibility: hidden;
-  transition: 4s;
-  transform: translateY(60px);
-}
+// .animation2 {
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: 4s;
+//   transform: translateY(60px);
+// }
 
-.animation3 {
-  opacity: 0;
-  visibility: hidden;
-  transition: 1s;
-  transform: translateY(100px);
-}
+// .animation3 {
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: 1s;
+//   transform: translateY(100px);
+// }
 
-.animation4 {
-  opacity: 0;
-  visibility: hidden;
-  transition: 3s;
-  clip-path: inset(0 100% 0 0);
-}
+// .animation4 {
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: 3s;
+//   clip-path: inset(0 100% 0 0);
+// }
 
-/*アニメーション要素までスクロールした時のスタイル*/
-.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
+// /*アニメーション要素までスクロールした時のスタイル*/
+// .active {
+//   opacity: 1;
+//   visibility: visible;
+//   transform: translateY(0);
+// }
 
-.intro-active {
-  opacity: 1;
-  visibility: visible;
-  clip-path: inset(0);
-}
+// .intro-active {
+//   opacity: 1;
+//   visibility: visible;
+//   clip-path: inset(0);
+// }
 
 @import "../layout/layout/header";
 @import "../layout/layout/footer";
@@ -203,3 +206,4 @@ body {
 @import "../layout/layout/sm-company";
 @import "../layout/layout/membership";
 @import "../layout/layout/finish";
+@import "../layout/layout/fc";

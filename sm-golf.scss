@@ -1,0 +1,205 @@
+// テキストカラー
+$text-black: #555555;
+$text-gray: #555555;
+$text-beige: #cbc3ad;
+
+// ラインカラー
+$line-gray1: #e8e8e8;
+$line-gray2: #d1d1d1;
+$line-gray3: #b0b0b0;
+
+// メインカラー
+$blue: #1ba2e6;
+$blue-shadow: #0e78ad;
+$orange: #fea801;
+$orange-shadow: #c18208;
+
+// 背景色
+$back-gray: #f1f3f5;
+$back-blue: #89c7e6;
+$back-beige: #edeae2;
+$back-beige2: #cec6b0;
+$back-darkbeige: #a59c84;
+$back-brown: #4e4224;
+$back-darkbrown: #483b19;
+$back-black: #000000;
+$back-khaki: #a59c84;
+$back-input: #f2f4f6;
+
+// WEBフォント
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+// Noto Sans
+$noto: "Noto Sans JP", sans-serif;
+$noto-serif: "Noto Serif JP", serif;
+
+// Acmin Pro
+$acmin: acumin-pro, sans-serif;
+
+// Montserrat
+$montserrat: "Montserrat", sans-serif;
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+// リンクの下線と青色をなしに
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// pのmarginをクリアに
+p {
+  margin: 0;
+}
+
+@media screen and (min-width: 400px), (max-width: 600px) {
+  body {
+    zoom: 1.05;
+  }
+}
+
+input,
+select,
+textarea {
+  border: none;
+  padding-left: 10px;
+}
+
+textarea {
+  padding-top: 10px;
+  resize: none;
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px $back-input inset;
+}
+
+// スタイルの基本セット
+body {
+  width: 100%;
+  height: 100%;
+  min-width: 375px;
+  scroll-behavior: smooth;
+  font-family: $noto;
+  font-size: 16px;
+  color: $text-black;
+  font-weight: 400;
+  scroll-padding-top: 92px;
+}
+
+#loader-bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 130%;
+  top: 0px;
+  left: 0px;
+  background: #edeae2;
+  padding: 80% 0;
+  z-index: 6000;
+}
+#loader {
+  display: none;
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  text-align: center;
+  color: #fff;
+  z-index: 60001;
+}
+
+/*アニメーション前の指定*/
+#mask path {
+  fill-opacity: 0; /*最初は透過0で見えない状態*/
+  transition: fill-opacity 0.5s; /*カラーがつく際のアニメーション0.5秒で変化*/
+  fill: none; /*塗りがない状態*/
+  stroke: #333; /*線の色*/
+}
+
+/*アニメーション後に.doneというクラス名がで付与された時の指定*/
+#mask.done path {
+  fill: #333; /*塗りの色*/
+  fill-opacity: 1; /*透過1で見える状態*/
+  stroke: none; /*線の色なし*/
+}
+
+// ローディング画面アニメーション
+@keyframes loader {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0);
+  }
+}
+
+#loader {
+  animation: 2s linear infinite loader;
+}
+
+// ふわっとアニメーション
+/*アニメーション要素のスタイル*/
+.animation {
+  opacity: 0;
+  visibility: hidden;
+  transition: 3s;
+  transform: translateY(50px);
+}
+
+.animation2 {
+  opacity: 0;
+  visibility: hidden;
+  transition: 4s;
+  transform: translateY(60px);
+}
+
+.animation3 {
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+  transform: translateY(100px);
+}
+
+.animation4 {
+  opacity: 0;
+  visibility: hidden;
+  transition: 3s;
+  clip-path: inset(0 100% 0 0);
+}
+
+/*アニメーション要素までスクロールした時のスタイル*/
+.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.intro-active {
+  opacity: 1;
+  visibility: visible;
+  clip-path: inset(0);
+}
+
+@import "../layout/layout/header";
+@import "../layout/layout/footer";
+@import "../layout/layout/index";
+@import "../layout/layout/contact-us";
+@import "../layout/layout/how-to-use";
+@import "../layout/layout/locations";
+@import "../layout/layout/store-details";
+@import "../layout/layout/news";
+@import "../layout/layout/news-detail";
+@import "../layout/layout/questions";
+@import "../layout/layout/form";
+@import "../layout/layout/sm-company";
+@import "../layout/layout/membership";
+@import "../layout/layout/finish";

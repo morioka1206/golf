@@ -12,13 +12,12 @@
     </div>
 
     <a href="<?php echo esc_url(home_url('/how-to-use')); ?>" class="third-section-how-to-use-button">
-      ご利用の流れ・体験予約はこちら
+      ご利用の流れはこちら
       <div class="third-section-how-to-use-arrow"></div>
     </a>
 
     <a href="<?php echo esc_url(home_url('/how-to-use')); ?>" class="sm-third-section-how-to-use-button">
-      <p>ご利用の流れ・</p>
-      <p>体験予約はこちら</p>
+      <p>ご利用の流れはこちら</p>
       <div class="third-section-how-to-use-arrow"></div>
     </a>
 

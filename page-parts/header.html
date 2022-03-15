@@ -1,0 +1,82 @@
+<!-- デスクトップ用ヘッダー -->
+
+<div class="header-desktop">
+  <div class="header-logo">
+    <img src="./images/logo.svg" alt="GOLFERS24ロゴ">
+  </div>
+  <!-- ヘッダーのナビゲーションメニュー -->
+  <div class="header-navi-contents">
+    <div class="header-navi-content"><a href="index.html">TOP</a></div>
+    <div class="header-navi-content"><a href="how-to-use.html">ご利用の流れ</a></div>
+    <div class="header-navi-content"><a href="locations.html">店舗一覧</a></div>
+    <div class="header-navi-content"><a href="news.html">NEWS</a></div>
+    <div class="header-navi-content"><a href="questions.html">F&Q</a></div>
+    <div class="header-navi-content"><a href="company.html">会社概要</a></div>
+  </div>
+  <!-- ヘッダーのSNSリンク -->
+  <div class="header-sns-icons">
+    <div class="header-facebook"><i class="fab fa-facebook-square"></i></div>
+    <div class="header-instagram"><i class="fab fa-instagram"></i></div>
+    <div class="header-line"><i class="fab fa-line"></i></div>
+  </div>
+
+</div>
+
+
+<!-- スマホ用ヘッダー -->
+<div class="header-smartphone">
+  <div class="header-logo">
+    <a href=""><img src="./images/logo.svg" alt="GOLFERS24ロゴ"></a>
+  </div>
+
+  <div class="header-humberger">
+    <input type="checkbox" id="menu-btn-check">
+    <label for="menu-btn-check" class="menubtn"><span></span></label>
+    <div class="hide-menu">
+      <nav>
+        <div class="hide-contents">
+          <div class="menu-list">
+            <a href="index.html">
+              <div class="menu">TOP</div>
+            </a>
+            <a href="how-to-use.html">
+              <div class="menu">ご利用の流れ・体験予約</div>
+            </a>
+            <a href="locations.html">
+              <div class="menu">店舗一覧</div>
+            </a>
+            <a href="news.html">
+              <div class="menu">NEWS</div>
+            </a>
+            <a href="questions.html">
+              <div class="menu">F&Q</div>
+            </a>
+            <a href="company.html">
+              <div class="menu">会社概要</div>
+            </a>
+          </div>
+          <div class="sm-nav-contact-us">CONTACT US</div>
+          <div class="sm-nav-sns">
+            <p>FOLLOW US</p>
+            <div class="sm-nav-sns-icons">
+              <div class="sm-header-facebook"><i class="fab fa-facebook-square"></i></div>
+              <div class="sm-header-instagram"><i class="fab fa-instagram"></i></div>
+              <div class="sm-header-line"><i class="fab fa-line"></i></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $(function () {
+    $(".hide-menu").hide();
+    $(".menubtn").click(function () {//メニューボタンをクリックしたとき
+      $(".hide-menu").toggle(300);//0.3秒で表示したり非表示にしたりする
+    });
+  });
+</script>

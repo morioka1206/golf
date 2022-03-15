@@ -27,8 +27,8 @@
     // 店舗詳細情報
     .store-detail-introduction {
       width: 1118px;
-      height: 566px;
-      margin: 150px auto 200px;
+      // height: 566px;
+      margin: 150px auto 60px;
 
       .store-introduction-text {
         .store-introduction-name {
@@ -48,113 +48,143 @@
         }
       }
 
-      .store-detail-images {
-        width: 1118px;
-        margin-top: 100px;
-        display: grid;
-        grid-template-rows: 244px;
-        // 列の幅
-        grid-template-columns: 334px 334px 334px;
-        // 空間 横
-        gap: 58px;
+      .store-detail-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px auto 82px;
+        gap: 20px;
 
-        .store-detail-image img {
-          width: 335px;
-          height: 242px;
-          object-fit: cover;
+        .how-to-line-link {
+          width: 455px;
+          height: 60px;
+          border-radius: 2px;
+          box-shadow: 0 2px #088c3e;
+          background-color: #06c755;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .how-to-webreserve-link {
+          width: 455px;
+          height: 60px;
+          box-shadow: 0 2px #9d1007;
+          background-color: #f13529;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
     }
 
-    // Googleマップ
-    .google-map {
+    .store-detail-images {
+      width: 1118px;
+      margin-top: 100px;
+      display: grid;
+      grid-template-rows: 244px;
+      // 列の幅
+      grid-template-columns: 334px 334px 334px;
+      // 空間 横
+      gap: 58px;
+
+      .store-detail-image img {
+        width: 335px;
+        height: 242px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  // Googleマップ
+  .google-map {
+    width: 1119px;
+    height: 513px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    iframe {
       width: 1119px;
       height: 513px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-
-      iframe {
-        width: 1119px;
-        height: 513px;
-      }
     }
+  }
 
-    // 店舗詳細情報
-    .store-detail-information-wrapper {
-      width: 1119px;
-      height: 173px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      margin: 0 auto;
-      margin-top: 73px;
+  // 店舗詳細情報
+  .store-detail-information-wrapper {
+    width: 1119px;
+    height: 173px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 73px;
 
-      .store-detail-information {
-        // width: 600px;
-        // 店舗名
-        .store-detail-name {
-          font-size: 20px;
-          font-weight: 700;
-          line-height: 27px;
+    .store-detail-information {
+      // width: 600px;
+      // 店舗名
+      .store-detail-name {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27px;
+      }
+
+      // 店舗住所
+      .store-detail-address {
+        font-size: 14px;
+        line-height: 23px;
+        display: flex;
+        align-items: flex-start;
+        gap: 39px;
+        margin-top: 12px;
+
+        .store-detail-address-title {
+          width: 56px;
         }
+      }
 
-        // 店舗住所
-        .store-detail-address {
-          font-size: 14px;
-          line-height: 23px;
-          display: flex;
-          align-items: flex-start;
-          gap: 39px;
-          margin-top: 12px;
+      // 店舗番号
+      .store-detail-tel {
+        font-size: 14px;
+        line-height: 23px;
+        display: flex;
+        align-items: center;
+        gap: 39px;
 
-          .store-detail-address-title {
-            width: 56px;
-          }
+        .store-detail-tel-title {
+          width: 56px;
         }
+      }
 
-        // 店舗番号
-        .store-detail-tel {
-          font-size: 14px;
-          line-height: 23px;
-          display: flex;
-          align-items: center;
-          gap: 39px;
+      // 店舗メールアドレス
+      .store-detail-mail {
+        font-size: 14px;
+        line-height: 23px;
+        display: flex;
+        align-items: center;
+        gap: 39px;
 
-          .store-detail-tel-title {
-            width: 56px;
-          }
+        .store-detail-mail-title {
+          width: 56px;
         }
+      }
 
-        // 店舗メールアドレス
-        .store-detail-mail {
-          font-size: 14px;
-          line-height: 23px;
-          display: flex;
-          align-items: center;
-          gap: 39px;
+      // 店舗営業時間
+      .store-detail-hours {
+        font-size: 14px;
+        line-height: 23px;
+        display: flex;
+        align-items: center;
+        gap: 39px;
 
-          .store-detail-mail-title {
-            width: 56px;
-          }
-        }
-
-        // 店舗営業時間
-        .store-detail-hours {
-          font-size: 14px;
-          line-height: 23px;
-          display: flex;
-          align-items: center;
-          gap: 39px;
-
-          .store-detail-hours-title {
-            width: 56px;
-          }
+        .store-detail-hours-title {
+          width: 56px;
         }
       }
     }
   }
+
   .hour-plan {
     width: 1166px;
     margin: 0 auto;
@@ -185,8 +215,21 @@
       margin-top: 100px;
       margin-bottom: 180px;
 
+      .plan-title {
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 40px;
+        font-family: $noto-serif;
+        margin-top: 110px;
+        margin-bottom: 40px;
+      }
+
+      .plan-title:first-of-type {
+        margin-top: 0px;
+      }
+
       table {
-        width: 1166px;
+        width: 1117px;
         height: 748px;
         font-size: 18px;
         padding: 0 60px;
@@ -240,6 +283,10 @@
           text-align: right;
         }
 
+        .night-week {
+          padding-left: 59px;
+        }
+
         .table-premium {
           height: 156px;
           background-color: $back-beige;
@@ -257,39 +304,51 @@
           }
 
           // 年間契約で割引
-          .premium-plan::after {
-            content: "";
-            background-image: url("../images/年間契約.svg");
-            display: inline-block;
-            width: 116px;
-            height: 24px;
-            background-size: contain;
-            margin-left: 10px;
-            margin-bottom: 3px;
-          }
+          // .premium-plan::after {
+          //   content: "";
+          //   background-image: url("../images/年間契約.svg");
+          //   display: inline-block;
+          //   width: 116px;
+          //   height: 25px;
+          //   background-size: contain;
+          //   margin-left: 10px;
+          //   margin-bottom: 3px;
+          // }
 
           // 20％オフ
-          .premium-discount:before {
-            content: "";
-            background-image: url("../images/premiumoff.svg");
-            display: inline-block;
-            width: 70px;
-            height: 70px;
-            background-size: contain;
-            margin-right: 18px;
-            margin-bottom: 2px;
-          }
+          // .premium-discount:before {
+          //   content: "";
+          //   background-image: url("../images/premiumoff.svg");
+          //   display: inline-block;
+          //   width: 66px;
+          //   height: 66px;
+          //   background-size: contain;
+          //   margin-right: 18px;
+          //   margin-bottom: 2px;
+          // }
         }
 
         .allday::before {
           content: "";
           background-image: url("../images/24hours.svg");
           display: inline-block;
-          width: 32px;
-          height: 32px;
+          width: 31px;
+          height: 31px;
           background-size: contain;
           margin-right: 28px;
           margin-bottom: 2px;
+        }
+
+        .night-allday::before {
+          content: "";
+          background-image: url("../images/24hours.svg");
+          display: inline-block;
+          width: 31px;
+          height: 31px;
+          background-size: contain;
+          margin-right: 28px;
+          margin-bottom: 2px;
+          transform: translateY(12px);
         }
 
         .day::before {
@@ -324,13 +383,26 @@
           margin-right: 28px;
           margin-bottom: 2px;
         }
-      }
-
-      .table-caution {
-        font-size: 14px;
-        line-height: 20.27px;
-        text-align: justify;
-        margin-top: 10px;
+        .morning::before {
+          content: "";
+          background-image: url("../images/morning.svg");
+          display: inline-block;
+          width: 31px;
+          height: 31px;
+          background-size: contain;
+          margin-right: 28px;
+          margin-bottom: 2px;
+        }
+        .weekday::before {
+          content: "";
+          background-image: url("../images/weekday.svg");
+          display: inline-block;
+          width: 31px;
+          height: 31px;
+          background-size: contain;
+          margin-right: 28px;
+          margin-bottom: 2px;
+        }
       }
     }
 
@@ -524,30 +596,48 @@
     .hour-table {
       margin-top: 100px;
       margin-bottom: 180px;
-      overflow-x: auto;
+      // overflow-x: auto;
       white-space: nowrap;
       scrollbar-color: black yellow;
 
+      .plan-title {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 40px;
+        font-family: $noto-serif;
+        margin-top: 100px;
+      }
+
+      .plan-title:first-of-type {
+        margin-top: 0px;
+      }
+
+      .times-table {
+        // width: 345px;
+      }
+
       table {
-        width: 591px;
-        height: 379px;
+        width: 100%;
         font-size: 10px;
+        margin: 0 auto;
 
         .play-hours {
-          padding-left: 40px;
+          width: 175px;
+          padding-left: 35px;
         }
 
         th {
+          height: 30px;
           background-color: $back-darkbrown;
           color: white;
           text-align: left;
-          padding: 0 20px;
+          padding: 0 13px;
         }
 
         td {
-          height: 52px;
+          height: 46px;
           border-bottom: 1px solid $text-black;
-          padding: 0 20px;
+          padding: 0 5%;
         }
 
         th:last-child,
@@ -556,7 +646,7 @@
         }
 
         .table-premium {
-          height: 75px;
+          height: 60px;
           background-color: $back-beige;
 
           // おすすめ
@@ -569,48 +659,39 @@
             background-size: contain;
             margin-right: 5px;
           }
+        }
 
-          // 年間契約で割引
-          .premium-plan::after {
-            content: "";
-            background-image: url("../images/年間契約.svg");
-            display: inline-block;
-            width: 58px;
-            height: 12px;
-            background-size: contain;
-            margin-left: 4px;
-            margin-bottom: 2px;
-          }
-
-          // 20％オフ
-          .premium-discount:before {
-            content: "";
-            background-image: url("../images/premiumoff.svg");
-            display: inline-block;
-            width: 35px;
-            height: 35px;
-            background-size: contain;
-            margin-right: 8px;
-            margin-bottom: 2px;
-          }
+        .night-week {
+          padding-left: 24px;
         }
 
         .allday::before {
           content: "";
           background-image: url("../images/24hours.svg");
           display: inline-block;
-          width: 15px;
+          width: 16px;
           height: 15px;
           background-size: contain;
           margin-right: 8px;
           margin-bottom: 2px;
         }
 
+        .night-allday::before {
+          content: "";
+          background-image: url("../images/24hours.svg");
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background-size: contain;
+          margin-right: 8px;
+          transform: translateY(4px);
+        }
+
         .day::before {
           content: "";
           background-image: url("../images/dayhours.svg");
           display: inline-block;
-          width: 15px;
+          width: 16px;
           height: 15px;
           background-size: contain;
           margin-right: 8px;
@@ -621,7 +702,7 @@
           content: "";
           background-image: url("../images/nighthours.svg");
           display: inline-block;
-          width: 15px;
+          width: 16px;
           height: 15px;
           background-size: contain;
           margin-right: 8px;
@@ -632,11 +713,33 @@
           content: "";
           background-image: url("../images/midnight.svg");
           display: inline-block;
-          width: 15px;
+          width: 16px;
           height: 15px;
           background-size: contain;
           margin-right: 8px;
           margin-bottom: 2px;
+        }
+
+        .morning::before {
+          content: "";
+          background-image: url("../images/morning.svg");
+          display: inline-block;
+          width: 16px;
+          height: 15px;
+          background-size: contain;
+          margin-right: 8px;
+          margin-bottom: 2px;
+        }
+
+        .weekday::before {
+          content: "";
+          background-image: url("../images/weekday.svg");
+          display: inline-block;
+          width: 16px;
+          height: 15px;
+          background-size: contain;
+          margin-right: 8px;
+          // transform: translateY(1px);
         }
       }
     }
@@ -647,10 +750,15 @@
     }
 
     .table-caution {
-      font-size: 14px;
+      display: none;
+    }
+
+    .mobile-table-caution {
+      font-size: 12px;
       line-height: 20.27px;
       text-align: justify;
       margin-top: 24px;
+      white-space: normal;
     }
 
     .sm-arrorw {
