@@ -11,14 +11,14 @@
 }
 
 .company-wrapper {
-  width: 1166px;
+  width: 75%;
   margin: 0 auto;
-  margin-top: 252px;
+  margin-top: 152px;
   position: relative;
 
   .company-title {
     font-weight: 300;
-    font-size: 30px;
+    font-size: 50px;
     line-height: 40px;
     letter-spacing: 0.2rem;
     font-family: $noto-serif;
@@ -41,7 +41,7 @@
 }
 
 .company-information {
-  width: 1166px;
+  width: 72%;
   margin: 0 auto;
   margin-top: 80px;
 
@@ -55,7 +55,7 @@
     border-bottom: 1px solid $text-black;
 
     .company-name-title {
-      width: 48px;
+      width: 70px;
     }
   }
 
@@ -70,7 +70,7 @@
     margin-bottom: 100px;
 
     .company-address-title {
-      width: 48px;
+      width: 70px;
     }
   }
 

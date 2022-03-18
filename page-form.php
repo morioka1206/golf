@@ -1,7 +1,7 @@
   <?php get_header(); ?>
 
   <div class="form-wrapper">
-    <div class="page-title">Contact</div>
+    <!-- <div class="page-title">Contact</div> -->
     <div class="form-title">お問い合わせ</div>
     <div class="form-contents">
       <!-- 公式LINEでのお問い合わせ -->

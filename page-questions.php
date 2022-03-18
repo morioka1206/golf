@@ -1,7 +1,7 @@
   <?php get_header(); ?>
 
   <div class="questions-wrapper">
-    <div class="page-title">FAQ</div>
+    <!-- <div class="page-title">FAQ</div> -->
     <div class="questions-title">よくある質問</div>
 
     <!-- 質問　施設・設備・ご予約について -->

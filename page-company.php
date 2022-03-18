@@ -2,7 +2,7 @@
 
 
   <div class="company-wrapper">
-    <div class="page-title">Company</div>
+    <!-- <div class="page-title">Company</div> -->
     <div class="company-title">会社概要</div>
   </div>
 

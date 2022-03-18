@@ -31,8 +31,8 @@
         </div>
 
         <div class="store-detail-links">
-          <a href="https://lin.ee/7Ii8MCV" class="how-to-line-link" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/how-to-use-line.svg" alt=""></a>
-          <a href="https://golfers24.hacomono.jp/" class="how-to-webreserve-link" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/how-to-use-webreserve.svg" alt=""></a>
+          <a href="<?php echo SCF::get('line') ?>" class="how-to-line-link" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/how-to-use-line.svg" alt=""></a>
+          <a href="<?php echo SCF::get('hacomono') ?>" class="how-to-webreserve-link" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/how-to-use-webreserve.svg" alt=""></a>
         </div>
 
         <div class="store-detail-images">

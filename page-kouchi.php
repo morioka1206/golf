@@ -66,7 +66,7 @@
             'post_status' => 'store',
             'post_type' => 'store',
             'meta_query' => array(array(
-              'key' => 'address',
+              'key' => 'email',
               'value' => '高知県',
               'compare' => 'LIKE'
             )),

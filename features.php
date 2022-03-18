@@ -26,13 +26,15 @@
               <div class="feature-title animation3">
                 <p><?php echo SCF::get('feature-title') ?></p>
               </div>
+              <div class="feature-image animation"><?php $image = SCF::get('image');
+                                                    echo wp_get_attachment_image($image, 'large'); ?></div>
               <div class="feature-sentence animation3">
                 <p><?php echo SCF::get('feature-content') ?></p>
               </div>
             </div>
           </div>
-          <div class="feature-image animation"><?php $image = SCF::get('image');
-                                                echo wp_get_attachment_image($image, 'large'); ?></div>
+          <!-- <div class="feature-image animation"><?php $image = SCF::get('image');
+                                                    echo wp_get_attachment_image($image, 'large'); ?></div> -->
         </div>
 
       <?php endwhile; ?>

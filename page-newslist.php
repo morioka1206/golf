@@ -1,7 +1,7 @@
   <?php get_header(); ?>
 
   <div class="news-wrapper">
-    <div class="page-title">NEWS</div>
+    <!-- <div class="page-title">NEWS</div> -->
     <div class="news-title">ニュース</div>
     <!-- ニュース全体 -->
     <div class="news-list">
