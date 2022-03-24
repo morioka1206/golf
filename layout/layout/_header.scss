@@ -1,68 +1,137 @@
 // デスクトップ用ヘッダー
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 1150px) {
   .header-smartphone {
     display: none;
   }
 
   .header-desktop {
     width: 100%;
-    height: 82.5px;
+    height: 80px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 0 51px;
+    justify-content: space-between;
+    padding-left: 3%;
     color: black;
     background-color: white;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 2000;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    gap: 4%;
 
     #menu-btn-check {
       display: none;
     }
-
-    // ナビゲーション
-    .header-navi-contents {
-      width: 420px;
+    // ヘッダー左側（ロゴとナビ）
+    .header-left {
       display: flex;
-      justify-content: center;
       align-items: center;
-      gap: 25.5px;
-      line-height: 13.6px;
-      margin-left: 246.5px;
-      margin-right: 297.5px;
+      // gap: 50px;
+
+      // ヘッダーのロゴ
+      .header-logo img {
+        // width: 170px;
+        // height: 31px;
+        object-fit: cover;
+      }
     }
 
-    // SNSのアイコン
-    .header-sns-icons {
-      width: 91px;
+    // ヘッダーの右側
+    .header-right {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
-      font-size: 21px;
-    }
+      gap: 20px;
+      position: fixed;
+      right: 0;
 
-    // ヘッダーのロゴ
-    .header-logo img {
-      width: 144.5px;
-      height: 22.7px;
+      // ナビゲーション
+      .header-navi-contents {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        line-height: 17px;
+      }
+
+      a {
+        transition: 0.2s;
+      }
+
+      a:hover {
+        opacity: 0.7;
+      }
+
+      .header-sns-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: nowrap;
+
+        img {
+          width: 25px;
+        }
+      }
+
+      .header-reserve-links {
+        display: flex;
+
+        img {
+          height: 24%;
+          object-fit: cover;
+        }
+      }
+
+      .header-line {
+        width: 140px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #06c755;
+      }
+
+      .header-webreserve {
+        width: 140px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f13529;
+      }
+
+      .header-contact-us {
+        width: 140px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #483b19;
+
+        img {
+          height: 18%;
+        }
+      }
+>>>>>>> wordpress
     }
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1149px) {
   .header-desktop {
     display: none;
   }
 
   .header-smartphone {
     height: 92px;
-    width: 375px;
-    min-width: 375px;
+    width: 100%;
+    // min-width: 375px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: white;
     position: fixed;
     top: 0;
@@ -86,7 +155,7 @@
       z-index: 3000;
       position: fixed;
       top: 20px;
-      left: 320px;
+      left: 80%;
       display: flex;
       height: 60px;
       width: 60px;
@@ -147,7 +216,7 @@
     }
 
     .hide-menu {
-      width: 375px;
+      width: 100%;
       height: 100%;
       z-index: 300;
       display: flex;
@@ -173,29 +242,55 @@
       align-items: center;
       flex-direction: column;
       color: white;
-      margin-top: 110px;
+      margin-top: 65px;
 
       .menu-list {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        font-size: 16px;
         line-height: 17px;
-        gap: 40px;
+        gap: 30px;
       }
 
-      .sm-nav-contact-us {
-        width: 282px;
-        height: 50px;
-        border: 1px solid white;
-        font-family: $montserrat;
-        font-weight: 600;
-        line-height: 19.5px;
-        letter-spacing: 0.2rem;
+      .humberger-links {
         display: flex;
+        flex-direction: column;
         align-items: center;
+        gap: 10px;
+        margin-top: 15%;
+      }
+
+      // LINE予約
+      .sm-nav-line {
+        width: 260px;
+        height: 50px;
+        background-color: #06c755;
+        display: flex;
         justify-content: center;
-        margin-top: 52px;
+        align-items: center;
+        object-fit: cover;
+      }
+
+      // ネット予約
+      .sm-nav-web-reserve {
+        width: 260px;
+        height: 50px;
+        background-color: #f13529;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      // お問い合わせ
+      .sm-nav-contact-us {
+        width: 260px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #483b19;
       }
 
       .sm-nav-sns {
@@ -203,14 +298,18 @@
         font-size: 14px;
         line-height: 24px;
         text-align: center;
-        margin-top: 51px;
+        margin-top: 35px;
 
         .sm-nav-sns-icons {
           width: 153px;
           display: flex;
           justify-content: space-between;
-          font-size: 30px;
-          margin-top: 9px;
+          margin-top: 12px;
+
+          img {
+            width: 26px;
+            object-fit: cover;
+          }
         }
       }
     }

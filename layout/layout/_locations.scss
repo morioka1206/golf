@@ -7,140 +7,312 @@
     line-height: 34px;
     -webkit-text-stroke: 1px $text-beige;
     position: absolute;
-    top: -76.5px;
-    left: -204px;
+    top: -90px;
+    left: -19%;
   }
 
   .location-wrapper {
-    width: 950.3px;
+    width: 69.8%;
     margin: 0 auto;
-    margin-top: 214.2px;
+    margin-top: 152px;
     position: relative;
 
     .location-title {
       font-weight: 300;
-      font-size: 30px;
+      font-size: 50px;
       line-height: 40px;
       letter-spacing: 0.2rem;
       font-family: $noto-serif;
+      margin-bottom: 93px;
+    }
+
+    .area-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2%;
+
+      .area-link {
+        width: 23.2%;
+        min-width: 260px;
+        height: 60px;
+        background-color: $back-darkbrown;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 23px;
+        line-height: 33.3px;
+        letter-spacing: 10%;
+        margin-top: 26px;
+        position: relative;
+      }
+
+      .area-link::after {
+        content: url(../images/navi-down.svg);
+        position: absolute;
+        top: 20%;
+        right: 24px;
+      }
+    }
+
+    .jscroll-wrapper {
+      padding-bottom: 130px;
     }
 
     // ご利用方法の内容
     .list-of-stores {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
-      gap: 56px;
-      margin-top: 153px;
-      padding-bottom: 130px;
+      gap: 16px;
+      margin-top: 60px;
+      padding-bottom: 80px;
 
       .store {
-        width: 334px;
-        height: 427px;
+        width: 260px;
+        height: 60px;
+        border: 1px solid #cbc3ab;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
 
-        // お店の写真
-        .store-image {
-          width: 335px;
-          height: 242px;
-          background-color: $back-beige2;
-
-          img {
-            width: 335px;
-            height: 242px;
-          }
+        .store-name-wrapper {
+          transform: translateY(2px);
         }
 
         // 店舗名
         .store-name {
           width: 100%;
-          font-size: 20px;
+          // height: 45px;
+          font-size: 18px;
           line-height: 23px;
-          font-weight: 700;
-          text-align: left;
-          margin-top: 31px;
+          font-weight: bold;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .schedule {
+          font-size: 14px;
+          color: $back-darkbeige;
+          line-height: 20.27px;
+          text-align: center;
+          font-weight: bold;
+          margin: 0;
         }
 
         // お店の住所
         .store-address {
           width: 100%;
+          height: 60px;
           font-size: 14px;
           line-height: 23px;
-          margin-top: 12px;
+          margin-top: 18px;
         }
 
         .store-link {
           margin-top: 33px;
+          transition: 0.5s;
+        }
+
+        .store-link a:hover {
+          opacity: 0.7;
         }
       }
+
+      .store::after {
+        position: absolute;
+        top: 42%;
+        right: 5%;
+        content: "";
+        display: inline-block;
+        width: 7px;
+        height: 12px;
+        background-image: url(../images/naviarrow-next.svg);
+        background-size: contain;
+      }
+    }
+
+    .area-name {
+      width: 100%;
+      height: 60px;
+      background-color: $back-beige;
+      color: $back-darkbrown;
+      padding-left: 17px;
+      display: flex;
+      align-items: center;
+      font-size: 23px;
+      font-weight: bold;
+      line-height: 33.3px;
+      margin: 44px auto 14px;
     }
   }
 }
 
 @media screen and (max-width: 600px) {
   .location-wrapper {
-    width: 335px;
+    width: calc(100% - 40px);
     margin: 0 auto;
-    margin-top: 163px;
+    margin-top: 80px;
+    padding-bottom: 80px;
 
     .page-title {
       font-family: $montserrat;
       color: transparent;
-      font-size: 60px;
+      font-size: 46px;
       font-weight: 400;
       line-height: 40px;
       -webkit-text-stroke: 1px $text-beige;
+    }
+
+    .location-select {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      transform: translate(0%, 460%);
+      transform: translate();
+
+      select {
+        border: 1px #d1d1d1 solid;
+        border-radius: 20px;
+        width: 159px;
+        height: 39px;
+        padding-right: 10px;
+        -webkit-appearance: none;
+        appearance: none; /* デフォルトのスタイルを無効 */
+        padding-left: 15px; /* 文字が左に寄るので右にずらす */
+        background-image: url(../images/location-select.svg);
+        background-position: right 20px center;
+        background-repeat: no-repeat;
+        background-size: 14px 14px;
+      }
     }
 
     .location-title {
       font-weight: 300;
       font-size: 28px;
       line-height: 40px;
-      letter-spacing: 0.2rem;
       font-family: $noto-serif;
-      margin-top: 20px;
+      // margin-top: 20px;
+      margin-bottom: 40px;
     }
 
-    // ご利用方法の内容
+    .area-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2%;
+
+      .area-link {
+        width: 42.6%;
+        min-width: 160px;
+        height: 60px;
+        background-color: $back-darkbrown;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        line-height: 23.17px;
+        letter-spacing: 10%;
+        margin-top: 26px;
+        position: relative;
+      }
+
+      .area-link::after {
+        content: url(../images/navi-down.svg);
+        position: absolute;
+        top: 30%;
+        right: 12px;
+      }
+    }
+
+    .area-name {
+      width: 100%;
+      height: 60px;
+      background-color: $back-beige;
+      color: $back-darkbrown;
+      padding-left: 17px;
+      display: flex;
+      align-items: center;
+      font-size: 23px;
+      font-weight: bold;
+      line-height: 33.3px;
+      margin: 30px auto 14px;
+    }
+
+    // 店舗リスト
     .list-of-stores {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      gap: 11px;
-      margin-top: 196px;
-      padding-bottom: 150px;
+      gap: 8px;
 
       .store {
-        width: 163px;
-        height: 307px;
+        // width: 50%;
+        min-width: 170px;
+        height: 60px;
+        border: 1px solid #cbc3ab;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
 
-        // お店の写真
-        .store-image img {
-          height: 118px;
-          width: 163px;
+        .store-name-wrapper {
+          transform: translateY(2px);
         }
 
         // 店舗名
         .store-name {
           width: 100%;
-          font-size: 20px;
+          // height: 45px;
+          font-size: 14px;
           line-height: 23px;
-          font-weight: 700;
-          text-align: left;
-          margin-top: 13px;
+          font-weight: bold;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .schedule {
+          font-size: 14px;
+          color: $back-darkbeige;
+          line-height: 20.27px;
+          text-align: center;
+          font-weight: bold;
+          margin: 0;
         }
 
         // お店の住所
         .store-address {
           width: 100%;
+          height: 60px;
           font-size: 14px;
           line-height: 23px;
-          margin-top: 13px;
+          margin-top: 18px;
         }
 
         .store-link {
-          margin-top: 10px;
+          margin-top: 33px;
+          transition: 0.5s;
         }
+
+        .store-link a:hover {
+          opacity: 0.7;
+        }
+      }
+      .store::after {
+        position: absolute;
+        top: 42%;
+        right: 5%;
+        content: "";
+        display: inline-block;
+        width: 7px;
+        height: 12px;
+        background-image: url(../images/naviarrow-next.svg);
+        background-size: contain;
       }
     }
   }

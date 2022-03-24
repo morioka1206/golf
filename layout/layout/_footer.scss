@@ -1,104 +1,41 @@
 // フッター
-footer {
-  width: 100%;
-  height: 333px;
-  background-color: $back-brown;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  font-size: 14px;
-  padding: 81.6px 170px 81.6px 187.9px;
-
-  .footer-company-infomation {
-    line-height: 20.4px;
-    margin-top: 28.34px;
-  }
-
-  .footer-logo img {
-    width: 144.5px;
-  }
-
-  .footer-links {
-    width: 321px;
-    font-size: 12px;
-    line-height: 13.6px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 44.2px;
-  }
-
-  .sm-footer-sns {
-    display: none;
-  }
-
-  .footer-sns {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .footer-sns-icons {
-    width: 130px;
-    font-size: 25.5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 25.5px;
-  }
-
-  .footer-follow-us {
-    font-size: 12px;
-    line-height: 20.4px;
-    font-family: $montserrat;
-  }
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 601px) {
   footer {
-    width: 375px;
-    height: 400px;
-    padding: 20px;
-    flex-direction: column;
-
-    .footer-logo img {
-      width: 130px;
-      height: 20.39px;
-      margin-top: 30px;
-    }
-
-    .footer-company-infomation {
-      font-size: 14px;
-      line-height: 24px;
-      margin: 39.61px 12px 0;
-    }
-
-    // ページリンク
-    .footer-links {
-      width: 312px;
-      font-size: 12px;
-      line-height: 17px;
-    }
-
-    .footer-sns {
+    .sm-footer {
       display: none;
     }
 
-    // スマホ用SNS
-    .sm-footer-sns {
+    width: 100%;
+    height: 392px;
+    background-color: $back-brown;
+    color: white;
+    font-size: 14px;
+    padding: 96px 200px 75px 221px;
+    .footer-wrapper {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      flex-direction: column;
-      margin-top: 34px;
-      .footer-follow-us {
-        font-size: 14px;
+
+      .footer-company-infomation {
         line-height: 24px;
-        font-family: $montserrat;
+        margin-top: 33.34px;
+      }
+      .footer-links {
+        width: 354px;
+        line-height: 17px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 52px;
       }
 
-      .footer-follow-us {
-        text-align: center;
+      .sm-footer-sns {
+        display: none;
+      }
+
+      .footer-sns {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
       }
 
       .footer-sns-icons {
@@ -107,7 +44,152 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0;
+        margin-left: 30px;
+        transform: translateY(-14%);
+      }
+
+      .footer-follow-us {
+        font-size: 14px;
+        line-height: 24px;
+        font-family: $montserrat;
+      }
+    }
+
+    .copyright {
+      display: flex;
+      justify-content: center;
+      background-color: $back-brown;
+      margin-top: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  // 追従するフッター
+  .sm-footer {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+
+    .sm-footer-line {
+      width: 50%;
+      height: 100%;
+      background-color: #06c755;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .sm-footer-web {
+      width: 50%;
+      height: 100%;
+      background-color: #f13529;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  footer {
+    width: 100%;
+    // height: 400px;
+    padding: 0;
+    background-color: $back-brown;
+    font-size: 14px;
+    color: white;
+    padding-bottom: 100px;
+
+    .footer-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+
+      .footer-contents {
+        width: calc(100% - 40px);
+      }
+
+      .footer-logo img {
+        width: 130px;
+        height: 20.39px;
+        margin-top: 30px;
+        // margin-left: 20px;
+      }
+
+      .footer-company-infomation {
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 39.61px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        // margin-left: 20px;
+      }
+
+      // ページリンク
+      .footer-links {
+        width: 85%;
+        font-size: 12px;
+        line-height: 17px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 0 auto;
+        margin-top: 50px;
+        white-space: nowrap;
+      }
+
+      .footer-sns {
+        display: none;
+      }
+
+      // スマホ用SNS
+      .sm-footer-sns {
+        width: 100%;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 34px;
+        transform: translate(-2px);
+
+        .footer-follow-us {
+          font-size: 14px;
+          line-height: 24px;
+          font-family: $montserrat;
+        }
+
+        .footer-follow-us {
+          text-align: center;
+        }
+
+        .footer-sns-icons {
+          width: 153px;
+          font-size: 30px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 9px;
+          // transform: translateX(-15px);
+        }
       }
     }
 
@@ -115,7 +197,7 @@ footer {
       font-size: 12px;
       line-height: 17px;
       text-align: center;
-      margin-top: 11px;
+      margin-bottom: 5px;
     }
   }
 }

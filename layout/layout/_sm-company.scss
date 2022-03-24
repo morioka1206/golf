@@ -1,12 +1,12 @@
 .company-wrapper {
   width: 337px;
   margin: 0 auto;
-  margin-top: 71px;
+  margin-top: 163px;
 
   .page-title {
     font-family: $montserrat;
     color: transparent;
-    font-size: 60px;
+    font-size: 46px;
     font-weight: 400;
     line-height: 40px;
     -webkit-text-stroke: 1px $text-beige;
@@ -14,10 +14,10 @@
 
   .company-title {
     font-weight: 300;
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 26px;
+    line-height: 37px;
     font-family: $noto-serif;
-    margin-top: 20px;
+    margin-top: 18px;
   }
 }
 
@@ -38,7 +38,7 @@
 }
 
 .company-information {
-  width: 335px;
+  width: calc(100% - 40px);
   margin: 0 auto;
   margin-top: 80px;
 

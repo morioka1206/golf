@@ -2,14 +2,104 @@
 
 <div class="top-section">
   <!-- トップ画像 -->
-  <div class="first-view-images">
-    <div class="swiper slider1">
-      <div class="swiper-wrapper">
+  <?php
+  $args = array(
+    'post_type' => 'top-view-image',
+    // 全件取得、数を指定すればその数だけ取得する。
+    'posts_per_page' => -1,
+  );
+  $st_query = new WP_Query($args);
+  ?>
+
+  <?php if ($st_query->have_posts()) : ?>
+    <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
+
+      <div class="first-view-images" style="background-image: url(<?php $image = SCF::get('image');
+                                                                  echo wp_get_attachment_url($image); ?>);">
+      <?php endwhile; ?>
+    <?php endif; ?>
+
+
+      </div>
+
+      <div class="top-logo"><img src="<?php echo get_theme_file_uri(); ?>/images/pc-top-logo.svg" alt=""></div>
+
+</div>
+
+
+<!-- トップ画像下のGOLFERS24紹介 -->
+<div class="top-introduction" id="section02">
+
+  <?php
+  $args = array(
+    'post_type' => 'introduction',
+    // 全件取得、数を指定すればその数だけ取得する。
+    'posts_per_page' => -1,
+  );
+  $st_query = new WP_Query($args);
+  ?>
+
+  <?php if ($st_query->have_posts()) : ?>
+    <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
+
+
+      <div class="top-introduction-text animation">
+        <!-- <div class="top-introduction-title"><?php echo SCF::get('title') ?></div> -->
+        <div class="top-introduction-sentence">
+          <?php echo SCF::get('introduction-text'); ?>
+        </div>
+      </div>
+      <div class="top-introduction-image animation4 ">
+        <!-- <?php $image = SCF::get('image');
+              echo wp_get_attachment_image($image, 'larage'); ?> -->
+      </div>
+
+    <?php endwhile; ?>
+  <?php endif; ?>
+</div>
+
+<!-- GOLFERS24の特徴 -->
+
+<div id="section03">
+  <?php get_template_part('features') ?>
+</div>
+<!-- ご利用の流れ -->
+<?php get_template_part('third-section') ?>
+
+
+<!-- 店舗一覧 -->
+<div class="forth-section" id="section04">
+  <div class="forth-section-list-of-stores animation">
+    <!-- 店舗一覧タイトル -->
+    <div class="forth-section-stores-title">店舗一覧</div>
+    <div class="shops-wrapper">
+      <div class="japan-map">
+        <img src="<?php echo get_theme_file_uri(); ?>/images/japan.png" alt="">
+      </div>
+      <!-- 店舗一覧 -->
+      <div class="forth-section-stores">
         <?php
         $args = array(
-          'post_type' => 'top-image',
+          'post_type' => 'store',
           // 全件取得、数を指定すればその数だけ取得する。
           'posts_per_page' => -1,
+          'meta_key' => 'local_id',
+          'orderby' => 'meta_value_num',
+          'order' => 'ASC',
+          'meta_query' => array(
+            // オープンまたは決まっているところだけ表示
+            array(
+              'key' => 'open',
+              'value' => 'オープン',
+              'compare' => '=',
+            ),
+            array(
+              'meta_key' => 'priority_id',
+              'orderby' => 'meta_value_num',
+              'order' => 'DESC'
+            ),
+            'relation' => 'AND'
+          )
         );
         $st_query = new WP_Query($args);
         ?>
@@ -17,128 +107,139 @@
         <?php if ($st_query->have_posts()) : ?>
           <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
 
-            <div class="swiper-slide">
-              <div class="first-image slide-img" style="background-image: url(<?php $image = SCF::get('image');
-                                                                              echo wp_get_attachment_url($image); ?>);"></div>
+            <div class="forth-section-store">
+              <div class="forth-section-store-infomation">
+                <a href="<?php the_permalink(); ?>">
+                  <div class="forth-section-store-name"><?php echo SCF::get('store-name'); ?><?php echo SCF::get('schedule'); ?></div>
+                </a>
+              </div>
+            </div>
+          <?php endwhile; ?>
+        <?php endif; ?>
+
+        <?php
+        $args = array(
+          'post_type' => 'store',
+          // 全件取得、数を指定すればその数だけ取得する。
+          'posts_per_page' => -1,
+          'meta_key' => 'local_id',
+          'orderby' => 'meta_value_num',
+          'order' => 'ASC',
+          'meta_query' => array(
+            // オープンまたは決まっているところだけ表示
+            array(
+              'key' => 'open',
+              'value' => 'オープン決定',
+              'compare' => '=',
+            ),
+            array(
+              'meta_key' => 'priority_id',
+              'orderby' => 'meta_value_num',
+              'order' => 'DESC'
+            ),
+            'relation' => 'AND'
+          )
+        );
+        $st_query = new WP_Query($args);
+        ?>
+
+        <?php if ($st_query->have_posts()) : ?>
+          <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
+
+            <div class="forth-section-store">
+              <div class="forth-section-store-infomation">
+                <a href="<?php the_permalink(); ?>">
+                  <div class="forth-section-store-name"><?php echo SCF::get('store-name'); ?><?php echo SCF::get('schedule'); ?></div>
+                </a>
+              </div>
+            </div>
+          <?php endwhile; ?>
+        <?php endif; ?>
+
+        <?php
+        $args = array(
+          'post_type' => 'store',
+          // 全件取得、数を指定すればその数だけ取得する。
+          'posts_per_page' => -1,
+          'meta_key' => 'local_id',
+          'orderby' => 'meta_value_num',
+          'order' => 'ASC',
+          'meta_query' => array(
+            // オープンまたは決まっているところだけ表示
+            array(
+              'key' => 'open',
+              'value' => 'オープン',
+              'compare' => '!=',
+            ),
+            array(
+              'key' => 'open',
+              'value' => 'オープン決定',
+              'compare' => '!=',
+            ),
+            array(
+              'meta_key' => 'priority_id',
+              'orderby' => 'meta_value_num',
+              'order' => 'DESC'
+            ),
+            'relation' => 'AND'
+          )
+        );
+        $st_query = new WP_Query($args);
+        ?>
+
+        <?php if ($st_query->have_posts()) : ?>
+          <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
+
+
+            <div class="forth-section-store">
+              <div class="forth-section-store-infomation">
+                <div class="forth-section-store-name"><?php echo SCF::get('store-name'); ?></div>
+              </div>
             </div>
           <?php endwhile; ?>
         <?php endif; ?>
       </div>
     </div>
-    <a href="<?php echo esc_url(home_url('/')); ?>">
-      <div class="contact-us"><img src="<?php echo get_template_directory_uri(); ?>/images/CONTACT US.svg" alt=""></div>
-    </a>
-  </div>
-  <!-- トップ画像下のGOLFERS24紹介 -->
-  <div class="top-introduction">
-
-    <?php
-    $args = array(
-      'post_type' => 'introduction',
-      // 全件取得、数を指定すればその数だけ取得する。
-      'posts_per_page' => -1,
-    );
-    $st_query = new WP_Query($args);
-    ?>
-
-    <?php if ($st_query->have_posts()) : ?>
-      <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
 
 
-        <div class="top-introduction-text">
-          <div class="top-introduction-title"><?php echo SCF::get('title') ?></div>
-          <div class="top-introduction-sentence">
-            <?php echo SCF::get('introduction-text'); ?>
-          </div>
-        </div>
-        <div class="top-introduction-image">
-          <?php $image = SCF::get('image');
-          echo wp_get_attachment_image($image, 'larage'); ?>
-        </div>
-  </div>
-
-<?php endwhile; ?>
-<?php endif; ?>
-</div>
-
-<!-- GOLFERS24の特徴 -->
-<?php get_template_part('features') ?>
-
-<!-- ご利用の流れ -->
-<?php get_template_part('third-section') ?>
-
-
-<!-- 店舗一覧 -->
-<div class="forth-section">
-  <div class="forth-section-list-of-stores">
-    <!-- 店舗一覧タイトル -->
-    <div class="forth-section-stores-title">店舗一覧</div>
-    <!-- 店舗一覧 -->
-    <div class="forth-section-stores">
-      <?php
-      $args = array(
-        'post_type' => 'store',
-        // 全件取得、数を指定すればその数だけ取得する。
-        'posts_per_page' => 3,
-      );
-      $st_query = new WP_Query($args);
-      ?>
-
-      <?php if ($st_query->have_posts()) : ?>
-        <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
-
-
-          <!-- 店舗1 -->
-          <div class="forth-section-store">
-            <div class="forth-section-store-image"><img src="<?php echo get_template_directory_uri(); ?>/images/store-image1.png" alt=""></div>
-            <div class="forth-section-store-infomation">
-              <div class="forth-section-store-name"><?php echo SCF::get('store-name'); ?></div>
-              <div class="forth-section-store-address">
-                <p>〒<?php echo SCF::get('postal-code'); ?></p>
-                <p><?php echo SCF::get('address'); ?></p>
-              </div>
-            </div>
-          </div>
-
+    <!-- VIEW MOREボタン -->
+    <div class="forth-section-view-more">
+      <a href="<?php echo esc_url(home_url('/locations')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/view-more-button.svg" alt=""></a>
     </div>
-
-  <?php endwhile; ?>
-<?php endif; ?>
-<!-- VIEW MOREボタン -->
-<div class="forth-section-view-more">
-  <a href="<?php echo esc_url(home_url('/locations')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/view-more-button.svg" alt=""></a>
-</div>
   </div>
 </div>
 
 <!-- NEWS -->
-<div class="fifth-section">
-  <div class="fifth-section-title">NEWS</div>
-  <div class="fifth-section-list-of-news">
+<div class="fifth-section animation" id="section05">
+  <div>
+    <div class="fifth-section-title">NEWS</div>
+    <div class="fifth-section-list-of-news">
+      <div class="list-of-news ">
 
-    <?php
-    $args = array(
-      'post_type' => 'news',
-      // 全件取得、数を指定すればその数だけ取得する。
-      'posts_per_page' => 3,
-    );
-    $st_query = new WP_Query($args);
-    ?>
+        <?php
+        $args = array(
+          'post_type' => 'news',
+          // 全件取得、数を指定すればその数だけ取得する。
+          'posts_per_page' => 3,
+        );
+        $st_query = new WP_Query($args);
+        ?>
 
-    <?php if ($st_query->have_posts()) : ?>
-      <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
+        <?php if ($st_query->have_posts()) : ?>
+          <?php while ($st_query->have_posts()) : $st_query->the_post(); ?>
 
 
-        <a href="<?php the_permalink(); ?>">
-          <div class="fifth-section-news">
-            <div class="fifth-section-news-date"><?php echo SCF::get('date') ?></div>
-            <div class="fifth-section-news-content"><?php echo SCF::get('title') ?></div>
-          </div>
-        </a>
+            <a href="<?php the_permalink(); ?>">
+              <div class="fifth-section-news">
+                <div class="fifth-section-news-date"><?php echo SCF::get('date') ?></div>
+                <div class="fifth-section-news-content"><?php echo SCF::get('title') ?></div>
+              </div>
+            </a>
 
-      <?php endwhile; ?>
-    <?php endif; ?>
-
+          <?php endwhile; ?>
+        <?php endif; ?>
+      </div>
+    </div>
   </div>
 
 
@@ -147,30 +248,31 @@
 </div>
 
 <!-- SNS -->
-<div class="sixth-section">
+<div class="sixth-section" id="section06">
+  <div class="sixth-section-title">Instagram</div>
   <div class="sixth-section-follow-message">
-    <p>各種SNS更新中！フォローして最新情報をGET</p>
+    <p>日々更新中！フォローして最新情報をGET</p>
   </div>
   <div class="sm-sixth-section-follow-message">
-    <p>各種SNS更新中！</p>
-    <p> フォローして最新情報をGET</p>
+    <p>日々更新中！フォローして最新情報をGET</p>
+  </div>
+  <?php echo do_shortcode('[instagram-feed feed=2]'); ?>
+  <div class="sixth-section-follow-message">
+    <p>Facebook・公式LINEもフォローする</p>
+  </div>
+  <div class="sm-sixth-section-follow-message">
+    <p>Facebook・公式LINEもフォローする</p>
   </div>
   <div class="sixth-sns-buttons">
-    <a href="#">
+    <a href="https://www.facebook.com/Golfers24-107676011730422/">
       <div class="sixth-sns-button">
-        <i class="fab fa-facebook-square sixth-sns-icon"></i>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-facebook-icon.svg" alt="">
         <p>Facebook</p>
       </div>
     </a>
-    <a href="#">
+    <a href="https://lin.ee/7Ii8MCV">
       <div class="sixth-sns-button">
-        <i class="fab fa-instagram sixth-sns-icon"></i>
-        <p>Instagram</p>
-      </div>
-    </a>
-    <a href="#">
-      <div class="sixth-sns-button">
-        <i class="fab fa-line sixth-sns-icon"></i>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/navi-f-line-icon.svg" alt="">
         <p>公式LINE</p>
       </div>
     </a>
@@ -178,7 +280,8 @@
 </div>
 
 <!-- CONTACT US -->
-<?php get_template_part('contact-us') ?>
+<?php // get_template_part('contact-us') 
+?>
 
 <!-- スクロール位置に応じて色を変える -->
 <script>
@@ -202,6 +305,33 @@
 
 
   };
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+  $(function() {
+    var h = $(window).height();
+
+    $('#wrap').css('display', 'none');
+    $('#loader-bg ,#loader').height(h).css('display', 'block');
+  });
+
+  $(window).load(function() { //全ての読み込みが完了したら実行
+    $('#loader-bg').delay(900).fadeOut(800);
+    $('#loader').delay(600).fadeOut(400);
+    $('#wrap').css('display', 'block');
+  });
+
+  //10秒たったら強制的にロード画面を非表示
+  $(function() {
+    setTimeout('stopload()', 10000);
+  });
+
+  function stopload() {
+    $('#wrap').css('display', 'block');
+    $('#loader-bg').delay(1200).fadeOut(900);
+    $('#loader').delay(700).fadeOut(600);
+  }
 </script>
 
 

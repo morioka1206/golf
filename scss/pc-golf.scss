@@ -1,7 +1,8 @@
 // テキストカラー
-$text-black: #555555;
-$text-gray: #555555;
+$text-black: #222;
+$text-gray: #222;
 $text-beige: #cbc3ad;
+$gold: #967110;
 
 // ラインカラー
 $line-gray1: #e8e8e8;
@@ -32,8 +33,11 @@ $back-input: #f2f4f6;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
 // Noto Sans
-$noto: "Noto Sans JP", sans-serif;
+$noto: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体",
+  "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN",
+  "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 $noto-serif: "Noto Serif JP", serif;
+$fork: "Folk Medium";
 
 // Acmin Pro
 $acmin: acumin-pro, sans-serif;
@@ -74,15 +78,243 @@ input:-webkit-autofill {
 
 // スタイルの基本セット
 body {
+  zoom: 0.85;
   width: 100%;
   height: 100%;
   min-width: 1400px;
   scroll-behavior: smooth;
   font-family: $noto;
-  font-size: 14px;
+  font-size: 20px;
   color: $text-black;
   font-weight: 400;
-  padding-top: 97px;
+  padding-top: 80px;
+  letter-spacing: 1px;
+}
+
+@function vw($width, $px) {
+  @return $px / $width * 100vw;
+}
+
+// @media screen and (max-width: 1400px) {
+//   html {
+//     zoom: 0.95;
+//   }
+// }
+@media screen and (max-width: 1250px) {
+  html {
+    zoom: 0.9;
+  }
+}
+// @media screen and (max-width: 1150px) {
+//   html {
+//     zoom: 0.8;
+//   }
+// }
+// @media screen and (max-width: 1050px) {
+//   html {
+//     zoom: 0.75;
+//   }
+// }
+
+// @media screen and (max-width: 1000px) {
+//   html {
+//     zoom: 0.7;
+//   }
+// }
+
+// @media screen and (max-width: 880px) {
+//   html {
+//     zoom: 0.65;
+//   }
+// }
+
+// @media screen and (max-width: 820px) {
+//   html {
+//     zoom: 0.6;
+//   }
+// }
+
+// @media screen and (max-width: 770px) {
+//   html {
+//     zoom: 0.55;
+//   }
+// }
+
+// @media screen and (max-width: 700px) {
+//   html {
+//     zoom: 0.5;
+//   }
+// }
+
+#loader-bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #edeae2;
+  padding: 80% 0;
+  z-index: 6000;
+}
+#loader {
+  display: none;
+  position: fixed;
+  top: 56%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  text-align: center;
+  color: #fff;
+  z-index: 60001;
+}
+
+// ローディング画面アニメーション
+@keyframes loader {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0);
+  }
+}
+
+#loader {
+  animation: 2.3s linear infinite loader;
+}
+
+/*アニメーション前の指定*/
+#mask path {
+  fill-opacity: 0; /*最初は透過0で見えない状態*/
+  transition: fill-opacity 0.5s; /*カラーがつく際のアニメーション0.5秒で変化*/
+  fill: none; /*塗りがない状態*/
+  stroke: $text-black; /*線の色*/
+}
+
+/*アニメーション後に.doneというクラス名がで付与された時の指定*/
+#mask.done path {
+  fill: $text-black; /*塗りの色*/
+  fill-opacity: 1; /*透過1で見える状態*/
+  stroke: none; /*線の色なし*/
+}
+
+// ふわっとアニメーション
+/*アニメーション要素のスタイル*/
+// .animation {
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: 3s;
+//   transform: translateY(50px);
+// }
+
+// .animation2 {
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: 4s;
+//   transform: translateY(60px);
+// }
+
+// .animation3 {
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: 1s;
+//   transform: translateY(100px);
+// }
+
+// .animation4 {
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: 2s;
+//   clip-path: inset(0 100% 0 0);
+// }
+
+// .animation5 {
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: 4s;
+//   transform: translateY(35px);
+// }
+
+// .animation6 {
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: 2s;
+//   transform: translateY(15px);
+// }
+
+/*アニメーション要素までスクロールした時のスタイル*/
+// .active {
+//   opacity: 1;
+//   visibility: visible;
+//   transform: translateY(0);
+// }
+
+// .intro-active {
+//   opacity: 1;
+//   visibility: visible;
+//   clip-path: inset(0);
+// }
+
+.pagination {
+  margin: 40px 0 0;
+}
+.nav-links {
+  display: flex;
+}
+.pagination .page-numbers {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 20px 25px;
+  color: #333;
+  border-radius: 3px;
+  box-shadow: 0 3px 3px #999;
+  background: #fff;
+}
+.pagination .current {
+  padding: 20px 25px;
+  background: #69a4db;
+  color: #fff;
+}
+.pagination .prev,
+.pagination .next {
+  background: transparent;
+  box-shadow: none;
+  color: #69a4db;
+}
+.pagination .dots {
+  background: transparent;
+  box-shadow: none;
+}
+
+.how-title {
+  font-size: 50px !important;
+  margin-bottom: 142px;
+}
+
+.scroll-arrow {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  z-index: 300;
+  transform: translateX(-50%);
+}
+
+#section02,
+#section03,
+#section04,
+#section05,
+#section06 {
+  position: relative;
+}
+
+.forth-section {
+  padding-bottom: 60px;
+}
+
+.fifth-section {
+  padding-bottom: 140px;
 }
 
 @import "../layout/layout/header";
@@ -98,3 +330,5 @@ body {
 @import "../layout/layout/form";
 @import "../layout/layout/company";
 @import "../layout/layout/membership";
+@import "../layout/layout/finish";
+@import "../layout/layout/fc";
