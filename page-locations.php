@@ -23,27 +23,27 @@
       // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
       $the_query = new WP_Query(
         array(
-          'post_status' => 'store',
           'post_type' => 'store',
           'posts_per_page' => -1,
+          'meta_key' => 'priority_id',
+          'orderby' => 'meta_value_num',
+          'order' => 'DESC',
           'meta_query' => array(
             array(
-              'key' => 'local_id',
-              'value' => '1',
-              'compare' => '='
-            ),
-            array(
-              'key' => 'open',
-              'value' => 'オープン',
-              'compare' => '=',
-            ),
-            array(
-              'meta_key' => 'priority_id',
-              'orderby' => 'meta_value_num',
-              'order' => 'DESC'
+              'relation' => 'AND',
+              array(
+                'key' => 'local_id',
+                'value' => '1',
+                'compare' => '='
+              ),
+              array(
+                'key' => 'open',
+                'value' => 'オープン',
+                'compare' => '=',
+              )
             ),
           ),
-        )
+        ),
       );
 
 
@@ -70,26 +70,27 @@
   // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $the_query = new WP_Query(
     array(
-      'post_status' => 'store',
       'post_type' => 'store',
       'posts_per_page' => -1,
-      'meta_key' => 'local_id',
-      'meta_value' => '1',
-      'compare' => '=',
+      'meta_key' => 'priority_id',
+      'orderby' => 'meta_value_num',
+      'order' => 'DESC',
       'meta_query' => array(
         array(
-          'key' => 'open',
-          'value' => 'オープン決定',
-          'compare' => '=',
+          'relation' => 'AND',
+          array(
+            'key' => 'local_id',
+            'value' => '1',
+            'compare' => '='
+          ),
+          array(
+            'key' => 'open',
+            'value' => 'オープン決定',
+            'compare' => '=',
+          )
         ),
-        array(
-          'meta_key' => 'priority_id',
-          'orderby' => 'meta_value_num',
-          'order' => 'DESC'
-        ),
-        'relation' => 'AND'
       ),
-    )
+    ),
   );
 
 
@@ -118,32 +119,27 @@
   // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $the_query = new WP_Query(
     array(
-      'post_status' => 'store',
       'post_type' => 'store',
       'posts_per_page' => -1,
-      'meta_key' => 'local_id',
-      'meta_value' => '1',
-      'compare' => '=',
+      'meta_key' => 'priority_id',
+      'orderby' => 'meta_value_num',
+      'order' => 'DESC',
       'meta_query' => array(
         array(
-          'key' => 'open',
-          'value' => 'オープン日未定',
-          'compare' => '=',
+          'relation' => 'AND',
           array(
-            'meta_key' => 'priority_id',
-            'orderby' => 'meta_value_num',
-            'order' => 'DESC'
+            'key' => 'local_id',
+            'value' => '1',
+            'compare' => '='
           ),
-          'relation' => 'AND'
+          array(
+            'key' => 'open',
+            'value' => 'オープン日未定',
+            'compare' => '=',
+          )
         ),
-        array(
-          'meta_key' => 'priority_id',
-          'orderby' => 'meta_value_num',
-          'order' => 'DESC'
-        ),
-        'relation' => 'AND'
       ),
-    )
+    ),
   );
 
 
@@ -174,26 +170,27 @@
   // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $the_query = new WP_Query(
     array(
-      'post_status' => 'store',
       'post_type' => 'store',
       'posts_per_page' => -1,
-      'meta_key' => 'local_id',
-      'meta_value' => '2',
-      'compare' => '=',
+      'meta_key' => 'priority_id',
+      'orderby' => 'meta_value_num',
+      'order' => 'DESC',
       'meta_query' => array(
         array(
-          'key' => 'open',
-          'value' => 'オープン',
-          'compare' => '=',
+          'relation' => 'AND',
+          array(
+            'key' => 'local_id',
+            'value' => '2',
+            'compare' => '='
+          ),
+          array(
+            'key' => 'open',
+            'value' => 'オープン',
+            'compare' => '=',
+          )
         ),
-        array(
-          'meta_key' => 'priority_id',
-          'orderby' => 'meta_value_num',
-          'order' => 'DESC'
-        ),
-        'relation' => 'AND'
       ),
-    )
+    ),
   );
 
 
@@ -220,26 +217,27 @@
   // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $the_query = new WP_Query(
     array(
-      'post_status' => 'store',
       'post_type' => 'store',
       'posts_per_page' => -1,
-      'meta_key' => 'local_id',
-      'meta_value' => '2',
-      'compare' => '=',
+      'meta_key' => 'priority_id',
+      'orderby' => 'meta_value_num',
+      'order' => 'DESC',
       'meta_query' => array(
         array(
-          'key' => 'open',
-          'value' => 'オープン決定',
-          'compare' => '=',
+          'relation' => 'AND',
+          array(
+            'key' => 'local_id',
+            'value' => '2',
+            'compare' => '='
+          ),
+          array(
+            'key' => 'open',
+            'value' => 'オープン決定',
+            'compare' => '=',
+          )
         ),
-        array(
-          'meta_key' => 'priority_id',
-          'orderby' => 'meta_value_num',
-          'order' => 'DESC'
-        ),
-        'relation' => 'AND'
       ),
-    )
+    ),
   );
 
 
@@ -268,26 +266,27 @@
   // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $the_query = new WP_Query(
     array(
-      'post_status' => 'store',
       'post_type' => 'store',
       'posts_per_page' => -1,
-      'meta_key' => 'local_id',
-      'meta_value' => '2',
-      'compare' => '=',
+      'meta_key' => 'priority_id',
+      'orderby' => 'meta_value_num',
+      'order' => 'DESC',
       'meta_query' => array(
         array(
-          'key' => 'open',
-          'value' => 'オープン日未定',
-          'compare' => '=',
+          'relation' => 'AND',
+          array(
+            'key' => 'local_id',
+            'value' => '2',
+            'compare' => '='
+          ),
+          array(
+            'key' => 'open',
+            'value' => 'オープン日未定',
+            'compare' => '=',
+          )
         ),
-        array(
-          'meta_key' => 'priority_id',
-          'orderby' => 'meta_value_num',
-          'order' => 'DESC'
-        ),
-        'relation' => 'AND'
       ),
-    )
+    ),
   );
 
 
@@ -318,26 +317,27 @@
   // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $the_query = new WP_Query(
     array(
-      'post_status' => 'store',
       'post_type' => 'store',
       'posts_per_page' => -1,
-      'meta_key' => 'local_id',
-      'meta_value' => '3',
-      'compare' => '=',
+      'meta_key' => 'priority_id',
+      'orderby' => 'meta_value_num',
+      'order' => 'DESC',
       'meta_query' => array(
         array(
-          'key' => 'open',
-          'value' => 'オープン',
-          'compare' => '=',
+          'relation' => 'AND',
+          array(
+            'key' => 'local_id',
+            'value' => '3',
+            'compare' => '='
+          ),
+          array(
+            'key' => 'open',
+            'value' => 'オープン',
+            'compare' => '=',
+          )
         ),
-        array(
-          'meta_key' => 'priority_id',
-          'orderby' => 'meta_value_num',
-          'order' => 'DESC'
-        ),
-        'relation' => 'AND'
       ),
-    )
+    ),
   );
 
 
@@ -364,26 +364,27 @@
   // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $the_query = new WP_Query(
     array(
-      'post_status' => 'store',
       'post_type' => 'store',
       'posts_per_page' => -1,
-      'meta_key' => 'local_id',
-      'meta_value' => '3',
-      'compare' => '=',
+      'meta_key' => 'priority_id',
+      'orderby' => 'meta_value_num',
+      'order' => 'DESC',
       'meta_query' => array(
         array(
-          'key' => 'open',
-          'value' => 'オープン決定',
-          'compare' => '=',
+          'relation' => 'AND',
+          array(
+            'key' => 'local_id',
+            'value' => '3',
+            'compare' => '='
+          ),
+          array(
+            'key' => 'open',
+            'value' => 'オープン決定',
+            'compare' => '=',
+          )
         ),
-        array(
-          'meta_key' => 'priority_id',
-          'orderby' => 'meta_value_num',
-          'order' => 'DESC'
-        ),
-        'relation' => 'AND'
       ),
-    )
+    ),
   );
 
 
@@ -412,26 +413,27 @@
   // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $the_query = new WP_Query(
     array(
-      'post_status' => 'store',
       'post_type' => 'store',
       'posts_per_page' => -1,
-      'meta_key' => 'local_id',
-      'meta_value' => '3',
-      'compare' => '=',
+      'meta_key' => 'priority_id',
+      'orderby' => 'meta_value_num',
+      'order' => 'DESC',
       'meta_query' => array(
         array(
-          'key' => 'open',
-          'value' => 'オープン日未定',
-          'compare' => '=',
+          'relation' => 'AND',
+          array(
+            'key' => 'local_id',
+            'value' => '3',
+            'compare' => '='
+          ),
+          array(
+            'key' => 'open',
+            'value' => 'オープン日未定',
+            'compare' => '=',
+          )
         ),
-        array(
-          'meta_key' => 'priority_id',
-          'orderby' => 'meta_value_num',
-          'order' => 'DESC'
-        ),
-        'relation' => 'AND'
       ),
-    )
+    ),
   );
 
 
@@ -462,26 +464,27 @@
   // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $the_query = new WP_Query(
     array(
-      'post_status' => 'store',
       'post_type' => 'store',
       'posts_per_page' => -1,
-      'meta_key' => 'local_id',
-      'meta_value' => '4',
-      'compare' => '=',
+      'meta_key' => 'priority_id',
+      'orderby' => 'meta_value_num',
+      'order' => 'DESC',
       'meta_query' => array(
         array(
-          'key' => 'open',
-          'value' => 'オープン',
-          'compare' => '=',
+          'relation' => 'AND',
+          array(
+            'key' => 'local_id',
+            'value' => '4',
+            'compare' => '='
+          ),
+          array(
+            'key' => 'open',
+            'value' => 'オープン',
+            'compare' => '=',
+          )
         ),
-        array(
-          'meta_key' => 'priority_id',
-          'orderby' => 'meta_value_num',
-          'order' => 'DESC'
-        ),
-        'relation' => 'AND'
       ),
-    )
+    ),
   );
 
 
@@ -508,26 +511,27 @@
   // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $the_query = new WP_Query(
     array(
-      'post_status' => 'store',
       'post_type' => 'store',
       'posts_per_page' => -1,
-      'meta_key' => 'local_id',
-      'meta_value' => '4',
-      'compare' => '=',
+      'meta_key' => 'priority_id',
+      'orderby' => 'meta_value_num',
+      'order' => 'DESC',
       'meta_query' => array(
         array(
-          'key' => 'open',
-          'value' => 'オープン決定',
-          'compare' => '=',
+          'relation' => 'AND',
+          array(
+            'key' => 'local_id',
+            'value' => '4',
+            'compare' => '='
+          ),
+          array(
+            'key' => 'open',
+            'value' => 'オープン決定',
+            'compare' => '=',
+          )
         ),
-        array(
-          'meta_key' => 'priority_id',
-          'orderby' => 'meta_value_num',
-          'order' => 'DESC'
-        ),
-        'relation' => 'AND'
       ),
-    )
+    ),
   );
 
 
@@ -556,26 +560,27 @@
   // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $the_query = new WP_Query(
     array(
-      'post_status' => 'store',
       'post_type' => 'store',
       'posts_per_page' => -1,
-      'meta_key' => 'local_id',
-      'meta_value' => '4',
-      'compare' => '=',
+      'meta_key' => 'priority_id',
+      'orderby' => 'meta_value_num',
+      'order' => 'DESC',
       'meta_query' => array(
         array(
-          'key' => 'open',
-          'value' => 'オープン日未定',
-          'compare' => '=',
+          'relation' => 'AND',
+          array(
+            'key' => 'local_id',
+            'value' => '4',
+            'compare' => '='
+          ),
+          array(
+            'key' => 'open',
+            'value' => 'オープン日未定',
+            'compare' => '=',
+          )
         ),
-        array(
-          'meta_key' => 'priority_id',
-          'orderby' => 'meta_value_num',
-          'order' => 'DESC'
-        ),
-        'relation' => 'AND'
       ),
-    )
+    ),
   );
 
 
@@ -606,26 +611,27 @@
   // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $the_query = new WP_Query(
     array(
-      'post_status' => 'store',
       'post_type' => 'store',
       'posts_per_page' => -1,
-      'meta_key' => 'local_id',
-      'meta_value' => '5',
-      'compare' => '=',
+      'meta_key' => 'priority_id',
+      'orderby' => 'meta_value_num',
+      'order' => 'DESC',
       'meta_query' => array(
         array(
-          'key' => 'open',
-          'value' => 'オープン',
-          'compare' => '=',
+          'relation' => 'AND',
+          array(
+            'key' => 'local_id',
+            'value' => '5',
+            'compare' => '='
+          ),
+          array(
+            'key' => 'open',
+            'value' => 'オープン',
+            'compare' => '=',
+          )
         ),
-        array(
-          'meta_key' => 'priority_id',
-          'orderby' => 'meta_value_num',
-          'order' => 'DESC'
-        ),
-        'relation' => 'AND'
       ),
-    )
+    ),
   );
 
 
@@ -652,26 +658,27 @@
   // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $the_query = new WP_Query(
     array(
-      'post_status' => 'store',
       'post_type' => 'store',
       'posts_per_page' => -1,
-      'meta_key' => 'local_id',
-      'meta_value' => '5',
-      'compare' => '=',
+      'meta_key' => 'priority_id',
+      'orderby' => 'meta_value_num',
+      'order' => 'DESC',
       'meta_query' => array(
         array(
-          'key' => 'open',
-          'value' => 'オープン決定',
-          'compare' => '=',
+          'relation' => 'AND',
+          array(
+            'key' => 'local_id',
+            'value' => '5',
+            'compare' => '='
+          ),
+          array(
+            'key' => 'open',
+            'value' => 'オープン決定',
+            'compare' => '=',
+          )
         ),
-        array(
-          'meta_key' => 'priority_id',
-          'orderby' => 'meta_value_num',
-          'order' => 'DESC'
-        ),
-        'relation' => 'AND'
       ),
-    )
+    ),
   );
 
 
@@ -700,26 +707,27 @@
   // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $the_query = new WP_Query(
     array(
-      'post_status' => 'store',
       'post_type' => 'store',
       'posts_per_page' => -1,
-      'meta_key' => 'local_id',
-      'meta_value' => '5',
-      'compare' => '=',
+      'meta_key' => 'priority_id',
+      'orderby' => 'meta_value_num',
+      'order' => 'DESC',
       'meta_query' => array(
         array(
-          'key' => 'open',
-          'value' => 'オープン日未定',
-          'compare' => '=',
+          'relation' => 'AND',
+          array(
+            'key' => 'local_id',
+            'value' => '5',
+            'compare' => '='
+          ),
+          array(
+            'key' => 'open',
+            'value' => 'オープン日未定',
+            'compare' => '=',
+          )
         ),
-        array(
-          'meta_key' => 'priority_id',
-          'orderby' => 'meta_value_num',
-          'order' => 'DESC'
-        ),
-        'relation' => 'AND'
       ),
-    )
+    ),
   );
 
 
@@ -750,26 +758,27 @@
   // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $the_query = new WP_Query(
     array(
-      'post_status' => 'store',
       'post_type' => 'store',
       'posts_per_page' => -1,
-      'meta_key' => 'local_id',
-      'meta_value' => '6',
-      'compare' => '=',
+      'meta_key' => 'priority_id',
+      'orderby' => 'meta_value_num',
+      'order' => 'DESC',
       'meta_query' => array(
         array(
-          'key' => 'open',
-          'value' => 'オープン',
-          'compare' => '=',
+          'relation' => 'AND',
+          array(
+            'key' => 'local_id',
+            'value' => '6',
+            'compare' => '='
+          ),
+          array(
+            'key' => 'open',
+            'value' => 'オープン',
+            'compare' => '=',
+          )
         ),
-        array(
-          'meta_key' => 'priority_id',
-          'orderby' => 'meta_value_num',
-          'order' => 'DESC'
-        ),
-        'relation' => 'AND'
       ),
-    )
+    ),
   );
 
 
@@ -796,28 +805,27 @@
   // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $the_query = new WP_Query(
     array(
-      'post_status' => 'store',
       'post_type' => 'store',
       'posts_per_page' => -1,
-      'meta_key' => 'local_id',
-      'meta_value' => '6',
-      'compare' => '=',
+      'meta_key' => 'priority_id',
+      'orderby' => 'meta_value_num',
+      'order' => 'DESC',
       'meta_query' => array(
         array(
-          'key' => 'open',
-          'value' => 'オープン決定',
-          'compare' => '=',
+          'relation' => 'AND',
+          array(
+            'key' => 'local_id',
+            'value' => '6',
+            'compare' => '='
+          ),
+          array(
+            'key' => 'open',
+            'value' => 'オープン決定',
+            'compare' => '=',
+          )
         ),
-        array(
-          'key' => 'open',
-          'value' => 'オープン日未定',
-          'compare' => '=',
-        ),
-        'relation' => 'AND'
       ),
-      
-      
-    )
+    ),
   );
 
 
@@ -846,27 +854,27 @@
   // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $the_query = new WP_Query(
     array(
-      'post_status' => 'store',
       'post_type' => 'store',
       'posts_per_page' => -1,
-      'meta_key' => 'local_id',
-      'meta_value' => '6',
-      'compare' => '=',
+      'meta_key' => 'priority_id',
+      'orderby' => 'meta_value_num',
+      'order' => 'DESC',
       'meta_query' => array(
         array(
-          'key' => 'open',
-          'value' => 'オープン日未定',
-          'compare' => '=',
-        ), 
-        array(
-          'key' => 'open',
-          'value' => 'オープン日未定',
-          'compare' => '=',
+          'relation' => 'AND',
+          array(
+            'key' => 'local_id',
+            'value' => '6',
+            'compare' => '='
+          ),
+          array(
+            'key' => 'open',
+            'value' => 'オープン日未定',
+            'compare' => '=',
+          )
         ),
-        'relation' => 'AND'
       ),
-      
-    )
+    ),
   );
 
 
@@ -897,26 +905,27 @@
   // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $the_query = new WP_Query(
     array(
-      'post_status' => 'store',
       'post_type' => 'store',
       'posts_per_page' => -1,
-      'meta_key' => 'local_id',
-      'meta_value' => '7',
-      'compare' => '=',
+      'meta_key' => 'priority_id',
+      'orderby' => 'meta_value_num',
+      'order' => 'DESC',
       'meta_query' => array(
         array(
-          'key' => 'open',
-          'value' => 'オープン',
-          'compare' => '=',
+          'relation' => 'AND',
+          array(
+            'key' => 'local_id',
+            'value' => '7',
+            'compare' => '='
+          ),
+          array(
+            'key' => 'open',
+            'value' => 'オープン',
+            'compare' => '=',
+          )
         ),
-        array(
-          'meta_key' => 'priority_id',
-          'orderby' => 'meta_value_num',
-          'order' => 'DESC'
-        ),
-        'relation' => 'AND'
       ),
-    )
+    ),
   );
 
 
@@ -944,28 +953,6 @@
 
   <!-- オープン予定 -->
   <?php
-  // $the_query = new WP_Query(
-  //   array(
-  //     'post_type' => 'store',
-  //     'meta_key' => 'priority_id',
-  //     'orderby' => 'meta_value_num',
-  //     'order' => 'DESC',
-  //     'posts_per_page' => -1,
-  //     'meta_query' => array(
-  //       array(
-  //         'key' => 'open',
-  //         'value' => 'オープン決定',
-  //         'compare' => '=',
-  //       ),
-  //       array(
-  //         'meta_key' => 'local_id',
-  //         'meta_value' => '7',
-  //         'compare' => '=',
-  //       ),
-  //       'relation' => 'AND'
-  //     ),
-  //   )
-  // );
   $the_query = new WP_Query(
     array(
       'post_type' => 'store',
@@ -1018,26 +1005,27 @@
   // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $the_query = new WP_Query(
     array(
-      'post_status' => 'store',
       'post_type' => 'store',
       'posts_per_page' => -1,
-      'meta_key' => 'local_id',
-      'meta_value' => '7',
-      'compare' => '=',
+      'meta_key' => 'priority_id',
+      'orderby' => 'meta_value_num',
+      'order' => 'DESC',
       'meta_query' => array(
         array(
-          'meta_key' => 'priority_id',
-          'orderby' => 'meta_value_num',
-          'order' => 'DESC'
+          'relation' => 'AND',
+          array(
+            'key' => 'local_id',
+            'value' => '7',
+            'compare' => '='
+          ),
+          array(
+            'key' => 'open',
+            'value' => 'オープン日未定',
+            'compare' => '=',
+          )
         ),
-        array(
-          'key' => 'open',
-          'value' => 'オープン日未定',
-          'compare' => '=',
-        ),
-        'relation' => 'AND'
       ),
-    )
+    ),
   );
 
 
