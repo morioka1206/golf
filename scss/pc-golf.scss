@@ -1,7 +1,8 @@
 // テキストカラー
-$text-black: #555555;
-$text-gray: #555555;
+$text-black: #222;
+$text-gray: #222;
 $text-beige: #cbc3ad;
+$gold: #967110;
 
 // ラインカラー
 $line-gray1: #e8e8e8;
@@ -36,6 +37,7 @@ $noto: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体",
   "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN",
   "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 $noto-serif: "Noto Serif JP", serif;
+$fork: "Folk Medium";
 
 // Acmin Pro
 $acmin: acumin-pro, sans-serif;
@@ -289,6 +291,30 @@ body {
 .how-title {
   font-size: 50px !important;
   margin-bottom: 142px;
+}
+
+.scroll-arrow {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  z-index: 300;
+  transform: translateX(-50%);
+}
+
+#section02,
+#section03,
+#section04,
+#section05,
+#section06 {
+  position: relative;
+}
+
+.forth-section {
+  padding-bottom: 60px;
+}
+
+.fifth-section {
+  padding-bottom: 140px;
 }
 
 @import "../layout/layout/header";

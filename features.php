@@ -24,7 +24,11 @@
           <div class="feature-text-wrapper">
             <div class="feature-text-box ">
               <div class="feature-title animation3">
-                <p><?php echo SCF::get('feature-title') ?></p>
+                <?php $image = SCF::get('number');
+                echo wp_get_attachment_image($image, 'large'); ?>
+                <div class="feature-title-wrapper">
+                  <p><?php echo SCF::get('feature-title') ?></p>
+                </div>
               </div>
               <div class="feature-image animation"><?php $image = SCF::get('image');
                                                     echo wp_get_attachment_image($image, 'large'); ?></div>

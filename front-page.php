@@ -28,7 +28,7 @@
 
 
 <!-- トップ画像下のGOLFERS24紹介 -->
-<div class="top-introduction">
+<div class="top-introduction" id="section02">
 
   <?php
   $args = array(
@@ -59,14 +59,16 @@
 </div>
 
 <!-- GOLFERS24の特徴 -->
-<?php get_template_part('features') ?>
 
+<div id="section03">
+  <?php get_template_part('features') ?>
+</div>
 <!-- ご利用の流れ -->
 <?php get_template_part('third-section') ?>
 
 
 <!-- 店舗一覧 -->
-<div class="forth-section">
+<div class="forth-section" id="section04">
   <div class="forth-section-list-of-stores animation">
     <!-- 店舗一覧タイトル -->
     <div class="forth-section-stores-title">店舗一覧</div>
@@ -208,7 +210,7 @@
 </div>
 
 <!-- NEWS -->
-<div class="fifth-section animation">
+<div class="fifth-section animation" id="section05">
   <div>
     <div class="fifth-section-title">NEWS</div>
     <div class="fifth-section-list-of-news">
@@ -246,7 +248,7 @@
 </div>
 
 <!-- SNS -->
-<div class="sixth-section">
+<div class="sixth-section" id="section06">
   <div class="sixth-section-title">Instagram</div>
   <div class="sixth-section-follow-message">
     <p>日々更新中！フォローして最新情報をGET</p>

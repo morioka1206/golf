@@ -39,7 +39,7 @@ body {
   scroll-behavior: smooth;
   font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 20px;
-  color: #555555;
+  color: #222;
   font-weight: 400;
   padding-top: 80px;
   letter-spacing: 1px;
@@ -110,13 +110,13 @@ body {
   /*カラーがつく際のアニメーション0.5秒で変化*/
   fill: none;
   /*塗りがない状態*/
-  stroke: #555555;
+  stroke: #222;
   /*線の色*/
 }
 
 /*アニメーション後に.doneというクラス名がで付与された時の指定*/
 #mask.done path {
-  fill: #555555;
+  fill: #222;
   /*塗りの色*/
   fill-opacity: 1;
   /*透過1で見える状態*/
@@ -167,7 +167,31 @@ body {
   margin-bottom: 142px;
 }
 
-@media screen and (min-width: 601px) {
+.scroll-arrow {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  z-index: 300;
+  transform: translateX(-50%);
+}
+
+#section02,
+#section03,
+#section04,
+#section05,
+#section06 {
+  position: relative;
+}
+
+.forth-section {
+  padding-bottom: 60px;
+}
+
+.fifth-section {
+  padding-bottom: 140px;
+}
+
+@media screen and (min-width: 1150px) {
   .header-smartphone {
     display: none;
   }
@@ -178,15 +202,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 60px;
+    padding-left: 3%;
     color: black;
     background-color: white;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 2000;
-    font-size: 1rem;
+    font-size: 0.9rem;
     white-space: nowrap;
+    gap: 4%;
   }
   .header-desktop #menu-btn-check {
     display: none;
@@ -194,10 +219,8 @@ body {
   .header-desktop .header-left {
     display: flex;
     align-items: center;
-    gap: 50px;
   }
   .header-desktop .header-left .header-logo img {
-    height: 31px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -205,13 +228,15 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
+    position: fixed;
+    right: 0;
   }
   .header-desktop .header-right .header-navi-contents {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     line-height: 17px;
   }
   .header-desktop .header-right a {
@@ -234,12 +259,12 @@ body {
     display: flex;
   }
   .header-desktop .header-right .header-reserve-links img {
-    height: 31%;
+    height: 24%;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .header-desktop .header-right .header-line {
-    width: 180px;
+    width: 140px;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -247,7 +272,7 @@ body {
     background-color: #06c755;
   }
   .header-desktop .header-right .header-webreserve {
-    width: 180px;
+    width: 140px;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -255,7 +280,7 @@ body {
     background-color: #f13529;
   }
   .header-desktop .header-right .header-contact-us {
-    width: 180px;
+    width: 140px;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -263,10 +288,10 @@ body {
     background-color: #483b19;
   }
   .header-desktop .header-right .header-contact-us img {
-    height: 23%;
+    height: 18%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1149px) {
   .header-desktop {
     display: none;
   }
@@ -312,7 +337,7 @@ body {
     height: 1px;
     width: 25px;
     border-radius: 3px;
-    background-color: #555555;
+    background-color: #222;
     position: absolute;
     z-index: 1000;
   }
@@ -661,7 +686,7 @@ body {
 
   .top-introduction {
     width: 100%;
-    height: 440px;
+    height: 500px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -683,7 +708,7 @@ body {
   }
   .top-introduction .top-introduction-sentence {
     line-height: 50px;
-    min-width: 815px;
+    min-width: 830px;
   }
   .top-introduction .top-introduction-image {
     content: "";
@@ -691,9 +716,9 @@ body {
     top: 0;
     right: 0;
     width: 50%;
-    height: 440px;
+    height: 500px;
     background-size: cover;
-    background: url(../images/top-intro01.png);
+    background-image: url(../images/top-intro01.png);
     position: absolute;
     opacity: 0.8;
   }
@@ -710,7 +735,7 @@ body {
     line-height: 40px;
     text-align: center;
     padding-top: 100px;
-    color: #555555;
+    color: #222;
   }
   .second-section .sm-second-section-features {
     display: none;
@@ -721,13 +746,13 @@ body {
     align-items: center;
     flex-wrap: wrap;
     margin: 0 auto;
-    gap: 20px;
-    padding: 0 185px;
-    color: #555555;
+    gap: 3%;
+    padding: 0 80px;
+    color: #222;
   }
   .second-section .second-section-features .feature {
-    width: 500px;
-    height: 800px;
+    width: 450px;
+    height: 750px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -741,18 +766,30 @@ body {
   }
   .second-section .second-section-features .feature .feature-text-wrapper .feature-text-box .feature-title {
     height: 100px;
+    color: #967110;
     font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-    font-size: 26px;
-    font-weight: bold;
+    font-size: 24px;
     line-height: 40px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
+    position: relative;
+  }
+  .second-section .second-section-features .feature .feature-text-wrapper .feature-text-box .feature-title img {
+    position: absolute;
+    left: 6px;
+    top: 48px;
+  }
+  .second-section .second-section-features .feature .feature-text-wrapper .feature-text-box .feature-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 88%;
+    padding-left: 5%;
   }
   .second-section .second-section-features .feature .feature-text-wrapper .feature-text-box .feature-sentence {
-    line-height: 50px;
+    line-height: 1.8;
     margin-top: 10px;
     font-size: 18px;
     height: 200px;
@@ -762,7 +799,7 @@ body {
     justify-content: flex-start;
   }
   .second-section .second-section-features .feature .feature-image img {
-    width: 500px;
+    width: 450px;
     height: 300px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -907,7 +944,6 @@ body {
   }
 
   .fifth-section {
-    padding-bottom: 80px;
     background-color: #edeae2 !important;
   }
   .fifth-section .fifth-section-title {
@@ -958,7 +994,7 @@ body {
   .sixth-section {
     padding-bottom: 126px;
     background-color: white !important;
-    color: #555555;
+    color: #222;
   }
   .sixth-section .sixth-section-title {
     font-family: "Noto Serif JP", serif;
@@ -1103,7 +1139,7 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
     background-size: cover;
-    background: url(../images/top-intro01.png);
+    background-image: url(../images/top-intro01.png);
     position: absolute;
     opacity: 0.9;
   }
@@ -1128,7 +1164,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #555555;
+    color: #222;
   }
   .second-section .sm-second-section-features .swiper {
     padding-bottom: 60px;
@@ -1368,7 +1404,7 @@ body {
     width: 100%;
     padding-bottom: 40px;
     background-color: white;
-    color: #555555;
+    color: #222;
   }
   .sixth-section .sixth-section-title {
     font-family: "Noto Serif JP", serif;
@@ -1718,7 +1754,7 @@ body {
     height: auto;
     background-color: white;
     padding: 15px 20px 22px;
-    color: #555555;
+    color: #222;
     position: relative;
     margin-top: 30px;
   }
@@ -1982,7 +2018,7 @@ body {
   }
   .how-to-use-wrapper .hour-plan .hour-table table td {
     height: 103px;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #222;
   }
   .how-to-use-wrapper .hour-plan .hour-table table td:nth-of-type(1) {
     padding-left: 60px;
@@ -2153,7 +2189,7 @@ body {
   }
   .how-to-use-wrapper .how-to-use-contents .hour-plan .hour-table table td {
     height: 52px;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #222;
     padding: 0 20px;
   }
   .how-to-use-wrapper .how-to-use-contents .hour-plan .hour-table table th:last-child,
@@ -2245,8 +2281,8 @@ body {
     border-right: 5px solid #86b78b;
     border-bottom: 3px dashed #483b19;
     border-right: 5px dotted #483b19;
-    border-bottom: 3px solid #555555;
-    border-right: 5px solid #555555;
+    border-bottom: 3px solid #222;
+    border-right: 5px solid #222;
     transform: skew(55deg);
   }
   .how-to-use-wrapper .how-to-use-contents .table-caution {
@@ -2282,7 +2318,7 @@ body {
     height: auto;
     background-color: white;
     padding: 13px 20px 20px;
-    color: #555555;
+    color: #222;
     position: relative;
     margin-top: 30px;
   }
@@ -2788,6 +2824,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../images/top-img01.png);
+    display: none;
   }
   .store-details-wrapper .store-details-top-image img {
     width: 100%;
@@ -2796,8 +2833,12 @@ body {
        object-fit: cover;
   }
   .store-details-wrapper .store-detail-introduction {
-    width: 1200px;
-    margin: 150px auto 60px;
+    width: 75%;
+    margin: 100px auto 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .store-details-wrapper .store-detail-introduction .store-introduction-text .store-introduction-name {
     font-size: 36px;
@@ -2807,8 +2848,8 @@ body {
     text-align: center;
   }
   .store-details-wrapper .store-detail-introduction .store-introduction-text .store-introduction-sentence {
-    width: 80%;
-    line-height: 40px;
+    width: 910px;
+    line-height: 1.8;
     margin: 0 auto;
     margin-top: 50px;
   }
@@ -2839,8 +2880,6 @@ body {
     align-items: center;
   }
   .store-details-wrapper .store-detail-images {
-    width: 1118px;
-    margin-top: 100px;
     display: grid;
     grid-template-rows: 244px;
     grid-template-columns: 334px 334px 334px;
@@ -2986,7 +3025,7 @@ body {
   }
   .hour-plan .hour-table table td {
     height: 103px;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #222;
   }
   .hour-plan .hour-table table td:nth-of-type(1) {
     padding-left: 60px;
@@ -3285,7 +3324,7 @@ body {
   }
   .hour-plan .hour-table table td {
     height: 46px;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #222;
     padding: 0 5%;
   }
   .hour-plan .hour-table table th:last-child,
@@ -3399,8 +3438,8 @@ body {
     border-right: 5px solid #86b78b;
     border-bottom: 3px dashed #483b19;
     border-right: 5px dotted #483b19;
-    border-bottom: 3px solid #555555;
-    border-right: 5px solid #555555;
+    border-bottom: 3px solid #222;
+    border-right: 5px solid #222;
     transform: skew(55deg);
   }
 }
@@ -3641,8 +3680,8 @@ body {
   }
   .news-detail-wrapper .news-detail-content-wrapper {
     padding: 30px 0;
-    border-top: 1px solid #555555;
-    border-bottom: 1px solid #555555;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
     margin-top: 30px;
     margin-bottom: 110px;
   }
@@ -3659,7 +3698,7 @@ body {
     height: 50px;
     display: flex;
     align-items: center;
-    border: 1px solid #555555;
+    border: 1px solid #222;
     margin: 0 auto;
     margin-bottom: 150px;
   }
@@ -3704,8 +3743,8 @@ body {
   }
   .news-detail-wrapper .news-detail-content-wrapper {
     padding: 30px 0;
-    border-top: 1px solid #555555;
-    border-bottom: 1px solid #555555;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
     margin-top: 36px;
     margin-bottom: 100px;
   }
@@ -3725,7 +3764,7 @@ body {
     height: 50px;
     display: flex;
     align-items: center;
-    border: 1px solid #555555;
+    border: 1px solid #222;
     margin: 0 auto;
     margin-bottom: 150px;
   }
@@ -3783,7 +3822,7 @@ body {
   .questions-wrapper .questions-contents-wrapper .question-content .question-q {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #222;
     padding-bottom: 33px;
   }
   .questions-wrapper .questions-contents-wrapper .question-content .question-q .question-q-text {
@@ -3798,7 +3837,7 @@ body {
     margin-bottom: 60px;
   }
   .questions-wrapper .questions-contents-wrapper .question-content .question-a .question-a-text {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 40px;
     margin-left: 37px;
   }
@@ -3842,7 +3881,7 @@ body {
   .questions-wrapper .questions-contents-wrapper .question-content .question-q {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #222;
     padding-bottom: 33px;
   }
   .questions-wrapper .questions-contents-wrapper .question-content .question-q .question-q-text {
@@ -3939,7 +3978,7 @@ body {
     height: 138.62px;
     display: flex;
     align-items: center;
-    border-top: 1px solid #555555;
+    border-top: 1px solid #222;
   }
   .form-wrapper .form-contents .form .form-required {
     width: 66px;
@@ -3990,7 +4029,7 @@ body {
   .form-wrapper .form-contents .form .detail-form-inquiry {
     width: 106.5%;
     height: 237.62px;
-    border-top: 1px solid #555555;
+    border-top: 1px solid #222;
     padding-top: 32.67px;
     display: flex;
   }
@@ -4036,7 +4075,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: white;
-    border: 1px solid #555555;
+    border: 1px solid #222;
     padding-left: 40px;
   }
   .form-wrapper .form-contents .form .form-submit p {
@@ -4112,7 +4151,7 @@ body {
 .form-wrapper .form-contents .form .form-name,
 .form-wrapper .form-contents .form .form-email {
     height: 177px;
-    border-top: 1px solid #555555;
+    border-top: 1px solid #222;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -4172,7 +4211,7 @@ body {
   }
   .form-wrapper .form-contents .form .detail-form-inquiry {
     height: 316px;
-    border-top: 1px solid #555555;
+    border-top: 1px solid #222;
     padding-top: 30px;
   }
   .form-wrapper .form-contents .form .detail-form-inquiry .form-content-title {
@@ -4225,7 +4264,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: white;
-    border: 1px solid #555555;
+    border: 1px solid #222;
     padding-left: 42px;
   }
   .form-wrapper .form-contents .form .form-submit p {
@@ -4286,8 +4325,8 @@ body {
   align-items: center;
   gap: 115px;
   line-height: 23.17px;
-  border-top: 1px solid #555555;
-  border-bottom: 1px solid #555555;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
 }
 .company-information .company-name-wrapper .company-name-title {
   width: 70px;
@@ -4298,7 +4337,7 @@ body {
   align-items: center;
   gap: 115px;
   line-height: 23.17px;
-  border-bottom: 1px solid #555555;
+  border-bottom: 1px solid #222;
   margin-bottom: 100px;
 }
 .company-information .company-address-wrapper .company-address-title {
@@ -4344,7 +4383,7 @@ body {
     line-height: 32px;
     padding-top: 76px;
     padding-bottom: 150px;
-    border-top: 1px solid #555555;
+    border-top: 1px solid #222;
   }
 }
 @media screen and (max-width: 600px) {
@@ -4380,7 +4419,7 @@ body {
     line-height: 32px;
     padding-top: 70px;
     padding-bottom: 150px;
-    border-top: 1px solid #555555;
+    border-top: 1px solid #222;
   }
 }
 @media screen and (min-width: 601px) {
@@ -4409,7 +4448,7 @@ body {
     font-size: 20px;
     align-items: center;
     gap: 20px;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #222;
   }
   .finish-page-wrapper .form .select-form-inquiry label {
     font-size: 14px;
@@ -4420,7 +4459,7 @@ body {
     font-size: 20px;
     align-items: center;
     gap: 20px;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #222;
   }
   .finish-page-wrapper .form .form-name label {
     font-size: 14px;
@@ -4431,7 +4470,7 @@ body {
     align-items: flex-start;
     padding: 30px 0;
     gap: 20px;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #222;
   }
   .finish-page-wrapper .form .detail-form-inquiry label {
     font-size: 14px;
@@ -4442,7 +4481,7 @@ body {
     font-size: 20px;
     align-items: center;
     gap: 20px;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #222;
   }
   .finish-page-wrapper .form .form-email label {
     font-size: 14px;
@@ -4455,7 +4494,7 @@ body {
     width: 200px;
     height: 100px;
     background-color: white;
-    border: 1px solid #555555;
+    border: 1px solid #222;
     margin-top: 100px;
     margin-bottom: 200px;
   }
@@ -4485,7 +4524,7 @@ body {
   .finish-page-wrapper .top-button {
     width: 250px;
     height: 80px;
-    border: 1px solid #555555;
+    border: 1px solid #222;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -4518,7 +4557,7 @@ body {
     font-size: 12px;
     align-items: center;
     gap: 10px;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #222;
   }
   .finish-page-wrapper .form .select-form-inquiry label {
     font-size: 10px;
@@ -4529,7 +4568,7 @@ body {
     font-size: 12px;
     align-items: center;
     gap: 20px;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #222;
   }
   .finish-page-wrapper .form .form-name label {
     font-size: 10px;
@@ -4541,7 +4580,7 @@ body {
     align-items: flex-start;
     padding: 20px 0;
     gap: 20px;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #222;
   }
   .finish-page-wrapper .form .detail-form-inquiry label {
     font-size: 10px;
@@ -4552,7 +4591,7 @@ body {
     font-size: 12px;
     align-items: center;
     gap: 20px;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #222;
   }
   .finish-page-wrapper .form .form-email label {
     font-size: 10px;
@@ -4565,7 +4604,7 @@ body {
     width: 140px;
     height: 60px;
     background-color: white;
-    border: 1px solid #555555;
+    border: 1px solid #222;
     margin-top: 80px;
     margin-bottom: 100px;
   }
@@ -4596,7 +4635,7 @@ body {
     width: 200px;
     height: 50px;
     font-size: 14px;
-    border: 1px solid #555555;
+    border: 1px solid #222;
     display: flex;
     justify-content: center;
     align-items: center;

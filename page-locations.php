@@ -25,6 +25,7 @@
         array(
           'post_status' => 'store',
           'post_type' => 'store',
+          'posts_per_page' => -1,
           'meta_query' => array(
             array(
               'key' => 'local_id',
@@ -36,11 +37,12 @@
               'value' => 'オープン',
               'compare' => '=',
             ),
+            array(
+              'meta_key' => 'priority_id',
+              'orderby' => 'meta_value_num',
+              'order' => 'DESC'
+            ),
           ),
-          // 'paged' => $paged,
-          // 'posts_per_page' => -1, // 表示件数
-          // // 'orderby'     => 'date',
-          // 'order' => 'ASC'
         )
       );
 
@@ -70,22 +72,23 @@
     array(
       'post_status' => 'store',
       'post_type' => 'store',
+      'posts_per_page' => -1,
+      'meta_key' => 'local_id',
+      'meta_value' => '1',
+      'compare' => '=',
       'meta_query' => array(
-        array(
-          'key' => 'local_id',
-          'value' => '1',
-          'compare' => '='
-        ),
         array(
           'key' => 'open',
           'value' => 'オープン決定',
           'compare' => '=',
         ),
+        array(
+          'meta_key' => 'priority_id',
+          'orderby' => 'meta_value_num',
+          'order' => 'DESC'
+        ),
+        'relation' => 'AND'
       ),
-      // 'paged' => $paged,
-      // 'posts_per_page' => -1, // 表示件数
-      // // 'orderby'     => 'date',
-      // 'order' => 'ASC'
     )
   );
 
@@ -117,22 +120,29 @@
     array(
       'post_status' => 'store',
       'post_type' => 'store',
+      'posts_per_page' => -1,
+      'meta_key' => 'local_id',
+      'meta_value' => '1',
+      'compare' => '=',
       'meta_query' => array(
-        array(
-          'key' => 'local_id',
-          'value' => '1',
-          'compare' => '='
-        ),
         array(
           'key' => 'open',
           'value' => 'オープン日未定',
           'compare' => '=',
-        )
+          array(
+            'meta_key' => 'priority_id',
+            'orderby' => 'meta_value_num',
+            'order' => 'DESC'
+          ),
+          'relation' => 'AND'
+        ),
+        array(
+          'meta_key' => 'priority_id',
+          'orderby' => 'meta_value_num',
+          'order' => 'DESC'
+        ),
+        'relation' => 'AND'
       ),
-      // 'paged' => $paged,
-      // 'posts_per_page' => -1, // 表示件数
-      // // 'orderby'     => 'date',
-      // 'order' => 'ASC'
     )
   );
 
@@ -166,22 +176,23 @@
     array(
       'post_status' => 'store',
       'post_type' => 'store',
+      'posts_per_page' => -1,
+      'meta_key' => 'local_id',
+      'meta_value' => '2',
+      'compare' => '=',
       'meta_query' => array(
-        array(
-          'key' => 'local_id',
-          'value' => '2',
-          'compare' => '='
-        ),
         array(
           'key' => 'open',
           'value' => 'オープン',
           'compare' => '=',
         ),
+        array(
+          'meta_key' => 'priority_id',
+          'orderby' => 'meta_value_num',
+          'order' => 'DESC'
+        ),
+        'relation' => 'AND'
       ),
-      // 'paged' => $paged,
-      // 'posts_per_page' => -1, // 表示件数
-      // // 'orderby'     => 'date',
-      // 'order' => 'ASC'
     )
   );
 
@@ -211,22 +222,23 @@
     array(
       'post_status' => 'store',
       'post_type' => 'store',
+      'posts_per_page' => -1,
+      'meta_key' => 'local_id',
+      'meta_value' => '2',
+      'compare' => '=',
       'meta_query' => array(
-        array(
-          'key' => 'local_id',
-          'value' => '2',
-          'compare' => '='
-        ),
         array(
           'key' => 'open',
           'value' => 'オープン決定',
           'compare' => '=',
         ),
+        array(
+          'meta_key' => 'priority_id',
+          'orderby' => 'meta_value_num',
+          'order' => 'DESC'
+        ),
+        'relation' => 'AND'
       ),
-      // 'paged' => $paged,
-      // 'posts_per_page' => -1, // 表示件数
-      // // 'orderby'     => 'date',
-      // 'order' => 'ASC'
     )
   );
 
@@ -258,22 +270,23 @@
     array(
       'post_status' => 'store',
       'post_type' => 'store',
+      'posts_per_page' => -1,
+      'meta_key' => 'local_id',
+      'meta_value' => '2',
+      'compare' => '=',
       'meta_query' => array(
-        array(
-          'key' => 'local_id',
-          'value' => '2',
-          'compare' => '='
-        ),
         array(
           'key' => 'open',
           'value' => 'オープン日未定',
           'compare' => '=',
-        )
+        ),
+        array(
+          'meta_key' => 'priority_id',
+          'orderby' => 'meta_value_num',
+          'order' => 'DESC'
+        ),
+        'relation' => 'AND'
       ),
-      // 'paged' => $paged,
-      // 'posts_per_page' => -1, // 表示件数
-      // // 'orderby'     => 'date',
-      // 'order' => 'ASC'
     )
   );
 
@@ -307,22 +320,23 @@
     array(
       'post_status' => 'store',
       'post_type' => 'store',
+      'posts_per_page' => -1,
+      'meta_key' => 'local_id',
+      'meta_value' => '3',
+      'compare' => '=',
       'meta_query' => array(
-        array(
-          'key' => 'local_id',
-          'value' => '3',
-          'compare' => '='
-        ),
         array(
           'key' => 'open',
           'value' => 'オープン',
           'compare' => '=',
         ),
+        array(
+          'meta_key' => 'priority_id',
+          'orderby' => 'meta_value_num',
+          'order' => 'DESC'
+        ),
+        'relation' => 'AND'
       ),
-      // 'paged' => $paged,
-      // 'posts_per_page' => -1, // 表示件数
-      // // 'orderby'     => 'date',
-      // 'order' => 'ASC'
     )
   );
 
@@ -352,22 +366,23 @@
     array(
       'post_status' => 'store',
       'post_type' => 'store',
+      'posts_per_page' => -1,
+      'meta_key' => 'local_id',
+      'meta_value' => '3',
+      'compare' => '=',
       'meta_query' => array(
-        array(
-          'key' => 'local_id',
-          'value' => '3',
-          'compare' => '='
-        ),
         array(
           'key' => 'open',
           'value' => 'オープン決定',
           'compare' => '=',
         ),
+        array(
+          'meta_key' => 'priority_id',
+          'orderby' => 'meta_value_num',
+          'order' => 'DESC'
+        ),
+        'relation' => 'AND'
       ),
-      // 'paged' => $paged,
-      // 'posts_per_page' => -1, // 表示件数
-      // // 'orderby'     => 'date',
-      // 'order' => 'ASC'
     )
   );
 
@@ -399,22 +414,23 @@
     array(
       'post_status' => 'store',
       'post_type' => 'store',
+      'posts_per_page' => -1,
+      'meta_key' => 'local_id',
+      'meta_value' => '3',
+      'compare' => '=',
       'meta_query' => array(
-        array(
-          'key' => 'local_id',
-          'value' => '3',
-          'compare' => '='
-        ),
         array(
           'key' => 'open',
           'value' => 'オープン日未定',
           'compare' => '=',
-        )
+        ),
+        array(
+          'meta_key' => 'priority_id',
+          'orderby' => 'meta_value_num',
+          'order' => 'DESC'
+        ),
+        'relation' => 'AND'
       ),
-      // 'paged' => $paged,
-      // 'posts_per_page' => -1, // 表示件数
-      // // 'orderby'     => 'date',
-      // 'order' => 'ASC'
     )
   );
 
@@ -448,22 +464,23 @@
     array(
       'post_status' => 'store',
       'post_type' => 'store',
+      'posts_per_page' => -1,
+      'meta_key' => 'local_id',
+      'meta_value' => '4',
+      'compare' => '=',
       'meta_query' => array(
-        array(
-          'key' => 'local_id',
-          'value' => '4',
-          'compare' => '='
-        ),
         array(
           'key' => 'open',
           'value' => 'オープン',
           'compare' => '=',
         ),
+        array(
+          'meta_key' => 'priority_id',
+          'orderby' => 'meta_value_num',
+          'order' => 'DESC'
+        ),
+        'relation' => 'AND'
       ),
-      // 'paged' => $paged,
-      // 'posts_per_page' => -1, // 表示件数
-      // // 'orderby'     => 'date',
-      // 'order' => 'ASC'
     )
   );
 
@@ -493,22 +510,23 @@
     array(
       'post_status' => 'store',
       'post_type' => 'store',
+      'posts_per_page' => -1,
+      'meta_key' => 'local_id',
+      'meta_value' => '4',
+      'compare' => '=',
       'meta_query' => array(
-        array(
-          'key' => 'local_id',
-          'value' => '4',
-          'compare' => '='
-        ),
         array(
           'key' => 'open',
           'value' => 'オープン決定',
           'compare' => '=',
         ),
+        array(
+          'meta_key' => 'priority_id',
+          'orderby' => 'meta_value_num',
+          'order' => 'DESC'
+        ),
+        'relation' => 'AND'
       ),
-      // 'paged' => $paged,
-      // 'posts_per_page' => -1, // 表示件数
-      // // 'orderby'     => 'date',
-      // 'order' => 'ASC'
     )
   );
 
@@ -540,22 +558,23 @@
     array(
       'post_status' => 'store',
       'post_type' => 'store',
+      'posts_per_page' => -1,
+      'meta_key' => 'local_id',
+      'meta_value' => '4',
+      'compare' => '=',
       'meta_query' => array(
-        array(
-          'key' => 'local_id',
-          'value' => '4',
-          'compare' => '='
-        ),
         array(
           'key' => 'open',
           'value' => 'オープン日未定',
           'compare' => '=',
-        )
+        ),
+        array(
+          'meta_key' => 'priority_id',
+          'orderby' => 'meta_value_num',
+          'order' => 'DESC'
+        ),
+        'relation' => 'AND'
       ),
-      // 'paged' => $paged,
-      // 'posts_per_page' => -1, // 表示件数
-      // // 'orderby'     => 'date',
-      // 'order' => 'ASC'
     )
   );
 
@@ -589,22 +608,23 @@
     array(
       'post_status' => 'store',
       'post_type' => 'store',
+      'posts_per_page' => -1,
+      'meta_key' => 'local_id',
+      'meta_value' => '5',
+      'compare' => '=',
       'meta_query' => array(
-        array(
-          'key' => 'local_id',
-          'value' => '5',
-          'compare' => '='
-        ),
         array(
           'key' => 'open',
           'value' => 'オープン',
           'compare' => '=',
         ),
+        array(
+          'meta_key' => 'priority_id',
+          'orderby' => 'meta_value_num',
+          'order' => 'DESC'
+        ),
+        'relation' => 'AND'
       ),
-      // 'paged' => $paged,
-      // 'posts_per_page' => -1, // 表示件数
-      // // 'orderby'     => 'date',
-      // 'order' => 'ASC'
     )
   );
 
@@ -634,22 +654,23 @@
     array(
       'post_status' => 'store',
       'post_type' => 'store',
+      'posts_per_page' => -1,
+      'meta_key' => 'local_id',
+      'meta_value' => '5',
+      'compare' => '=',
       'meta_query' => array(
-        array(
-          'key' => 'local_id',
-          'value' => '5',
-          'compare' => '='
-        ),
         array(
           'key' => 'open',
           'value' => 'オープン決定',
           'compare' => '=',
         ),
+        array(
+          'meta_key' => 'priority_id',
+          'orderby' => 'meta_value_num',
+          'order' => 'DESC'
+        ),
+        'relation' => 'AND'
       ),
-      // 'paged' => $paged,
-      // 'posts_per_page' => -1, // 表示件数
-      // // 'orderby'     => 'date',
-      // 'order' => 'ASC'
     )
   );
 
@@ -681,22 +702,23 @@
     array(
       'post_status' => 'store',
       'post_type' => 'store',
+      'posts_per_page' => -1,
+      'meta_key' => 'local_id',
+      'meta_value' => '5',
+      'compare' => '=',
       'meta_query' => array(
-        array(
-          'key' => 'local_id',
-          'value' => '5',
-          'compare' => '='
-        ),
         array(
           'key' => 'open',
           'value' => 'オープン日未定',
           'compare' => '=',
-        )
+        ),
+        array(
+          'meta_key' => 'priority_id',
+          'orderby' => 'meta_value_num',
+          'order' => 'DESC'
+        ),
+        'relation' => 'AND'
       ),
-      // 'paged' => $paged,
-      // 'posts_per_page' => -1, // 表示件数
-      // // 'orderby'     => 'date',
-      // 'order' => 'ASC'
     )
   );
 
@@ -730,22 +752,23 @@
     array(
       'post_status' => 'store',
       'post_type' => 'store',
+      'posts_per_page' => -1,
+      'meta_key' => 'local_id',
+      'meta_value' => '6',
+      'compare' => '=',
       'meta_query' => array(
-        array(
-          'key' => 'local_id',
-          'value' => '6',
-          'compare' => '='
-        ),
         array(
           'key' => 'open',
           'value' => 'オープン',
           'compare' => '=',
         ),
+        array(
+          'meta_key' => 'priority_id',
+          'orderby' => 'meta_value_num',
+          'order' => 'DESC'
+        ),
+        'relation' => 'AND'
       ),
-      // 'paged' => $paged,
-      // 'posts_per_page' => -1, // 表示件数
-      // // 'orderby'     => 'date',
-      // 'order' => 'ASC'
     )
   );
 
@@ -775,22 +798,25 @@
     array(
       'post_status' => 'store',
       'post_type' => 'store',
+      'posts_per_page' => -1,
+      'meta_key' => 'local_id',
+      'meta_value' => '6',
+      'compare' => '=',
       'meta_query' => array(
-        array(
-          'key' => 'local_id',
-          'value' => '6',
-          'compare' => '='
-        ),
         array(
           'key' => 'open',
           'value' => 'オープン決定',
           'compare' => '=',
         ),
+        array(
+          'key' => 'open',
+          'value' => 'オープン日未定',
+          'compare' => '=',
+        ),
+        'relation' => 'AND'
       ),
-      // 'paged' => $paged,
-      // 'posts_per_page' => -1, // 表示件数
-      // // 'orderby'     => 'date',
-      // 'order' => 'ASC'
+      
+      
     )
   );
 
@@ -822,22 +848,24 @@
     array(
       'post_status' => 'store',
       'post_type' => 'store',
+      'posts_per_page' => -1,
+      'meta_key' => 'local_id',
+      'meta_value' => '6',
+      'compare' => '=',
       'meta_query' => array(
-        array(
-          'key' => 'local_id',
-          'value' => '6',
-          'compare' => '='
-        ),
         array(
           'key' => 'open',
           'value' => 'オープン日未定',
           'compare' => '=',
-        )
+        ), 
+        array(
+          'key' => 'open',
+          'value' => 'オープン日未定',
+          'compare' => '=',
+        ),
+        'relation' => 'AND'
       ),
-      // 'paged' => $paged,
-      // 'posts_per_page' => -1, // 表示件数
-      // // 'orderby'     => 'date',
-      // 'order' => 'ASC'
+      
     )
   );
 
@@ -871,28 +899,32 @@
     array(
       'post_status' => 'store',
       'post_type' => 'store',
+      'posts_per_page' => -1,
+      'meta_key' => 'local_id',
+      'meta_value' => '7',
+      'compare' => '=',
       'meta_query' => array(
-        array(
-          'key' => 'local_id',
-          'value' => '7',
-          'compare' => '='
-        ),
         array(
           'key' => 'open',
           'value' => 'オープン',
           'compare' => '=',
         ),
+        array(
+          'meta_key' => 'priority_id',
+          'orderby' => 'meta_value_num',
+          'order' => 'DESC'
+        ),
+        'relation' => 'AND'
       ),
-      // 'paged' => $paged,
-      // 'posts_per_page' => -1, // 表示件数
-      // // 'orderby'     => 'date',
-      // 'order' => 'ASC'
     )
   );
 
 
   if ($the_query->have_posts()) : ?><?php
-                                    while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                                    while ($the_query->have_posts()) : $the_query->the_post();
+                                    // echo
+                                      // SCF::get('priority_id');
+                                    ?>
 
 
   <a href="<?php the_permalink(); ?>">
@@ -901,6 +933,7 @@
         <div class="store-name"><?php echo SCF::get('store-name'); ?>
         </div>
         <p class="schedule"><?php echo SCF::get('schedule'); ?></p>
+
       </div>
 
     </div>
@@ -911,35 +944,59 @@
 
   <!-- オープン予定 -->
   <?php
-  // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+  // $the_query = new WP_Query(
+  //   array(
+  //     'post_type' => 'store',
+  //     'meta_key' => 'priority_id',
+  //     'orderby' => 'meta_value_num',
+  //     'order' => 'DESC',
+  //     'posts_per_page' => -1,
+  //     'meta_query' => array(
+  //       array(
+  //         'key' => 'open',
+  //         'value' => 'オープン決定',
+  //         'compare' => '=',
+  //       ),
+  //       array(
+  //         'meta_key' => 'local_id',
+  //         'meta_value' => '7',
+  //         'compare' => '=',
+  //       ),
+  //       'relation' => 'AND'
+  //     ),
+  //   )
+  // );
   $the_query = new WP_Query(
     array(
-      'post_status' => 'store',
       'post_type' => 'store',
+      'posts_per_page' => -1,
+      'meta_key' => 'priority_id',
+      'orderby' => 'meta_value_num',
+      'order' => 'DESC',
       'meta_query' => array(
         array(
-          'key' => 'local_id',
-          'value' => '7',
-          'compare' => '='
-        ),
-        array(
-          'key' => 'open',
-          'value' => 'オープン決定',
-          'compare' => '=',
-        ),
+          'relation' => 'AND',
+          array(
+            'key' => 'local_id',
+            'value' => '7',
+            'compare' => '='
+          ),
+          array(
+            'key' => 'open',
+            'value' => 'オープン決定',
+            'compare' => '=',
+          )
+          ),
       ),
-      // 'paged' => $paged,
-      // 'posts_per_page' => -1, // 表示件数
-      // // 'orderby'     => 'date',
-      // 'order' => 'ASC'
-    )
+    ),
   );
-
+  // var_dump($the_query);
 
 
 
   if ($the_query->have_posts()) : ?><?php
-                                    while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                                    while ($the_query->have_posts()) : $the_query->the_post();
+                                      ?>
 
 
   <a href="<?php the_permalink(); ?>">
@@ -963,22 +1020,23 @@
     array(
       'post_status' => 'store',
       'post_type' => 'store',
+      'posts_per_page' => -1,
+      'meta_key' => 'local_id',
+      'meta_value' => '7',
+      'compare' => '=',
       'meta_query' => array(
         array(
-          'key' => 'local_id',
-          'value' => '7',
-          'compare' => '='
+          'meta_key' => 'priority_id',
+          'orderby' => 'meta_value_num',
+          'order' => 'DESC'
         ),
         array(
           'key' => 'open',
           'value' => 'オープン日未定',
           'compare' => '=',
-        )
+        ),
+        'relation' => 'AND'
       ),
-      // 'paged' => $paged,
-      // 'posts_per_page' => -1, // 表示件数
-      // // 'orderby'     => 'date',
-      // 'order' => 'ASC'
     )
   );
 

@@ -2,9 +2,23 @@
 <html lang="ja">
 
 <head>
-	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5CWPFXD');</script>
-	<!-- End Google Tag Manager -->
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5CWPFXD');
+  </script>
+  <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +28,7 @@
   <link rel="stylesheet" href="<?php echo get_theme_file_uri(); ?>/scss/pc-golf.css" media="only screen and (min-width: 601px)">
   <!-- webフォント -->
   <link rel="stylesheet" href="https://use.typekit.net/szq6kdr.css">
+  <script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?62399843b7504c4ba51231fbac1e02e5" charset="utf-8"></script>
   <script src="https://kit.fontawesome.com/e0b0272f60.js" crossorigin="anonymous"></script>
   <!-- スライド -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
@@ -31,9 +46,9 @@
 
 
 <body <?php body_class(); ?>>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CWPFXD"　height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CWPFXD" 　height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <?php wp_body_open(); ?>
   <div id="loader-bg">
     <div id="loader">
@@ -54,7 +69,7 @@
           <!-- ヘッダーのナビゲーションメニュー -->
           <div class="header-navi-contents">
             <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/')); ?>">TOP</a></div>
-            <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/how-to-use')); ?>">ご利用の流れ・体験予約</a></div>
+            <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/how-to-use')); ?>">ご利用の流れ</a></div>
             <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/locations')); ?>">店舗一覧</a></div>
             <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/newslist')); ?>">NEWS</a></div>
             <div class="header-navi-content"><a href="<?php echo esc_url(home_url('/fc')); ?>">FC加盟店募集</a></div>
@@ -66,7 +81,7 @@
           </div>
           <div class="header-reserve-links">
             <a href="https://lin.ee/7Ii8MCV/" target="_blank" class="header-line"><img src="<?php echo get_template_directory_uri(); ?>/images/pc-header-line.svg"></a>
-            <a href="https://golfers24.hacomono.jp/" target="_blank" class="header-webreserve"><img src="<?php echo get_template_directory_uri(); ?>/images/pc-header-webreserve.svg"></a>
+            <!-- <a href="https://golfers24.hacomono.jp/" target="_blank" class="header-webreserve"><img src="<?php echo get_template_directory_uri(); ?>/images/pc-header-webreserve.svg"></a> -->
             <a href="<?php echo esc_url(home_url('/form')); ?>" class="header-contact-us"><img src="<?php echo get_template_directory_uri(); ?>/images/pc-header-contact-us.svg" alt=""></a>
           </div>
         </div>
