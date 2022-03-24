@@ -32,9 +32,9 @@
 
       // ヘッダーのロゴ
       .header-logo img {
-        // width: 170px;
-        // height: 31px;
-        object-fit: cover;
+        width: 170px;
+        height: 31px;
+        // object-fit: cover
       }
     }
 
@@ -43,7 +43,7 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      gap: 20px;
+      gap: 30px;
       position: fixed;
       right: 0;
 
@@ -52,8 +52,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 35px;
         line-height: 17px;
+        font-size: 18px;
       }
 
       a {
@@ -68,7 +69,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 30px;
         flex-wrap: nowrap;
 
         img {
@@ -80,13 +81,13 @@
         display: flex;
 
         img {
-          height: 24%;
+          height: 26%;
           object-fit: cover;
         }
       }
 
       .header-line {
-        width: 140px;
+        width: 160px;
         height: 80px;
         display: flex;
         justify-content: center;
@@ -94,17 +95,8 @@
         background-color: #06c755;
       }
 
-      .header-webreserve {
-        width: 140px;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #f13529;
-      }
-
       .header-contact-us {
-        width: 140px;
+        width: 160px;
         height: 80px;
         display: flex;
         justify-content: center;
@@ -112,10 +104,9 @@
         background-color: #483b19;
 
         img {
-          height: 18%;
+          height: 22%;
         }
       }
->>>>>>> wordpress
     }
   }
 }

@@ -36,9 +36,9 @@
                 <div class="step-explanation">
                   <?php echo SCF::get('text'); ?>
                 </div>
-                <div class="step-caution">
+                <!-- <div class="step-caution">
                   <?php echo SCF::get('caution'); ?>
-                </div>
+                </div> -->
                 <div class="step-number"><img src="<?php echo get_theme_file_uri(); ?>/images/step1.svg" alt=""></div>
               <?php endwhile; ?>
             <?php endif; ?>
@@ -47,7 +47,7 @@
           <!-- LINEと予約サイトはこちら -->
           <div class="how-to-line-webreserve">
             <a href="https://lin.ee/7Ii8MCV" class="how-to-line-link" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/how-to-use-line.svg" alt=""></a>
-            <a href="https://golfers24.hacomono.jp/" class="how-to-webreserve-link" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/how-to-use-webreserve.svg" alt=""></a>
+            <!-- <a href="https://golfers24.hacomono.jp/" class="how-to-webreserve-link" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/how-to-use-webreserve.svg" alt=""></a> -->
           </div>
 
 
@@ -411,12 +411,12 @@
           </div>
         </div>
 
-        <a href="<?php echo esc_url(home_url('/how-to-use')); ?>" class="third-section-how-to-use-button">
+        <a href="<?php echo esc_url(home_url('/locations')); ?>" class="third-section-how-to-use-button">
           店舗一覧はこちら
           <div class="third-section-how-to-use-arrow"></div>
         </a>
 
-        <a href="<?php echo esc_url(home_url('/how-to-use')); ?>" class="sm-third-section-how-to-use-button">
+        <a href="<?php echo esc_url(home_url('/locations')); ?>" class="sm-third-section-how-to-use-button">
           <p>店舗一覧はこちら</p>
           <div class="third-section-how-to-use-arrow"></div>
         </a>

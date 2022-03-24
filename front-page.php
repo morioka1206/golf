@@ -168,13 +168,8 @@
             // オープンまたは決まっているところだけ表示
             array(
               'key' => 'open',
-              'value' => 'オープン',
-              'compare' => '!=',
-            ),
-            array(
-              'key' => 'open',
-              'value' => 'オープン決定',
-              'compare' => '!=',
+              'value' => 'オープン日未定',
+              'compare' => '=',
             ),
             array(
               'meta_key' => 'priority_id',
@@ -193,7 +188,7 @@
 
             <div class="forth-section-store">
               <div class="forth-section-store-infomation">
-                <div class="forth-section-store-name"><?php echo SCF::get('store-name'); ?></div>
+                <div class="forth-section-store-name"><?php echo SCF::get('store-name');?></div>
               </div>
             </div>
           <?php endwhile; ?>
@@ -256,7 +251,7 @@
   <div class="sm-sixth-section-follow-message">
     <p>日々更新中！フォローして最新情報をGET</p>
   </div>
-  <?php echo do_shortcode('[instagram-feed feed=2]'); ?>
+  <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
   <div class="sixth-section-follow-message">
     <p>Facebook・公式LINEもフォローする</p>
   </div>

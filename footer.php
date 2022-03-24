@@ -34,7 +34,6 @@
         <div class="footer-privacy"><a href="<?php echo esc_url(home_url('/privacy_policy')); ?>">プライバシーポリシー</a></div>
         <div class="footer-special"><a href="<?php echo esc_url(home_url('/special_commercial_code')); ?>">特商法</a></a></div>
       </div>
->>>>>>> wordpress
     </div>
 
 

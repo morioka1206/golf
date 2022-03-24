@@ -115,7 +115,7 @@
       width: 50%;
       height: 500px;
       background-size: cover;
-      background-image: url(../images/top-intro01.png);
+      background-image: url(../images/top-intro02.png);
       position: absolute;
       opacity: 0.8;
     }
@@ -187,19 +187,21 @@
               color: $gold;
               font-family: $noto;
               font-size: 24px;
-              // font-weight: bold;
-              line-height: 40px;
+              font-weight: bold;
+              line-height: 1.4;
               display: flex;
               // flex-direction: column;
               align-items: center;
               justify-content: flex-end;
-              margin-bottom: 8px;
+              // margin-bottom: 8px;
               position: relative;
 
               img {
                 position: absolute;
+                width: 65px;
+                object-fit: contain;
                 left: 6px;
-                top: 48px;
+                top: 4px;
               }
             }
             .feature-title-wrapper {
@@ -207,8 +209,8 @@
               flex-direction: column;
               justify-content: center;
               // align-items: center;
-              width: 88%;
-              padding-left: 5%;
+              width: 90%;
+              padding-left: 10%;
             }
 
             .feature-sentence {
@@ -504,12 +506,13 @@
         height: 81.6px;
         display: flex;
         align-items: center;
-        gap: 94px;
+        gap: 74px;
         border-bottom: 2px solid $line-gray3;
         .fifth-section-news-date {
           font-family: $montserrat;
           line-height: 16.6px;
           letter-spacing: 0.2rem;
+          width: 160px;
         }
 
         .fifth-section-news-content {
@@ -731,7 +734,7 @@
       height: 330px;
       object-fit: cover;
       background-size: cover;
-      background-image: url(../images/top-intro01.png);
+      background-image: url(../images/top-intro02.png);
       position: absolute;
       opacity: 0.9;
     }
@@ -812,9 +815,10 @@
             // 特徴のタイトル
             .feature-title {
               height: 60px;
-              font-family: $noto-serif;
+              font-family: $noto;
+              color: $gold;
               font-size: 18px;
-              font-weight: 300;
+              font-weight: bold;
               line-height: 30px;
               text-align: center;
               margin: 0 auto;
@@ -1034,6 +1038,7 @@
           font-family: $montserrat;
           line-height: 17.07px;
           letter-spacing: 0.2rem;
+          width: 160px;
         }
 
         .fifth-section-news-content {
@@ -1084,8 +1089,8 @@
       // }
 
       .sbi-photo {
-        width: 122px !important;
-        height: 122px !important;
+        width: 122.2px !important;
+        height: 122.2px !important;
       }
     }
 
@@ -1094,7 +1099,7 @@
     }
 
     .sm-sixth-section-follow-message {
-      font-size: 20px;
+      font-size: 16px;
       line-height: 40px;
       text-align: center;
       display: flex;

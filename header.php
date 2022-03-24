@@ -108,7 +108,7 @@
                     <div class="menu">TOP</div>
                   </a>
                   <a href="<?php echo esc_url(home_url('/how-to-use')); ?>">
-                    <div class="menu">ご利用の流れ・体験予約</div>
+                    <div class="menu">ご利用の流れ</div>
                   </a>
                   <a href="<?php echo esc_url(home_url('/locations')); ?>">
                     <div class="menu">店舗一覧</div>
@@ -128,9 +128,9 @@
                   <a href="https://lin.ee/7Ii8MCV" target="_blank">
                     <div class="sm-nav-line"><img src="<?php echo get_theme_file_uri(); ?>/images/humberger-line.svg" alt=""></div>
                   </a>
-                  <a href="https://golfers24.hacomono.jp/" target="_blank">
+                  <!-- <a href="https://golfers24.hacomono.jp/" target="_blank">
                     <div class="sm-nav-web-reserve"><img src="<?php echo get_theme_file_uri(); ?>/images/humberger-webreserve.svg" alt=""></div>
-                  </a>
+                  </a> -->
                   <a href="<?php echo esc_url(home_url('/form')); ?>">
                     <div class="sm-nav-contact-us"><img src="<?php echo get_theme_file_uri(); ?>/images/humberger-contact-us.svg" alt=""></div>
                   </a>

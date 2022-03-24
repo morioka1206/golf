@@ -155,14 +155,14 @@ body {
     align-items: center;
   }
   .header-desktop .header-left .header-logo img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    width: 170px;
+    height: 31px;
   }
   .header-desktop .header-right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     position: fixed;
     right: 0;
   }
@@ -170,8 +170,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 35px;
     line-height: 17px;
+    font-size: 18px;
   }
   .header-desktop .header-right a {
     transition: 0.2s;
@@ -183,7 +184,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: nowrap;
   }
   .header-desktop .header-right .header-sns-icons img {
@@ -193,28 +194,20 @@ body {
     display: flex;
   }
   .header-desktop .header-right .header-reserve-links img {
-    height: 24%;
+    height: 26%;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .header-desktop .header-right .header-line {
-    width: 140px;
+    width: 160px;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #06c755;
   }
-  .header-desktop .header-right .header-webreserve {
-    width: 140px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f13529;
-  }
   .header-desktop .header-right .header-contact-us {
-    width: 140px;
+    width: 160px;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -222,7 +215,7 @@ body {
     background-color: #483b19;
   }
   .header-desktop .header-right .header-contact-us img {
-    height: 18%;
+    height: 22%;
   }
 }
 @media screen and (max-width: 1149px) {
@@ -465,7 +458,7 @@ body {
     z-index: 200;
   }
   .sm-footer .sm-footer-line {
-    width: 50%;
+    width: 100%;
     height: 100%;
     background-color: #06c755;
     display: flex;
@@ -473,7 +466,7 @@ body {
     align-items: center;
   }
   .sm-footer .sm-footer-line img {
-    width: 100%;
+    width: 55%;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -481,7 +474,7 @@ body {
     width: 50%;
     height: 100%;
     background-color: #f13529;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
   }
@@ -652,7 +645,7 @@ body {
     width: 50%;
     height: 500px;
     background-size: cover;
-    background-image: url(../images/top-intro01.png);
+    background-image: url(../images/top-intro02.png);
     position: absolute;
     opacity: 0.8;
   }
@@ -665,8 +658,8 @@ body {
   .second-section .second-section-title {
     font-family: "Noto Serif JP", serif;
     font-weight: 300;
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 34px;
+    line-height: 34px;
     text-align: center;
     padding-top: 100px;
     color: #555555;
@@ -700,15 +693,30 @@ body {
   }
   .second-section .second-section-features .feature .feature-text-wrapper .feature-text-box .feature-title {
     height: 100px;
+    color: #967110;
     font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
-    line-height: 40px;
+    line-height: 1.4;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    margin-bottom: 20px;
+    position: relative;
+  }
+  .second-section .second-section-features .feature .feature-text-wrapper .feature-text-box .feature-title img {
+    position: absolute;
+    width: 65px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    left: 6px;
+    top: 4px;
+  }
+  .second-section .second-section-features .feature .feature-text-wrapper .feature-text-box .feature-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    padding-left: 10%;
   }
   .second-section .second-section-features .feature .feature-text-wrapper .feature-text-box .feature-sentence {
     line-height: 1.8;
@@ -725,6 +733,10 @@ body {
     height: 300px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .second-section .second-section-features .feature img {
+    width: 100%;
+    height: 100%;
   }
 
   .third-section {
@@ -747,8 +759,8 @@ body {
   .third-section .third-section-how-to-use-text .how-to-use-title {
     font-family: "Noto Serif JP", serif;
     font-weight: 300;
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 34px;
+    line-height: 34px;
   }
   .third-section .third-section-how-to-use-text .sm-how-to-use-sentence {
     display: none;
@@ -806,15 +818,16 @@ body {
 
   .forth-section {
     width: 100%;
+    background-color: white;
   }
   .forth-section .forth-section-list-of-stores {
-    padding-top: 126px;
+    padding-top: 107px;
   }
   .forth-section .forth-section-list-of-stores .forth-section-stores-title {
     font-family: "Noto Serif JP", serif;
     font-weight: 300;
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 34px;
+    line-height: 34px;
     text-align: center;
     position: relative;
   }
@@ -871,9 +884,9 @@ body {
   .fifth-section .fifth-section-title {
     font-family: "Noto Serif JP", serif;
     font-weight: 300;
-    font-size: 40px;
-    line-height: 40px;
-    padding-top: 126px;
+    font-size: 34px;
+    line-height: 34px;
+    padding-top: 107px;
     text-align: center;
     position: relative;
   }
@@ -884,16 +897,17 @@ body {
   }
   .fifth-section .fifth-section-list-of-news .fifth-section-news {
     width: 100%;
-    height: 96px;
+    height: 81.6px;
     display: flex;
     align-items: center;
-    gap: 94px;
+    gap: 74px;
     border-bottom: 2px solid #b0b0b0;
   }
   .fifth-section .fifth-section-list-of-news .fifth-section-news .fifth-section-news-date {
     font-family: "Montserrat", sans-serif;
-    line-height: 19.5px;
+    line-height: 16.6px;
     letter-spacing: 0.2rem;
+    width: 160px;
   }
   .fifth-section .fifth-section-list-of-news .fifth-section-news .fifth-section-news-content {
     line-height: 23.17px;
@@ -951,11 +965,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 21px;
+    gap: 17.8px;
   }
   .sixth-section .sixth-sns-buttons .sixth-sns-button {
-    width: 282px;
-    height: 50px;
+    width: 239.7px;
+    height: 42.5px;
     border: 1px solid white;
     display: flex;
     justify-content: center;
@@ -967,8 +981,8 @@ body {
     background-color: #a59c84;
   }
   .sixth-section .sixth-sns-buttons .sixth-sns-button p {
-    width: 176.64px;
-    height: 20px;
+    width: 150.1px;
+    height: 17px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -1061,7 +1075,7 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
     background-size: cover;
-    background-image: url(../images/top-intro01.png);
+    background-image: url(../images/top-intro02.png);
     position: absolute;
     opacity: 0.9;
   }
@@ -1122,9 +1136,10 @@ body {
   }
   .second-section .sm-second-section-features .feature .feature-text-wrapper .feature-text-box .feature-title {
     height: 60px;
-    font-family: "Noto Serif JP", serif;
+    font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    color: #967110;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: bold;
     line-height: 30px;
     text-align: center;
     margin: 0 auto;
@@ -1308,6 +1323,7 @@ body {
     font-family: "Montserrat", sans-serif;
     line-height: 17.07px;
     letter-spacing: 0.2rem;
+    width: 160px;
   }
   .fifth-section .fifth-section-list-of-news .fifth-section-news .fifth-section-news-content {
     line-height: 20.27px;
@@ -1344,14 +1360,14 @@ body {
     padding-bottom: 47px !important;
   }
   .sixth-section .sbi .sbi-photo {
-    width: 122px !important;
-    height: 122px !important;
+    width: 122.2px !important;
+    height: 122.2px !important;
   }
   .sixth-section .sixth-section-follow-message {
     display: none;
   }
   .sixth-section .sm-sixth-section-follow-message {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 40px;
     text-align: center;
     display: flex;
@@ -1424,7 +1440,7 @@ body {
     flex-direction: column;
   }
   .contact-us-section .contact-us-wrapper .contact-us-text {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     line-height: 40px;
     text-align: center;
@@ -1483,7 +1499,7 @@ body {
     height: 60px;
     border-radius: 4px;
     background-color: #f13529;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
@@ -1495,8 +1511,8 @@ body {
     opacity: 0.7;
   }
   .contact-us-section .contact-us-wrapper .reserve-buttons .line-reserve {
-    width: 230px;
-    height: 60px;
+    width: 320px;
+    height: 80px;
     border-radius: 4px;
     background-color: #06c755;
     display: flex;
@@ -1506,6 +1522,9 @@ body {
     border: 2.7px solid white;
     overflow: hidden;
     transition: 0.7s;
+  }
+  .contact-us-section .contact-us-wrapper .reserve-buttons .line-reserve img {
+    transform: scale(1.3);
   }
   .contact-us-section .contact-us-wrapper .reserve-buttons .line-reserve:hover {
     opacity: 0.7;
@@ -1555,7 +1574,7 @@ body {
     height: 60px;
     border-radius: 4px;
     background-color: #f13529;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
@@ -1629,9 +1648,9 @@ body {
   .page-title {
     font-family: "Montserrat", sans-serif;
     color: transparent;
-    font-size: 120px;
+    font-size: 102px;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 34px;
     -webkit-text-stroke: 1px #cbc3ad;
     position: absolute;
     top: -90px;
@@ -1641,13 +1660,13 @@ body {
   .how-to-use-wrapper {
     width: 1118px;
     margin: 0 auto;
-    margin-top: 252px;
+    margin-top: 214.2px;
     position: relative;
   }
   .how-to-use-wrapper .how-title {
     font-weight: 300;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 25.5px;
+    line-height: 34px;
     letter-spacing: 0.2rem;
     font-family: "Noto Serif JP", serif;
   }
@@ -1655,7 +1674,7 @@ body {
     display: none;
   }
   .how-to-use-wrapper .how-to-use-contents {
-    width: 1118px;
+    width: 100%;
     margin-top: 80px;
   }
   .how-to-use-wrapper .how-to-use-contents .steps-title {
@@ -1736,7 +1755,7 @@ body {
     width: 455px;
     height: 60px;
     background-color: #f13529;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
   }
@@ -1817,8 +1836,8 @@ body {
     padding-top: 20px;
   }
   .how-to-use-wrapper .how-to-use-contents .step input:checked ~ .hide-steps-wrapper .hide-explanation-wrapper .step5-time-required {
-    width: 90px;
-    height: 14px;
+    width: 120px;
+    height: 30px;
     color: #483b19;
     font-size: 13px;
     font-weight: 500;
@@ -1887,7 +1906,7 @@ body {
   .how-to-use-wrapper .hour-plan {
     width: 1117px;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 127.5px;
     margin: 0 auto;
   }
   .how-to-use-wrapper .hour-plan .page-title {
@@ -2391,8 +2410,8 @@ body {
     margin-top: 10px;
   }
   .how-to-use-wrapper .how-to-use-contents .step input:checked ~ .hide-steps-wrapper .hide-explanation-wrapper .time-required {
-    width: 81px;
-    height: 14px;
+    width: 120px;
+    height: 30px;
     color: #483b19;
     font-size: 10px;
     font-weight: 500;
@@ -2453,9 +2472,9 @@ body {
   .page-title {
     font-family: "Montserrat", sans-serif;
     color: transparent;
-    font-size: 120px;
+    font-size: 102px;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 34px;
     -webkit-text-stroke: 1px #cbc3ad;
     position: absolute;
     top: -90px;
@@ -2661,7 +2680,7 @@ body {
     padding-left: 17px;
     display: flex;
     align-items: center;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: bold;
     line-height: 33.3px;
     margin: 30px auto 14px;
@@ -2674,7 +2693,7 @@ body {
     gap: 8px;
   }
   .location-wrapper .list-of-stores .store {
-    min-width: 170px;
+    min-width: 163px;
     height: 60px;
     border: 1px solid #cbc3ab;
     display: flex;
@@ -2696,7 +2715,7 @@ body {
     align-items: center;
   }
   .location-wrapper .list-of-stores .store .schedule {
-    font-size: 14px;
+    font-size: 10px;
     color: #a59c84;
     line-height: 20.27px;
     text-align: center;
@@ -2797,7 +2816,7 @@ body {
     height: 60px;
     box-shadow: 0 2px #9d1007;
     background-color: #f13529;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
   }
@@ -3375,9 +3394,9 @@ body {
   .news-wrapper .page-title {
     font-family: "Montserrat", sans-serif;
     color: transparent;
-    font-size: 120px;
+    font-size: 102px;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 34px;
     -webkit-text-stroke: 1px #cbc3ad;
     position: absolute;
     top: -90px;
@@ -3408,17 +3427,18 @@ body {
     padding: 40px 0;
   }
   .news-wrapper .news-list .news .news-date {
+    width: 160px;
     font-family: "Montserrat", sans-serif;
-    line-height: 19.5px;
+    line-height: 16.5px;
     letter-spacing: 0.2rem;
   }
   .news-wrapper .news-list .news .news-tag {
-    width: 82px;
-    height: 31px;
+    width: 69.7px;
+    height: 26.35px;
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
-    line-height: 17.07px;
+    line-height: 14.5px;
     letter-spacing: 0.2rem;
     color: white;
     background-color: #483b19;
@@ -3704,9 +3724,9 @@ body {
   .page-title {
     font-family: "Montserrat", sans-serif;
     color: transparent;
-    font-size: 120px;
+    font-size: 102px;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 34px;
     -webkit-text-stroke: 1px #cbc3ad;
     position: absolute;
     top: -90px;
@@ -3714,7 +3734,7 @@ body {
   }
 
   .questions-wrapper {
-    width: 1116px;
+    width: 991.1px;
     margin: 0 auto;
     margin-top: 152px;
     position: relative;
@@ -3728,7 +3748,7 @@ body {
   }
   .questions-wrapper .questions-contents-wrapper {
     width: 100%;
-    margin: 150px auto;
+    margin: 127.5px auto;
   }
   .questions-wrapper .questions-contents-wrapper .questions-contents-title {
     font-size: 36px;
@@ -3827,9 +3847,9 @@ body {
   .page-title {
     font-family: "Montserrat", sans-serif;
     color: transparent;
-    font-size: 120px;
+    font-size: 102px;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 34px;
     -webkit-text-stroke: 1px #cbc3ad;
     position: absolute;
     top: -90px;
@@ -3837,15 +3857,15 @@ body {
   }
 
   .form-wrapper {
-    width: 1166px;
+    width: 991.1px;
     margin: 0 auto;
-    margin-top: 252px;
+    margin-top: 214.2px;
     position: relative;
   }
   .form-wrapper .form-title {
     font-weight: 300;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 25.5px;
+    line-height: 34px;
     letter-spacing: 0.2rem;
     font-family: "Noto Serif JP", serif;
   }
