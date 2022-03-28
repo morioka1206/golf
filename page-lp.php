@@ -61,9 +61,100 @@
     <div class="lp-header-logo"><img src="<?php echo get_theme_file_uri(); ?>/images/logo.svg" alt="GOLFERSロゴ"></div>
     <lp-header-right>
       <img src="<?php echo get_theme_file_uri(); ?>/images/lp-header01.svg" alt="" class="lp-header01">
-      <img src="<?php echo get_theme_file_uri(); ?>/images/lp-header02.svg" alt="" class="lp-header02">
+      <a href="https://lin.ee/7Ii8MCV/" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/lp-header02.svg" alt="" class="lp-header02"></a>
     </lp-header-right>
   </header>
+
+  <!-- LPの本体 -->
+  <div class="lp-wrapper">
+    <div class="lp-top">
+      <div class="lp-top-image">
+        <div class="lp-top-logo">
+          <div class="lp-top-logo-logo"><img src="<?php echo get_theme_file_uri(); ?>/images/pc-lp-top-logo.svg" alt=""></div>
+          <div class="lp-top-logo-line"><img src="<?php echo get_theme_file_uri(); ?>/images/pc-lp-line.png" alt=""></div>
+        </div>
+
+        <div class="lp-top-message">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/fv-copy-pc.png" alt="" class="fv-copy">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/top-orange.svg" alt="" class="top-orange">
+        </div>
+
+        <div class="lp-top-price">
+          <div class="lp-top-price-message">
+            <img src="<?php echo get_theme_file_uri(); ?>/images/lp-top-price-black.png" alt="">
+            <img src="<?php echo get_theme_file_uri(); ?>/images/無料体験予約受付中！.svg" alt="" class="message">
+          </div>
+          <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext.svg" alt="" class="top-price">
+        </div>
+
+        <div class="lp-top-under">
+        </div>
+
+        <div class="lp-top-image-line-link">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/体験予約はこちらから！.svg" alt="">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/ctabtn-line-pc.png" alt="">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="lp-second">
+      <!-- 選ばれるポイント -->
+      <div class="three-points">
+        <div class="point-title">
+          <p>GOLFERS24の<span>3つの選ばれる</span>ポイント</p>
+        </div>
+        <div class="points">
+          <div class="each-point">
+            <div class="point-top">放題プラン</div>
+            <div class="point-under">
+              <p>定額制で<span>24時間</span></p>
+              <p><span>いつでも練習し放題！</span></p>
+              <p>お仕事帰りでもスーツのまま</p>
+              <p>手ぶらでお越しいただけます。</p>
+            </div>
+            <img src="<?php echo get_theme_file_uri(); ?>/images/Point1.svg" alt="" class="point-number">
+          </div>
+          <div class="each-point">
+            <div class="point-top">プライベート空間</div>
+            <div class="point-under">
+              <p>完全個室の</p>
+              <p>プライベート空間なので</p>
+              <p><span>人目を気にせず練習できる！</span></p>
+              <p>ゲストの方と一緒でも。</p>
+            </div>
+            <img src="<?php echo get_theme_file_uri(); ?>/images/Point2.svg" alt="" class="point-number">
+          </div>
+          <div class="each-point">
+            <div class="point-top">最新のゴルフシュミレーター</div>
+            <div class="point-under">
+              <p><span>世界シェアNo.1</span>の</p>
+              <p>ゴルフシュミレーターを採用。</p>
+              <p>実在のコースを</p>
+              <p>ラウンドできる！</p>
+            </div>
+            <img src="<?php echo get_theme_file_uri(); ?>/images/Point3.svg" alt="" class="point-number">
+          </div>
+        </div>
+      </div>
+
+      <div class="trial-link-wrapper">
+        <div class="trial-link-head">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/second-goldtop.png" alt="">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/mayottara.png" alt="" class="link-head-title">
+        </div>
+        <div class="trial-link-off">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext.svg" alt="">
+        </div>
+        <div class="trial-link-off-limit">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/second-off.png" alt="">
+        </div>
+        <div class="trial-link-line">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/ctabtn-line-pc.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 

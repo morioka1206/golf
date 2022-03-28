@@ -4797,6 +4797,7 @@ body {
     top: 0;
     left: 0;
     z-index: 200;
+    background-color: white;
   }
   .lp-header .lp-header-logo {
     width: 194px;
@@ -4808,5 +4809,203 @@ body {
   .lp-header .lp-header-right {
     display: flex;
     gap: 6px;
+  }
+
+  .lp-wrapper {
+    width: 100%;
+  }
+  .lp-wrapper .lp-top .lp-top-image {
+    background-image: url(../images/lp-top.png);
+    height: 1200px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 34px;
+  }
+  .lp-wrapper .lp-top .lp-top-image .lp-top-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .lp-wrapper .lp-top .lp-top-image .lp-top-logo .lp-top-logo-line {
+    width: 48%;
+  }
+  .lp-wrapper .lp-top .lp-top-image .lp-top-message {
+    margin-top: 111px;
+    position: relative;
+    display: flex;
+  }
+  .lp-wrapper .lp-top .lp-top-image .lp-top-message .fv-copy {
+    width: 100%;
+    height: 267px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    transform: translateX(15%);
+  }
+  .lp-wrapper .lp-top .lp-top-image .lp-top-message .top-orange {
+    transform: translateY(-35%);
+    padding-right: 10px;
+  }
+  .lp-wrapper .lp-top .lp-top-image .lp-top-message .top-orange img {
+    width: 100%;
+    height: 100%;
+  }
+  .lp-wrapper .lp-top .lp-top-image .lp-top-price {
+    width: 750px;
+    height: 390px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    outline: 1px solid #f76f00;
+    outline-offset: -7px;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(-18.5%);
+    padding: 20px 0;
+  }
+  .lp-wrapper .lp-top .lp-top-image .lp-top-price .lp-top-price-message {
+    position: relative;
+    margin-bottom: 22px;
+  }
+  .lp-wrapper .lp-top .lp-top-image .lp-top-price .lp-top-price-message .message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .lp-wrapper .lp-top .lp-top-under {
+    width: 100%;
+    height: 550px;
+    opacity: 0.8;
+    background: linear-gradient(180deg, rgba(41, 36, 21, 0) 0%, #292415 93.75%);
+    position: relative;
+  }
+  .lp-wrapper .lp-top .lp-top-image-line-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 54%;
+    position: absolute;
+    bottom: -8%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .lp-wrapper .lp-second {
+    background-color: #292415;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .lp-wrapper .lp-second .three-points {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .lp-wrapper .lp-second .three-points .point-title {
+    width: 900px;
+    font-family: "Toppan Bunkyu Midashi Gothic";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 33px;
+    line-height: 50px;
+    text-align: center;
+    background: linear-gradient(90deg, #b08920 2.33%, #e3b12c 20.64%, #fff8b9 52.18%, #e3b12c 79.65%, #b08920 100%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 2px solid white;
+    -o-border-image: linear-gradient(90deg, #b08920 2.33%, #e3b12c 20.64%, #fff8b9 52.18%, #e3b12c 79.65%, #b08920 100%);
+       border-image: linear-gradient(90deg, #b08920 2.33%, #e3b12c 20.64%, #fff8b9 52.18%, #e3b12c 79.65%, #b08920 100%);
+    border-image-slice: 1;
+  }
+  .lp-wrapper .lp-second .three-points .point-title span {
+    font-size: 50px;
+    line-height: 75px;
+  }
+  .lp-wrapper .lp-second .three-points .points {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    margin-top: 46px;
+    font-family: "Noto Sans JP";
+  }
+  .lp-wrapper .lp-second .three-points .points .each-point {
+    display: flex;
+    flex-direction: column;
+    width: 283px;
+    position: relative;
+  }
+  .lp-wrapper .lp-second .three-points .points .each-point .point-top {
+    height: 54px;
+    background-color: #f76f00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+    color: white;
+    font-weight: bold;
+  }
+  .lp-wrapper .lp-second .three-points .points .each-point .point-under {
+    height: 131px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #edeae2 0%, #e9dbb5 100%);
+    border-radius: 0 0 5px 5px;
+    font-size: 16px;
+    font-family: "Noto Sans JP";
+    line-height: 23.17px;
+    color: #292415;
+  }
+  .lp-wrapper .lp-second .three-points .points .each-point .point-under span {
+    font-weight: bold;
+    background: linear-gradient(transparent 65%, yellow 100%);
+  }
+  .lp-wrapper .lp-second .three-points .points .each-point .point-number {
+    position: absolute;
+    top: -21px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .lp-wrapper .lp-second .trial-link-wrapper {
+    background-color: white;
+    margin-top: 80px;
+    width: 840px;
+    border-radius: 10px;
+  }
+  .lp-wrapper .lp-second .trial-link-head {
+    position: relative;
+  }
+  .lp-wrapper .lp-second .trial-link-head .link-head-title {
+    height: 60px;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .lp-wrapper .lp-second .trial-link-off {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .lp-wrapper .lp-second .trial-link-off-limit {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 0 30px;
+  }
+  .lp-wrapper .lp-second .trial-link-line {
+    margin-top: 33px;
+    padding: 0 25px 35px;
   }
 }/*# sourceMappingURL=pc-golf.css.map */
