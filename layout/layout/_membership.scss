@@ -1,6 +1,6 @@
 @media screen and (min-width: 601px) {
   .memberhip-wrapper {
-    width: 1166px;
+    width: 1200px;
     margin: 0 auto;
 
     // 会員規約タイトル
@@ -49,26 +49,26 @@
     // 会員規約タイトル
     .membership-title {
       font-family: $noto-serif;
-      font-size: 40px;
+      font-size: 28px;
       font-weight: 300;
       line-height: 40px;
       text-align: center;
-      margin-top: 150px;
+      margin-top: 80px;
     }
 
     .special-commercial-title {
       font-family: $noto-serif;
-      font-size: 40px;
+      font-size: 28px;
       font-weight: 300;
       line-height: 40px;
       text-align: center;
-      margin-top: 150px;
+      margin-top: 80px;
       margin-bottom: 75px;
     }
 
     // 会員規約の前提文章
     .memberhip-description {
-      font-size: 18px;
+      font-size: 14px;
       line-height: 30px;
       text-align: center;
       margin: 70px 0 76px;

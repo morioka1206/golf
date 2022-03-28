@@ -71,27 +71,29 @@
               <div class="feature-text-wrapper">
                 <div class="feature-text-box">
                   <div class="feature-title">
-                    <p><?php echo SCF::get('feature-smart-title') ?></p>
-                  </div>
-                  <div class="feature-sentence">
-                    <p>
-                    <p><?php echo SCF::get('feature-content') ?></p>
-                    </p>
+                    <?php $image = SCF::get('number');
+                    echo wp_get_attachment_image($image, 'large'); ?>
+                      <p><?php echo SCF::get('feature-smart-title') ?></p>
+                    </div>
+                    <div class="feature-sentence">
+                      <p>
+                      <p><?php echo SCF::get('feature-content') ?></p>
+                      </p>
+                    </div>
                   </div>
                 </div>
+                <div class="feature-image"><?php $image = SCF::get('image');
+                                            echo wp_get_attachment_image($image, 'large'); ?></div>
               </div>
-              <div class="feature-image"><?php $image = SCF::get('image');
-                                          echo wp_get_attachment_image($image, 'large'); ?></div>
+
+
+            <?php endwhile; ?>
+          <?php endif; ?>
             </div>
+            <div class="swiper-pagination"></div>
 
 
-          <?php endwhile; ?>
-        <?php endif; ?>
+
       </div>
-      <div class="swiper-pagination"></div>
-
-
-
     </div>
   </div>
-</div>

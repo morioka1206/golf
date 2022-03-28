@@ -2,12 +2,10 @@
   <div class="third-section-wrapper">
     <div class="third-section-how-to-use-text">
       <div class="how-to-use-sentence">
-        <p>GOLFERS24ご利用の流れを紹介しております。本利用前にトライアル利用も可能。</p>
+        <p>初回無料体験ご予約受付中！</p>
       </div>
       <div class="sm-how-to-use-sentence">
-        <p>GOLFERS24ご利用の流れを</p>
-        <p>紹介しております。</p>
-        <p>本利用前にトライアル利用も可能。</p>
+        <p>初回無料体験ご予約受付中！</p>
       </div>
     </div>
 

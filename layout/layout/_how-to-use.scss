@@ -685,7 +685,7 @@
   .how-to-use-wrapper {
     width: calc(100% - 40px);
     margin: 0 auto;
-    margin-top: 163px;
+    margin-top: 100px;
 
     .page-title {
       font-family: $montserrat;
@@ -712,173 +712,6 @@
     .how-to-use-contents {
       // width: ;
       margin: 0 auto;
-
-      // トライアル利用
-      // .trial-use {
-      //   .trial-title {
-      //     font-weight: 700;
-      //     font-size: 26px;
-      //     line-height: 37.65px;
-      //     letter-spacing: 0.2rem;
-      //     color: $text-beige;
-      //     display: flex;
-      //     text-align: center;
-      //     align-items: center;
-      //     margin-top: 120px;
-      //   }
-      //   .trial-title::before {
-      //     content: "";
-      //     width: 17px;
-      //     margin-right: 7px;
-      //     border-top: 3px solid $text-beige;
-      //   }
-
-      //   // トライアル利用のステップ
-      //   .trial-steps {
-      //     margin-top: 40px;
-      //     display: flex;
-      //     justify-content: center;
-      //     align-items: center;
-      //     flex-direction: column;
-      //     gap: 60px;
-
-      //     .trial-step {
-      //       // width: 89%;
-      //       // ステップの番号
-      //       .step-number {
-      //         font-weight: 700;
-      //         font-size: 26px;
-      //         line-height: 23px;
-      //         color: $text-beige;
-      //       }
-      //       // ステップのタイトル
-      //       .step-title {
-      //         font-weight: 700;
-      //         line-height: 23px;
-      //         margin-top: 10px;
-      //       }
-
-      //       // ステップのイメージ
-      //       .step-image {
-      //         // width: 89%;
-      //         height: 244px;
-      //         margin: 20px 0;
-      //       }
-
-      //       // ステップの説明
-      //       .step-sentence {
-      //         font-size: 14px;
-      //         line-height: 28px;
-      //         width: 100%;
-      //       }
-
-      //       .step-line-friends {
-      //         margin-top: 20px;
-      //       }
-
-      //       // LINEをお持ちでない方
-      //       .no-line-user {
-      //         height: 357px;
-      //         background-color: $back-beige;
-      //         display: flex;
-      //         justify-content: center;
-      //         align-items: center;
-      //         flex-direction: column;
-      //         margin-top: 60px;
-
-      //         .no-line-title {
-      //           width: 323px;
-      //           font-size: 23px;
-      //           font-weight: 700;
-      //           line-height: 23px;
-      //           text-align: center;
-      //           padding-top: 54px;
-      //         }
-
-      //         .no-line-sentence {
-      //           width: 323px;
-      //           line-height: 33px;
-      //           text-align: center;
-      //           margin-top: 20px;
-      //         }
-
-      //         .reserve-link {
-      //           width: 289px;
-      //           height: 60px;
-      //           background-color: $back-darkbrown;
-      //           color: white;
-      //           display: flex;
-      //           justify-content: center;
-      //           align-items: center;
-      //           margin: 0 auto;
-      //           margin-top: 20px;
-      //         }
-      //       }
-      //     }
-      //   }
-      // }
-
-      // メンバー利用
-      // .member-use {
-      //   .member-use-title {
-      //     font-weight: 700;
-      //     font-size: 26px;
-      //     line-height: 37.65px;
-      //     letter-spacing: 0.2rem;
-      //     color: $text-beige;
-      //     display: flex;
-      //     text-align: center;
-      //     align-items: center;
-      //     margin-top: 120px;
-      //   }
-      //   .member-use-title::before {
-      //     content: "";
-      //     width: 17px;
-      //     margin-right: 7px;
-      //     border-top: 3px solid $text-beige;
-      //   }
-
-      //   // メンバー利用のステップ
-      //   .member-use-steps {
-      //     margin-top: 60px;
-      //     display: flex;
-      //     justify-content: center;
-      //     align-items: center;
-      //     flex-direction: column;
-      //     gap: 60px;
-
-      //     .member-step {
-      //       // width: 89%;
-      //       // ステップの番号
-      //       .member-number {
-      //         font-weight: 700;
-      //         font-size: 26px;
-      //         line-height: 23px;
-      //         color: $text-beige;
-      //       }
-      //       // ステップのタイトル
-      //       .member-title {
-      //         font-size: 16px;
-      //         font-weight: 700;
-      //         line-height: 23px;
-      //         margin-top: 10px;
-      //       }
-
-      //       // ステップのイメージ
-      //       .member-image {
-      //         width: 89%;
-      //         height: 244px;
-      //         margin: 20px 0;
-      //       }
-
-      //       .member-sentence {
-      //         font-size: 14px;
-      //         line-height: 28px;
-      //         width: 100%;
-      //       }
-      //     }
-      //   }
-      // }
 
       .hour-plan {
         margin: 0 auto;
@@ -1053,13 +886,13 @@
     .how-to-use-contents {
       width: calc(100%);
       margin: 0 auto;
-      margin-top: 180px;
+      margin-top: 80px;
 
       // 共通の設定
       // タイトル
       .steps-title {
         color: $back-darkbrown;
-        font-size: 32px;
+        font-size: 24px;
         font-weight: bold;
         line-height: 46.34px;
         left: 0.1rem;

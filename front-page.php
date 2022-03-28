@@ -82,7 +82,7 @@
         $args = array(
           'post_type' => 'store',
           // 全件取得、数を指定すればその数だけ取得する。
-          'posts_per_page' => -1,
+          'posts_per_page' => 6,
           'meta_key' => 'local_id',
           'orderby' => 'meta_value_num',
           'order' => 'ASC',
@@ -121,7 +121,7 @@
         $args = array(
           'post_type' => 'store',
           // 全件取得、数を指定すればその数だけ取得する。
-          'posts_per_page' => -1,
+          'posts_per_page' => 6,
           'meta_key' => 'local_id',
           'orderby' => 'meta_value_num',
           'order' => 'ASC',
@@ -160,7 +160,7 @@
         $args = array(
           'post_type' => 'store',
           // 全件取得、数を指定すればその数だけ取得する。
-          'posts_per_page' => -1,
+          'posts_per_page' => 6,
           'meta_key' => 'local_id',
           'orderby' => 'meta_value_num',
           'order' => 'ASC',
