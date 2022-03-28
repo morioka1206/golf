@@ -154,6 +154,35 @@
         </div>
       </div>
     </div>
+
+    <div class="lp-third">
+
+    </div>
+
+    <div class="lp-forth">
+
+    </div>
+
+    <div class="lp-between">
+
+    </div>
+
+    <div class="lp-fifth">
+
+    </div>
+
+    <div class="lp-sixth">
+
+    </div>
+
+    <div class="lp-seventh">
+
+    </div>
+
+    <div class="lp-eighth"></div>
+
+    <div class="lp-store-list"><?php get_template_part('store-list') ?></div>
+
   </div>
 
 
