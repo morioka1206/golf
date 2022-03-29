@@ -155,39 +155,164 @@
       </div>
     </div>
 
+    <!-- 口コミ -->
     <div class="lp-third">
+      <div class="lp-third-title">
+        <img src="<?php echo get_theme_file_uri(); ?>/images/uresii-title.svg" alt="">
+      </div>
+
+      <div class="uresii-wrapper">
+
+        <div class="each-uresii i01">
+          <div class="uresii-title">
+            人目を気にせず24時間いつでも練習ができるのが嬉しい！
+          </div>
+          <div class="uresii-content">
+            <span> 初めてのインドアゴルフ場だったのですが、</span>
+            <span>室内は清潔感があり最新の機械を使用できとても快適でした。</span>
+            <span class="uresii-yellow">外から見えないので完全個室のプライベート空間で人目を気にせず24時間いつでも練習ができて、</span>
+            <span>大濠公園</span><span>や赤坂駅からも近くて便利なので活用して上達したいと思います。</span>
+          </div>
+        </div>
+
+        <div class="each-uresii i02">
+          <div class="uresii-title">
+            人目を気にせず24時間いつでも練習ができるのが嬉しい！
+          </div>
+          <div class="uresii-content">
+            <span>バーチャルゴルフは初めてでしたが、<span class="uresii-yellow">係りの方が親切に使い方や遊び方を教えて</span></span>
+            <span class="uresii-yellow">頂いたおかげで楽しく体験が出来ました。</span>
+            <span>色々あるモードの中でも、実際のコースをラウンドできるモードが臨場感もあって楽しかっ</span><span>たです</span>
+          </div>
+
+
+
+        </div>
+
+        <div class="each-uresii 03">
+          <div class="uresii-title">
+            人目を気にせず24時間いつでも練習ができるのが嬉しい！
+          </div>
+          <div class="uresii-content">
+            <span> 初めてのインドアゴルフ場だったのですが、</span>
+            <span>室内は清潔感があり最新の機械を使用できとても快適でした。</span>
+            <span class="uresii-yellow">外から見えないので完全個室のプライベート空間で人目を気にせず24時間いつでも練習ができて、</span>
+            <span>大濠公園や赤坂駅からも近くて便利なので活用して上達したいと思います。</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+      <!-- こんなお悩みありませんか？ -->
+      <div class="lp-forth">
+        <div class="lp-forth-title">
+          <p>打ちっ放し練習場の</p>
+          <p class="big">こんな<span>お悩み</span>ありませんか？</p>
+        </div>
+        <div class="onayami-list">
+          <div class="each-onayami">家から遠い</div>
+          <div class="each-onayami">仕事終わりに行きたいけど締まってる・・・</div>
+          <div class="each-onayami">周りの視線が気になる・・・</div>
+          <div class="each-onayami">闇雲に打つだけで効果あるのかな・・・</div>
+          <div class="each-onayami">いつも混んでて打席待ち・・・</div>
+        </div>
+      </div>
+
+
+
+      <div class="lp-fifth">
+        <div class="lp-fifth-top-message">
+          <p>このような打ちっ放し練習場の悩み</p>
+          <p>あなただけのプライベート練習場<span>GOLFERS24</span>なら丸っと解決できます！</p>
+        </div>
+        <div class="eight-reasons-wrapper">
+          <div class="reason-title">
+            <img src="<?php echo get_theme_file_uri(); ?>/images/8reason.svg" alt="">
+          </div>
+
+          <div class="trial-link-wrapper">
+            <div class="trial-link-head">
+              <img src="<?php echo get_theme_file_uri(); ?>/images/second-goldtop.png" alt="">
+              <img src="<?php echo get_theme_file_uri(); ?>/images/mayottara.png" alt="" class="link-head-title">
+            </div>
+            <div class="trial-link-off">
+              <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext.svg" alt="">
+            </div>
+            <div class="trial-link-off-limit">
+              <img src="<?php echo get_theme_file_uri(); ?>/images/second-off.png" alt="">
+            </div>
+            <div class="trial-link-line">
+              <img src="<?php echo get_theme_file_uri(); ?>/images/ctabtn-line-pc.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 体験予約の流れ -->
+      <div class="lp-sixth">
+        <div class="lp-sixth-title">体験予約の流れ</div>
+        <div class="trial-steps">
+          <div class="each-step">
+            <div class="step-top">
+              <div class="step-number">STEP<span>01</span></div>
+              <div class="step-number-text">体験申込み</div>
+            </div>
+            <div class="step-under">
+              <p>まずは体験のお申し込みから。</p>
+              <p>WebまたはLINEからのお申し込みをお願いいたします。</p>
+            </div>
+          </div>
+
+          <div class="trial-step-arrow">
+            <img src="<?php echo get_theme_file_uri(); ?>/images/lp-step-arrow.png" alt="">
+          </div>
+
+          <div class="each-step">
+            <div class="step-top">
+              <div class="step-number">STEP<span>02</span></div>
+              <div class="step-number-text">ご来店</div>
+            </div>
+            <div class="step-under">
+              <p>当店は完全無人で運営を行なっております。</p>
+              <p>あなただけのプライベート空間で、お一人で黙々と練習するも良し、</p>
+              <p>ゲストの方と一緒にラウンドを楽しむも良しです！</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="trial-step-line-link">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/体験予約はこちらから！.svg" alt="">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/ctabtn-line-pc.png" alt="">
+        </div>
+      </div>
+
+      <!-- イメージを変えるため -->
+      <div class="lp-seventh">
+        <div class="lp-seventh-message-wrapper">
+          <div class="small-message">
+            <p>ゴルフの練習をしようと思うと、家から遠くの練習場に行かないいけない…</p>
+            <p>遠くの練習場に行くのにも時間がかかる…</p>
+            <p>好きな時に練習できない…</p>
+          </div>
+          <div class="big-message">
+            <p><span>そんな打ちっ放し練習場のイメージを変えるため、</span></p>
+            <p><span>GOLFERS24は生まれました</spa>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lp-eighth"></div>
+
+      <div class="lp-store-list"><?php get_template_part('store-list') ?></div>
 
     </div>
 
-    <div class="lp-forth">
-
-    </div>
-
-    <div class="lp-between">
-
-    </div>
-
-    <div class="lp-fifth">
-
-    </div>
-
-    <div class="lp-sixth">
-
-    </div>
-
-    <div class="lp-seventh">
-
-    </div>
-
-    <div class="lp-eighth"></div>
-
-    <div class="lp-store-list"><?php get_template_part('store-list') ?></div>
-
-  </div>
 
 
 
 
 
-
-  <?php get_footer(); ?>
+    <?php get_footer(); ?>
