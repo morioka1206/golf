@@ -113,7 +113,8 @@
         </div>
 
         <div class="sm-point-title">
-          <p>GOLFERS24の</p><p><span>3</span>つの選ばれるポイント</p>
+          <p>GOLFERS24の</p>
+          <p><span>3</span>つの選ばれるポイント</p>
         </div>
         <div class="points">
           <div class="each-point">
@@ -189,6 +190,9 @@
       <div class="lp-third-title">
         <img src="<?php echo get_theme_file_uri(); ?>/images/uresii-title.svg" alt="">
       </div>
+      <div class="sm-lp-third-title">
+        <img src="<?php echo get_theme_file_uri(); ?>/images/sm-uresii-title.svg" alt="">
+      </div>
 
       <div class="uresii-wrapper">
 
@@ -196,6 +200,7 @@
           <div class="uresii-title">
             人目を気にせず24時間いつでも練習ができるのが嬉しい！
           </div>
+
           <div class="uresii-content">
             <span> 初めてのインドアゴルフ場だったのですが、</span>
             <span>室内は清潔感があり最新の機械を使用できとても快適でした。</span>
@@ -235,7 +240,7 @@
     <!-- こんなお悩みありませんか？ -->
     <div class="lp-forth">
       <div class="lp-forth-title">
-        <p>打ちっ放し練習場の</p>
+        <p class="small">打ちっ放し練習場の</p>
         <p class="big">こんな<span>お悩み</span>ありませんか？</p>
       </div>
       <div class="onayami-list">
@@ -245,6 +250,26 @@
         <div class="each-onayami">闇雲に打つだけで効果あるのかな・・・</div>
         <div class="each-onayami">いつも混んでて打席待ち・・・</div>
       </div>
+      <div class="sm-onayami-list">
+        <div class="each-onayami"><img src="<?php echo get_theme_file_uri(); ?>/images/onayami-check.svg" alt="">
+          <p>家から遠い</p>
+        </div>
+        <div class="each-onayami"><img src="<?php echo get_theme_file_uri(); ?>/images/onayami-check.svg" alt="">
+          <p>仕事終わりに行きたいけど締まってる・・・</p>
+        </div>
+        <div class="each-onayami"><img src="<?php echo get_theme_file_uri(); ?>/images/onayami-check.svg" alt="">
+          <p>周りの視線が気になる・・・</p>
+        </div>
+        <div class="each-onayami"><img src="<?php echo get_theme_file_uri(); ?>/images/onayami-check.svg" alt="">
+          <p>闇雲に打つだけで効果あるのかな・・・</p>
+        </div>
+        <div class="each-onayami"><img src="<?php echo get_theme_file_uri(); ?>/images/onayami-check.svg" alt="">
+          <p>いつも混んでて打席待ち・・・</p>
+        </div>
+      </div>
+      <div class="onayami-lady">
+        <img src="<?php echo get_theme_file_uri(); ?>/images/sm-nayami-lady.png" alt="">
+      </div>
     </div>
 
 
@@ -252,11 +277,14 @@
     <div class="lp-fifth">
       <div class="lp-fifth-top-message">
         <p>このような打ちっ放し練習場の悩み</p>
-        <p>あなただけのプライベート練習場<span>GOLFERS24</span>なら丸っと解決できます！</p>
+        <p><span>GOLFERS24</span>なら<br class="sm-br">丸っと解決できます！</p>
       </div>
       <div class="six-reasons-wrapper">
         <div class="reason-title">
           <img src="<?php echo get_theme_file_uri(); ?>/images/6reason.svg" alt="">
+        </div>
+        <div class="sm-reason-title">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/sm6reason.svg" alt="">
         </div>
 
         <div class="reasons">
@@ -317,7 +345,7 @@
             </div>
             <div class="each-reason-title">
               <p>アプリで練習データや</p>
-              <p><span>スイング動画がチェック可能</span></p>
+              <p><span>スイング動画が<br class="sm-br">チェック可能</span></p>
             </div>
             <div class="each-reason-content">
               スイング時に前方・後方から自動で動画を撮影。スロー再生やコマ送り再生はもちろん、
@@ -379,6 +407,22 @@
             <img src="<?php echo get_theme_file_uri(); ?>/images/ctabtn-line-pc.png" alt="">
           </a>
         </div>
+        <div class="sm-trial-link-wrapper">
+          <div class="trial-link-head">
+            <img src="<?php echo get_theme_file_uri(); ?>/images/sm-trial-goldtop.png" alt="">
+            <img src="<?php echo get_theme_file_uri(); ?>/images/sm-mayottara.png" alt="" class="link-head-title">
+          </div>
+          <div class="trial-link-off">
+            <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext.svg" alt="">
+          </div>
+          <div class="trial-link-off-limit">
+            <img src="<?php echo get_theme_file_uri(); ?>/images/second-off.png" alt="">
+          </div>
+          <a href="https://lin.ee/7Ii8MCV/" target="_blank" class="trial-link-line">
+            <img src="<?php echo get_theme_file_uri(); ?>/images/ctabtn-line-pc.png" alt="">
+          </a>
+        </div>
+
       </div>
     </div>
 

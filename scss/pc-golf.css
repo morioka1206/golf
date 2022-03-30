@@ -5638,6 +5638,10 @@ body {
     font-size: 16px;
     margin-top: 60px;
   }
+
+  .sm-br {
+    display: none;
+  }
 }
 @media screen and (max-width: 600px) {
   .lp-header {
@@ -5852,10 +5856,435 @@ body {
     left: 50%;
     transform: translateX(-50%);
   }
-  .lp-wrapper .lp-third,
-.lp-wrapper .lp-forth,
-.lp-wrapper .lp-fifth,
-.lp-wrapper .lp-sixth,
+  .lp-wrapper .lp-third {
+    background: linear-gradient(180deg, #483b19 0%, #a59c84 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+  }
+  .lp-wrapper .lp-third .lp-third-title {
+    display: none;
+  }
+  .lp-wrapper .lp-third .sm-lp-third-title {
+    padding-top: 32px;
+  }
+  .lp-wrapper .lp-third .lp-third-title::before {
+    content: url(../images/uresii-title-left.svg);
+    vertical-align: middle;
+    margin-right: 12px;
+  }
+  .lp-wrapper .lp-third .lp-third-title::after {
+    content: url(../images/uresii-title-right.svg);
+    vertical-align: middle;
+  }
+  .lp-wrapper .lp-third .uresii-wrapper {
+    width: 335px;
+    background-color: #edeae2;
+    margin-top: 45px;
+    color: #292415;
+    padding: 24px 20px 65px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.45);
+  }
+  .lp-wrapper .lp-third .uresii-wrapper .each-uresii .uresii-title {
+    width: 192px;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 29px;
+  }
+  .lp-wrapper .lp-third .uresii-wrapper .each-uresii .uresii-content {
+    font-family: "Noto Sans JP";
+    width: 295px;
+    font-size: 16px;
+    line-height: 29px;
+    margin-top: 83px;
+    letter-spacing: 0;
+    border-bottom: dashed 1px #a59c84;
+  }
+  .lp-wrapper .lp-third .uresii-wrapper .each-uresii .uresii-content p,
+.lp-wrapper .lp-third .uresii-wrapper .each-uresii .uresii-content span {
+    border-bottom: dashed 1px #a59c84;
+  }
+  .lp-wrapper .lp-third .uresii-wrapper .each-uresii .uresii-content span:last-child {
+    border: none;
+  }
+  .lp-wrapper .lp-third .uresii-wrapper .each-uresii .uresii-content .uresii-yellow {
+    background: linear-gradient(transparent 0%, yellow 0%);
+  }
+  .lp-wrapper .lp-third .uresii-wrapper .each-uresii:nth-child(even) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .lp-wrapper .lp-third .uresii-wrapper .each-uresii:nth-child(even) .uresii-title {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .lp-wrapper .lp-third .uresii-wrapper .each-uresii:nth-child(odd) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .lp-wrapper .lp-third .uresii-wrapper .each-uresii:nth-child(odd) .uresii-title {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .lp-wrapper .lp-third .uresii-wrapper .each-uresii:nth-child(1) {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .lp-wrapper .lp-third .uresii-wrapper .each-uresii:nth-child(1) .uresii-content {
+    width: 292px;
+  }
+  .lp-wrapper .lp-third .uresii-wrapper .each-uresii:nth-child(1)::after {
+    content: "";
+    display: inline-block;
+    background-image: url(../images/uresii-man01.png);
+    width: 119px;
+    height: 170px;
+    background-size: contain;
+    position: absolute;
+    right: -6px;
+    top: -5px;
+  }
+  .lp-wrapper .lp-third .uresii-wrapper .each-uresii:nth-child(2) {
+    position: relative;
+    margin-bottom: 40px;
+    z-index: 300;
+  }
+  .lp-wrapper .lp-third .uresii-wrapper .each-uresii:nth-child(2)::after {
+    content: "";
+    display: inline-block;
+    background-image: url(../images/uresii-man02.png);
+    width: 118px;
+    height: 170px;
+    background-size: contain;
+    position: absolute;
+    left: -4px;
+    top: -5px;
+    z-index: 310;
+  }
+  .lp-wrapper .lp-third .uresii-wrapper .each-uresii:nth-child(3) {
+    position: relative;
+    z-index: 500;
+  }
+  .lp-wrapper .lp-third .uresii-wrapper .each-uresii:nth-child(3) .uresii-content {
+    margin-top: 126px;
+  }
+  .lp-wrapper .lp-third .uresii-wrapper .each-uresii:nth-child(3)::after {
+    content: "";
+    display: inline-block;
+    background-image: url(../images/uresii-man03.png);
+    width: 161.2px;
+    height: 170px;
+    background-size: contain;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    z-index: 400;
+  }
+  .lp-wrapper .lp-third .uresii-wrapper::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 44%;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    transform: skewY(10deg);
+    transform-origin: bottom left;
+    z-index: 0;
+  }
+  .lp-wrapper .lp-third .uresii-wrapper::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 27.9%;
+    width: 26%;
+    height: 10%;
+    background-color: #edeae2;
+    /* むらさき */
+    transform: skewY(185deg);
+    transform-origin: bottom left;
+    z-index: 331;
+  }
+  .lp-wrapper .lp-forth {
+    height: 729px;
+    background-image: url(../images/nayami2.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .lp-wrapper .lp-forth .lp-forth-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    font-family: "Toppan Bunkyu Midashi Gothic";
+  }
+  .lp-wrapper .lp-forth .lp-forth-title p {
+    display: inline-block;
+    color: #292415;
+    /* 文字の色 */
+    text-shadow: 5px 5px 5px #ffffff, -5px 5px 5px #ffffff, 5px -5px 5px #ffffff, -5px -5px 5px #ffffff, 5px 0px 5px #ffffff, 0px 5px 5px #ffffff, -5px 0px 5px #ffffff, 0px -5px 5px #ffffff;
+  }
+  .lp-wrapper .lp-forth .lp-forth-title span {
+    color: navy;
+    font-family: "Noto Sans JP";
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 37.65px;
+  }
+  .lp-wrapper .lp-forth .lp-forth-title .small {
+    font-size: 23px;
+    /* 文字のサイズ */
+    line-height: 34.5px;
+  }
+  .lp-wrapper .lp-forth .lp-forth-title .big {
+    font-size: 26px;
+    line-height: 39px;
+  }
+  .lp-wrapper .lp-forth .onayami-list {
+    display: none;
+  }
+  .lp-wrapper .lp-forth .sm-onayami-list {
+    position: relative;
+    color: #333;
+    font-family: "Noto Sans JP";
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 27px;
+    padding: 0 20px;
+  }
+  .lp-wrapper .lp-forth .sm-onayami-list .each-onayami {
+    text-shadow: 5px 5px 5px #ffffff, -5px 5px 5px #ffffff, 5px -5px 5px #ffffff, -5px -5px 5px #ffffff, 5px 0px 5px #ffffff, 0px 5px 5px #ffffff, -5px 0px 5px #ffffff, 0px -5px 5px #ffffff;
+    position: relative;
+    display: flex;
+    gap: 5px;
+  }
+  .lp-wrapper .lp-forth .sm-onayami-list .each-onayami img {
+    width: 30px;
+    height: 25px;
+  }
+  .lp-wrapper .lp-forth .onayami-lady {
+    position: absolute;
+    bottom: 0;
+    left: 9%;
+  }
+  .lp-wrapper .lp-forth .onayami-lady img {
+    width: 222px;
+    height: 292px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .lp-wrapper .lp-fifth {
+    width: 100%;
+    background-color: #edeae2;
+    position: relative;
+    padding-bottom: 80px;
+  }
+  .lp-wrapper .lp-fifth .lp-between {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .lp-wrapper .lp-fifth .lp-fifth-top-message {
+    width: 100%;
+    height: 140px;
+    font-family: "Toppan Bunkyu Midashi Gothic";
+    font-size: 18px;
+    line-height: 26.39px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: white;
+    z-index: 200;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: #292415;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .lp-wrapper .lp-fifth .lp-fifth-top-message span {
+    font-size: 35px;
+    line-height: 39px;
+    background: linear-gradient(90deg, #b08920 2.33%, #e3b12c 20.64%, #fff8b9 52.18%, #e3b12c 79.65%, #b08920 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .lp-wrapper .lp-fifth .lp-fifth-top-message::after {
+    content: "";
+    border-right: 75px solid transparent;
+    border-bottom: 55px solid #292415;
+    border-left: 75px solid transparent;
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: -34px;
+    left: 30%;
+    z-index: -1;
+  }
+  .lp-wrapper .lp-fifth .six-reasons-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 144px;
+  }
+  .lp-wrapper .lp-fifth .six-reasons-wrapper .reason-title {
+    display: none;
+  }
+  .lp-wrapper .lp-fifth .six-reasons-wrapper .sm-reason-title {
+    padding-top: 37px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+  }
+  .lp-wrapper .lp-fifth .six-reasons-wrapper .sm-reason-title::after {
+    content: url(../images/lp-sm-reason-underline.svg);
+    position: absolute;
+    bottom: -18px;
+  }
+  .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 160px 160px;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 27px 20px;
+    grid-template-areas: ". ." ". ." ". .";
+  }
+  .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .each-reason {
+    width: 100%;
+    background-color: white;
+    height: 462px;
+    position: relative;
+    font-family: "Noto Sans JP";
+  }
+  .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .each-reason .reason-image {
+    display: flex;
+    justify-content: center;
+    padding: 5px 5px 0;
+  }
+  .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .each-reason .each-reason-title {
+    color: #292415;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 17px;
+    margin-bottom: 18px;
+  }
+  .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .each-reason .each-reason-title span {
+    color: #f76f00;
+  }
+  .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .each-reason .each-reason-content {
+    color: #000;
+    font-size: 11px;
+    line-height: 17px;
+    padding: 0 8px;
+    letter-spacing: 0;
+  }
+  .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .each-reason::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 3px;
+    bottom: -4px;
+    border-width: 0 18px 25px 0;
+    border-style: solid;
+    width: 0;
+    transform: rotate(90deg);
+    background: #e3e3e3;
+    border-color: #fff #edeae2 #cbc3ab #cbc3ab;
+  }
+  .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .reason01::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/reason01.svg);
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 9px;
+    z-index: 20;
+  }
+  .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .reason02::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/reason02.svg);
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 9px;
+    z-index: 20;
+  }
+  .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .reason03::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/reason03.svg);
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 9px;
+    z-index: 20;
+  }
+  .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .reason04::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/reason04.svg);
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 9px;
+    z-index: 20;
+  }
+  .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .reason05::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/reason05.svg);
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 9px;
+    z-index: 20;
+  }
+  .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .reason06::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/reason06.svg);
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 9px;
+    z-index: 20;
+  }
+  .lp-wrapper .lp-fifth:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 880px;
+    background: linear-gradient(180deg, #edeae2 0%, rgba(237, 234, 226, 0) 100%), url(../images/lp-fifth.png);
+    background-size: cover;
+  }
+  .lp-wrapper .lp-sixth,
 .lp-wrapper .lp-seventh,
 .lp-wrapper .lp-eighth,
 .lp-wrapper .lp-nineth,
