@@ -28,16 +28,24 @@
   .lp-wrapper {
     width: 100%;
     .lp-top {
+      // height: 1250px;
       .lp-top-image {
-        background-image: url(../images/lp-top.png);
+        width: 100%;
+        background-image: url(../images/lp-top02.png);
         height: 1200px;
         background-size: cover;
-
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         padding-top: 34px;
+
+        .lp-golfman {
+          position: absolute;
+          top: 0;
+          left: 10%;
+          // z-index: 20;
+        }
 
         .lp-top-logo {
           // position: absolute;
@@ -111,14 +119,16 @@
 
       .lp-top-under {
         width: 100%;
-        height: 550px;
-        opacity: 0.8;
+        height: 500px;
+        // opacity: 0.8;
         background: linear-gradient(
           180deg,
           rgba(41, 36, 21, 0) 0%,
-          #292415 93.75%
+          #292415 88.54%
         );
-        position: relative;
+        bottom: -6px;
+        left: 0;
+        position: absolute;
       }
 
       .lp-top-image-line-link {
@@ -128,7 +138,7 @@
         justify-content: center;
         width: 789px;
         position: absolute;
-        bottom: -8%;
+        bottom: -2%;
         left: 50%;
         transform: translateX(-50%);
       }
@@ -136,7 +146,7 @@
 
     .lp-second {
       background-color: #292415;
-      padding-top: 120px;
+      padding-top: 80px;
       padding-bottom: 80px;
       display: flex;
       flex-direction: column;
@@ -285,7 +295,7 @@
             line-height: 29px;
             margin-top: 15px;
             letter-spacing: 0;
-            // border-bottom: dashed 1px #a59c84;
+            border-bottom: dashed 1px #a59c84;
 
             p,
             span {
@@ -293,7 +303,7 @@
             }
 
             span:last-child {
-              // border: none;
+              border: none;
             }
 
             .uresii-yellow {
@@ -303,19 +313,32 @@
         }
 
         .each-uresii:nth-child(even) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+
           .uresii-title {
             display: flex;
             justify-content: flex-end;
           }
 
           .uresii-content {
-            padding-left: 255px;
+            width: 581px;
           }
         }
 
         .each-uresii:nth-child(odd) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          .uresii-title {
+            display: flex;
+            justify-content: flex-start;
+          }
+
           .uresii-content {
-            padding-right: 255px;
+            width: 581px;
           }
         }
 
@@ -333,7 +356,7 @@
           background-size: contain;
           position: absolute;
           right: -30px;
-          top: -11px;
+          top: -5px;
         }
 
         .each-uresii:nth-child(2) {
@@ -346,12 +369,12 @@
           content: "";
           display: inline-block;
           background-image: url(../images/uresii-man02.png);
-          width: 160px;
-          height: 231px;
+          width: 162px;
+          height: 240px;
           background-size: contain;
           position: absolute;
           left: -25px;
-          top: -63px;
+          top: -46px;
           z-index: 310;
         }
 
@@ -369,7 +392,7 @@
           background-size: contain;
           position: absolute;
           right: -30px;
-          top: -47px;
+          top: -16px;
           z-index: 400;
         }
       }
@@ -380,7 +403,7 @@
         left: 0;
         bottom: 38%;
         width: 100%;
-        height: 253px;
+        height: 263px;
         background-color: white;
         transform: skewY(185deg);
         transform-origin: bottom left;
@@ -470,18 +493,12 @@
       }
     }
 
+    // ６つの理由
     .lp-fifth {
       width: 100%;
-      height: 2000px;
-      background: linear-gradient(
-          180deg,
-          #edeae2 0%,
-          rgba(237, 234, 226, 0) 100%
-        ),
-        url(../images/lp-fifth.png);
-      // background-image: url(../images/lp-fifth.png);
-      background-size: cover;
+      background-color: #edeae2;
       position: relative;
+      padding-bottom: 80px;
 
       .lp-between {
         width: 100%;
@@ -540,7 +557,7 @@
         z-index: -1;
       }
 
-      .eight-reasons-wrapper {
+      .six-reasons-wrapper {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -562,25 +579,137 @@
           bottom: 0;
           right: 0;
         }
+
+        .reasons {
+          margin-top: 60px;
+          display: grid;
+          grid-template-columns: 280px 280px 280px;
+          grid-template-rows: 1fr 1fr;
+          gap: 36px 30px;
+          grid-template-areas:
+            ". . ."
+            ". . .";
+
+          .each-reason {
+            width: 100%;
+            background-color: white;
+            height: 516px;
+            position: relative;
+            font-family: "Noto Sans JP";
+
+            .reason-image {
+              display: flex;
+              justify-content: center;
+              padding-top: 5px;
+            }
+
+            .each-reason-title {
+              color: #292415;
+              font-size: 19px;
+              line-height: 23px;
+              font-weight: bold;
+              text-align: center;
+              margin-top: 17px;
+              margin-bottom: 18px;
+
+              span {
+                color: #f76f00;
+              }
+            }
+
+            .each-reason-content {
+              color: #000;
+              font-size: 14px;
+              line-height: 20px;
+              padding: 0 15px;
+              letter-spacing: 0;
+            }
+          }
+
+          .each-reason::after {
+            // content: url(../images/reason-ori.svg);
+            // position: absolute;
+            // bottom: 0;
+            // right: 0;
+            content: "";
+            content: " ";
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border-width: 0 30px 30px 0;
+            border-style: solid;
+            width: 0;
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+            background: #e3e3e3;
+            border-color: #fff #edeae2 #cbc3ab #cbc3ab;
+          }
+
+          .reason01::before {
+            content: url(../images/reason01.svg);
+            position: absolute;
+            top: 0;
+            left: 9px;
+            z-index: 20;
+          }
+          .reason02::before {
+            content: url(../images/reason02.svg);
+            position: absolute;
+            top: 0;
+            left: 9px;
+            z-index: 20;
+          }
+          .reason03::before {
+            content: url(../images/reason03.svg);
+            position: absolute;
+            top: 0;
+            left: 9px;
+            z-index: 20;
+          }
+          .reason04::before {
+            content: url(../images/reason04.svg);
+            position: absolute;
+            top: 0;
+            left: 9px;
+            z-index: 20;
+          }
+          .reason05::before {
+            content: url(../images/reason05.svg);
+            position: absolute;
+            top: 0;
+            left: 9px;
+            z-index: 20;
+          }
+          .reason06::before {
+            content: url(../images/reason06.svg);
+            position: absolute;
+            top: 0;
+            left: 9px;
+            z-index: 20;
+          }
+        }
       }
     }
 
     .lp-fifth:before {
       content: "";
-      background: inherit;
-      -webkit-filter: blur(4px);
-      -moz-filter: blur(4px);
-      -o-filter: blur(4px);
-      -ms-filter: blur(4px);
-      filter: blur(6px);
       position: absolute;
-      top: 5px;
-      left: -5px;
-      right: -5px;
-      bottom: 3px;
-      // z-index: -1;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1600px;
+      background: linear-gradient(
+          180deg,
+          #edeae2 0%,
+          rgba(237, 234, 226, 0) 100%
+        ),
+        url(../images/lp-fifth.png);
+      // background-image: url(../images/lp-fifth.png);
+      background-size: cover;
     }
 
+    // 体験予約の流れ
     .lp-sixth {
       display: flex;
       flex-direction: column;
@@ -662,6 +791,7 @@
       }
     }
 
+    // 生まれた理由
     .lp-seventh {
       height: 420px;
       background-image: url(../images/lp-seventh.png);
@@ -717,9 +847,78 @@
       }
     }
 
+    // 比較の表
     .lp-eighth {
-      height: 775px;
       background: linear-gradient(180deg, #483b19 0%, #a59c84 100%);
+      padding-top: 65px;
+      padding-bottom: 80px;
+
+      .lp-eighth-title {
+        position: relative;
+        color: white;
+        text-align: center;
+        .top {
+          font-family: "Toppan Bunkyu Midashi Gothic";
+          font-size: 32px;
+          line-height: 48px;
+        }
+
+        .under {
+          font-family: "Noto Sans JP";
+          font-weight: bold;
+          font-size: 32px;
+          line-height: 46.34px;
+
+          span {
+            font-size: 41px;
+            line-height: 59.37px;
+            color: yellow;
+          }
+        }
+      }
+
+      .lp-eighth-title::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/lp-table-title-line.svg);
+        display: inline-block;
+        top: -20px;
+        left: 0;
+        height: 10px;
+        width: 100%;
+        background-size: contain;
+        background-repeat: repeat;
+        transform: rotate(180deg);
+      }
+
+      .lp-eighth-title::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/lp-table-title-line.svg);
+        display: inline-block;
+        bottom: -20px;
+        left: 0;
+        height: 10px;
+        width: 100%;
+        background-size: contain;
+        background-repeat: repeat;
+      }
+
+      .lp-table {
+        display: flex;
+        justify-content: center;
+        margin-top: 68px;
+      }
+    }
+
+    .lp-nineth {
+      padding: 50px 0 80px;
+      display: flex;
+      justify-content: center;
+
+      .trial-link-wrapper {
+        filter: drop-shadow(0px 0px 34px rgba(0, 0, 0, 0.45));
+      }
     }
 
     .lp-store-list {
@@ -740,22 +939,388 @@
         }
 
         .area-name {
-          background-color: #a59c84;
+          background-color: #483b19;
           color: white;
+          border-radius: 5px;
+          position: relative;
+        }
+
+        .area-name::after {
+          content: url(../images/lp-storelist-arrow.svg);
+          position: absolute;
+          top: 25%;
+          right: 24px;
         }
 
         .area-link {
           border-radius: 5px;
         }
+
+        .store {
+          background-color: white;
+        }
+      }
+    }
+
+    // 無料体験のリンク
+    .trial-link-wrapper {
+      background-color: white;
+      margin-top: 80px;
+      width: 840px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .trial-link-head {
+        position: relative;
+
+        .link-head-title {
+          height: 60px;
+          position: absolute;
+          top: 12%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+
+      .trial-link-off {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        width: 780px;
+      }
+
+      .trial-link-off-limit {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        width: 780px;
+      }
+
+      .trial-link-line {
+        width: 789px;
+        margin-top: 33px;
+      }
+    }
+
+    .lp-footer-wrapper {
+      footer {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        font-family: "Noto Sans JP";
+        padding: 60px 0;
+
+        .lp-footer-contents {
+          .footer-logo {
+            display: flex;
+            justify-content: center;
+            transform: scale(1.1);
+          }
+
+          .footer-company-infomation {
+            font-size: 16px;
+            line-height: 30px;
+            text-align: center;
+            margin-top: 30px;
+          }
+
+          .footer-links {
+            display: flex;
+            gap: 34px;
+            font-size: 16px;
+            margin-top: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// SP
+@media screen and (max-width: 600px) {
+  .lp-header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 600;
+    background-color: white;
+
+    .lp-header-logo {
+      width: 116px;
+      object-fit: cover;
+      display: flex;
+      align-items: center;
+    }
+
+    .lp-header-right {
+      width: 148px;
+      display: flex;
+      align-items: center;
+
+      .lp-header01 {
+        display: none;
+      }
+
+      .lp-header02 {
+        object-fit: cover;
       }
     }
   }
 
-  // 無料体験のリンク
+  .lp-wrapper {
+    .lp-top {
+      // height: 1250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .lp-top-image {
+        width: 100%;
+        background-image: url(../images/lp-sp-top01.png);
+        height: 718px;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 34px;
+
+        .lp-golfman {
+          position: absolute;
+          top: 32.5%;
+          left: 5%;
+
+          img {
+            width: 193px;
+            height: 499px;
+            object-fit: contain;
+          }
+          // z-index: 20;
+        }
+
+        .lp-top-logo {
+          display: none;
+          flex-direction: column;
+          align-items: flex-end;
+        }
+
+        .lp-top-message {
+          margin-top: 80px;
+          // transform: translateX(-133px);
+          position: relative;
+          // width: 52%;
+          display: flex;
+          justify-content: center;
+
+          .fv-copy {
+            width: 335px;
+            height: 117px;
+            object-fit: contain;
+          }
+
+          .top-orange {
+            position: absolute;
+            right: 0;
+            bottom: -200%;
+            width: 128px;
+
+            img {
+              object-fit: contain;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+
+        .lp-top-price {
+          display: none;
+          .lp-top-price-message {
+            position: relative;
+            margin-bottom: 22px;
+
+            .message {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+        }
+
+        .sm-lp-top-price {
+          width: 335px;
+          margin-top: 240px;
+          z-index: 20;
+        }
+      }
+
+      .lp-top-under {
+        width: 100%;
+        height: 375px;
+        // opacity: 0.8;
+        background: linear-gradient(
+          180deg,
+          rgba(41, 36, 21, 0) 0%,
+          #292415 88.54%
+        );
+        bottom: -120px;
+        left: 0;
+        position: absolute;
+      }
+
+      .lp-top-image-line-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 335px;
+        position: absolute;
+        bottom: -10%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .lp-second {
+      background-color: #292415;
+      padding-top: 115px;
+      padding-bottom: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      // 3つのポイント
+      .three-points {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .point-title {
+          display: none;
+        }
+
+        .sm-point-title {
+          letter-spacing: 0;
+          width: 335px;
+          font-family: "Toppan Bunkyu Midashi Gothic";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 30px;
+          line-height: 45px;
+          text-align: center;
+          background: linear-gradient(
+            90deg,
+            #b08920 2.33%,
+            #e3b12c 20.64%,
+            #fff8b9 52.18%,
+            #e3b12c 79.65%,
+            #b08920 100%
+          );
+          background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          border-bottom: 2px solid white;
+          border-image: linear-gradient(
+            90deg,
+            #b08920 2.33%,
+            #e3b12c 20.64%,
+            #fff8b9 52.18%,
+            #e3b12c 79.65%,
+            #b08920 100%
+          );
+          border-image-slice: 1;
+
+          span {
+            font-size: 50px;
+            line-height: 75px;
+          }
+        }
+
+        .points {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          gap: 35px;
+          margin-top: 46px;
+          font-family: "Noto Sans JP";
+
+          .each-point {
+            display: flex;
+            flex-direction: column;
+            width: 283px;
+            position: relative;
+
+            .point-top {
+              height: 54px;
+              background-color: #f76f00;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 5px 5px 0 0;
+              color: white;
+              font-weight: bold;
+            }
+
+            .point-under {
+              height: 131px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              background: linear-gradient(180deg, #edeae2 0%, #e9dbb5 100%);
+              border-radius: 0 0 5px 5px;
+              font-size: 16px;
+              font-family: "Noto Sans JP";
+              line-height: 23.17px;
+              color: #292415;
+
+              span {
+                font-weight: bold;
+                background: linear-gradient(transparent 65%, yellow 100%);
+              }
+            }
+
+            .point-number {
+              position: absolute;
+              top: -21px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+        }
+      }
+    }
+
+    .lp-third,
+    .lp-forth,
+    .lp-fifth,
+    .lp-sixth,
+    .lp-seventh,
+    .lp-eighth,
+    .lp-nineth,
+    .lp-store-list,
+    .lp-questions-list,
+    .lp-footer-wrapper {
+      display: none;
+    }
+  }
+
   .trial-link-wrapper {
+    display: none;
+  }
+
+  .sm-trial-link-wrapper {
     background-color: white;
     margin-top: 80px;
-    width: 840px;
+    width: 335px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -777,19 +1342,19 @@
       display: flex;
       justify-content: center;
       margin-top: 10px;
-      width: 780px;
+      width: 295px;
     }
 
     .trial-link-off-limit {
       display: flex;
       justify-content: center;
-      margin-top: 40px;
-      width: 780px;
+      margin-top: 19px;
+      width: 295px;
     }
 
     .trial-link-line {
-      width: 789px;
-      margin-top: 33px;
+      width: 295px;
+      margin-top: 18px;
     }
   }
 }

@@ -4,16 +4,6 @@
     <!-- <div class="page-title">Locations</div> -->
     <div class="location-title">店舗一覧</div>
 
-    <div class="area-list">
-      <a href="#1" class="area-link">北海道・東北</a>
-      <a href="#2" class="area-link">東京</a>
-      <a href="#3" class="area-link">関東</a>
-      <a href="#4" class="area-link">中部</a>
-      <a href="#5" class="area-link">関西・大阪</a>
-      <a href="#6" class="area-link">中国・四国</a>
-      <a href="#7" class="area-link">九州・沖縄</a>
-    </div>
-
     <div class="list-of-stores">
 
       <!-- 北海道・東北地方 -->
@@ -1053,3 +1043,4 @@
 
 
     </div>
+</div>
