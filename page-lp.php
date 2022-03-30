@@ -62,6 +62,7 @@
     <div class="lp-header-right">
       <img src="<?php echo get_theme_file_uri(); ?>/images/lp-header01.svg" alt="" class="lp-header01">
       <a href="https://lin.ee/7Ii8MCV/" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/lp-header02.svg" alt="" class="lp-header02"></a>
+      <a href="https://lin.ee/7Ii8MCV/" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/lp-sm-header-line.png" alt="" class="lp-header03"></a>
     </div>
   </header>
 
@@ -172,7 +173,7 @@
           <img src="<?php echo get_theme_file_uri(); ?>/images/sm-mayottara.png" alt="" class="link-head-title">
         </div>
         <div class="trial-link-off">
-          <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext.svg" alt="">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext2.png" alt="">
         </div>
         <div class="trial-link-off-limit">
           <img src="<?php echo get_theme_file_uri(); ?>/images/second-off.png" alt="">
@@ -413,7 +414,7 @@
             <img src="<?php echo get_theme_file_uri(); ?>/images/sm-mayottara.png" alt="" class="link-head-title">
           </div>
           <div class="trial-link-off">
-            <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext.svg" alt="">
+            <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext2.png" alt="">
           </div>
           <div class="trial-link-off-limit">
             <img src="<?php echo get_theme_file_uri(); ?>/images/second-off.png" alt="">
@@ -451,9 +452,8 @@
             <div class="step-number-text">ご来店</div>
           </div>
           <div class="step-under">
-            <p>当店は完全無人で運営を行なっております。</p>
-            <p>あなただけのプライベート空間で、お一人で黙々と練習するも良し、</p>
-            <p>ゲストの方と一緒にラウンドを楽しむも良しです！</p>
+            <p>あなただけのプライベート空間で、ご自身のペースで練習をお楽しみください。
+              もちろんゲストの方と一緒にお楽しみ頂くことも可能です。</p>
           </div>
         </div>
 
@@ -469,13 +469,13 @@
     <div class="lp-seventh">
       <div class="lp-seventh-message-wrapper">
         <div class="small-message">
-          <p>ゴルフの練習をしようと思うと、家から遠くの練習場に行かないいけない…</p>
-          <p>遠くの練習場に行くのにも時間がかかる…</p>
+          <p>ゴルフの練習をしようと思うと、<br class="sm-br">家から遠くの練習場に<br class="sm-br">行かないいけない…</p>
+          <p>遠くの練習場に行くのにも<br class="sm-br">時間がかかる…</p>
           <p>好きな時に練習できない…</p>
         </div>
         <div class="big-message">
-          <p><span>そんな打ちっ放し練習場のイメージを変えるため、</span></p>
-          <p><span>GOLFERS24は生まれました</spa>
+          <p><span>そんな打ちっ放し練習場の</span><br class="sm-br"><span>イメージを変えるため、</span></p>
+          <p><span>GOLFERS24は生まれました</span>
           </p>
         </div>
       </div>
@@ -486,7 +486,9 @@
     <div class="lp-eighth">
       <div class="lp-eighth-title">
         <p class="top">GOLFERS24なら、</p>
-        <p class="under">打ちっ放し練習場と比べて<span>こんなにお得！</spa>
+        <p class="under">打ちっ放し練習場と比べて
+          <br class="sm-br">
+          <span>こんなにお得！</span>
         </p>
       </div>
       <div class="lp-table">
@@ -504,6 +506,22 @@
         </div>
         <div class="trial-link-off">
           <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext.svg" alt="">
+        </div>
+        <div class="trial-link-off-limit">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/second-off.png" alt="">
+        </div>
+        <a href="https://lin.ee/7Ii8MCV/" target="_blank" class="trial-link-line">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/ctabtn-line-pc.png" alt="">
+        </a>
+      </div>
+
+      <div class="sm-trial-link-wrapper">
+        <div class="trial-link-head">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/sm-trial-goldtop.png" alt="">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/sm-mayottara.png" alt="" class="link-head-title">
+        </div>
+        <div class="trial-link-off">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext2.png" alt="">
         </div>
         <div class="trial-link-off-limit">
           <img src="<?php echo get_theme_file_uri(); ?>/images/second-off.png" alt="">

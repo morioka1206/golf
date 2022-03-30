@@ -25,12 +25,10 @@
         <div class="question-content">
           <!-- Q -->
           <div class="question-q">
-            <img src="<?php echo get_theme_file_uri(); ?>/images/Qbeige.svg" alt="">
-            <div class="question-q-text"><?php echo SCF::get('question') ?></div>
+            <?php echo SCF::get('question') ?>
           </div>
           <!-- A -->
           <div class="question-a">
-            <img src="<?php echo get_theme_file_uri(); ?>/images/Abeige.svg" alt="">
             <div class="question-a-text">
               <p><?php echo SCF::get('answer') ?></p>
             </div>
@@ -61,12 +59,10 @@
         <div class="question-content">
           <!-- Q -->
           <div class="question-q">
-            <img src="<?php echo get_theme_file_uri(); ?>/images/Qbeige.svg" alt="">
-            <div class="question-q-text"><?php echo SCF::get('question') ?></div>
+            <?php echo SCF::get('question') ?>
           </div>
           <!-- A -->
           <div class="question-a">
-            <img src="<?php echo get_theme_file_uri(); ?>/images/Abeige.svg" alt="">
             <div class="question-a-text">
               <p><?php echo SCF::get('answer') ?></p>
             </div>
@@ -98,12 +94,10 @@
         <div class="question-content">
           <!-- Q -->
           <div class="question-q">
-            <img src="<?php echo get_theme_file_uri(); ?>/images/Qbeige.svg" alt="">
-            <div class="question-q-text"><?php echo SCF::get('question') ?></div>
+            <?php echo SCF::get('question') ?>
           </div>
           <!-- A -->
           <div class="question-a">
-            <img src="<?php echo get_theme_file_uri(); ?>/images/Abeige.svg" alt="">
             <div class="question-a-text">
               <p><?php echo SCF::get('answer') ?></p>
             </div>
@@ -118,3 +112,14 @@
   </div>
 
 </div>
+
+<script>
+  $(function() {
+    //.accordion_oneの中の.accordion_headerがクリックされたら
+    $('.question-content .question-q').click(function() {
+      //クリックされた.accordion_oneの中の.accordion_headerに隣接する.accordion_innerが開いたり閉じたりする。
+      $(this).next('.question-a').slideToggle();
+      $(this).toggleClass("open");
+    });
+  });
+</script>

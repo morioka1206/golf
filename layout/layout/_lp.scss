@@ -20,7 +20,16 @@
 
     .lp-header-right {
       display: flex;
+      align-items: center;
       gap: 6px;
+
+      .lp-header01 {
+        height: 60px;
+      }
+
+      .lp-headr02 {
+        height: 69px;
+      }
     }
   }
 
@@ -922,6 +931,7 @@
       }
     }
 
+    // 店舗一覧
     .lp-store-list {
       background-color: #edeae2;
 
@@ -939,11 +949,16 @@
           color: #483b19;
         }
 
+        .list-of-stores {
+          gap: 20px;
+        }
+
         .area-name {
           background-color: #483b19;
           color: white;
           border-radius: 5px;
           position: relative;
+          margin: 0;
         }
 
         .area-name::after {
@@ -957,8 +972,91 @@
           border-radius: 5px;
         }
 
+        .hide-store-list {
+          display: none;
+        }
+
+        .each-store-list {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 16px;
+        }
+
         .store {
           background-color: white;
+          // display: none;
+        }
+      }
+    }
+
+    // よくある質問
+    .lp-questions-list {
+      background-color: #cbc3ab;
+
+      .questions-wrapper {
+        margin-top: 0;
+        padding-top: 65px;
+
+        .questions-title {
+          color: #483b19;
+          font-family: "Toppan Bunkyu Midashi Gothic";
+          font-weight: 800;
+          font-size: 42px;
+          line-height: 63px;
+          text-align: center;
+        }
+
+        .questions-contents-wrapper {
+          margin: 0;
+          padding: 48px 0 66px;
+          .questions-contents-title {
+            color: #483b19;
+            font-family: "Noto Sans JP";
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 26px;
+            text-align: center;
+            margin-top: 40px;
+          }
+
+          .question-content {
+            font-family: "Noto Sans JP";
+            .question-q {
+              background-color: white;
+              width: 100%;
+              height: 60px;
+              display: flex;
+              align-items: center;
+              color: #483b19;
+              font-size: 16px;
+              line-height: 23px;
+              padding: 0;
+              padding-left: 20px;
+              border-radius: 5px;
+              position: relative;
+              margin-bottom: 14px;
+            }
+
+            .question-q::after {
+              content: url(../images/lp-question-arrow.svg);
+              position: absolute;
+              top: 25%;
+              right: 24px;
+            }
+
+            .question-a {
+              display: none;
+              margin: 0;
+              padding: 0px 0 24px;
+
+              .question-a-text {
+                color: #333;
+                font-size: 16px;
+                line-height: 30px;
+                margin: 0;
+              }
+            }
+          }
         }
       }
     }
@@ -1038,6 +1136,30 @@
     }
   }
 
+  .sm-lp-top-price {
+    display: none;
+  }
+
+  .sm-onayami-list {
+    display: none;
+  }
+
+  .onayami-lady {
+    display: none;
+  }
+
+  .sm-reason-title {
+    display: none;
+  }
+
+  .sm-trial-link-wrapper {
+    display: none;
+  }
+
+  .lp-header03 {
+    display: none;
+  }
+
   .sm-br {
     display: none;
   }
@@ -1074,7 +1196,7 @@
       }
 
       .lp-header02 {
-        object-fit: cover;
+        display: none;
       }
     }
   }
@@ -1807,14 +1929,395 @@
       background-size: cover;
     }
 
-    .lp-sixth,
-    .lp-seventh,
-    .lp-eighth,
-    .lp-nineth,
-    .lp-store-list,
-    .lp-questions-list,
+    // 体験予約の流れ
+    .lp-sixth {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // height: 1032px;
+      background-color: #292415;
+      padding-bottom: 95px;
+
+      .lp-sixth-title {
+        color: white;
+        font-family: "Toppan Bunkyu Midashi Gothic";
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 45px;
+        padding-top: 50px;
+        margin-bottom: 48px;
+      }
+
+      .each-step {
+        width: 335px;
+        .step-top {
+          height: 50px;
+          background-color: #f76f00;
+          color: white;
+          border-radius: 10px 10px 0 0;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 20px 0 18px 35px;
+
+          .step-number {
+            font-family: Helvetica;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 23px;
+            transform: translateY(2px);
+
+            span {
+              font-size: 32px;
+              line-height: 23px;
+            }
+          }
+
+          .step-number-text {
+            font-family: "Noto Sans JP";
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 23px;
+          }
+        }
+
+        .step-under {
+          // height: 221px;
+          background-color: white;
+          border-radius: 0 0 10px 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          font-family: "Noto Sans JP";
+          font-weight: bold;
+          font-size: 15px;
+          line-height: 23px;
+          text-align: center;
+          padding: 27px 20px;
+        }
+      }
+
+      .trial-step-arrow {
+        width: 157px;
+        margin: 0 auto;
+        margin-top: 12px;
+        margin-bottom: 28px;
+      }
+
+      .trial-step-line-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 335px;
+        margin-top: 40px;
+      }
+    }
+
+    // 生まれた理由
+    .lp-seventh {
+      // height: 420px;
+      background-image: url(../images/lp-seventh.png);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+
+      .lp-seventh-message-wrapper {
+        // width: 900px;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+        color: #483b19;
+        font-family: $noto-serif;
+        font-weight: bold;
+        text-align: center;
+        padding: 42px 20px;
+
+        .small-message {
+          font-size: 16px;
+          line-height: 29px;
+        }
+
+        .big-message {
+          font-size: 21px;
+          line-height: 32.18px;
+          margin-top: 38px;
+
+          span {
+            position: relative;
+            z-index: 20;
+          }
+
+          span::before {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            right: 0;
+            height: 4px;
+            width: 100%;
+            background-image: linear-gradient(
+              to right,
+              transparent,
+              yellow 25%,
+              yellow 75%,
+              transparent
+            );
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 2;
+          }
+        }
+      }
+    }
+
+    // 比較の表
+    .lp-eighth {
+      background: linear-gradient(180deg, #483b19 0%, #a59c84 100%);
+      padding-top: 60px;
+      padding-bottom: 80px;
+
+      .lp-eighth-title {
+        position: relative;
+        color: white;
+        text-align: center;
+        .top {
+          font-family: "Toppan Bunkyu Midashi Gothic";
+          font-size: 20px;
+          line-height: 30px;
+        }
+
+        .under {
+          font-family: "Noto Sans JP";
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 28.96px;
+
+          span {
+            font-size: 41px;
+            line-height: 59.37px;
+            color: yellow;
+          }
+        }
+      }
+
+      .lp-eighth-title::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/lp-sm-table-title-line.svg);
+        display: inline-block;
+        top: -20px;
+        left: 0;
+        height: 10px;
+        width: 100%;
+        background-size: contain;
+        background-repeat: repeat;
+        transform: rotate(180deg);
+      }
+
+      .lp-eighth-title::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/lp-sm-table-title-line.svg);
+        display: inline-block;
+        bottom: -20px;
+        left: 0;
+        height: 10px;
+        width: 100%;
+        background-size: contain;
+        background-repeat: repeat;
+      }
+
+      .lp-table {
+        display: flex;
+        justify-content: center;
+        margin-top: 68px;
+
+        img {
+          width: 335px;
+        }
+      }
+    }
+
+    .lp-nineth {
+      padding: 50px 0 60px;
+      display: flex;
+      justify-content: center;
+
+      .sm-trial-link-wrapper {
+        filter: drop-shadow(0px 0px 34px rgba(0, 0, 0, 0.45));
+        margin-top: 0;
+      }
+    }
+
+    // 店舗一覧
+    .lp-store-list {
+      background-color: #edeae2;
+
+      .location-wrapper {
+        margin-top: 0;
+        padding-top: 50px;
+
+        .location-title {
+          display: flex;
+          justify-content: center;
+          font-family: "Toppan Bunkyu Midashi Gothic";
+          font-weight: 800;
+          font-size: 30px;
+          line-height: 45px;
+          color: #483b19;
+        }
+
+        .list-of-stores {
+          gap: 20px;
+        }
+
+        .area-name {
+          font-size: 23px;
+          line-height: 33.3px;
+          background-color: #483b19;
+          color: white;
+          border-radius: 5px;
+          position: relative;
+          margin: 0;
+        }
+
+        .area-name::after {
+          content: url(../images/lp-storelist-arrow.svg);
+          position: absolute;
+          top: 18%;
+          right: 24px;
+        }
+
+        .area-link {
+          border-radius: 5px;
+        }
+
+        .hide-store-list {
+          display: none;
+        }
+
+        .each-store-list {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 16px;
+        }
+
+        .store {
+          background-color: white;
+          min-width: 159px;
+        }
+      }
+    }
+
+    // よくある質問
+    .lp-questions-list {
+      background-color: #cbc3ab;
+
+      .questions-wrapper {
+        margin-top: 0;
+        padding-top: 40px;
+
+        .questions-title {
+          color: #483b19;
+          font-family: "Toppan Bunkyu Midashi Gothic";
+          font-weight: 800;
+          font-size: 30px;
+          line-height: 45px;
+          text-align: center;
+          margin: 0;
+        }
+
+        .questions-contents-wrapper {
+          margin: 0;
+          padding: 0px 0 66px;
+          .questions-contents-title {
+            color: #483b19;
+            font-family: "Noto Sans JP";
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 26px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 24px;
+          }
+
+          .question-content {
+            font-family: "Noto Sans JP";
+            .question-q {
+              background-color: white;
+              width: 100%;
+              height: 60px;
+              display: flex;
+              align-items: center;
+              color: #483b19;
+              font-size: 16px;
+              line-height: 23px;
+              padding: 0;
+              padding-left: 20px;
+              padding-right: 28px;
+              border-radius: 5px;
+              position: relative;
+              margin-bottom: 14px;
+            }
+
+            .question-q::after {
+              content: url(../images/lp-question-arrow.svg);
+              position: absolute;
+              top: 25%;
+              right: 24px;
+            }
+
+            .question-a {
+              display: none;
+              margin: 0;
+              padding: 0px 0 24px;
+
+              .question-a-text {
+                color: #333;
+                font-size: 14px;
+                line-height: 18px;
+                margin: 0;
+                padding: 0 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+
     .lp-footer-wrapper {
-      display: none;
+      footer {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        font-family: "Noto Sans JP";
+        padding: 30px 0;
+
+        .lp-footer-contents {
+          .footer-logo {
+            display: flex;
+            justify-content: center;
+            transform: scale(1.1);
+          }
+
+          .footer-company-infomation {
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            margin-top: 16px;
+          }
+
+          .footer-links {
+            display: flex;
+            gap: 25px;
+            font-size: 12px;
+            line-height: 17px;
+            margin-top: 30px;
+          }
+        }
+      }
     }
   }
 
@@ -1830,6 +2333,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 20px;
 
     .trial-link-head {
       position: relative;
