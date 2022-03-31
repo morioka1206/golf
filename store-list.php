@@ -43,7 +43,7 @@
                                             while ($the_query->have_posts()) : $the_query->the_post(); ?>
       
       
-          <a href="<?php the_permalink(); ?>">
+          <!-- <a href="<?php the_permalink(); ?>"> -->
             <div class="store">
               <div class="store-name-wrapper">
                 <div class="store-name"><?php echo SCF::get('store-name'); ?>
@@ -52,7 +52,7 @@
               </div>
       
             </div>
-          </a>
+          <!-- </a> -->
       
         <?php endwhile; ?>
       <?php endif; ?>
@@ -92,7 +92,7 @@
                                         while ($the_query->have_posts()) : $the_query->the_post(); ?>
       
       
-      <a href="<?php the_permalink(); ?>">
+      <!-- <a href="<?php the_permalink(); ?>"> -->
         <div class="store">
           <div class="store-name-wrapper">
             <div class="store-name"><?php echo SCF::get('store-name'); ?>
@@ -101,7 +101,7 @@
           </div>
       
         </div>
-      </a>
+      <!-- </a> -->
       
       <?php endwhile; ?>
       <?php endif; ?>
@@ -195,7 +195,7 @@
                                           while ($the_query->have_posts()) : $the_query->the_post(); ?>
         
         
-        <a href="<?php the_permalink(); ?>">
+        <!-- <a href="<?php the_permalink(); ?>"> -->
           <div class="store">
             <div class="store-name-wrapper">
               <div class="store-name"><?php echo SCF::get('store-name'); ?>
@@ -204,7 +204,7 @@
             </div>
         
           </div>
-        </a>
+        <!-- </a> -->
         
         <?php endwhile; ?>
         <?php endif; ?>
@@ -244,7 +244,7 @@
                                           while ($the_query->have_posts()) : $the_query->the_post(); ?>
         
         
-        <a href="<?php the_permalink(); ?>">
+        <!-- <a href="<?php the_permalink(); ?>"> -->
           <div class="store">
             <div class="store-name-wrapper">
               <div class="store-name"><?php echo SCF::get('store-name'); ?>
@@ -253,7 +253,7 @@
             </div>
         
           </div>
-        </a>
+        <!-- </a> -->
         
         <?php endwhile; ?>
         <?php endif; ?>
@@ -346,7 +346,7 @@
                                           while ($the_query->have_posts()) : $the_query->the_post(); ?>
         
         
-        <a href="<?php the_permalink(); ?>">
+        <!-- <a href="<?php the_permalink(); ?>"> -->
           <div class="store">
             <div class="store-name-wrapper">
               <div class="store-name"><?php echo SCF::get('store-name'); ?>
@@ -355,7 +355,7 @@
             </div>
         
           </div>
-        </a>
+        <!-- </a> -->
         
         <?php endwhile; ?>
         <?php endif; ?>
@@ -395,7 +395,7 @@
                                           while ($the_query->have_posts()) : $the_query->the_post(); ?>
         
         
-        <a href="<?php the_permalink(); ?>">
+        <!-- <a href="<?php the_permalink(); ?>"> -->
           <div class="store">
             <div class="store-name-wrapper">
               <div class="store-name"><?php echo SCF::get('store-name'); ?>
@@ -404,7 +404,7 @@
             </div>
         
           </div>
-        </a>
+        <!-- </a> -->
         
         <?php endwhile; ?>
         <?php endif; ?>
@@ -497,7 +497,7 @@
                                           while ($the_query->have_posts()) : $the_query->the_post(); ?>
         
         
-        <a href="<?php the_permalink(); ?>">
+        <!-- <a href="<?php the_permalink(); ?>"> -->
           <div class="store">
             <div class="store-name-wrapper">
               <div class="store-name"><?php echo SCF::get('store-name'); ?>
@@ -506,7 +506,7 @@
             </div>
         
           </div>
-        </a>
+        <!-- </a> -->
         
         <?php endwhile; ?>
         <?php endif; ?>
@@ -546,7 +546,7 @@
                                           while ($the_query->have_posts()) : $the_query->the_post(); ?>
         
         
-        <a href="<?php the_permalink(); ?>">
+        <!-- <a href="<?php the_permalink(); ?>"> -->
           <div class="store">
             <div class="store-name-wrapper">
               <div class="store-name"><?php echo SCF::get('store-name'); ?>
@@ -555,7 +555,7 @@
             </div>
         
           </div>
-        </a>
+        <!-- </a> -->
         
         <?php endwhile; ?>
         <?php endif; ?>
@@ -648,7 +648,7 @@
                                           while ($the_query->have_posts()) : $the_query->the_post(); ?>
         
         
-        <a href="<?php the_permalink(); ?>">
+        <!-- <a href="<?php the_permalink(); ?>"> -->
           <div class="store">
             <div class="store-name-wrapper">
               <div class="store-name"><?php echo SCF::get('store-name'); ?>
@@ -657,7 +657,7 @@
             </div>
         
           </div>
-        </a>
+        <!-- </a> -->
         
         <?php endwhile; ?>
         <?php endif; ?>
@@ -697,7 +697,7 @@
                                           while ($the_query->have_posts()) : $the_query->the_post(); ?>
         
         
-        <a href="<?php the_permalink(); ?>">
+        <!-- <a href="<?php the_permalink(); ?>"> -->
           <div class="store">
             <div class="store-name-wrapper">
               <div class="store-name"><?php echo SCF::get('store-name'); ?>
@@ -706,7 +706,7 @@
             </div>
         
           </div>
-        </a>
+        <!-- </a> -->
         
         <?php endwhile; ?>
         <?php endif; ?>
@@ -799,7 +799,7 @@
                                           while ($the_query->have_posts()) : $the_query->the_post(); ?>
         
         
-        <a href="<?php the_permalink(); ?>">
+        <!-- <a href="<?php the_permalink(); ?>"> -->
           <div class="store">
             <div class="store-name-wrapper">
               <div class="store-name"><?php echo SCF::get('store-name'); ?>
@@ -808,7 +808,7 @@
             </div>
         
           </div>
-        </a>
+        <!-- </a> -->
         
         <?php endwhile; ?>
         <?php endif; ?>
@@ -848,7 +848,7 @@
                                           while ($the_query->have_posts()) : $the_query->the_post(); ?>
         
         
-        <a href="<?php the_permalink(); ?>">
+        <!-- <a href="<?php the_permalink(); ?>"> -->
           <div class="store">
             <div class="store-name-wrapper">
               <div class="store-name"><?php echo SCF::get('store-name'); ?>
@@ -857,7 +857,7 @@
             </div>
         
           </div>
-        </a>
+        <!-- </a> -->
         
         <?php endwhile; ?>
         <?php endif; ?>
@@ -953,7 +953,7 @@
                                           ?>
         
         
-        <a href="<?php the_permalink(); ?>">
+        <!-- <a href="<?php the_permalink(); ?>"> -->
           <div class="store">
             <div class="store-name-wrapper">
               <div class="store-name"><?php echo SCF::get('store-name'); ?>
@@ -963,7 +963,7 @@
             </div>
         
           </div>
-        </a>
+        <!-- </a> -->
         
         <?php endwhile; ?>
         <?php endif; ?>
@@ -1003,7 +1003,7 @@
                                           ?>
         
         
-        <a href="<?php the_permalink(); ?>">
+        <!-- <a href="<?php the_permalink(); ?>"> -->
           <div class="store">
             <div class="store-name-wrapper">
               <div class="store-name"><?php echo SCF::get('store-name'); ?>
@@ -1012,7 +1012,7 @@
             </div>
         
           </div>
-        </a>
+        <!-- </a> -->
         
         <?php endwhile; ?>
         <?php endif; ?>

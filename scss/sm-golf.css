@@ -4762,77 +4762,63 @@ body {
   }
   .lp-wrapper .lp-top .lp-top-image {
     width: 100%;
-    background-image: url(../images/lp-top02.png);
-    height: 1200px;
+    background-image: url(../images/lp-top03.png);
+    height: 1050px;
     background-size: cover;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding-top: 34px;
+    padding-top: 20px;
   }
   .lp-wrapper .lp-top .lp-top-image .lp-golfman {
     position: absolute;
     top: 0;
-    left: 10%;
+    left: 18%;
+  }
+  .lp-wrapper .lp-top .lp-top-image .lp-golfman img {
+    width: 85%;
   }
   .lp-wrapper .lp-top .lp-top-image .lp-top-logo {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
   }
+  .lp-wrapper .lp-top .lp-top-image .lp-top-logo .lp-top-logo-logo img {
+    width: 75%;
+  }
   .lp-wrapper .lp-top .lp-top-image .lp-top-logo .lp-top-logo-line {
     width: 48%;
   }
   .lp-wrapper .lp-top .lp-top-image .lp-top-message {
-    margin-top: 111px;
+    margin-top: 65px;
     position: relative;
     display: flex;
   }
   .lp-wrapper .lp-top .lp-top-image .lp-top-message .fv-copy {
     width: 100%;
-    height: 267px;
+    height: 226px;
     -o-object-fit: contain;
        object-fit: contain;
-    transform: translateX(15%);
+    transform: translateX(10%);
   }
   .lp-wrapper .lp-top .lp-top-image .lp-top-message .top-orange {
-    transform: translateY(-35%);
-    padding-right: 10px;
-  }
-  .lp-wrapper .lp-top .lp-top-image .lp-top-message .top-orange img {
-    width: 100%;
-    height: 100%;
+    transform: translate(-10%, -30%);
+    width: 189px;
   }
   .lp-wrapper .lp-top .lp-top-image .lp-top-price {
     width: 750px;
     height: 390px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    outline: 1px solid #f76f00;
-    outline-offset: -7px;
     z-index: 20;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transform: translateX(-18.5%);
-    padding: 20px 0;
+    transform: translateX(-1%);
   }
-  .lp-wrapper .lp-top .lp-top-image .lp-top-price .lp-top-price-message {
-    position: relative;
-    margin-bottom: 22px;
-  }
-  .lp-wrapper .lp-top .lp-top-image .lp-top-price .lp-top-price-message .message {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .lp-wrapper .lp-top .lp-top-image .lp-top-price img {
+    width: 85%;
   }
   .lp-wrapper .lp-top .lp-top-under {
     width: 100%;
-    height: 500px;
-    background: linear-gradient(180deg, rgba(41, 36, 21, 0) 0%, #292415 88.54%);
+    height: 750px;
+    background: linear-gradient(180deg, rgba(41, 36, 21, 0) 0%, #292415 75%);
     bottom: -6px;
     left: 0;
     position: absolute;
@@ -4847,6 +4833,12 @@ body {
     bottom: -2%;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .lp-wrapper .lp-top .lp-top-image-line-link .kotirakara {
+    width: 78%;
+  }
+  .lp-wrapper .lp-top .lp-top-image-line-link .link-button {
+    width: 100%;
   }
   .lp-wrapper .lp-second {
     background-color: #292415;
@@ -5050,7 +5042,7 @@ body {
     background-size: contain;
     position: absolute;
     right: -30px;
-    top: -16px;
+    top: -15px;
     z-index: 400;
   }
   .lp-wrapper .lp-third .uresii-wrapper::before {
@@ -5168,6 +5160,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    display: none;
   }
   .lp-wrapper .lp-fifth .lp-fifth-top-message span {
     font-size: 36px;
@@ -5193,10 +5186,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 133px;
   }
   .lp-wrapper .lp-fifth .six-reasons-wrapper .reason-title {
-    padding-top: 100px;
+    padding-top: 60px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -5219,7 +5211,7 @@ body {
   .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .each-reason {
     width: 100%;
     background-color: white;
-    height: 516px;
+    height: 448px;
     position: relative;
     font-family: "Noto Sans JP";
   }
@@ -5227,6 +5219,14 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 5px;
+    width: 270px;
+    height: 190px;
+    margin: 0 auto;
+  }
+  .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .each-reason .reason-image img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .each-reason .each-reason-title {
     color: #292415;
@@ -5323,7 +5323,7 @@ body {
   .lp-wrapper .lp-sixth .lp-sixth-title {
     color: white;
     font-family: "Toppan Bunkyu Midashi Gothic";
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 800;
     line-height: 60px;
     padding-top: 50px;
@@ -5344,21 +5344,21 @@ body {
   .lp-wrapper .lp-sixth .each-step .step-top .step-number {
     font-family: Helvetica;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 23px;
   }
   .lp-wrapper .lp-sixth .each-step .step-top .step-number span {
-    font-size: 37px;
+    font-size: 32px;
     line-height: 23px;
   }
   .lp-wrapper .lp-sixth .each-step .step-top .step-number-text {
     font-family: "Noto Sans JP";
     font-weight: bold;
-    font-size: 27px;
+    font-size: 23px;
     line-height: 23px;
   }
   .lp-wrapper .lp-sixth .each-step .step-under {
-    height: 221px;
+    height: 180px;
     background-color: white;
     border-radius: 0 0 10px 10px;
     display: flex;
@@ -5367,14 +5367,19 @@ body {
     flex-direction: column;
     font-family: "Noto Sans JP";
     font-weight: bold;
-    font-size: 23px;
+    font-size: 20px;
     line-height: 33.3px;
+    padding: 0 100px;
   }
   .lp-wrapper .lp-sixth .trial-step-arrow {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
     margin-top: 2px;
     margin-bottom: 21px;
+  }
+  .lp-wrapper .lp-sixth .trial-step-arrow img {
+    width: 157px;
   }
   .lp-wrapper .lp-sixth .trial-step-line-link {
     display: flex;
@@ -5383,6 +5388,12 @@ body {
     justify-content: center;
     width: 789px;
     margin-top: 40px;
+  }
+  .lp-wrapper .lp-sixth .trial-step-line-link .kotirakara {
+    width: 440px;
+  }
+  .lp-wrapper .lp-sixth .trial-step-line-link .link-button {
+    width: 100%;
   }
   .lp-wrapper .lp-seventh {
     height: 420px;
@@ -5450,7 +5461,7 @@ body {
   }
   .lp-wrapper .lp-eighth .lp-eighth-title .under span {
     font-size: 41px;
-    line-height: 59.37px;
+    line-height: 38px;
     color: yellow;
   }
   .lp-wrapper .lp-eighth .lp-eighth-title::before {
@@ -5481,7 +5492,12 @@ body {
   .lp-wrapper .lp-eighth .lp-table {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
     margin-top: 68px;
+    width: 661px;
+  }
+  .lp-wrapper .lp-eighth .lp-table img {
+    width: 80%;
   }
   .lp-wrapper .lp-nineth {
     padding: 50px 0 80px;
@@ -5503,7 +5519,7 @@ body {
     justify-content: center;
     font-family: "Toppan Bunkyu Midashi Gothic";
     font-weight: 800;
-    font-size: 42px;
+    font-size: 36px;
     line-height: 63px;
     color: #483b19;
   }
@@ -5513,6 +5529,7 @@ body {
   .lp-wrapper .lp-store-list .location-wrapper .area-name {
     background-color: #483b19;
     color: white;
+    font-size: 18px;
     border-radius: 5px;
     position: relative;
     margin: 0;
@@ -5548,7 +5565,7 @@ body {
     color: #483b19;
     font-family: "Toppan Bunkyu Midashi Gothic";
     font-weight: 800;
-    font-size: 42px;
+    font-size: 36px;
     line-height: 63px;
     text-align: center;
   }
@@ -5563,7 +5580,8 @@ body {
     font-size: 18px;
     line-height: 26px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 60px;
+    margin-bottom: 24px;
   }
   .lp-wrapper .lp-questions-list .questions-wrapper .questions-contents-wrapper .question-content {
     font-family: "Noto Sans JP";
@@ -5603,7 +5621,7 @@ body {
   .lp-wrapper .trial-link-wrapper {
     background-color: white;
     margin-top: 80px;
-    width: 840px;
+    width: 720px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -5612,8 +5630,11 @@ body {
   .lp-wrapper .trial-link-wrapper .trial-link-head {
     position: relative;
   }
+  .lp-wrapper .trial-link-wrapper .trial-link-head .trial-link-gold {
+    width: 100%;
+  }
   .lp-wrapper .trial-link-wrapper .trial-link-head .link-head-title {
-    height: 60px;
+    height: 49px;
     position: absolute;
     top: 12%;
     left: 50%;
@@ -5625,15 +5646,27 @@ body {
     margin-top: 10px;
     width: 780px;
   }
+  .lp-wrapper .trial-link-wrapper .trial-link-off img {
+    width: 75%;
+  }
   .lp-wrapper .trial-link-wrapper .trial-link-off-limit {
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    width: 780px;
+    width: 758px;
+  }
+  .lp-wrapper .trial-link-wrapper .trial-link-off-limit img {
+    width: 75%;
   }
   .lp-wrapper .trial-link-wrapper .trial-link-line {
     width: 789px;
     margin-top: 33px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .lp-wrapper .trial-link-wrapper .trial-link-line img {
+    width: 75%;
   }
   .lp-wrapper .lp-footer-wrapper footer {
     height: auto;
@@ -5684,6 +5717,10 @@ body {
     display: none;
   }
 
+  .sm-lp-third-title {
+    display: none;
+  }
+
   .sm-br {
     display: none;
   }
@@ -5708,6 +5745,9 @@ body {
     display: flex;
     align-items: center;
   }
+  .lp-header .lp-header-logo img {
+    width: 100%;
+  }
   .lp-header .lp-header-right {
     width: 148px;
     display: flex;
@@ -5719,6 +5759,9 @@ body {
   .lp-header .lp-header-right .lp-header02 {
     display: none;
   }
+  .lp-header .lp-header-right .lp-header03 {
+    width: 169px;
+  }
 
   .lp-wrapper .lp-top {
     display: flex;
@@ -5727,7 +5770,7 @@ body {
   }
   .lp-wrapper .lp-top .lp-top-image {
     width: 100%;
-    background-image: url(../images/lp-sp-top01.png);
+    background-image: url(../images/lp-sp-top-02.png);
     height: 718px;
     background-size: cover;
     position: relative;
@@ -5765,6 +5808,7 @@ body {
        object-fit: contain;
   }
   .lp-wrapper .lp-top .lp-top-image .lp-top-message .top-orange {
+    display: none;
     position: absolute;
     right: 0;
     bottom: -200%;
@@ -5794,6 +5838,9 @@ body {
     margin-top: 240px;
     z-index: 20;
   }
+  .lp-wrapper .lp-top .lp-top-image .sm-lp-top-price img {
+    width: 100%;
+  }
   .lp-wrapper .lp-top .lp-top-under {
     width: 100%;
     height: 375px;
@@ -5812,6 +5859,12 @@ body {
     bottom: -10%;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .lp-wrapper .lp-top .lp-top-image-line-link .kotirakara {
+    width: 78%;
+  }
+  .lp-wrapper .lp-top .lp-top-image-line-link .link-button {
+    width: 100%;
   }
   .lp-wrapper .lp-second {
     background-color: #292415;
@@ -6164,6 +6217,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    display: none;
   }
   .lp-wrapper .lp-fifth .lp-fifth-top-message span {
     font-size: 35px;
@@ -6189,7 +6243,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 144px;
   }
   .lp-wrapper .lp-fifth .six-reasons-wrapper .reason-title {
     display: none;
@@ -6217,7 +6270,7 @@ body {
   .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .each-reason {
     width: 100%;
     background-color: white;
-    height: 462px;
+    height: 426px;
     position: relative;
     font-family: "Noto Sans JP";
   }
@@ -6225,6 +6278,9 @@ body {
     display: flex;
     justify-content: center;
     padding: 5px 5px 0;
+  }
+  .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .each-reason .reason-image img {
+    width: 100%;
   }
   .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .each-reason .each-reason-title {
     color: #292415;
@@ -6240,9 +6296,9 @@ body {
   }
   .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .each-reason .each-reason-content {
     color: #000;
-    font-size: 11px;
-    line-height: 17px;
-    padding: 0 8px;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0 14px;
     letter-spacing: 0;
   }
   .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .each-reason::after {
@@ -6394,6 +6450,9 @@ body {
     margin-top: 12px;
     margin-bottom: 28px;
   }
+  .lp-wrapper .lp-sixth .trial-step-arrow img {
+    width: 100%;
+  }
   .lp-wrapper .lp-sixth .trial-step-line-link {
     display: flex;
     flex-direction: column;
@@ -6401,6 +6460,12 @@ body {
     justify-content: center;
     width: 335px;
     margin-top: 40px;
+  }
+  .lp-wrapper .lp-sixth .trial-step-line-link .kotirakara {
+    width: 78%;
+  }
+  .lp-wrapper .lp-sixth .trial-step-line-link .link-button {
+    width: 100%;
   }
   .lp-wrapper .lp-seventh {
     background-image: url(../images/lp-seventh.png);
@@ -6532,7 +6597,7 @@ body {
     gap: 20px;
   }
   .lp-wrapper .lp-store-list .location-wrapper .area-name {
-    font-size: 23px;
+    font-size: 16px;
     line-height: 33.3px;
     background-color: #483b19;
     color: white;
@@ -6543,7 +6608,7 @@ body {
   .lp-wrapper .lp-store-list .location-wrapper .area-name::after {
     content: url(../images/lp-storelist-arrow.svg);
     position: absolute;
-    top: 18%;
+    top: 21%;
     right: 24px;
   }
   .lp-wrapper .lp-store-list .location-wrapper .area-link {
@@ -6670,6 +6735,10 @@ body {
   }
   .sm-trial-link-wrapper .trial-link-head {
     position: relative;
+    width: 100%;
+  }
+  .sm-trial-link-wrapper .trial-link-head .trial-link-gold {
+    width: 100%;
   }
   .sm-trial-link-wrapper .trial-link-head .link-head-title {
     height: 60px;
@@ -6684,14 +6753,23 @@ body {
     margin-top: 10px;
     width: 295px;
   }
+  .sm-trial-link-wrapper .trial-link-off img {
+    width: 295px;
+  }
   .sm-trial-link-wrapper .trial-link-off-limit {
     display: flex;
     justify-content: center;
     margin-top: 19px;
     width: 295px;
   }
+  .sm-trial-link-wrapper .trial-link-off-limit img {
+    width: 295px;
+  }
   .sm-trial-link-wrapper .trial-link-line {
     width: 295px;
     margin-top: 18px;
+  }
+  .sm-trial-link-wrapper .trial-link-line img {
+    width: 100%;
   }
 }/*# sourceMappingURL=sm-golf.css.map */

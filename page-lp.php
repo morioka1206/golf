@@ -84,11 +84,12 @@
         </div>
 
         <div class="lp-top-price">
-          <div class="lp-top-price-message">
+          <!-- <div class="lp-top-price-message">
             <img src="<?php echo get_theme_file_uri(); ?>/images/lp-top-price-black.png" alt="">
             <img src="<?php echo get_theme_file_uri(); ?>/images/無料体験予約受付中！.svg" alt="" class="message">
           </div>
-          <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext.svg" alt="" class="top-price">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext.svg" alt="" class="top-price"> -->
+          <img src="<?php echo get_theme_file_uri(); ?>/images/sm-top-price01.png" alt="">
         </div>
 
         <div class="sm-lp-top-price">
@@ -99,8 +100,8 @@
         </div>
 
         <div class="lp-top-image-line-link">
-          <img src="<?php echo get_theme_file_uri(); ?>/images/体験予約はこちらから！.svg" alt="">
-          <a href="https://lin.ee/7Ii8MCV/" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/ctabtn-line-pc.png" alt=""></a>
+          <img src="<?php echo get_theme_file_uri(); ?>/images/体験予約はこちらから！.svg" alt="" class="kotirakara">
+          <a href="https://lin.ee/7Ii8MCV/" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/ctabtn-line-pc.png" alt="" class="link-button"></a>
         </div>
       </div>
 
@@ -153,7 +154,7 @@
 
       <div class="trial-link-wrapper">
         <div class="trial-link-head">
-          <img src="<?php echo get_theme_file_uri(); ?>/images/second-goldtop.png" alt="">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/second-goldtop.png" alt="" class="trial-link-gold">
           <img src="<?php echo get_theme_file_uri(); ?>/images/mayottara.png" alt="" class="link-head-title">
         </div>
         <div class="trial-link-off">
@@ -169,7 +170,7 @@
 
       <div class="sm-trial-link-wrapper">
         <div class="trial-link-head">
-          <img src="<?php echo get_theme_file_uri(); ?>/images/sm-trial-goldtop.png" alt="">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/sm-trial-goldtop.png" alt="" class="trial-link-gold">
           <img src="<?php echo get_theme_file_uri(); ?>/images/sm-mayottara.png" alt="" class="link-head-title">
         </div>
         <div class="trial-link-off">
@@ -291,7 +292,7 @@
         <div class="reasons">
           <div class="each-reason reason01">
             <div class="reason-image">
-              <img src="<?php echo get_theme_file_uri(); ?>/images/dammy.png" alt="">
+              <img src="<?php echo get_theme_file_uri(); ?>/images/lp-reason-image01.png" alt="">
             </div>
             <div class="each-reason-title">
               <p>完全個室の</p>
@@ -299,7 +300,7 @@
               </p>
             </div>
             <div class="each-reason-content">
-              1ブースのみのプライベート空間にこだわっています。屋外練習場のように周囲の目を気にすることなく、BGMをかけたり、動画を見たりしながら、お好きなスタイルで練習に励むことができます。
+              1ブースのみのプライベート空間にこだわっています。周囲の目を気にすることなく、BGMをかけたり、動画を見たりしながら、お好きなスタイルで練習に励むことができます。
               <br>
               <br>
               ゲストの方も無料でご招待頂けます。
@@ -308,7 +309,7 @@
           </div>
           <div class="each-reason reason02">
             <div class="reason-image">
-              <img src="<?php echo get_theme_file_uri(); ?>/images/dammy.png" alt="">
+              <img src="<?php echo get_theme_file_uri(); ?>/images/lp-reason-image02.png" alt="">
             </div>
             <div class="each-reason-title">
               <p><span>24時間</span>いつでも</p>
@@ -325,49 +326,43 @@
           </div>
           <div class="each-reason reason03">
             <div class="reason-image">
-              <img src="<?php echo get_theme_file_uri(); ?>/images/dammy.png" alt="">
+              <img src="<?php echo get_theme_file_uri(); ?>/images/lp-reason-image03.png" alt="">
             </div>
             <div class="each-reason-title">
               <p><span>世界シェアNo.1</span>の</p>
               <p>ゴルフシミュレーターを採用</p>
             </div>
             <div class="each-reason-content">
-              米LPGA公認/世界シェアNo.1ゴルフシミュレーター、GOLFZON『GDR』を採用。高性能ハイスピードカメラにより打ち出し角やボールスピード、
-              バックスピン量などのデータを正確に計測。屋外練習場よりも質の高い練習環境をご提供します。
-              <br>
-              <br>
-              ラウンドモードも搭載しており、実在する210以上のコースを複数人でラウンドすることも可能です。
+              世界シェアNo.1ゴルフシミュレーター、GOLFZON『GDR』を採用。高性能ハイスピードカメラにより打ち出し角やボールスピードなどのデータを正確に計測。
+              ラウンドモードも搭載しており、実在するコースを複数人でラウンドすることも可能です。
 
             </div>
           </div>
           <div class="each-reason reason04">
             <div class="reason-image">
-              <img src="<?php echo get_theme_file_uri(); ?>/images/dammy.png" alt="">
+              <img src="<?php echo get_theme_file_uri(); ?>/images/lp-reason-image04.png" alt="">
             </div>
             <div class="each-reason-title">
               <p>アプリで練習データや</p>
               <p><span>スイング動画が<br class="sm-br">チェック可能</span></p>
             </div>
             <div class="each-reason-content">
-              スイング時に前方・後方から自動で動画を撮影。スロー再生やコマ送り再生はもちろん、
-              プロのスイング動画との比較ができ、効率良くスイングチェックが可能です。
-              <br>
-              <br>
-              さらにアプリと連携することでご自身の練習データやスイング動画をいつでもどこでも確認することができます。
+              スイング時に前方・後方から自動で動画を撮影。スロー再生やコマ送り再生はもちろん、プロのスイング動画との比較ができ、効率良くスイングチェックが可能です。
+              アプリを使ってご自身の練習データをいつでもどこでも確認することができます。
 
             </div>
           </div>
           <div class="each-reason reason05">
             <div class="reason-image">
-              <img src="<?php echo get_theme_file_uri(); ?>/images/dammy.png" alt="">
+              <img src="<?php echo get_theme_file_uri(); ?>/images/lp-reason-image05.png" alt="">
             </div>
             <div class="each-reason-title">
               <p><span>コースボール</span>で</p>
               <p>リアルな練習が可能</p>
             </div>
             <div class="each-reason-content">
-              通常の練習場だと基本的に安価な練習用ボールを使用していますが、
-              当店はよりリアルな練習環境を追求しコースボールを導入しています。
+              通常の練習場だと「練習用ボール」が一般的ですが、
+              当店はリアルな練習環境を追求し本番用の「コースボール」を導入。
               <br>
               <br>
               本番と変わらない打感での練習をお楽しみください。
@@ -375,15 +370,14 @@
           </div>
           <div class="each-reason reason06">
             <div class="reason-image">
-              <img src="<?php echo get_theme_file_uri(); ?>/images/dammy.png" alt="">
+              <img src="<?php echo get_theme_file_uri(); ?>/images/lp-reason-image06.png" alt="">
             </div>
             <div class="each-reason-title">
               <p><span>定額料金</span>で</p>
               <p>何度でも通い放題</p>
             </div>
             <div class="each-reason-content">
-              回数制限もなく何度でも通い放題です。
-              そのため一般的な練習場のように持ち玉を気にする必要もなく、思う存分練習に打ち込むことができます。
+              回数制限もなく何度でも通い放題です。そのため持ち玉を気にする必要もなく、思う存分練習に打ち込むことができます。
               <br>
               <br>
               最新シミュレーターで練習すればするほどどんどん上達していくはずです。
@@ -395,7 +389,7 @@
 
         <div class="trial-link-wrapper">
           <div class="trial-link-head">
-            <img src="<?php echo get_theme_file_uri(); ?>/images/second-goldtop.png" alt="">
+            <img src="<?php echo get_theme_file_uri(); ?>/images/second-goldtop.png" alt="" class="trial-link-gold">
             <img src="<?php echo get_theme_file_uri(); ?>/images/mayottara.png" alt="" class="link-head-title">
           </div>
           <div class="trial-link-off">
@@ -410,7 +404,7 @@
         </div>
         <div class="sm-trial-link-wrapper">
           <div class="trial-link-head">
-            <img src="<?php echo get_theme_file_uri(); ?>/images/sm-trial-goldtop.png" alt="">
+            <img src="<?php echo get_theme_file_uri(); ?>/images/sm-trial-goldtop.png" alt="" class="trial-link-gold">
             <img src="<?php echo get_theme_file_uri(); ?>/images/sm-mayottara.png" alt="" class="link-head-title">
           </div>
           <div class="trial-link-off">
@@ -438,7 +432,7 @@
           </div>
           <div class="step-under">
             <p>まずは体験のお申し込みから。</p>
-            <p>WebまたはLINEからのお申し込みをお願いいたします。</p>
+            <p>WebまたはLINEからのお申し込みを<br class="sm-br">お願いいたします。</p>
           </div>
         </div>
 
@@ -452,16 +446,16 @@
             <div class="step-number-text">ご来店</div>
           </div>
           <div class="step-under">
-            <p>あなただけのプライベート空間で、ご自身のペースで練習をお楽しみください。
-              もちろんゲストの方と一緒にお楽しみ頂くことも可能です。</p>
+            <p>あなただけのプライベート空間で、<br>ご自身のペースで練習を<br class="sm-br">お楽しみください。<br>
+              もちろんゲストの方と一緒に<br class="sm-br">お楽しみ頂くことも可能です。</p>
           </div>
         </div>
 
       </div>
 
       <div class="trial-step-line-link">
-        <img src="<?php echo get_theme_file_uri(); ?>/images/体験予約はこちらから！.svg" alt="">
-        <a href="https://lin.ee/7Ii8MCV/" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/ctabtn-line-pc.png" alt=""></a>
+        <img src="<?php echo get_theme_file_uri(); ?>/images/体験予約はこちらから！.svg" alt="" class="kotirakara">
+        <a href="https://lin.ee/7Ii8MCV/" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/ctabtn-line-pc.png" alt="" class="link-button"></a>
       </div>
     </div>
 
@@ -501,7 +495,7 @@
     <div class="lp-nineth">
       <div class="trial-link-wrapper">
         <div class="trial-link-head">
-          <img src="<?php echo get_theme_file_uri(); ?>/images/second-goldtop.png" alt="">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/second-goldtop.png" alt="" class="trial-link-gold">
           <img src="<?php echo get_theme_file_uri(); ?>/images/mayottara.png" alt="" class="link-head-title">
         </div>
         <div class="trial-link-off">
@@ -517,7 +511,7 @@
 
       <div class="sm-trial-link-wrapper">
         <div class="trial-link-head">
-          <img src="<?php echo get_theme_file_uri(); ?>/images/sm-trial-goldtop.png" alt="">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/sm-trial-goldtop.png" alt="" class="trial-link-gold">
           <img src="<?php echo get_theme_file_uri(); ?>/images/sm-mayottara.png" alt="" class="link-head-title">
         </div>
         <div class="trial-link-off">
