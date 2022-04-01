@@ -4856,7 +4856,7 @@ body {
   }
   .lp-wrapper .lp-second .three-points .point-title {
     width: 900px;
-    font-family: "Toppan Bunkyu Midashi Gothic";
+    font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 33px;
@@ -4881,7 +4881,7 @@ body {
     justify-content: center;
     gap: 26px;
     margin-top: 46px;
-    font-family: "Noto Sans JP";
+    font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   }
   .lp-wrapper .lp-second .three-points .points .each-point {
     display: flex;
@@ -4909,6 +4909,7 @@ body {
     border-radius: 0 0 5px 5px;
     font-size: 16px;
     font-family: "Noto Sans JP";
+    font-weight: 500;
     line-height: 23.17px;
     color: #292415;
   }
@@ -4958,10 +4959,10 @@ body {
   .lp-wrapper .lp-third .uresii-wrapper .each-uresii .uresii-content {
     font-family: "Noto Sans JP";
     font-size: 16px;
+    font-weight: 500;
     line-height: 29px;
     margin-top: 15px;
     letter-spacing: 0;
-    border-bottom: dashed 1px #a59c84;
   }
   .lp-wrapper .lp-third .uresii-wrapper .each-uresii .uresii-content p,
 .lp-wrapper .lp-third .uresii-wrapper .each-uresii .uresii-content span {
@@ -4972,6 +4973,7 @@ body {
   }
   .lp-wrapper .lp-third .uresii-wrapper .each-uresii .uresii-content .uresii-yellow {
     background: linear-gradient(transparent 0%, yellow 0%);
+    border-bottom: dashed 1px #a59c84;
   }
   .lp-wrapper .lp-third .uresii-wrapper .each-uresii:nth-child(even) {
     display: flex;
@@ -5010,7 +5012,7 @@ body {
     background-size: contain;
     position: absolute;
     right: -30px;
-    top: -5px;
+    top: -1px;
   }
   .lp-wrapper .lp-third .uresii-wrapper .each-uresii:nth-child(2) {
     position: relative;
@@ -5026,7 +5028,7 @@ body {
     background-size: contain;
     position: absolute;
     left: -25px;
-    top: -46px;
+    top: -43px;
     z-index: 310;
   }
   .lp-wrapper .lp-third .uresii-wrapper .each-uresii:nth-child(3) {
@@ -5042,7 +5044,7 @@ body {
     background-size: contain;
     position: absolute;
     right: -30px;
-    top: -15px;
+    top: -42px;
     z-index: 400;
   }
   .lp-wrapper .lp-third .uresii-wrapper::before {
@@ -5080,35 +5082,18 @@ body {
   }
   .lp-wrapper .lp-forth .lp-forth-title {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding-top: 60px;
-    font-family: "Toppan Bunkyu Midashi Gothic";
+    margin-top: 61px;
   }
-  .lp-wrapper .lp-forth .lp-forth-title p {
-    display: inline-block;
-    color: #292415;
-    /* 文字の色 */
-    font-size: 33pt;
-    /* 文字のサイズ */
-    line-height: 49.5px;
-    text-shadow: 5px 5px 5px #ffffff, -5px 5px 5px #ffffff, 5px -5px 5px #ffffff, -5px -5px 5px #ffffff, 5px 0px 5px #ffffff, 0px 5px 5px #ffffff, -5px 0px 5px #ffffff, 0px -5px 5px #ffffff;
-  }
-  .lp-wrapper .lp-forth .lp-forth-title span {
-    color: navy;
-    font-family: "Noto Sans JP";
-    font-weight: bold;
-  }
-  .lp-wrapper .lp-forth .lp-forth-title .big {
-    font-size: 50px;
-    line-height: 75px;
+  .lp-wrapper .lp-forth .lp-forth-title .lp-forth-title-pc {
+    width: 650px;
   }
   .lp-wrapper .lp-forth .onayami-list {
     color: #333;
     font-family: "Noto Sans JP";
     font-size: 26px;
     line-height: 37.65px;
+    font-weight: 500;
     margin-top: 52px;
     display: flex;
     flex-direction: column;
@@ -5127,7 +5112,7 @@ body {
     height: 28px;
     background-image: url(../images/onayami-check.svg);
     background-size: contain;
-    transform: translate(-5px, 2px);
+    transform: translate(-5px, 4px);
   }
   .lp-wrapper .lp-fifth {
     width: 100%;
@@ -5144,7 +5129,7 @@ body {
   .lp-wrapper .lp-fifth .lp-fifth-top-message {
     width: 100%;
     height: 133px;
-    font-family: "Toppan Bunkyu Midashi Gothic";
+    font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     font-size: 23px;
     line-height: 25.39px;
     font-weight: 800;
@@ -5243,6 +5228,7 @@ body {
   .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .each-reason .each-reason-content {
     color: #000;
     font-size: 14px;
+    font-weight: 500;
     line-height: 20px;
     padding: 0 15px;
     letter-spacing: 0;
@@ -5321,13 +5307,11 @@ body {
     padding-bottom: 95px;
   }
   .lp-wrapper .lp-sixth .lp-sixth-title {
-    color: white;
-    font-family: "Toppan Bunkyu Midashi Gothic";
-    font-size: 36px;
-    font-weight: 800;
-    line-height: 60px;
     padding-top: 50px;
     margin-bottom: 48px;
+  }
+  .lp-wrapper .lp-sixth .lp-sixth-title img {
+    width: 280px;
   }
   .lp-wrapper .lp-sixth .each-step {
     width: 900px;
@@ -5352,7 +5336,7 @@ body {
     line-height: 23px;
   }
   .lp-wrapper .lp-sixth .each-step .step-top .step-number-text {
-    font-family: "Noto Sans JP";
+    font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     font-weight: bold;
     font-size: 23px;
     line-height: 23px;
@@ -5410,7 +5394,7 @@ body {
     font-family: "Noto Serif JP", serif;
     font-weight: bold;
     text-align: center;
-    padding: 42px 70px;
+    padding: 42px 65px;
   }
   .lp-wrapper .lp-seventh .lp-seventh-message-wrapper .small-message {
     font-size: 21px;
@@ -5449,12 +5433,13 @@ body {
     text-align: center;
   }
   .lp-wrapper .lp-eighth .lp-eighth-title .top {
-    font-family: "Toppan Bunkyu Midashi Gothic";
+    font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     font-size: 32px;
     line-height: 48px;
+    font-weight: bold;
   }
   .lp-wrapper .lp-eighth .lp-eighth-title .under {
-    font-family: "Noto Sans JP";
+    font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     font-weight: bold;
     font-size: 32px;
     line-height: 46.34px;
@@ -5517,11 +5502,9 @@ body {
   .lp-wrapper .lp-store-list .location-wrapper .location-title {
     display: flex;
     justify-content: center;
-    font-family: "Toppan Bunkyu Midashi Gothic";
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 63px;
-    color: #483b19;
+  }
+  .lp-wrapper .lp-store-list .location-wrapper .location-title img {
+    width: 168px;
   }
   .lp-wrapper .lp-store-list .location-wrapper .list-of-stores {
     gap: 20px;
@@ -5537,7 +5520,7 @@ body {
   .lp-wrapper .lp-store-list .location-wrapper .area-name::after {
     content: url(../images/lp-storelist-arrow.svg);
     position: absolute;
-    top: 25%;
+    top: 20%;
     right: 24px;
   }
   .lp-wrapper .lp-store-list .location-wrapper .area-link {
@@ -5554,6 +5537,9 @@ body {
   .lp-wrapper .lp-store-list .location-wrapper .store {
     background-color: white;
   }
+  .lp-wrapper .lp-store-list .location-wrapper .store::after {
+    display: none;
+  }
   .lp-wrapper .lp-questions-list {
     background-color: #cbc3ab;
   }
@@ -5562,20 +5548,19 @@ body {
     padding-top: 65px;
   }
   .lp-wrapper .lp-questions-list .questions-wrapper .questions-title {
-    color: #483b19;
-    font-family: "Toppan Bunkyu Midashi Gothic";
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 63px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .lp-wrapper .lp-questions-list .questions-wrapper .questions-title img {
+    width: 252px;
   }
   .lp-wrapper .lp-questions-list .questions-wrapper .questions-contents-wrapper {
     margin: 0;
-    padding: 48px 0 66px;
+    padding-bottom: 66px;
   }
   .lp-wrapper .lp-questions-list .questions-wrapper .questions-contents-wrapper .questions-contents-title {
     color: #483b19;
-    font-family: "Noto Sans JP";
+    font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     font-weight: bold;
     font-size: 18px;
     line-height: 26px;
@@ -5584,7 +5569,7 @@ body {
     margin-bottom: 24px;
   }
   .lp-wrapper .lp-questions-list .questions-wrapper .questions-contents-wrapper .question-content {
-    font-family: "Noto Sans JP";
+    font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   }
   .lp-wrapper .lp-questions-list .questions-wrapper .questions-contents-wrapper .question-content .question-q {
     background-color: white;
@@ -5672,28 +5657,31 @@ body {
     height: auto;
     display: flex;
     justify-content: center;
-    font-family: "Noto Sans JP";
-    padding: 60px 0;
+    font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    padding: 30px 0;
   }
   .lp-wrapper .lp-footer-wrapper footer .lp-footer-contents .footer-logo {
     display: flex;
     justify-content: center;
-    transform: scale(1.1);
   }
   .lp-wrapper .lp-footer-wrapper footer .lp-footer-contents .footer-company-infomation {
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 24px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 16.37px;
   }
   .lp-wrapper .lp-footer-wrapper footer .lp-footer-contents .footer-links {
     display: flex;
     gap: 34px;
-    font-size: 16px;
-    margin-top: 60px;
+    font-size: 12px;
+    margin-top: 30px;
   }
 
   .sm-lp-top-price {
+    display: none;
+  }
+
+  .sm-point-title {
     display: none;
   }
 
@@ -5722,6 +5710,14 @@ body {
   }
 
   .sm-br {
+    display: none;
+  }
+
+  .sm-uresii-content {
+    display: none;
+  }
+
+  .lp-forth-title-sm {
     display: none;
   }
 }
@@ -5843,9 +5839,9 @@ body {
   }
   .lp-wrapper .lp-top .lp-top-under {
     width: 100%;
-    height: 375px;
+    height: 180px;
     background: linear-gradient(180deg, rgba(41, 36, 21, 0) 0%, #292415 88.54%);
-    bottom: -120px;
+    bottom: -30px;
     left: 0;
     position: absolute;
   }
@@ -5884,27 +5880,10 @@ body {
     display: none;
   }
   .lp-wrapper .lp-second .three-points .sm-point-title {
-    letter-spacing: 0;
     width: 335px;
-    font-family: "Toppan Bunkyu Midashi Gothic";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 45px;
-    text-align: center;
-    background: linear-gradient(90deg, #b08920 2.33%, #e3b12c 20.64%, #fff8b9 52.18%, #e3b12c 79.65%, #b08920 100%);
-    -webkit-background-clip: text;
-            background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border-bottom: 2px solid white;
-    -o-border-image: linear-gradient(90deg, #b08920 2.33%, #e3b12c 20.64%, #fff8b9 52.18%, #e3b12c 79.65%, #b08920 100%);
-       border-image: linear-gradient(90deg, #b08920 2.33%, #e3b12c 20.64%, #fff8b9 52.18%, #e3b12c 79.65%, #b08920 100%);
-    border-image-slice: 1;
   }
-  .lp-wrapper .lp-second .three-points .sm-point-title span {
-    font-size: 50px;
-    line-height: 75px;
+  .lp-wrapper .lp-second .three-points .sm-point-title img {
+    width: 100%;
   }
   .lp-wrapper .lp-second .three-points .points {
     display: flex;
@@ -5912,7 +5891,7 @@ body {
     flex-direction: column;
     gap: 35px;
     margin-top: 46px;
-    font-family: "Noto Sans JP";
+    font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   }
   .lp-wrapper .lp-second .three-points .points .each-point {
     display: flex;
@@ -5994,24 +5973,24 @@ body {
     font-size: 18px;
     line-height: 29px;
   }
-  .lp-wrapper .lp-third .uresii-wrapper .each-uresii .uresii-content {
+  .lp-wrapper .lp-third .uresii-wrapper .each-uresii .sm-uresii-content {
     font-family: "Noto Sans JP";
     width: 295px;
     font-size: 16px;
     line-height: 29px;
     margin-top: 83px;
     letter-spacing: 0;
+  }
+  .lp-wrapper .lp-third .uresii-wrapper .each-uresii .sm-uresii-content p,
+.lp-wrapper .lp-third .uresii-wrapper .each-uresii .sm-uresii-content span {
     border-bottom: dashed 1px #a59c84;
   }
-  .lp-wrapper .lp-third .uresii-wrapper .each-uresii .uresii-content p,
-.lp-wrapper .lp-third .uresii-wrapper .each-uresii .uresii-content span {
-    border-bottom: dashed 1px #a59c84;
-  }
-  .lp-wrapper .lp-third .uresii-wrapper .each-uresii .uresii-content span:last-child {
+  .lp-wrapper .lp-third .uresii-wrapper .each-uresii .sm-uresii-content span:last-child {
     border: none;
   }
-  .lp-wrapper .lp-third .uresii-wrapper .each-uresii .uresii-content .uresii-yellow {
+  .lp-wrapper .lp-third .uresii-wrapper .each-uresii .sm-uresii-content .uresii-yellow {
     background: linear-gradient(transparent 0%, yellow 0%);
+    border-bottom: dashed 1px #a59c84;
   }
   .lp-wrapper .lp-third .uresii-wrapper .each-uresii:nth-child(even) {
     display: flex;
@@ -6035,7 +6014,7 @@ body {
     position: relative;
     margin-bottom: 30px;
   }
-  .lp-wrapper .lp-third .uresii-wrapper .each-uresii:nth-child(1) .uresii-content {
+  .lp-wrapper .lp-third .uresii-wrapper .each-uresii:nth-child(1) .sm-uresii-content {
     width: 292px;
   }
   .lp-wrapper .lp-third .uresii-wrapper .each-uresii:nth-child(1)::after {
@@ -6070,7 +6049,7 @@ body {
     position: relative;
     z-index: 500;
   }
-  .lp-wrapper .lp-third .uresii-wrapper .each-uresii:nth-child(3) .uresii-content {
+  .lp-wrapper .lp-third .uresii-wrapper .each-uresii:nth-child(3) .sm-uresii-content {
     margin-top: 126px;
   }
   .lp-wrapper .lp-third .uresii-wrapper .each-uresii:nth-child(3)::after {
@@ -6120,34 +6099,10 @@ body {
     position: relative;
   }
   .lp-wrapper .lp-forth .lp-forth-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding-top: 60px;
-    font-family: "Toppan Bunkyu Midashi Gothic";
   }
-  .lp-wrapper .lp-forth .lp-forth-title p {
-    display: inline-block;
-    color: #292415;
-    /* 文字の色 */
-    text-shadow: 5px 5px 5px #ffffff, -5px 5px 5px #ffffff, 5px -5px 5px #ffffff, -5px -5px 5px #ffffff, 5px 0px 5px #ffffff, 0px 5px 5px #ffffff, -5px 0px 5px #ffffff, 0px -5px 5px #ffffff;
-  }
-  .lp-wrapper .lp-forth .lp-forth-title span {
-    color: navy;
-    font-family: "Noto Sans JP";
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 37.65px;
-  }
-  .lp-wrapper .lp-forth .lp-forth-title .small {
-    font-size: 23px;
-    /* 文字のサイズ */
-    line-height: 34.5px;
-  }
-  .lp-wrapper .lp-forth .lp-forth-title .big {
-    font-size: 26px;
-    line-height: 39px;
+  .lp-wrapper .lp-forth .lp-forth-title .lp-forth-title-sm {
+    width: 338px;
   }
   .lp-wrapper .lp-forth .onayami-list {
     display: none;
@@ -6158,6 +6113,7 @@ body {
     font-family: "Noto Sans JP";
     font-size: 20px;
     line-height: 22px;
+    font-weight: 500;
     margin-top: 25px;
     display: flex;
     flex-direction: column;
@@ -6174,6 +6130,7 @@ body {
   .lp-wrapper .lp-forth .sm-onayami-list .each-onayami img {
     width: 30px;
     height: 25px;
+    transform: translateY(-2px);
   }
   .lp-wrapper .lp-forth .onayami-lady {
     position: absolute;
@@ -6201,7 +6158,7 @@ body {
   .lp-wrapper .lp-fifth .lp-fifth-top-message {
     width: 100%;
     height: 140px;
-    font-family: "Toppan Bunkyu Midashi Gothic";
+    font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     font-size: 18px;
     line-height: 26.39px;
     font-weight: 800;
@@ -6262,15 +6219,15 @@ body {
   .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons {
     margin-top: 60px;
     display: grid;
-    grid-template-columns: 160px 160px;
+    grid-template-columns: 180px 180px;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 27px 20px;
+    gap: 10px 5px;
     grid-template-areas: ". ." ". ." ". .";
   }
   .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .each-reason {
     width: 100%;
     background-color: white;
-    height: 426px;
+    height: 326px;
     position: relative;
     font-family: "Noto Sans JP";
   }
@@ -6281,24 +6238,30 @@ body {
   }
   .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .each-reason .reason-image img {
     width: 100%;
+    height: 115px;
   }
   .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .each-reason .each-reason-title {
     color: #292415;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
     font-weight: bold;
     text-align: center;
-    margin-top: 17px;
-    margin-bottom: 18px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    letter-spacing: 0;
   }
   .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .each-reason .each-reason-title span {
     color: #f76f00;
   }
+  .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .each-reason .long-each-reason-title {
+    font-size: 13px;
+  }
   .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .each-reason .each-reason-content {
     color: #000;
-    font-size: 12px;
+    font-size: 10px;
+    font-weight: 500;
     line-height: 18px;
-    padding: 0 14px;
+    padding: 0 5px;
     letter-spacing: 0;
   }
   .lp-wrapper .lp-fifth .six-reasons-wrapper .reasons .each-reason::after {
@@ -6393,12 +6356,11 @@ body {
   }
   .lp-wrapper .lp-sixth .lp-sixth-title {
     color: white;
-    font-family: "Toppan Bunkyu Midashi Gothic";
-    font-size: 30px;
-    font-weight: 800;
-    line-height: 45px;
     padding-top: 50px;
     margin-bottom: 48px;
+  }
+  .lp-wrapper .lp-sixth .lp-sixth-title img {
+    width: 210px;
   }
   .lp-wrapper .lp-sixth .each-step {
     width: 335px;
@@ -6425,7 +6387,7 @@ body {
     line-height: 23px;
   }
   .lp-wrapper .lp-sixth .each-step .step-top .step-number-text {
-    font-family: "Noto Sans JP";
+    font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     font-weight: bold;
     font-size: 20px;
     line-height: 23px;
@@ -6520,12 +6482,12 @@ body {
     text-align: center;
   }
   .lp-wrapper .lp-eighth .lp-eighth-title .top {
-    font-family: "Toppan Bunkyu Midashi Gothic";
+    font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     font-size: 20px;
     line-height: 30px;
   }
   .lp-wrapper .lp-eighth .lp-eighth-title .under {
-    font-family: "Noto Sans JP";
+    font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     font-weight: bold;
     font-size: 20px;
     line-height: 28.96px;
@@ -6587,11 +6549,9 @@ body {
   .lp-wrapper .lp-store-list .location-wrapper .location-title {
     display: flex;
     justify-content: center;
-    font-family: "Toppan Bunkyu Midashi Gothic";
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 45px;
-    color: #483b19;
+  }
+  .lp-wrapper .lp-store-list .location-wrapper .location-title img {
+    width: 120px;
   }
   .lp-wrapper .lp-store-list .location-wrapper .list-of-stores {
     gap: 20px;
@@ -6626,6 +6586,9 @@ body {
     background-color: white;
     min-width: 159px;
   }
+  .lp-wrapper .lp-store-list .location-wrapper .store::after {
+    display: none;
+  }
   .lp-wrapper .lp-questions-list {
     background-color: #cbc3ab;
   }
@@ -6634,13 +6597,12 @@ body {
     padding-top: 40px;
   }
   .lp-wrapper .lp-questions-list .questions-wrapper .questions-title {
-    color: #483b19;
-    font-family: "Toppan Bunkyu Midashi Gothic";
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 45px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin: 0;
+  }
+  .lp-wrapper .lp-questions-list .questions-wrapper .questions-title img {
+    width: 180px;
   }
   .lp-wrapper .lp-questions-list .questions-wrapper .questions-contents-wrapper {
     margin: 0;
@@ -6648,7 +6610,7 @@ body {
   }
   .lp-wrapper .lp-questions-list .questions-wrapper .questions-contents-wrapper .questions-contents-title {
     color: #483b19;
-    font-family: "Noto Sans JP";
+    font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     font-weight: bold;
     font-size: 18px;
     line-height: 26px;
@@ -6657,7 +6619,7 @@ body {
     margin-bottom: 24px;
   }
   .lp-wrapper .lp-questions-list .questions-wrapper .questions-contents-wrapper .question-content {
-    font-family: "Noto Sans JP";
+    font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   }
   .lp-wrapper .lp-questions-list .questions-wrapper .questions-contents-wrapper .question-content .question-q {
     background-color: white;
@@ -6697,7 +6659,7 @@ body {
     height: auto;
     display: flex;
     justify-content: center;
-    font-family: "Noto Sans JP";
+    font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     padding: 30px 0;
   }
   .lp-wrapper .lp-footer-wrapper footer .lp-footer-contents .footer-logo {
@@ -6771,5 +6733,70 @@ body {
   }
   .sm-trial-link-wrapper .trial-link-line img {
     width: 100%;
+  }
+
+  .point-title {
+    display: none;
+  }
+
+  .uresii-content {
+    display: none;
+  }
+
+  .lp-forth-title-pc {
+    display: none;
+  }
+}
+.dokidoki {
+  -webkit-animation-name: dokidoki;
+          animation-name: dokidoki;
+  /* アニメーション名の指定 */
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  /* アニメーションの開始時間指定 */
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  /* アニメーション動作時間の指定 */
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  /* アニメーションの動き（徐々に早く徐々に遅く）*/
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  /* アニメーションをループさせる */
+}
+
+@-webkit-keyframes dokidoki {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes dokidoki {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
   }
 }/*# sourceMappingURL=sm-golf.css.map */

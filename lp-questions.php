@@ -1,6 +1,8 @@
 <div class="questions-wrapper">
   <!-- <div class="page-title">FAQ</div> -->
-  <div class="questions-title">よくある質問</div>
+  <div class="questions-title">
+    <img src="<?php echo get_theme_file_uri(); ?>/images/yokuaru-situmon.svg" alt="">
+  </div>
 
   <!-- 質問　施設・設備・ご予約について -->
   <div class="questions-contents-wrapper">

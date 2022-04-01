@@ -89,11 +89,11 @@
             <img src="<?php echo get_theme_file_uri(); ?>/images/無料体験予約受付中！.svg" alt="" class="message">
           </div>
           <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext.svg" alt="" class="top-price"> -->
-          <img src="<?php echo get_theme_file_uri(); ?>/images/sm-top-price01.png" alt="">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/lp-top-price02.png" alt="">
         </div>
 
         <div class="sm-lp-top-price">
-          <img src="<?php echo get_theme_file_uri(); ?>/images/sm-top-price01.png" alt="">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/lp-top-price02.png" alt="">
         </div>
 
         <div class="lp-top-under">
@@ -101,7 +101,7 @@
 
         <div class="lp-top-image-line-link">
           <img src="<?php echo get_theme_file_uri(); ?>/images/体験予約はこちらから！.svg" alt="" class="kotirakara">
-          <a href="https://lin.ee/7Ii8MCV/" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/ctabtn-line-pc.png" alt="" class="link-button"></a>
+          <a href="https://lin.ee/7Ii8MCV/" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/ctabtn-line-pc.png" alt="" class="link-button dokidoki"></a>
         </div>
       </div>
 
@@ -115,9 +115,13 @@
         </div>
 
         <div class="sm-point-title">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/sm-3point-title.png" alt="">
+        </div>
+
+        <!-- <div class="sm-point-title">
           <p>GOLFERS24の</p>
           <p><span>3</span>つの選ばれるポイント</p>
-        </div>
+        </div> -->
         <div class="points">
           <div class="each-point">
             <div class="point-top">放題プラン</div>
@@ -158,12 +162,12 @@
           <img src="<?php echo get_theme_file_uri(); ?>/images/mayottara.png" alt="" class="link-head-title">
         </div>
         <div class="trial-link-off">
-          <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext.svg" alt="">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext02.png" alt="">
         </div>
         <div class="trial-link-off-limit">
           <img src="<?php echo get_theme_file_uri(); ?>/images/second-off.png" alt="">
         </div>
-        <a href="https://lin.ee/7Ii8MCV/" target="_blank" class="trial-link-line">
+        <a href="https://lin.ee/7Ii8MCV/" target="_blank" class="trial-link-line dokidoki">
           <img src="<?php echo get_theme_file_uri(); ?>/images/ctabtn-line-pc.png" alt="">
         </a>
       </div>
@@ -174,12 +178,12 @@
           <img src="<?php echo get_theme_file_uri(); ?>/images/sm-mayottara.png" alt="" class="link-head-title">
         </div>
         <div class="trial-link-off">
-          <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext2.png" alt="">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext02.png" alt="">
         </div>
         <div class="trial-link-off-limit">
           <img src="<?php echo get_theme_file_uri(); ?>/images/second-off.png" alt="">
         </div>
-        <a href="https://lin.ee/7Ii8MCV/" target="_blank" class="trial-link-line">
+        <a href="https://lin.ee/7Ii8MCV/" target="_blank" class="trial-link-line dokidoki">
           <img src="<?php echo get_theme_file_uri(); ?>/images/ctabtn-line-pc.png" alt="">
         </a>
       </div>
@@ -204,10 +208,19 @@
           </div>
 
           <div class="uresii-content">
-            <span> 初めてのインドアゴルフ場だったのですが、</span>
-            <span>室内は清潔感があり最新の機械を使用できとても快適でした。</span>
-            <span class="uresii-yellow">外から見えないので完全個室のプライベート空間で人目を気にせず24時間いつでも練習ができて、</span>
-            <span>大濠公園や赤坂駅からも近くて便利</span><span>なので活用して上達したいと思います。</span>
+            <p> 初めてのインドアゴルフ場だったのですが、室内は清潔感があり最新の機械を使</p>
+            <p>用できとても快適でした。<span class="uresii-yellow">外から見えないので完全個室のプライベート空間で人</span></p>
+            <p><span class="uresii-yellow">目を気にせず24時間いつでも練習ができて、</span>駅からも家からも近くて便利なので</p>
+            <p>活用して上達したいと思います。</p>
+          </div>
+          <div class="sm-uresii-content">
+            <p> 初めてのインドアゴルフ場だったのです</p>
+            <p>が、室内は清潔感があり最新の機械を使</p>
+            <p>用できとても快適でした。<span class="uresii-yellow">外から見えな</span></p>
+            <p><span class="uresii-yellow">いので完全個室のプライベート空間で人</span></p>
+            <p><span class="uresii-yellow">目を気にせず24時間いつでも練習ができ</span></p>
+            <p><span class="uresii-yellow">て、</span>駅からも家からも近くて便利なので</p>
+            <p>活用して上達したいと思います。</p>
           </div>
         </div>
 
@@ -216,9 +229,19 @@
             初めてでも丁寧なサポートで迷わず利用できました！
           </div>
           <div class="uresii-content">
-            <span>バーチャルゴルフは初めてでしたが、<span class="uresii-yellow">係りの方が親切に使い方や遊び方を教えて</span></span>
-            <p><span class="uresii-yellow">頂いたおかげで楽しく体験が出来ました。</span></p>
-            <span>色々あるモードの中でも、実際のコー</span><span>スをラウンドできるモードが臨場感もあっ</span><span>て楽しかったです。</spa>
+            <p>バーチャルゴルフは初めてでしたが、<span class="uresii-yellow">係りの方がオンラインで親切に使い方や遊</span></p>
+            <p><span class="uresii-yellow">び方を教えてくれたおかげで楽しく体験が出来ました。</span></p>
+            <p>色々あるモードの中でも、実際のコースをラウンドできるモードが臨場感もあっ</p>
+            <p>て楽しかったです。</p>
+          </div>
+          <div class="sm-uresii-content">
+            <p>バーチャルゴルフは初めてでしたが、<span class="uresii-yellow">係</span></p>
+            <p><span class="uresii-yellow">りの方がオンラインで親切に使い方や遊</span></p>
+            <p><span class="uresii-yellow">び方を教えてくれたおかげで楽しく体験</span></p>
+            <p><span class="uresii-yellow">が出来ました。</span></p>
+            <p>色々あるモードの中でも、実際のコース</p>
+            <p>をラウンドできるモードが臨場感もあっ</p>
+            <p>て楽しかったです。</p>
           </div>
 
 
@@ -230,9 +253,19 @@
             全てオンラインで完結するのがすばらしい！
           </div>
           <div class="uresii-content">
-            <span>初めての利用でしたが、</span><span class="uresii-yellow">会員登録〜体験予約までオンラインで完結。スマホで鍵も開けられるので、予約時間に店舗に行くだけでした。</span>
-            <p>大濠公園・赤坂エリアにあって、駅からも徒歩5分以内と好アクセス。</p>
-            <span>無人店舗ですが、利用マニュアルが完備されているので、初めてでも迷うことな</span><span>くシミュレーターを活用できました。</span>
+            <p>初めての利用でしたが、<span class="uresii-yellow">会員登録〜体験予約までオンラインで完結。スマホで鍵</p>
+            <p><span class="uresii-yellow">も開けられるので、予約時間に店舗に行くだけでした。</span></p>
+            <p>無人店舗ですが、利用マニュアルが完備されているので、初めてでも迷うことな</p>
+            <p>くシミュレーターを活用できました。</p>
+          </div>
+          <div class="sm-uresii-content">
+            <p>初めての利用でしたが、<span class="uresii-yellow">会員登録〜体験</span></p>
+            <p><span class="uresii-yellow">予約までオンラインで完結。スマホで鍵</span></p>
+            <p><span class="uresii-yellow">も開けられるので、予約時間に店舗に行</span></p>
+            <p><span class="uresii-yellow">くだけでした。</span></p>
+            <p>無人店舗ですが、利用マニュアルが完備</p>
+            <p>されているので、初めてでも迷うことな</p>
+            <p>くシミュレーターを活用できました。</p>
           </div>
         </div>
 
@@ -242,8 +275,10 @@
     <!-- こんなお悩みありませんか？ -->
     <div class="lp-forth">
       <div class="lp-forth-title">
-        <p class="small">打ちっ放し練習場の</p>
-        <p class="big">こんな<span>お悩み</span>ありませんか？</p>
+        <!-- <p class="small">打ちっ放し練習場の</p>
+        <p class="big">こんな<span>お悩み</span>ありませんか？</p> -->
+        <img src="<?php echo get_theme_file_uri(); ?>/images/lp-pc-konnaonayami.png" alt="" class="lp-forth-title-pc">
+        <img src="<?php echo get_theme_file_uri(); ?>/images/lp-sm-konnaonayami.png" alt="" class="lp-forth-title-sm">
       </div>
       <div class="onayami-list">
         <div class="each-onayami">家から遠い</div>
@@ -330,7 +365,7 @@
             </div>
             <div class="each-reason-title">
               <p><span>世界シェアNo.1</span>の</p>
-              <p>ゴルフシミュレーターを採用</p>
+              <p>シミュレーターを採用</p>
             </div>
             <div class="each-reason-content">
               世界シェアNo.1ゴルフシミュレーター、GOLFZON『GDR』を採用。高性能ハイスピードカメラにより打ち出し角やボールスピードなどのデータを正確に計測。
@@ -342,9 +377,9 @@
             <div class="reason-image">
               <img src="<?php echo get_theme_file_uri(); ?>/images/lp-reason-image04.png" alt="">
             </div>
-            <div class="each-reason-title">
-              <p>アプリで練習データや</p>
-              <p><span>スイング動画が<br class="sm-br">チェック可能</span></p>
+            <div class="each-reason-title long-each-reason-title">
+              <p>アプリを使って練習データや</p>
+              <p><span>スイング動画がチェック可能</span></p>
             </div>
             <div class="each-reason-content">
               スイング時に前方・後方から自動で動画を撮影。スロー再生やコマ送り再生はもちろん、プロのスイング動画との比較ができ、効率良くスイングチェックが可能です。
@@ -393,12 +428,12 @@
             <img src="<?php echo get_theme_file_uri(); ?>/images/mayottara.png" alt="" class="link-head-title">
           </div>
           <div class="trial-link-off">
-            <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext.svg" alt="">
+            <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext02.png" alt="">
           </div>
           <div class="trial-link-off-limit">
             <img src="<?php echo get_theme_file_uri(); ?>/images/second-off.png" alt="">
           </div>
-          <a href="https://lin.ee/7Ii8MCV/" target="_blank" class="trial-link-line">
+          <a href="https://lin.ee/7Ii8MCV/" target="_blank" class="trial-link-line dokidoki">
             <img src="<?php echo get_theme_file_uri(); ?>/images/ctabtn-line-pc.png" alt="">
           </a>
         </div>
@@ -408,12 +443,12 @@
             <img src="<?php echo get_theme_file_uri(); ?>/images/sm-mayottara.png" alt="" class="link-head-title">
           </div>
           <div class="trial-link-off">
-            <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext2.png" alt="">
+            <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext02.png" alt="">
           </div>
           <div class="trial-link-off-limit">
             <img src="<?php echo get_theme_file_uri(); ?>/images/second-off.png" alt="">
           </div>
-          <a href="https://lin.ee/7Ii8MCV/" target="_blank" class="trial-link-line">
+          <a href="https://lin.ee/7Ii8MCV/" target="_blank" class="trial-link-line dokidoki">
             <img src="<?php echo get_theme_file_uri(); ?>/images/ctabtn-line-pc.png" alt="">
           </a>
         </div>
@@ -423,7 +458,9 @@
 
     <!-- 体験予約の流れ -->
     <div class="lp-sixth">
-      <div class="lp-sixth-title">体験予約の流れ</div>
+      <div class="lp-sixth-title">
+        <img src="<?php echo get_theme_file_uri(); ?>/images/taiken-nagare.png" alt="">
+      </div>
       <div class="trial-steps">
         <div class="each-step">
           <div class="step-top">
@@ -455,7 +492,7 @@
 
       <div class="trial-step-line-link">
         <img src="<?php echo get_theme_file_uri(); ?>/images/体験予約はこちらから！.svg" alt="" class="kotirakara">
-        <a href="https://lin.ee/7Ii8MCV/" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/ctabtn-line-pc.png" alt="" class="link-button"></a>
+        <a href="https://lin.ee/7Ii8MCV/" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/ctabtn-line-pc.png" alt="" class="link-button dokidoki"></a>
       </div>
     </div>
 
@@ -463,7 +500,7 @@
     <div class="lp-seventh">
       <div class="lp-seventh-message-wrapper">
         <div class="small-message">
-          <p>ゴルフの練習をしようと思うと、<br class="sm-br">家から遠くの練習場に<br class="sm-br">行かないいけない…</p>
+          <p>ゴルフの練習をしようと思うと、<br class="sm-br">家から遠くの練習場に<br class="sm-br">行かないといけない…</p>
           <p>遠くの練習場に行くのにも<br class="sm-br">時間がかかる…</p>
           <p>好きな時に練習できない…</p>
         </div>
@@ -499,12 +536,12 @@
           <img src="<?php echo get_theme_file_uri(); ?>/images/mayottara.png" alt="" class="link-head-title">
         </div>
         <div class="trial-link-off">
-          <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext.svg" alt="">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext02.png" alt="">
         </div>
         <div class="trial-link-off-limit">
           <img src="<?php echo get_theme_file_uri(); ?>/images/second-off.png" alt="">
         </div>
-        <a href="https://lin.ee/7Ii8MCV/" target="_blank" class="trial-link-line">
+        <a href="https://lin.ee/7Ii8MCV/" target="_blank" class="trial-link-line dokidoki">
           <img src="<?php echo get_theme_file_uri(); ?>/images/ctabtn-line-pc.png" alt="">
         </a>
       </div>
@@ -515,12 +552,12 @@
           <img src="<?php echo get_theme_file_uri(); ?>/images/sm-mayottara.png" alt="" class="link-head-title">
         </div>
         <div class="trial-link-off">
-          <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext2.png" alt="">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/fv-maintext02.png" alt="">
         </div>
         <div class="trial-link-off-limit">
           <img src="<?php echo get_theme_file_uri(); ?>/images/second-off.png" alt="">
         </div>
-        <a href="https://lin.ee/7Ii8MCV/" target="_blank" class="trial-link-line">
+        <a href="https://lin.ee/7Ii8MCV/" target="_blank" class="trial-link-line dokidoki">
           <img src="<?php echo get_theme_file_uri(); ?>/images/ctabtn-line-pc.png" alt="">
         </a>
       </div>
