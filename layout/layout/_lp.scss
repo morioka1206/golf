@@ -1060,8 +1060,9 @@
             .question-q::after {
               content: url(../images/lp-question-arrow.svg);
               position: absolute;
-              top: 25%;
+              top: 30%;
               right: 24px;
+              transition: 0.6s;
             }
 
             .question-a {
@@ -1075,6 +1076,14 @@
                 line-height: 30px;
                 margin: 0;
               }
+            }
+
+            .open::after {
+              content: url(../images/lp-question-arrow.svg);
+              position: absolute;
+              top: 30%;
+              right: 24px;
+              transform: rotate(180deg);
             }
           }
         }
@@ -1264,6 +1273,7 @@
   }
 
   .lp-wrapper {
+    width: 100%;
     .lp-top {
       // height: 1250px;
       display: flex;
@@ -2126,13 +2136,14 @@
         color: white;
         text-align: center;
         .top {
-          font-family: $noto;
+          font-family: "Noto Sans JP";
           font-size: 20px;
           line-height: 30px;
+          font-weight: bold;
         }
 
         .under {
-          font-family: $noto;
+          font-family: "Noto Sans JP";
           font-weight: bold;
           font-size: 20px;
           line-height: 28.96px;
@@ -2311,8 +2322,9 @@
             .question-q::after {
               content: url(../images/lp-question-arrow.svg);
               position: absolute;
-              top: 25%;
+              top: 30%;
               right: 24px;
+              transition: 0.6s;
             }
 
             .question-a {
@@ -2327,6 +2339,14 @@
                 margin: 0;
                 padding: 0 5px;
               }
+            }
+
+            .open::after {
+              content: url(../images/lp-question-arrow.svg);
+              position: absolute;
+              top: 30%;
+              right: 24px;
+              transform: rotate(180deg);
             }
           }
         }
@@ -2447,8 +2467,8 @@
 .dokidoki {
   animation-name: dokidoki; /* アニメーション名の指定 */
   animation-delay: 0s; /* アニメーションの開始時間指定 */
-  animation-duration: 3s; /* アニメーション動作時間の指定 */
-  animation-timing-function: ease-in-out;
+  animation-duration: 2s; /* アニメーション動作時間の指定 */
+  animation-timing-function: linear;
   /* アニメーションの動き（徐々に早く徐々に遅く）*/
   animation-iteration-count: infinite; /* アニメーションをループさせる */
 }
@@ -2458,8 +2478,12 @@
     transform: scale(1);
   }
 
+  20% {
+    transform: scale(1.05);
+  }
+
   40% {
-    transform: scale(1);
+    transform: scale(1.08);
   }
 
   50% {
@@ -2467,7 +2491,11 @@
   }
 
   60% {
-    transform: scale(1);
+    transform: scale(1.08);
+  }
+
+  80% {
+    transform: scale(1.05);
   }
 
   100% {
