@@ -2,10 +2,8 @@
 <footer id="footer">
   <!-- スマホの追従するフッター -->
   <div class="sm-footer">
-    <!-- <a href="https://lin.ee/7Ii8MCV" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/sm-footer-line.svg" alt=""></a>
-    <a href="https://golfers24.hacomono.jp/" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/sm-footer-webreserve.svg" alt=""></a> -->
     <a href="https://lin.ee/7Ii8MCV" class="sm-footer-line" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/sm-footer-line.svg" alt=""></a>
-    <a href="https://golfers24.hacomono.jp/" target="_blank" class="sm-footer-web"><img src="<?php echo get_theme_file_uri(); ?>/images/sm-footer-webreserve.svg" alt=""></a>
+    <!-- <a href="https://golfers24.hacomono.jp/" target="_blank" class="sm-footer-web"><img src="<?php echo get_theme_file_uri(); ?>/images/sm-footer-webreserve.svg" alt=""></a> -->
   </div>
 
 

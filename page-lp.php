@@ -469,7 +469,7 @@
           </div>
           <div class="step-under">
             <p>まずは体験のお申し込みから。</p>
-            <p>WebまたはLINEからのお申し込みを<br class="sm-br">お願いいたします。</p>
+            <p>LINEのお友達登録後に申し込みを<br class="sm-br">お願いいたします。</p>
           </div>
         </div>
 
@@ -500,12 +500,12 @@
     <div class="lp-seventh">
       <div class="lp-seventh-message-wrapper">
         <div class="small-message">
-          <p>ゴルフの練習をしようと思うと、<br class="sm-br">家から遠くの練習場に<br class="sm-br">行かないといけない…</p>
-          <p>遠くの練習場に行くのにも<br class="sm-br">時間がかかる…</p>
-          <p>好きな時に練習できない…</p>
+          <p>●ゴルフの練習をしようと思うと、<br>　家から遠くの練習場に行かない<br class="sm-br"><span class="sm-br">　</span>といけない…</p>
+          <p>●遠くの練習場に行くのにも<br class="sm-br"><span class="sm-br">　</span>時間がかかる…</p>
+          <p>●好きな時に練習できない…</p>
         </div>
         <div class="big-message">
-          <p><span>そんな打ちっ放し練習場の</span><br class="sm-br"><span>イメージを変えるため、</span></p>
+          <p><span>そんな打ちっ放し練習場の</span><br><span>イメージを変えるため、</span></p>
           <p><span>GOLFERS24は生まれました</span>
           </p>
         </div>
@@ -516,10 +516,10 @@
     <!-- 比較の表 -->
     <div class="lp-eighth">
       <div class="lp-eighth-title">
-        <p class="top">GOLFERS24なら、</p>
-        <p class="under">打ちっ放し練習場と比べて
+        <!-- <p class="top">GOLFERS24なら、</p> -->
+        <p class="under"><span class="small">GOLFERS24</span><span class="hiragana">と
           <br class="sm-br">
-          <span>こんなにお得！</span>
+        </span><span class="big">屋外練習場</span><span class="hiragana">の</span>比較
         </p>
       </div>
       <div class="lp-table">
@@ -571,6 +571,9 @@
 
     <div class="lp-footer-wrapper">
       <footer>
+        <div class="sm-footer">
+          <a href="https://lin.ee/7Ii8MCV" class="sm-footer-line" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/sm-footer-line.svg" alt=""></a>
+        </div>
         <div class="lp-footer-contents">
           <div class="footer-logo">
             <img src="<?php echo get_theme_file_uri(); ?>/images/logo-white.svg" alt="GOLFERS24ロゴ">

@@ -5441,30 +5441,39 @@ body {
     width: 100%;
   }
   .lp-wrapper .lp-seventh {
-    height: 420px;
+    height: 750px;
     background-image: url(../images/lp-seventh.png);
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .lp-wrapper .lp-seventh .lp-seventh-message-wrapper {
-    width: 900px;
+    width: 600px;
+    height: 500px;
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     color: #483b19;
     font-family: "Noto Serif JP", serif;
     font-weight: bold;
-    text-align: center;
-    padding: 42px 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
   }
   .lp-wrapper .lp-seventh .lp-seventh-message-wrapper .small-message {
-    font-size: 21px;
+    font-size: 20px;
     line-height: 30.18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
   .lp-wrapper .lp-seventh .lp-seventh-message-wrapper .big-message {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 45.98px;
     margin-top: 50px;
+    text-align: center;
   }
   .lp-wrapper .lp-seventh .lp-seventh-message-wrapper .big-message span {
     position: relative;
@@ -5500,15 +5509,30 @@ body {
     font-weight: bold;
   }
   .lp-wrapper .lp-eighth .lp-eighth-title .under {
-    font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-family: "Noto Sans JP";
     font-weight: bold;
-    font-size: 32px;
-    line-height: 46.34px;
+    font-size: 36px;
+    line-height: 52.34px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .lp-wrapper .lp-eighth .lp-eighth-title .under span {
-    font-size: 41px;
-    line-height: 38px;
     color: yellow;
+  }
+  .lp-wrapper .lp-eighth .lp-eighth-title .under .hiragana {
+    color: white;
+    font-size: 32px;
+    line-height: 46px;
+  }
+  .lp-wrapper .lp-eighth .lp-eighth-title .under .small {
+    font-size: 36px;
+    line-height: 52.13px;
+  }
+  .lp-wrapper .lp-eighth .lp-eighth-title .under .big {
+    font-size: 40px;
+    line-height: 59.37px;
   }
   .lp-wrapper .lp-eighth .lp-eighth-title::before {
     content: "";
@@ -5570,6 +5594,9 @@ body {
   .lp-wrapper .lp-store-list .location-wrapper .list-of-stores {
     gap: 20px;
   }
+  .lp-wrapper .lp-store-list .location-wrapper .each-store-list {
+    gap: 13px;
+  }
   .lp-wrapper .lp-store-list .location-wrapper .area-name {
     background-color: #483b19;
     color: white;
@@ -5593,10 +5620,12 @@ body {
   .lp-wrapper .lp-store-list .location-wrapper .each-store-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 10px;
+    padding-left: 15px;
   }
   .lp-wrapper .lp-store-list .location-wrapper .store {
     background-color: white;
+    width: 230px;
   }
   .lp-wrapper .lp-store-list .location-wrapper .store::after {
     display: none;
@@ -5797,7 +5826,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 600;
@@ -6509,22 +6538,27 @@ body {
     padding: 60px 20px;
   }
   .lp-wrapper .lp-seventh .lp-seventh-message-wrapper {
+    width: 335px;
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     color: #483b19;
     font-family: "Noto Serif JP", serif;
     font-weight: bold;
-    text-align: center;
-    padding: 42px 20px;
+    padding: 60px 30px;
+    border-radius: 5px;
   }
   .lp-wrapper .lp-seventh .lp-seventh-message-wrapper .small-message {
     font-size: 16px;
-    line-height: 29px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
   .lp-wrapper .lp-seventh .lp-seventh-message-wrapper .big-message {
-    font-size: 21px;
+    font-size: 19px;
     line-height: 32.18px;
     margin-top: 38px;
+    text-align: center;
   }
   .lp-wrapper .lp-seventh .lp-seventh-message-wrapper .big-message span {
     position: relative;
@@ -6562,13 +6596,21 @@ body {
   .lp-wrapper .lp-eighth .lp-eighth-title .under {
     font-family: "Noto Sans JP";
     font-weight: bold;
-    font-size: 20px;
-    line-height: 28.96px;
+    font-size: 36px;
+    line-height: 39.71px;
   }
   .lp-wrapper .lp-eighth .lp-eighth-title .under span {
-    font-size: 41px;
-    line-height: 59.37px;
     color: yellow;
+  }
+  .lp-wrapper .lp-eighth .lp-eighth-title .under .hiragana {
+    color: white;
+    font-size: 30px;
+    line-break: 33.09px;
+  }
+  .lp-wrapper .lp-eighth .lp-eighth-title .under .small,
+.lp-wrapper .lp-eighth .lp-eighth-title .under .big {
+    font-size: 36px;
+    line-height: 39.71px;
   }
   .lp-wrapper .lp-eighth .lp-eighth-title::before {
     content: "";
@@ -6741,7 +6783,10 @@ body {
     display: flex;
     justify-content: center;
     font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-    padding: 30px 0;
+    padding: 30px 0 100px;
+  }
+  .lp-wrapper .lp-footer-wrapper footer .sm-footer {
+    z-index: 600;
   }
   .lp-wrapper .lp-footer-wrapper footer .lp-footer-contents .footer-logo {
     display: flex;
