@@ -5467,11 +5467,11 @@ body {
     line-height: 46px;
   }
   .lp-wrapper .lp-eighth .lp-eighth-title .under .small {
-    font-size: 36px;
+    font-size: 38px;
     line-height: 52.13px;
   }
   .lp-wrapper .lp-eighth .lp-eighth-title .under .big {
-    font-size: 40px;
+    font-size: 38px;
     line-height: 59.37px;
   }
   .lp-wrapper .lp-eighth .lp-eighth-title::before {
@@ -5764,11 +5764,8 @@ body {
     width: 100%;
     height: 80px;
     display: flex;
-    justify-content: space-between;
-    padding: 0 30px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    justify-content: center;
+    gap: 25px;
     z-index: 600;
     background-color: white;
   }
@@ -5783,7 +5780,6 @@ body {
     width: 100%;
   }
   .lp-header .lp-header-right {
-    width: 148px;
     display: flex;
     align-items: center;
   }
@@ -5808,17 +5804,16 @@ body {
   .lp-wrapper .lp-top .lp-top-image {
     width: 100%;
     background-image: url(../images/lp-sp-top-02.png);
-    height: 718px;
+    height: 667px;
     background-size: cover;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 34px;
   }
   .lp-wrapper .lp-top .lp-top-image .lp-golfman {
     position: absolute;
-    top: 32.5%;
+    top: 23.5%;
     left: 5%;
   }
   .lp-wrapper .lp-top .lp-top-image .lp-golfman img {
@@ -5833,7 +5828,7 @@ body {
     align-items: flex-end;
   }
   .lp-wrapper .lp-top .lp-top-image .lp-top-message {
-    margin-top: 80px;
+    margin-top: 40px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -5893,7 +5888,7 @@ body {
     justify-content: center;
     width: 335px;
     position: absolute;
-    bottom: -10%;
+    bottom: -7%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -5905,7 +5900,7 @@ body {
   }
   .lp-wrapper .lp-second {
     background-color: #292415;
-    padding-top: 115px;
+    padding-top: 90px;
     padding-bottom: 80px;
     display: flex;
     flex-direction: column;
@@ -6536,7 +6531,7 @@ body {
   .lp-wrapper .lp-eighth .lp-eighth-title .under {
     font-family: "Noto Sans JP";
     font-weight: bold;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 39.71px;
   }
   .lp-wrapper .lp-eighth .lp-eighth-title .under span {
@@ -6544,12 +6539,12 @@ body {
   }
   .lp-wrapper .lp-eighth .lp-eighth-title .under .hiragana {
     color: white;
-    font-size: 30px;
+    font-size: 26px;
     line-break: 33.09px;
   }
   .lp-wrapper .lp-eighth .lp-eighth-title .under .small,
 .lp-wrapper .lp-eighth .lp-eighth-title .under .big {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 39.71px;
   }
   .lp-wrapper .lp-eighth .lp-eighth-title::before {
@@ -6727,6 +6722,9 @@ body {
   }
   .lp-wrapper .lp-footer-wrapper footer .sm-footer {
     z-index: 600;
+  }
+  .lp-wrapper .lp-footer-wrapper footer .sm-footer .sm-footer-line img {
+    width: 100%;
   }
   .lp-wrapper .lp-footer-wrapper footer .lp-footer-contents .footer-logo {
     display: flex;

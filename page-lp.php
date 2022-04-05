@@ -572,7 +572,7 @@
     <div class="lp-footer-wrapper">
       <footer>
         <div class="sm-footer">
-          <a href="https://lin.ee/7Ii8MCV" class="sm-footer-line" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/sm-footer-line.svg" alt=""></a>
+          <a href="https://lin.ee/7Ii8MCV" class="sm-footer-line" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/images/lp-sm-footer-line.png" alt=""></a>
         </div>
         <div class="lp-footer-contents">
           <div class="footer-logo">
